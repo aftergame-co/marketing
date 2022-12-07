@@ -5,6 +5,8 @@
 # Base path to your source files, relative to the root folder of your repository.
 source: src
 
+output: .next
+
 # The locations of various types of files within your site.
 # Each path is relative to your site's source folder.
 paths:

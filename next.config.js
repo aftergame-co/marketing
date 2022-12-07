@@ -4,6 +4,7 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  distDir: 'out'
 }
 
 module.exports = nextConfig

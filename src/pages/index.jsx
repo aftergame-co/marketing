@@ -26,7 +26,9 @@ export default function Home() {
         <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />
-        <Reviews />
+        <div className='hidden lg:flex justify-center'>
+          <Reviews />
+        </div>
       </main>
       <Footer />
     </>

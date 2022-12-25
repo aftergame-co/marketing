@@ -4,39 +4,39 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'Import plays with ease',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+      'Bring your past plays with you.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: 'Record as much or as little as you want',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
-    icon: DeviceCardsIcon,
-  },
-  {
-    name: 'Trade in real-time',
-    description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+      '2 line description.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
+    name: 'Forget about losing your data',
     description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
+      'Plays are securely stored in the cloud, meaning no more saving backups or manually syncing.',
+    icon: DeviceCardsIcon,
+  },
+  {
+    name: 'Something on groups',
+    description:
+      '2 line description.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Encrypted and anonymized',
+    name: 'Something on events',
     description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+      '2 line description.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Portfolio tracking',
+    name: 'Fast and intuitive user experience',
     description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
+      'Built using the latest technology.',
     icon: DeviceChartIcon,
   },
 ]
@@ -196,11 +196,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+            Another title.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+            2 lines<br/> description.
           </p>
         </div>
         <ul

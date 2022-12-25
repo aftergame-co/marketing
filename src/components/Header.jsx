@@ -55,7 +55,7 @@ export function Header() {
               <Logo className="h-16 w-auto" />
             </Link>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-10 mt-1">
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
             </div>
@@ -63,7 +63,7 @@ export function Header() {
               {({ open }) => (
                 <>
                   <Popover.Button
-                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none"
+                    className="relative z-10 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none"
                     aria-label="Toggle site navigation"
                   >
                     {({ open }) =>
@@ -101,19 +101,23 @@ export function Header() {
                             <MobileNavLink href="#features">
                               Features
                             </MobileNavLink>
-                            <MobileNavLink href="#reviews">
-                              Reviews
+                            <MobileNavLink href="/designers">
+                              Game Designers
                             </MobileNavLink>
-                            <MobileNavLink href="#pricing">
+                            <MobileNavLink href="/pricing">
                               Pricing
                             </MobileNavLink>
-                            <MobileNavLink href="#faqs">FAQs</MobileNavLink>
+                            <MobileNavLink href="/blog">
+                              Blog
+                            </MobileNavLink>
+                            <MobileNavLink href="/about">
+                              About
+                            </MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button href="/login" variant="outline">
-                              Log in
+                            <Button href="#" className="bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+                              Get Goodgame
                             </Button>
-                            <Button href="#">Download the app</Button>
                           </div>
                         </Popover.Panel>
                       </>
@@ -122,7 +126,7 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <Button href="/login" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+            <Button href="#" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
               Get Goodgame
             </Button>
           </div>

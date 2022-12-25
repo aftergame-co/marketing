@@ -8,59 +8,36 @@ import { Logomark } from '@/components/Logo'
 
 const plans = [
   {
-    name: 'Starter',
+    name: 'Lite',
     featured: false,
-    price: { Monthly: '$0', Annually: '$0' },
-    description:
-      'You’re new to investing but want to do it right. Get started for free.',
+    price: { Monthly: '$0/month', Annually: '$0' },
     button: {
-      label: 'Get started for free',
-      href: '/register',
+      label: 'Get Goodgame',
+      href: '#',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      'No ads, ever.',
+      'Full history of every game you have ever played, stored across devices',
+      'Analytics for the last 90 days of game plays',
+      'Join groups and play with friends',
+      'Easy import of your games collection and play logs',
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
-    featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
-    description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
-    button: {
-      label: 'Subscribe',
-      href: '/register',
-    },
-    features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
-    ],
-    logomarkClassName: 'fill-gray-500',
-  },
-  {
-    name: 'VIP',
+    name: 'Premium',
     featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
-    description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
+    price: { Monthly: '$4.99/month', Annually: '$49.99' },
     button: {
       label: 'Subscribe',
-      href: '/register',
+      href: '#',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
+      'Analytics for all your game plays',
+      'Deeper insights, custom graphs, and reports',
+      'Track your own datapoints on your game plays',
+      'Ability to host events, create tournaments, and start leagues.',
+      'Access new features early',
     ],
     logomarkClassName: 'fill-cyan-500',
   },
@@ -101,17 +78,16 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col overflow-hidden rounded-3xl p-6 shadow-lg shadow-gray-900/5',
-        featured ? 'order-first bg-gray-900 lg:order-none' : 'bg-white'
+        featured ? 'order-first bg-gg-blue lg:order-none' : 'bg-white'
       )}
     >
       <h3
         className={clsx(
-          'flex items-center text-sm font-semibold',
+          'flex items-center font-semibold',
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
-        <Logomark className={clsx('h-8 w-8 flex-none', logomarkClassName)} />
-        <span className="ml-4">{name}</span>
+        <span>{name}</span>
       </h3>
       <p
         className={clsx(
@@ -146,30 +122,22 @@ function Plan({
           </>
         )}
       </p>
-      <p
-        className={clsx(
-          'mt-3 text-sm',
-          featured ? 'text-gray-300' : 'text-gray-700'
-        )}
-      >
-        {description}
-      </p>
       <div className="order-last mt-6">
         <ul
           role="list"
           className={clsx(
             '-my-2 divide-y text-sm',
             featured
-              ? 'divide-gray-800 text-gray-300'
+              ? 'divide-gray-200 text-white'
               : 'divide-gray-200 text-gray-700'
           )}
         >
           {features.map((feature) => (
-            <li key={feature} className="flex py-2">
+            <li key={feature} className="flex py-2 items-center">
               <CheckIcon
                 className={clsx(
                   'h-6 w-6 flex-none',
-                  featured ? 'text-white' : 'text-cyan-500'
+                  featured ? 'text-white' : 'text-gg-blue'
                 )}
               />
               <span className="ml-4">{feature}</span>
@@ -189,7 +157,7 @@ function Plan({
   )
 }
 
-export function Pricing() {
+export function Plans() {
   let [activePeriod, setActivePeriod] = useState('Monthly')
 
   return (

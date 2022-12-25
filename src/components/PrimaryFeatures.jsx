@@ -24,23 +24,23 @@ const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'Invite friends for better returns',
+    name: 'Play with your friends',
     description:
-      'For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
+      '2-3 lines about easy play sharing feature.',
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
   {
-    name: 'Notifications on stock dips',
+    name: 'Use tailored pre-built scoresheets',
     description:
-      'Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
+      '2-3 lines about game definitions',
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
   {
-    name: 'Invest what you want',
+    name: 'Access unrivaled analytics and insights',
     description:
-      'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
+      '2-3 lines about our stats and data',
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },
@@ -391,7 +391,7 @@ function FeaturesDesktop() {
         {features.map((feature, featureIndex) => (
           <div
             key={feature.name}
-            className="relative rounded-2xl transition-colors hover:bg-gray-200/20"
+            className="relative rounded-2xl transition-colors hover:bg-gray-600/20"
           >
             {featureIndex === selectedIndex && (
               <motion.div
@@ -551,13 +551,10 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Every feature you need to win. Try it for yourself.
+            Play tracking and statistics reimagined.
           </h2>
           <p className="mt-2 text-lg text-gray-200">
-            Pocket was built for investors like you who play by their own rules
-            and aren’t going to let SEC regulations get in the way of their
-            dreams. If other investing tools are afraid to build it, Pocket has
-            it.
+            2-3 lines <br/> of description text
           </p>
         </div>
       </Container>

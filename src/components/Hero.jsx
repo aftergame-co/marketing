@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import { motion, useInView, useMotionValue } from 'framer-motion'
 
 import { AppScreen } from '@/components/AppScreen'
-import { AppStoreLink } from '@/components/AppStoreLink'
+import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
@@ -101,9 +101,7 @@ function PlayIcon(props) {
 
 const prices = [
   997.56, 944.34, 972.25, 832.4, 888.76, 834.8, 805.56, 767.38, 861.21, 669.6,
-  694.39, 721.32, 694.03, 610.1, 502.2, 549.56, 611.03, 583.4, 610.14, 660.6,
-  752.11, 721.19, 638.89, 661.7, 694.51, 580.3, 638.0, 613.3, 651.64, 560.51,
-  611.45, 670.68, 752.56,
+  694.39, 721.32, 694.03, 610.1, 602.2, 649.56, 711.03, 783.4, 710.14, 760.6
 ]
 const maxPrice = Math.max(...prices)
 const minPrice = Math.min(...prices)
@@ -130,6 +128,7 @@ function Chart({
   let [interactionEnabled, setInteractionEnabled] = useState(false)
 
   let path = ''
+  let path2 = ''
   let points = []
 
   for (let index = 0; index < prices.length; index++) {
@@ -139,6 +138,7 @@ function Chart({
       (1 - (prices[index] - minPrice) / (maxPrice - minPrice)) * height
     points.push({ x, y })
     path += `${index === 0 ? 'M' : 'L'} ${x.toFixed(4)} ${y.toFixed(4)}`
+    path2 += `${index === 0 ? 'M' : 'L'} ${x.toFixed(4)} ${y.toFixed(4)*1.15}`
   }
 
   return (
@@ -178,8 +178,15 @@ function Chart({
           <path d={`${path} V ${height + paddingY} H ${paddingX} Z`} />
         </clipPath>
         <linearGradient id={`${id}-gradient`} x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stopColor="#13B5C8" />
-          <stop offset="100%" stopColor="#13B5C8" stopOpacity="0" />
+          <stop offset="0%" stopColor="#4966f5" />
+          <stop offset="100%" stopColor="#4966f5" stopOpacity="0" />
+        </linearGradient>
+        <clipPath id={`${id}-clip2`}>
+          <path d={`${path2} V ${height + paddingY} H ${paddingX} Z`} />
+        </clipPath>
+        <linearGradient id={`${id}-gradient2`} x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stopColor="#ff3a20" />
+          <stop offset="100%" stopColor="#ff3a20" stopOpacity="0" />
         </linearGradient>
       </defs>
       {[...Array(gridLines - 1).keys()].map((index) => (
@@ -210,7 +217,34 @@ function Chart({
         strokeLinejoin="round"
         initial={{ pathLength: 0 }}
         transition={{ duration: 1 }}
-        {...(isInView ? { stroke: '#06b6d4', animate: { pathLength: 1 } } : {})}
+        {...(isInView ? { stroke: '#4966f5', animate: { pathLength: 1 } } : {})}
+        onUpdate={({ pathLength }) => {
+          pathWidth.set(
+            pathRef.current.getPointAtLength(
+              pathLength * pathRef.current.getTotalLength()
+            ).x
+          )
+        }}
+        onAnimationComplete={() => setInteractionEnabled(true)}
+      />
+      <motion.rect
+        y={paddingY}
+        width={pathWidth}
+        height={height}
+        fill={`url(#${id}-gradient2)`}
+        clipPath={`url(#${id}-clip2)`}
+        opacity="0.5"
+      />
+      <motion.path
+        ref={pathRef}
+        d={path2}
+        fill="none"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        initial={{ pathLength: 0 }}
+        transition={{ duration: 1 }}
+        {...(isInView ? { stroke: '#ff3a20', animate: { pathLength: 1 } } : {})}
         onUpdate={({ pathLength }) => {
           pathWidth.set(
             pathRef.current.getPointAtLength(
@@ -258,20 +292,11 @@ function AppDemo() {
     <AppScreen>
       <AppScreen.Body>
         <div className="p-4">
-          <div className="flex gap-2">
-            <div className="text-xs leading-6 text-gray-500">
-              Tailwind Labs, Inc.
+          <div className="flex gap-4">
+            <img src='../images/catan.webp' width={64} />
+            <div className="text-md leading-6 text-black">
+              Catan
             </div>
-            <div className="text-sm text-gray-900">$CSS</div>
-            <svg viewBox="0 0 24 24" className="ml-auto h-6 w-6" fill="none">
-              <path
-                d="M5 12a7 7 0 1 1 14 0 7 7 0 0 1-14 0ZM12 9v6M15 12H9"
-                stroke="#171717"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
           </div>
           <div className="mt-3 border-t border-gray-200 pt-5">
             <div className="flex items-baseline gap-2">
@@ -291,14 +316,6 @@ function AppDemo() {
                   }${percentageChange.toFixed(2)}%`}
                 </div>
               )}
-            </div>
-            <div className="mt-6 flex gap-4 text-xs text-gray-500">
-              <div>1D</div>
-              <div>5D</div>
-              <div className="font-semibold text-cyan-600">1M</div>
-              <div>6M</div>
-              <div>1Y</div>
-              <div>5Y</div>
             </div>
             <div className="mt-3 rounded-lg bg-gray-50 ring-1 ring-inset ring-black/5">
               <Chart
@@ -341,16 +358,14 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Understand how people play your game.
+            Record, share, and analyse your game playing.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              By leveraging insights from our network of industry insiders,
-              you’ll know exactly when to buy to maximize profit, and exactly
-              when to sell to avoid painful losses.
+              Three lines<br/>of text<br/>here
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
-              <AppStoreLink />
+              <GooglePlayLink />
             </div>
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">

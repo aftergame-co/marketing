@@ -12,16 +12,16 @@ export function NavLinks() {
       href: '#features',
     },
     {
-      name: 'For Designers',
-      href: '#reviews',
+      name: 'Game Designers',
+      href: '/designers',
     },
     {
       name: 'Pricing',
-      href: '#pricing',
+      href: '/pricing',
     },
     {
       name: 'Blog',
-      href: '##',
+      href: '/blog',
       // menu: [
       //   {
       //     name: 'Insights',
@@ -45,7 +45,7 @@ export function NavLinks() {
     },
     {
       name: 'About',
-      href: '##',
+      href: '/about',
       // menu: [
       //   {
       //     name: 'Insights',

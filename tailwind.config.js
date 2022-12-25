@@ -36,6 +36,7 @@ module.exports = {
       colors: ({ colors }) => ({
         gray: colors.neutral,
         'gg-blue': '#4966f5',
+        'gg-blue-faint': '#dbe0fd',
         'gg-red': '#ff3a20',
       }),
       fontFamily: {

@@ -363,7 +363,7 @@ export function Hero() {
             <p className="mt-6 text-lg text-gray-600">
               Three lines<br/>of text<br/>here
             </p>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+            <div className="mt-8 flex flex-wrap gap-x-4 gap-y-4 lg:gap-x-6">
               <AppStoreLink />
               <GooglePlayLink />
             </div>

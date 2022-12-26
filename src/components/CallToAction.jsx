@@ -8,7 +8,7 @@ export function CallToAction() {
       id="get-free-shares-today"
       className="relative overflow-hidden bg-gg-blue py-20 sm:py-28"
     >
-      <div className="hidden lg:flex absolute top-1/2 left-20 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
+      <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
         <CircleBackground color="#fff" className="animate-spin-slower" />
       </div>
       <Container className="relative">
@@ -17,7 +17,7 @@ export function CallToAction() {
             Record your first play today
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            1-2 lins
+            1-2 <br /> lines
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-4 lg:gap-x-6">
             <AppStoreLink />

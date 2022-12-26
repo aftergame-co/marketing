@@ -391,7 +391,7 @@ function FeaturesDesktop() {
         {features.map((feature, featureIndex) => (
           <div
             key={feature.name}
-            className="relative rounded-2xl transition-colors hover:bg-gray-600/20"
+            className="relative rounded-2xl transition-colors hover:bg-white/20"
           >
             {featureIndex === selectedIndex && (
               <motion.div

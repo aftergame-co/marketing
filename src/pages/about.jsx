@@ -14,7 +14,7 @@ export default function About() {
         />
       </Head>
       <Header />
-      <main>
+      <main className='pt-20'>
       </main>
       <Footer />
     </>

@@ -164,7 +164,7 @@ export function Plans() {
     <section
       id="pricing"
       aria-labelledby="pricing-title"
-      className="border-t border-gray-200 bg-gray-100 py-20 sm:py-32"
+      className="py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl text-center">

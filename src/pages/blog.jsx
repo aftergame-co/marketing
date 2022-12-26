@@ -14,7 +14,7 @@ export default function Blog() {
         />
       </Head>
       <Header />
-      <main>
+      <main className='pt-20'>
       </main>
       <Footer />
     </>

@@ -1,11 +1,9 @@
 import Head from 'next/head'
 
-import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { Plans } from '@/components/Plans'
 
-export default function Pricing() {
+export default function Terms() {
   return (
     <>
       <Head>
@@ -17,8 +15,6 @@ export default function Pricing() {
       </Head>
       <Header />
       <main className='pt-20'>
-        <Plans />
-        <Faqs />
       </main>
       <Footer />
     </>

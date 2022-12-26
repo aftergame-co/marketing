@@ -14,7 +14,7 @@ export default function Designers() {
         />
       </Head>
       <Header />
-      <main>
+      <main className='pt-20'>
       </main>
       <Footer />
     </>

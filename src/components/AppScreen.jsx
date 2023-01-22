@@ -1,5 +1,6 @@
 import { forwardRef } from 'react'
 import clsx from 'clsx'
+import { ArrowLeftIcon, EllipsisVerticalIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
 function Logo(props) {
   return (
@@ -57,9 +58,19 @@ function UserIcon(props) {
 export function AppScreen({ children, className, ...props }) {
   return (
     <div className={clsx('flex flex-col', className)} {...props}>
-      <div className="flex justify-between px-4 pt-4">
-        <Logo className="h-6 flex-none" />
-        <UserIcon className="h-6 w-6 flex-none" />
+      <div className="flex px-4 pt-4">
+        <ArrowLeftIcon 
+          className="h-8 w-8 text-gray-900"
+        />
+        <div 
+          className="w-full"
+        />
+        <MagnifyingGlassIcon 
+          className="h-8 w-8 text-gray-900"
+        />
+        <EllipsisVerticalIcon
+          className="ml-4 h-8 w-8 text-gray-900"
+        />
       </div>
       {children}
     </div>

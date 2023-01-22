@@ -16,6 +16,8 @@ import logoForbes from '@/images/logos/forbes.svg'
 import logoHuffpost from '@/images/logos/huffpost.svg'
 import logoTechcrunch from '@/images/logos/techcrunch.svg'
 import logoWired from '@/images/logos/wired.svg'
+import { WaitlistForm } from './WaitlistForm'
+import { ClockIcon, UserGroupIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -280,12 +282,41 @@ function AppDemo() {
       <AppScreen.Body>
         <div className="p-4">
           <div className="flex gap-4">
-            <img src='../images/catan.webp' width={64} />
-            <div className="text-md leading-6 text-black">
-              Catan
+            <img src='../images/root.jpeg' width={64} className='rounded-md' />
+            <div>
+              <h3 className="text-lg font-medium leading-6 text-black">
+                Root
+              </h3>
+              <div
+                className='mt-2 flex align-middle text-gray-600 text-xs'>
+                  <UserGroupIcon
+                    className="h-4 w-4"
+                  />
+                  <span className='ml-1 mr-3'>2-4</span>
+                  <ClockIcon 
+                    className="h-4 w-4"
+                  />
+                  <span className='ml-1 mr-3'>60-90min</span>
+                  <UsersIcon
+                    className="h-4 w-4"
+                  />
+                  <span className='ml-1 mr-3'>10+</span>
+              </div>
             </div>
           </div>
-          <div className="mt-3 border-t border-gray-200 pt-5">
+          <div>
+              <p className='mt-4 mb-3 text-gray-600 text-xs'>Last played 3 days ago</p>
+              <div className='grid grid-cols-12 rounded-md overflow-hidden'>
+                <div className='bg-green-500 col-span-7 py-1'></div>
+                <div className='bg-red-500 col-span-5 py-1'></div>
+              </div>
+              <div
+                className='flex justify-between text-gray-900 text-sm'>
+                  <span>21 wins</span>
+                  <span>15 losses</span>
+              </div>
+          </div>
+          {/* <div className="mt-3 border-t border-gray-200 pt-5">
             <div className="flex items-baseline gap-2">
               <div className="text-2xl tabular-nums tracking-tight text-gray-900">
                 {activeValue.toFixed(2)}
@@ -314,24 +345,7 @@ function AppDemo() {
                 onChangeActivePointIndex={setActivePointIndex}
               />
             </div>
-            <div className="mt-4 rounded-lg bg-cyan-500 py-2 px-4 text-center text-sm font-semibold text-white">
-              Trade
-            </div>
-            <div className="mt-3 divide-y divide-gray-100 text-sm">
-              <div className="flex justify-between py-1">
-                <div className="text-gray-500">Open</div>
-                <div className="font-medium text-gray-900">6,387.55</div>
-              </div>
-              <div className="flex justify-between py-1">
-                <div className="text-gray-500">Closed</div>
-                <div className="font-medium text-gray-900">6,487.09</div>
-              </div>
-              <div className="flex justify-between py-1">
-                <div className="text-gray-500">Low</div>
-                <div className="font-medium text-gray-900">6,322.01</div>
-              </div>
-            </div>
-          </div>
+          </div> */}
         </div>
       </AppScreen.Body>
     </AppScreen>
@@ -344,16 +358,24 @@ export function Hero() {
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
-            <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-            Record, share, and analyse your game playing.
+            <h1 className="text-6xl xl:text-7xl font-medium tracking-tight text-gray-900">
+            {/* Record, share, and analyse your game playing. */}
+            {/* Remember every epic moment and track your gaming journey */}
+            Remember <span className='text-gg-blue font-semibold'>every</span> <span className='text-gg-red font-semibold'>epic</span> moment
             </h1>
-            <p className="mt-6 text-lg text-gray-600">
-              Three lines<br/>of text<br/>here
+            <p className="my-8 xl:w-4/5 text-xl text-gray-600">
+            {/* Unlock the full potential of your gaming passion with our app, where you can easily record, share, and gain valuable insights into the games you love - taking your gameplay to the next level. */}
+            Track the games you love on Goodgame to gain meaningful insights and share your gaming journey with friends.
+            {/* ecord, share, and gain valuable insights into the games you love */}
             </p>
-            <div className="mt-8 mb-16 flex flex-wrap gap-x-4 gap-y-4 lg:gap-x-6">
+            <div className="pt-6 xl:w-4/5">
+              <WaitlistForm />
+            </div>
+
+            {/* <div className="mt-8 mb-16 flex flex-wrap gap-x-4 gap-y-4 lg:gap-x-6">
               <AppStoreLink />
               <GooglePlayLink />
-            </div>
+            </div> */}
           </div>
           <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="hidden lg:flex absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />

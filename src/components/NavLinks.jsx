@@ -9,19 +9,19 @@ export function NavLinks() {
   const navItems = [
     {
       name: 'Features',
-      href: '#features',
+      href: '/',
     },
-    {
-      name: 'Game Designers',
-      href: '/designers',
-    },
-    {
-      name: 'Pricing',
-      href: '/pricing',
-    },
-    {
-      name: 'Blog',
-      href: '/blog',
+    // {
+    //   name: 'Game Designers',
+    //   href: '/designers',
+    // },
+    // {
+    //   name: 'Pricing',
+    //   href: '/pricing',
+    // },
+    // {
+      // name: 'Blog',
+      // href: '/blog',
       // menu: [
       //   {
       //     name: 'Insights',
@@ -42,9 +42,9 @@ export function NavLinks() {
       //     icon: IconThree,
       //   },
       // ]
-    },
+    // },
     {
-      name: 'About',
+      name: 'About us',
       href: '/about',
       // menu: [
       //   {

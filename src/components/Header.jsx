@@ -145,9 +145,9 @@ export function Header() {
                   </>
                 )}
               </Popover>
-              <Button href="#" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+              {/* <Button href="#" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
                 Get Goodgame
-              </Button>
+              </Button> */}
             </div>
           </Container>
         </nav>

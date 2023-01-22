@@ -147,7 +147,7 @@ function Plan({
       </div>
       <Button
         href={button.href}
-        color={featured ? 'cyan' : 'gray'}
+        color={featured ? 'white' : 'gg'}
         className="mt-6"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
@@ -172,11 +172,10 @@ export function Plans() {
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Flat pricing, no management fees.
+            Pricing intro
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+            1-2 lines
           </p>
         </div>
 
@@ -205,7 +204,7 @@ export function Plans() {
             <div
               aria-hidden="true"
               className={clsx(
-                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300',
+                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-gg-blue transition-all duration-300',
                 activePeriod === 'Monthly'
                   ? '[clip-path:inset(0_50%_0_0)]'
                   : '[clip-path:inset(0_0_0_calc(50%-1px))]'

@@ -8,7 +8,7 @@ const userTypeOptions = [
   { name: 'Game designer' },
 ]
 
-export function WaitlistForm({lightMode}) {
+export function WaitlistForm({label, lightMode}) {
   const [selected, setSelected] = useState(userTypeOptions[0])
 
   return (
@@ -28,7 +28,7 @@ export function WaitlistForm({lightMode}) {
             lightMode ? 'text-white' : 'text-gray-900'
           )}
           id="waitlist-email"
-          label="Find out what all the fuss is about"
+          label={label}
           name="waitlist-email"
           placeholder="Email"
           type="email"

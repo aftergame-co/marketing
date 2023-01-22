@@ -20,7 +20,7 @@ function PlaceholderFrame(props) {
 export function PhoneFrame({
   className,
   children,
-  priority = false,
+  priority = true,
   ...props
 }) {
   return (

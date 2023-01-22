@@ -24,7 +24,7 @@ export function GooglePlayLink({ color = 'black' }) {
   return (
     <Link
       href="#"
-      aria-label="Download on the App Store"
+      aria-label="Download on Google Play"
       className={clsx(
         'rounded-lg transition-colors',
         color === 'black'

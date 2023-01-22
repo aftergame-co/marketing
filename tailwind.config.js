@@ -11,13 +11,13 @@ module.exports = {
       lg: ['1.125rem', { lineHeight: '2rem' }],
       xl: ['1.25rem', { lineHeight: '1.75rem' }],
       '2xl': ['1.5rem', { lineHeight: '2rem' }],
-      '3xl': ['2rem', { lineHeight: '3rem' }],
+      '3xl': ['2rem', { lineHeight: '2.5rem' }],
       '4xl': ['2.5rem', { lineHeight: '3rem' }],
-      '5xl': ['3rem', { lineHeight: '1' }],
-      '6xl': ['3.75rem', { lineHeight: '1' }],
-      '7xl': ['4.5rem', { lineHeight: '1' }],
-      '8xl': ['6rem', { lineHeight: '1' }],
-      '9xl': ['8rem', { lineHeight: '1' }],
+      '5xl': ['3rem', { lineHeight: '3.5rem' }],
+      '6xl': ['3.75rem', { lineHeight: '4.25rem' }],
+      '7xl': ['4.5rem', { lineHeight: '5rem' }],
+      '8xl': ['6rem', { lineHeight: '6.5rem' }],
+      '9xl': ['8rem', { lineHeight: '8.5rem' }],
     },
     extend: {
       animation: {
@@ -38,6 +38,7 @@ module.exports = {
         'gg-blue': 'rgb(46, 78, 222)',
         'gg-blue-faint': 'rgb(237, 237, 252)',
         'gg-red': '#ff3a20',
+        'discord-blurple': '#5865F2'
       }),
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],

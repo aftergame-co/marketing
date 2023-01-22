@@ -15,19 +15,18 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            Record your first play today
+            {/* Record your first play today */}
+            Be the first in line
           </h2>
-          <p className="mt-4 text-lg text-gray-300">
-            1-2 <br /> lines
+          <p className="mt-4 text-lg text-gray-100">
+            Goodgame is in active development and will launch soon. Get early access by signing up now. 
           </p>
           {/* <div className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-4 lg:gap-x-6">
             <AppStoreLink />
             <GooglePlayLink />
           </div> */}
           <div className="mt-8">
-            {/* <AppStoreLink />
-            <GooglePlayLink /> */}
-            <WaitlistForm lightMode={true} />
+            <WaitlistForm label="" lightMode={true} />
           </div>
         </div>
       </Container>

@@ -6,13 +6,13 @@ const features = [
   {
     name: 'Import plays with ease',
     description:
-      'Bring your past plays with you.',
+      'Bring your past plays with you. Simply import from BGG, BG Stats, spreadsheets, and more!',
     icon: DeviceArrowIcon,
   },
   {
     name: 'Record as much or as little as you want',
     description:
-      '2 line description.',
+      'Log a play in just 3 taps! Noting every tiny detail is not for everyone, so all details are optional.',
     icon: DeviceClockIcon,
   },
   {
@@ -22,21 +22,21 @@ const features = [
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Something on groups',
+    name: 'Organise the group',
     description:
-      '2 line description.',
+      'Choose which games to play, set up leagues, and host events with your friend groups.',
     icon: DeviceNotificationIcon,
   },
   {
-    name: 'Something on events',
+    name: 'Offline support',
     description:
-      '2 line description.',
-    icon: DeviceLockIcon,
+      'Away from the internet? Not a problem! Goodgame works seamlessly online and offline.',
+    icon: DeviceOfflineIcon,
   },
   {
     name: 'Fast and intuitive user experience',
     description:
-      'Built using the latest technology.',
+      'Using the latest technology, we have optimised to make key actions blazingly fast. ',
     icon: DeviceTouchIcon,
   },
 ]
@@ -135,7 +135,7 @@ function DeviceNotificationIcon(props) {
   )
 }
 
-function DeviceLockIcon(props) {
+function DeviceOfflineIcon(props) {
   return (
     <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
       <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
@@ -148,7 +148,7 @@ function DeviceLockIcon(props) {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M18 19.5a3.5 3.5 0 117 0V22a2 2 0 012 2v6a2 2 0 01-2 2h-7a2 2 0 01-2-2v-6a2 2 0 012-2v-2.5zm2 2.5h3v-2.5a1.5 1.5 0 00-3 0V22z"
+        d="m29 22 2-2c-3.73-3.73-8.87-5.15-13.7-4.31l2.58 2.58c3.3-.02 6.61 1.22 9.12 3.73zm-12 6 3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm10-4c-1.08-1.08-2.36-1.85-3.72-2.33l3.02 3.02zm-15.59-11.36-1.41 1.41 3.05 3.05c-1.46.73-2.83 1.69-4.05 2.9l2 2c1.23-1.23 2.65-2.16 4.17-2.78l2.24 2.24c-1.62.43-3.14 1.28-4.41 2.54l2 2c1.35-1.35 3.11-2.04 4.89-2.06l7.08 7.08 1.41-1.41z"
         fill="#171717"
       />
     </svg>
@@ -205,10 +205,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Packed with features
+          <span className='text-gg-blue font-semibold'>Smart features</span> so you can <span className='text-gg-red font-semibold'>keep on playing</span>
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            2 lines<br/> description.
+          <p className="mt-4 mx-6 text-lg text-gray-600">
+            You don't want to have to be thumbling around with your phone while you're playing games, so we made things easy.
           </p>
         </div>
         <ul
@@ -220,7 +220,7 @@ export function SecondaryFeatures() {
               key={feature.name}
               className="rounded-2xl border border-gray-200 p-8"
             >
-              <feature.icon className="h-8 w-8" />
+              <feature.icon className="h-12 w-12" />
               <h3 className="mt-6 font-semibold text-gray-900">
                 {feature.name}
               </h3>

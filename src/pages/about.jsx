@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Goodgame Data</title>
+        <title>Goodgame Data - About us</title>
         <meta
           name="description"
           content="Goodgame Data. Coming soon."
@@ -24,11 +24,9 @@ export default function About() {
           <p className='mt-40 lg:mt-56 text-center text-xl text-gray-400'>OUR STORY</p>
           <div className="mt-6 lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
             <div className='lg:col-span-6 text-lg text-gray-900'>
-              <p>In the middle of 2022, founders John Brent and Eric Poulin decided to start recording the games we played against each other. It started out in large part because we are a <i>bit</i> competitive but also we were genuinely interested in keeping a record to preserve our memories and for later analysis (yes, we are geeks!)</p>
-              
-              <p className='mt-6'>And because we’re geeks, our first instinct was a spreadsheet… with dropdowns… and formulas… <i>and pivot tables!</i> My partner created the initial spreadsheet for our first game, chess. This was a simple sheet which let you choose a winner and it kept a tally. We then wanted to track another game we get competitive in: Magic the Gathering. For this game we also wanted to know which deck each of us were playing and how they did against each other (we each have a favourite).</p>
+              <p>In mid-2022, founders John Brent and Eric Poulin decided to start recording the games they played. John was a spreadsheet whiz, so naturally their first instinct was a spreadsheet… with dropdowns… and formulas… <i>and pivot tables!</i> The first sheet was simple, letting you choose a winner and keeping a tally. This quickly got more complex as they added more things to track.</p>
 
-              <p className='mt-6'>It was when we came to the third game that the penny dropped… there’s definitely an app for this! A quick search found a handful of really good apps that did exactly as we were building. Though as good as some of these apps were, and they still will be perfect for some people, there were a couple of big opportunities that we felt were missed.</p>
+              <p className='mt-6'>It was soon that the penny dropped… there’s definitely an app for this! A quick search found a handful of really good apps that did exactly as they were building. Though as good as some of these apps were, there were some opportunities missed.</p>
 
               <p className='mt-6'>Our spreadsheet allowed either of us to log a game from our phone in two taps and for it to be immediately shown to the other. None of the apps did this well. Our spreadsheet also had dropdowns pre-built with relevant information for the game we were playing. None of the other apps had this for all the games we wanted.</p>
 

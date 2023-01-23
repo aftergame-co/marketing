@@ -369,7 +369,7 @@ export function Hero() {
             {/* ecord, share, and gain valuable insights into the games you love */}
             </p>
             <div className="pt-6 xl:w-4/5">
-              <WaitlistForm label="Find out what all the fuss is about" />
+              <WaitlistForm label="Sign up for early access" />
             </div>
 
             {/* <div className="mt-8 mb-16 flex flex-wrap gap-x-4 gap-y-4 lg:gap-x-6">

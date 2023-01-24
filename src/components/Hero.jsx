@@ -368,11 +368,11 @@ export function Hero() {
             Track the games you love on Goodgame to gain meaningful insights and share your gaming journey with friends.
             {/* ecord, share, and gain valuable insights into the games you love */}
             </p>
-            <div className="pt-6 xl:w-4/5">
+            <div className="pt-6 pb-16 xl:pb-0 xl:w-4/5">
               <WaitlistForm label="Sign up for early access" />
             </div>
 
-            {/* <div className="mt-8 mb-16 flex flex-wrap gap-x-4 gap-y-4 lg:gap-x-6">
+            {/* <div className="pt-6 pb-16 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4 lg:gap-x-6">
               <AppStoreLink />
               <GooglePlayLink />
             </div> */}

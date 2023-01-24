@@ -22,3 +22,6 @@
 #__next {
   min-height: 100%;
 }
+.grecaptcha-badge { 
+  visibility: hidden;
+}

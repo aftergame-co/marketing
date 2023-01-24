@@ -208,7 +208,7 @@ export function SecondaryFeatures() {
           <span className='text-gg-blue font-semibold'>Smart features</span> so you can <span className='text-gg-red font-semibold'>keep on playing</span>
           </h2>
           <p className="mt-4 mx-6 text-lg text-gray-600">
-            You don't want to have to be thumbling around with your phone while you're playing games, so we made things easy.
+            You don’t want to have to be thumbling around with your phone while you’re playing games, so we made things easy.
           </p>
         </div>
         <ul

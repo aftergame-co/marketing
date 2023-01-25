@@ -50,8 +50,10 @@ function MobileNavLink({ children, ...props }) {
 export function Header() {
   let [scrolled, setScrolled] = useState(false);
   useEffect(function mount() {
+    setScrolled(window.pageYOffset > 30);
+
     function onScroll() {
-      setScrolled((scrolled) => window.pageYOffset > 30);
+      setScrolled(window.pageYOffset > 30);
     }
 
     window.addEventListener("scroll", onScroll);
@@ -60,10 +62,6 @@ export function Header() {
       window.removeEventListener("scroll", onScroll);
     };
   });
-
-  // if (typeof window !== "undefined") {
-  //   window.addEventListener('scroll', () => { setScrolled((scrolled) => window.pageYOffset > 30)});
-  // }
 
   return (
       <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', scrolled ? 'shadow-lg  bg-white py-4 lg:py-2' : 'py-4')}>

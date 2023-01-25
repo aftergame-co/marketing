@@ -6,7 +6,7 @@ const features = [
   {
     name: 'Import plays with ease',
     description:
-      'Bring your past plays with you. Simply import from BGG, BG Stats, spreadsheets, and more!',
+      'Bring your past plays with you. Simply import from other apps, spreadsheets, and more!',
     icon: DeviceArrowIcon,
   },
   {
@@ -18,7 +18,7 @@ const features = [
   {
     name: 'Forget about losing your data',
     description:
-      'Plays are securely stored in the cloud, meaning no more saving backups or manually syncing.',
+      'Plays are securely stored in the cloud, meaning no more saving backups or manual syncing.',
     icon: DeviceCardsIcon,
   },
   {
@@ -199,7 +199,7 @@ export function SecondaryFeatures() {
   return (
     <section
       id="secondary-features"
-      aria-label="Features for building a portfolio"
+      aria-label="Smart features so you can keep on playing"
       className="py-20 sm:py-32"
     >
       <Container>

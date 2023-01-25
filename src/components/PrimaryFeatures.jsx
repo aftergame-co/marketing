@@ -16,7 +16,7 @@ const features = [
   {
     name: 'Play with your friends',
     description:
-      'Sending files is a thing of the past. Share plays with live scoring updates all in realtime without leaving the app.',
+      'Sending files is a thing of the past. Share plays with live scoring updates all in real-time without leaving the app.',
     icon: DeviceUserIconLight,
     selectedicon: DeviceUserIconDark,
     screen: InviteScreen,
@@ -30,7 +30,7 @@ const features = [
     screen: StocksScreen,
   },
   {
-    name: 'Access unrivaled analytics and insights',
+    name: 'Access unrivalled analytics and insights',
     description:
       'With our standardised data structure, we can go deeper on meaningful statistics and use all plays globally to surface unique insights.',
     icon: DeviceChartIconLight,

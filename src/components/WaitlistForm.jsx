@@ -69,13 +69,15 @@ export function WaitlistForm({label, lightMode}) {
   return (
     <div>
 
-      {success && <div 
-              className={clsx(
-                'm-2 flex align-middle justify-center	',
-                lightMode ? 'text-white' : 'text-gg-blue',
+      {success &&
+        <div 
+          className={clsx(
+            'm-2 flex align-middle justify-center	',
+            lightMode ? 'text-white' : 'text-gg-blue',
 
-              )}>
-        <EnvelopeIcon className='h-6 w-6 mr-2'/> <p>You’re now on the Goodgame waiting list!</p>
+          )}>
+          <EnvelopeIcon className='h-6 w-6 mr-2'/>
+          <p>You’re now on the Goodgame waiting list!</p>
       </div>}
 
       {!success && <form noValidate={true}>
@@ -84,7 +86,7 @@ export function WaitlistForm({label, lightMode}) {
             size="invisible"
             sitekey="6LesdyAkAAAAAB4gYlrAhrBPtzgbLI8anrQ7x1Yn"
           />
-        <div className="grid xl:grid-cols-6 lg:grid-cols-1 gap-4 items-end text-left">
+        <div className="grid sm:grid-cols-6 grid-cols-1 gap-4 items-end text-left">
           {/* <ListField
             className="col-span-6"
             id="waitlist-usertype"
@@ -93,7 +95,7 @@ export function WaitlistForm({label, lightMode}) {
             setSelected={setSelected}
             options={userTypeOptions}
           /> */}
-          <div className='col-span-4'>
+          <div className='sm:col-span-4'>
             <TextField
               className={clsx(
                 '',
@@ -102,7 +104,7 @@ export function WaitlistForm({label, lightMode}) {
               )}
               id="waitlist-email"
               label={label}
-              name="waitlist-email"
+              name="waitlist-email-address"
               placeholder="Email"
               type="email"
               value={email || ''}
@@ -115,7 +117,7 @@ export function WaitlistForm({label, lightMode}) {
                 {validationError}
               </p>
           </div>
-          <div className='col-span-2'>
+          <div className='sm:col-span-2'>
             <Button
               type="submit"
               onClick={signUpToWaitlist}

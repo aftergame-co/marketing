@@ -282,7 +282,7 @@ function AppDemo() {
       <AppScreen.Body>
         <div className="p-4">
           <div className="flex gap-4">
-            <Image src='/images/root.jpeg' width={64} height={50} className='rounded-md' alt='Root Game Image' />
+            <Image src='/images/root.jpeg' width={64} height={50} className='rounded-md' alt='An image of the board game "Root"' />
             <div>
               <h3 className="text-lg font-medium leading-6 text-black">
                 Root
@@ -354,21 +354,21 @@ function AppDemo() {
 
 export function Hero() {
   return (
-    <div className="overflow-hidden py-16 sm:py-32 lg:pb-32 xl:pb-36">
+    <div className="overflow-hidden py-16 sm:py-32 lg:pb-32">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-6">
-            <h1 className="text-5xl xl:text-7xl font-medium tracking-tighter lg:tracking-tight text-gray-900">
+            <h1 className="text-5xl md:text-6xl xl:text-7xl font-medium tracking-tighter md:tracking-tight text-gray-900">
             {/* Record, share, and analyse your game playing. */}
             {/* Remember every epic moment and track your gaming journey */}
-            Remember <span className='text-gg-blue font-semibold'>every</span> <span className='text-gg-red font-semibold'>epic</span> moment
+            Remember <span className='text-gg-blue font-semibold'>every</span><br /><span className='text-gg-red font-semibold'>epic</span> moment
             </h1>
-            <p className="mt-6 mb-8 xl:w-4/5 text-xl text-gray-600">
+            <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
             {/* Unlock the full potential of your gaming passion with our app, where you can easily record, share, and gain valuable insights into the games you love - taking your gameplay to the next level. */}
             Track the games you love on Goodgame to gain meaningful insights and share your gaming journey with friends.
             {/* ecord, share, and gain valuable insights into the games you love */}
             </p>
-            <div className="pt-6 pb-16 xl:pb-0 xl:w-4/5">
+            <div className="pt-6 pb-16 xl:pb-0 lg:w-4/5">
               <WaitlistForm label="Sign up for early access" />
             </div>
 

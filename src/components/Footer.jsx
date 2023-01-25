@@ -48,7 +48,7 @@ export function Footer() {
               Terms
             </Link> */}
           </div>
-          <p className="mt-6 text-sm text-gray-500 md:mt-0">
+          <p className="mt-6 text-sm text-gray-600 md:mt-0">
             &copy; {new Date().getFullYear()} Goodgame Data Ltd.
           </p>
         </div>

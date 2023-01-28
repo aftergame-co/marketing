@@ -19,7 +19,7 @@ export function CallToAction() {
             Be the first in line
           </h2>
           <p className="mt-4 text-lg text-white">
-            Goodgame is getting ready to launch. Get early access by signing up now. 
+            Goodgame is getting ready to launch. Get early insights and app access by signing up now. 
           </p>
           {/* <div className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-4 lg:gap-x-6">
             <AppStoreLink />

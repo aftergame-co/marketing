@@ -23,7 +23,7 @@ const features = [
   {
     name: 'Organise the group',
     description:
-      'Choose which games to play, set up leagues, and host events with your friend groups.',
+      'Choose which games to play, set up leagues and host events with your friends, family, and foes.',
     icon: DeviceNotificationIcon,
   },
   {

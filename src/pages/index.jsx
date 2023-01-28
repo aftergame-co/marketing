@@ -18,16 +18,16 @@ export default function Home() {
           content="Track the board games, sports, and video games you love on Goodgame to gain meaningful insights and share your gaming journey with friends."
         />
       </Head>
-      {/* <Header /> */}
+      <Header />
       <main className='pt-20'>
-        <Splash />
-        {/* <Hero />
+        {/* <Splash /> */}
+        <Hero />
         <PrimaryFeatures />
         <SecondaryFeatures />
-        <CallToAction /> */}
+        <CallToAction />
         {/* <Reviews /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

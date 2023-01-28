@@ -4,8 +4,33 @@ import { Container } from '@/components/Container'
 import { Footer } from '@/sections/Footer'
 import { Header } from '@/sections/Header'
 import { CallToAction } from '@/sections/CallToAction'
+import Image from 'next/image'
 
 export default function About() {
+  
+  const team = [
+    {
+      image: '/images/team/eric.jpg',
+      name: 'Eric Poulin',
+      role: 'CEO',
+    },
+    {
+      image: '/images/team/john.jpg',
+      name: 'John Brent',
+      role: 'Head of Operations',
+    },
+    {
+      image: '/images/team/eli.jpg',
+      name: 'Eli Labes',
+      role: 'Head of Engineering',
+    },
+    {
+      image: '/images/team/alex.jpg',
+      name: 'Alex Poulin',
+      role: 'Co-founder',
+    },
+  ]
+
   return (
     <>
       <Head>
@@ -54,6 +79,28 @@ export default function About() {
         >
           <Container>
             <p className='text-center text-xl text-gray-500'>OUR TEAM</p>
+            <ul
+              role="list"
+              className="mx-auto mt-10 grid max-w-2xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm md:gap-y-10 lg:max-w-none"
+            >
+              {team.map((member) => (
+                <li
+                  key={member.name}
+                  className="rounded-2xl border border-gray-200 p-8 text-center"
+                >
+                  <Image
+                    src={member.image}
+                    alt={'Team member: '+ member.name}
+                    width={200}
+                    height={200}
+                    className='rounded-full m-auto'
+                  />
+                  <h3 className="mt-6 font-semibold text-gray-900">
+                    {member.name}, {member.role}
+                  </h3>
+                </li>
+              ))}
+            </ul>
           </Container>
         </section>
         <CallToAction />

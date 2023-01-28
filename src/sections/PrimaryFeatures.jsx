@@ -11,6 +11,8 @@ import { Button } from '@/components/Button'
 import { PhoneFrame } from '@/components/PhoneFrame'
 import { DeviceChartIconDark, DeviceChartIconLight, DeviceListIconDark, DeviceListIconLight, DeviceUserIconDark, DeviceUserIconLight } from '@/components/DeviceIcons'
 import { XMarkIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'
+import { ClockIcon, GlobeEuropeAfricaIcon, LightBulbIcon, UserGroupIcon, UserIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
@@ -118,22 +120,22 @@ function InviteScreen({ custom, animated = false }) {
             <div className='flex mb-4'>
               <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>EP</div>
               <div className='text-sm self-center grow'>Eric Poulin</div>
-              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center"></input>
+              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <div className='flex mb-4'>
               <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>JB</div>
               <div className='text-sm self-center grow'>John Brent</div>
-              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center"></input>
+              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <div className='flex mb-4'>
               <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>AP</div>
               <div className='text-sm self-center grow'>Alex Poulin</div>
-              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center"></input>
+              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <div className='flex mb-4'>
               <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>EL</div>
               <div className='text-sm self-center grow'>Eli Labes</div>
-              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center"></input>
+              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <Button className='w-full bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl' disabled>Select</Button>
           </div>
@@ -147,8 +149,19 @@ function StocksScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
+        <XMarkIcon
+          className="h-8 w-8 text-gray-900"
+        />
+        <div className='ml-2 grow'>Log play</div>
+        <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl text-sm px-6' disabled>Save</Button>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
+        <Image
+          src='/images/scoresheet.png'
+          alt='A screenshot of the scoresheet interface for Goodgame' 
+          fill 
+          sizes='100vw'
+        />
       </MotionAppScreenBody>
     </AppScreen>
   )
@@ -160,6 +173,71 @@ function InvestScreen({ custom, animated = false }) {
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
+        <div className="p-3 sm:p-4">
+          <div className="flex gap-4">
+            <Image src='/images/catan.webp' width={64} height={50} className='rounded-md' alt='An image of the board game "Root"' />
+            <div>
+              <h3 className="text-lg font-medium leading-6 text-black">
+                Catan
+              </h3>
+              <div
+                className='mt-2 flex align-middle text-gray-600 text-xs'>
+                  <UserGroupIcon
+                    className="h-4 w-4"
+                  />
+                  <span className='ml-1 mr-3'>3-4</span>
+                  <ClockIcon 
+                    className="h-4 w-4"
+                  />
+                  <span className='ml-1 mr-3'>60-120min</span>
+                  <UsersIcon
+                    className="h-4 w-4"
+                  />
+                  <span className='ml-1 mr-3'>10+</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className='mt-4 mb-3 text-gray-600 text-xs'>Last played yesterday</p>
+            <div className='grid grid-cols-10 rounded-md overflow-hidden'>
+              <div className='bg-green-500 col-span-6 py-1'></div>
+              <div className='bg-red-500 col-span-4 py-1'></div>
+            </div>
+            <div className='flex justify-between text-gray-900 text-sm'>
+              <span>33 wins</span>
+              <span>22 losses</span>
+            </div>
+          </div>
+          <div className="mt-3 pt-3 border-t border-gray-200">
+            <div className='flex items-center mb-1'>
+              <p className='font-medium text-sm grow'>Insights</p>
+            </div>
+            <div className='my-1 flex items-center align-middle gap-2 border border-gg-blue bg-gg-blue-faint rounded-md p-2'>
+              <LightBulbIcon 
+                className="shrink-0 h-6 w-6"
+              />
+              <p className='grow text-xs'>80% of the time when you get ’The Longest Road’ you will win the game.</p>
+            </div>
+            <div className='my-1 flex items-center align-middle gap-2 border border-gg-blue bg-gg-blue-faint rounded-md p-2'>
+              <UserIcon
+                className="shrink-0 h-6 w-6"
+              />
+              <p className='grow text-xs'>You have never won a game when Sideshow Bob is playing.</p>
+            </div>
+            <div className='my-1 flex items-center align-middle gap-2 border border-gg-blue bg-gg-blue-faint rounded-md p-2'>
+              <GlobeEuropeAfricaIcon
+                className="shrink-0 h-6 w-6"
+              />
+              <p className='grow text-xs'>Players are more likely to win with ’The Longest Road’ than ’The Largest Army’, though when players have both they win 95% of the time.</p>
+            </div>
+            <p className='text-center text-sm text-gg-blue'>more...</p>
+          </div>
+          <div className="mt-3 pt-3 border-t border-gray-200">
+            <div className='flex items-center mb-1'>
+              <p className='font-medium text-sm grow'>Score breakdown</p>
+            </div>
+          </div>
+        </div>
       </MotionAppScreenBody>
     </AppScreen>
   )

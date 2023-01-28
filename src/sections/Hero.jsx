@@ -133,6 +133,11 @@ for (let index = 0; index < scores_1.length; index++) {
   points2.push({ x: x2, y: y2 })
 }
 
+
+// function timedCount() {
+//   timeout = setTimeout(timedCount, 1000);
+// }
+
 function Chart({
   className,
   activePointIndex,

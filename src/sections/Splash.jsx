@@ -1,6 +1,6 @@
-import { useId, useRef, useState } from 'react'
+import { useId } from 'react'
 import { Container } from '@/components/Container'
-import { Logo } from './Logo'
+import { Logo } from '@/components/Logo'
 
 function BackgroundIllustration(props) {
   let id = useId()

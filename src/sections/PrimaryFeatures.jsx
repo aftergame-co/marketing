@@ -7,22 +7,26 @@ import { useDebouncedCallback } from 'use-debounce'
 import { AppScreen } from '@/components/AppScreen'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
+import { Button } from '@/components/Button'
 import { PhoneFrame } from '@/components/PhoneFrame'
+import { DeviceChartIconDark, DeviceChartIconLight, DeviceListIconDark, DeviceListIconLight, DeviceUserIconDark, DeviceUserIconLight } from '@/components/DeviceIcons'
+import { XMarkIcon } from '@heroicons/react/20/solid'
 
 const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'Play with your friends',
+    name: 'Link up with friends',
     description:
-      'Sending files is a thing of the past. Share plays with live scoring updates all in real-time without leaving the app.',
+      // 'Sending files is a thing of the past. Share plays with live scoring updates all in real-time without leaving the app.',
+      'Sending files is a thing of the past. Share plays with real-time scoring updates, all without leaving the app.',
     icon: DeviceUserIconLight,
     selectedicon: DeviceUserIconDark,
     screen: InviteScreen,
   },
   {
-    name: 'Use tailored pre-built scoresheets',
+    name: 'Use tailored, pre-built scoresheets',
     description:
       'We research and define every game to save you time and allow any data-points relevant to the specific game you are playing to be recorded.',
     icon: DeviceListIconLight,
@@ -38,144 +42,6 @@ const features = [
     screen: InvestScreen,
   },
 ]
-
-function DeviceUserIconLight(props) {
-  return (
-    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
-      <circle cx={16} cy={16} r={16} fill="#C3C3C3" fillOpacity={0.2} />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M16 23a3 3 0 100-6 3 3 0 000 6zm-1 2a4 4 0 00-4 4v1a2 2 0 002 2h6a2 2 0 002-2v-1a4 4 0 00-4-4h-2z"
-        fill="#f6f6f6"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M5 4a4 4 0 014-4h14a4 4 0 014 4v24a4.002 4.002 0 01-3.01 3.877c-.535.136-.99-.325-.99-.877s.474-.98.959-1.244A2 2 0 0025 28V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9a2 2 0 00-2 2v24a2 2 0 001.041 1.756C8.525 30.02 9 30.448 9 31s-.455 1.013-.99.877A4.002 4.002 0 015 28V4z"
-        fill="#C3C3C3"
-      />
-    </svg>
-  )
-}
-
-function DeviceUserIconDark(props) {
-  return (
-    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
-      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M16 23a3 3 0 100-6 3 3 0 000 6zm-1 2a4 4 0 00-4 4v1a2 2 0 002 2h6a2 2 0 002-2v-1a4 4 0 00-4-4h-2z"
-        fill="#222222"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M5 4a4 4 0 014-4h14a4 4 0 014 4v24a4.002 4.002 0 01-3.01 3.877c-.535.136-.99-.325-.99-.877s.474-.98.959-1.244A2 2 0 0025 28V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9a2 2 0 00-2 2v24a2 2 0 001.041 1.756C8.525 30.02 9 30.448 9 31s-.455 1.013-.99.877A4.002 4.002 0 015 28V4z"
-        fill="#A3A3A3"
-      />
-    </svg>
-  )
-}
-
-function DeviceListIconLight(props) {
-  return (
-    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
-        fill="#C3C3C3"
-      />
-      <circle cx={11} cy={14} r={2} fill="#f6f6f6" />
-      <circle cx={11} cy={20} r={2} fill="#f6f6f6" />
-      <circle cx={11} cy={26} r={2} fill="#f6f6f6" />
-      <path
-        d="M16 14h6M16 20h6M16 26h6"
-        stroke="#C3C3C3"
-        strokeWidth={2}
-        strokeLinecap="square"
-      />
-      <circle cx={16} cy={16} r={16} fill="#C3C3C3" fillOpacity={0.2} />
-    </svg>
-  )
-}
-
-function DeviceListIconDark(props) {
-  return (
-    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
-        fill="#737373"
-      />
-      <circle cx={11} cy={14} r={2} fill="#222222" />
-      <circle cx={11} cy={20} r={2} fill="#222222" />
-      <circle cx={11} cy={26} r={2} fill="#222222" />
-      <path
-        d="M16 14h6M16 20h6M16 26h6"
-        stroke="#737373"
-        strokeWidth={2}
-        strokeLinecap="square"
-      />
-      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
-    </svg>
-  )
-}
-
-function DeviceChartIconLight(props) {
-  return (
-    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
-        fill="#C3C3C3"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M23 13.838V26a2 2 0 01-2 2H11a2 2 0 01-2-2V15.65l2.57 3.212a1 1 0 001.38.175L15.4 17.2a1 1 0 011.494.353l1.841 3.681c.399.797 1.562.714 1.843-.13L23 13.837z"
-        fill="#f6f6f6"
-      />
-      <path
-        d="M10 12h12"
-        stroke="#C3C3C3"
-        strokeWidth={2}
-        strokeLinecap="square"
-      />
-      <circle cx={16} cy={16} r={16} fill="#C3C3C3" fillOpacity={0.2} />
-    </svg>
-  )
-}
-
-function DeviceChartIconDark(props) {
-  return (
-    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
-        fill="#737373"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M23 13.838V26a2 2 0 01-2 2H11a2 2 0 01-2-2V15.65l2.57 3.212a1 1 0 001.38.175L15.4 17.2a1 1 0 011.494.353l1.841 3.681c.399.797 1.562.714 1.843-.13L23 13.837z"
-        fill="#222222"
-      />
-      <path
-        d="M10 12h12"
-        stroke="#737373"
-        strokeWidth={2}
-        strokeLinecap="square"
-      />
-      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
-    </svg>
-  )
-}
 
 const headerAnimation = {
   initial: { opacity: 0, transition: { duration: 0.3 } },
@@ -222,31 +88,54 @@ const bodyAnimation = {
 
 function InviteScreen({ custom, animated = false }) {
   return (
-    <AppScreen className="w-full">
+    <AppScreen className="relative w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Invite people</AppScreen.Title>
-        <AppScreen.Subtitle>
-          Get tips <span className="text-white">5s sooner</span> for every
-          invite.
-        </AppScreen.Subtitle>
+        <XMarkIcon
+          className="h-8 w-8 text-gray-900"
+        />
+        <div className='ml-2 grow'>Log play</div>
+        <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl text-sm px-6' disabled>Save</Button>
       </MotionAppScreenHeader>
-      <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="px-4 py-6">
-          <div className="space-y-6">
-            {[
-              { label: 'Full name', value: 'Albert H. Wiggin' },
-              { label: 'Email address', value: 'awiggin@chase.com' },
-            ].map((field) => (
-              <div key={field.label}>
-                <div className="text-sm text-gray-500">{field.label}</div>
-                <div className="mt-2 border-b border-gray-200 pb-2 text-sm text-gray-900">
-                  {field.value}
-                </div>
+        <div className='absolute top-14 left-0 right-0 bg-white mt-4 bottom-0'></div>
+        <div className='absolute top-0 left-0 right-0 bottom-0 bg-gray-900 opacity-25'></div>
+      <MotionAppScreenBody className='bg-transparent flex' {...(animated ? { ...bodyAnimation, custom } : {})}>
+        <div className="mt-6 px-4 pt-3 pb-6 bg-white rounded-t-3xl grow">
+          <div className='m-auto bg-gray-300 w-8 h-1 rounded-xl mb-3'></div>
+          <div className='h-full'>
+            <div className='flex w-full border-solid border border-gray-700 rounded-md p-2 mb-4'>
+              <div className='bg-gg-blue-faint rounded-lg p-2 mr-1 text-xs'>Eric Poulin</div>
+              <div className='bg-gg-blue-faint rounded-lg p-2 mr-2 text-xs'>John Brent</div>
+              <div className='w-0.5 h-5 bg-gray-500 self-center'></div>
+            </div>
+            <div className='w-full rounded-md p-2 mb-6 bg-gg-blue-faint'>
+              <p className='font-semibold text-xs mb-1'>Player added!</p>
+              <p className='text-xs mb-1'>Send them an invite link so they can see this play on their device:</p>
+              <div className='flex items-center bg-white p-1 rounded-md'>
+                <p className='grow text-gg-blue underline text-xs'>https://invited.gg/dg876gr87gyer</p>
+                <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl text-xs py-1 px-3 font-light' disabled>Copy</Button>
               </div>
-            ))}
-          </div>
-          <div className="mt-6 rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
-            Invite person
+            </div>
+            <div className='flex mb-4'>
+              <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>EP</div>
+              <div className='text-sm self-center grow'>Eric Poulin</div>
+              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center"></input>
+            </div>
+            <div className='flex mb-4'>
+              <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>JB</div>
+              <div className='text-sm self-center grow'>John Brent</div>
+              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center"></input>
+            </div>
+            <div className='flex mb-4'>
+              <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>AP</div>
+              <div className='text-sm self-center grow'>Alex Poulin</div>
+              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center"></input>
+            </div>
+            <div className='flex mb-4'>
+              <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>EL</div>
+              <div className='text-sm self-center grow'>Eli Labes</div>
+              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center"></input>
+            </div>
+            <Button className='w-full bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl' disabled>Select</Button>
           </div>
         </div>
       </MotionAppScreenBody>
@@ -258,8 +147,6 @@ function StocksScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Stocks</AppScreen.Title>
-        <AppScreen.Subtitle>March 9, 2022</AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
       </MotionAppScreenBody>
@@ -271,50 +158,8 @@ function InvestScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
       <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <AppScreen.Title>Buy $LA</AppScreen.Title>
-        <AppScreen.Subtitle>
-          <span className="text-white">$34.28</span> per share
-        </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="px-4 py-6">
-          <div className="space-y-4">
-            {[
-              { label: 'Number of shares', value: '100' },
-              {
-                label: 'Current market price',
-                value: (
-                  <div className="flex">
-                    $34.28
-                    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
-                      <path
-                        d="M17 15V7H9M17 7 7 17"
-                        stroke="#06B6D4"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                ),
-              },
-              { label: 'Estimated cost', value: '$3,428.00' },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="flex justify-between border-b border-gray-100 pb-4"
-              >
-                <div className="text-sm text-gray-500">{item.label}</div>
-                <div className="text-sm font-semibold text-gray-900">
-                  {item.value}
-                </div>
-              </div>
-            ))}
-            <div className="rounded-lg bg-cyan-500 py-2 px-3 text-center text-sm font-semibold text-white">
-              Buy shares
-            </div>
-          </div>
-        </div>
       </MotionAppScreenBody>
     </AppScreen>
   )

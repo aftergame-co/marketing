@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
+import { Footer } from '@/sections/Footer'
+import { Header } from '@/sections/Header'
 import { Container } from '@/components/Container'
 
 export default function Privacy() {
@@ -46,7 +46,7 @@ export default function Privacy() {
               <p className="mb-4">In this privacy policy we inform you about which personal data we collect whenever you use our Goodgame app (<strong className="font-semibold">App</strong>) and our website https://goodgamedata.com (<strong className="font-semibold">Website</strong>), how we use and disclose your personal data and how your personal data are protected. In addition, users of our App may post comments and upload media which contains personal information (<strong className="font-semibold">User Data</strong>).</p>
               <p className="mb-4">We require our customers to obtain the necessary consents from individuals to provide User Data to us and permit us to use it as set out in this privacy policy. If you have any concern about our collection and use of personal information about you contained in User Data, please contact us at <a className="text-gg-blue font-medium hover:underline" href="mailto:privacy@goodgamedata.com" target="_blank" rel="noreferrer">privacy@goodgamedata.com</a>.</p>
               <p className="mb-4">For the purposes of the GDPR, our customers are the data controller when storing or otherwise processing User Data that we hold solely for the purpose of providing our App’s functionality and we are the data processor. We are the data controller when storing or otherwise processing User Data that we use for our own purposes.</p>
-              <p className="mb-4">We only process User Data as authorised by our customers in our Goodgame Data Terms of Service (available at <a className="text-gg-blue font-medium hover:underline" href="https://goodgamedata.com/terms">https://goodgamedata.com/terms</a>)<em>.</em> Unless required otherwise under applicable law, if we receive any request or enquiry relating to User Data that we hold solely for the purpose of providing our service, we will forward this request to our relevant customer. If we receive any requests or enquiries relating to User Data that we use for our own purposes, we will deal with these requests or enquiries as set out in this privacy policy.</p>
+              <p className="mb-4">We only process User Data as authorised by our customers{/* in our Goodgame Data Terms of Service (available at <a className="text-gg-blue font-medium hover:underline" href="https://goodgamedata.com/terms">https://goodgamedata.com/terms</a>) */}. Unless required otherwise under applicable law, if we receive any request or enquiry relating to User Data that we hold solely for the purpose of providing our service, we will forward this request to our relevant customer. If we receive any requests or enquiries relating to User Data that we use for our own purposes, we will deal with these requests or enquiries as set out in this privacy policy.</p>
               
               <h4 className="mt-10 mb-2 text-xl font-medium">CHILDREN</h4>
               <p className="mb-4">We do not intend to collect personal information from or about children aged under 13 and we do not specifically market to children under this age. If you have reason to believe that we have collected personal information from or about a child under the age of 13, please contact us at <a className="text-gg-blue font-medium hover:underline" href="mailto:privacy@goodgamedata.com" target="_blank" rel="noreferrer">privacy@goodgamedata.com</a>.</p>

@@ -16,8 +16,8 @@ import logoForbes from '@/images/logos/forbes.svg'
 import logoHuffpost from '@/images/logos/huffpost.svg'
 import logoTechcrunch from '@/images/logos/techcrunch.svg'
 import logoWired from '@/images/logos/wired.svg'
-import { WaitlistForm } from './WaitlistForm'
-import { ClockIcon, UserGroupIcon, UsersIcon } from '@heroicons/react/24/outline'
+import { WaitlistForm } from '@/components/WaitlistForm'
+import { ClockIcon, FunnelIcon, UserGroupIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -88,12 +88,50 @@ function BackgroundIllustration(props) {
   )
 }
 
-const prices = [
-  997.56, 944.34, 972.25, 832.4, 888.76, 834.8, 805.56, 767.38, 861.21, 669.6,
-  694.39, 721.32, 694.03, 610.1, 602.2, 649.56, 711.03, 783.4, 710.14, 760.6
+const scores_1 = [
+  {score: 31, team: 'Woodland Alliance'},
+  {score: 22, team: 'Marquise de Cat'},
+  {score: 23, team: 'Vagabond'},
+  {score: 30, team: 'The Lizard Cult'},
+  {score: 16, team: 'Corvid Conspiracy'},
+  {score: 30, team: 'The Eyrie'},
+  {score: 32, team: 'Vagabond'},
+  {score: 30, team: 'Corvid Conspiracy'},
+  {score: 33, team: 'The Underground Duchy'},
 ]
-const maxPrice = Math.max(...prices)
-const minPrice = Math.min(...prices)
+const scores_2 = [
+  {score: 20, team: 'Vagabond'},
+  {score: 30, team: 'The Eyrie'},
+  {score: 31, team: 'Marquise de Cat'},
+  {score: 24, team: 'The Eyrie'},
+  {score: 30, team: 'Woodland Alliance'},
+  {score: 21, team: 'The Lizard Cult'},
+  {score: 17, team: 'Corvid Conspiracy'},
+  {score: 29, team: 'Vagabond'},
+  {score: 24, team: 'The Riverfolk Company'},
+]
+const maxScore = Math.max(...scores_1.map(s => s.score))
+const mnScore = Math.min(...scores_1.map(s => s.score))
+
+
+let path = ''
+let path2 = ''
+let points = []
+let points2 = []
+
+let width = 282 - 1 * 2
+let height = 180 - 32 * 2
+for (let index = 0; index < scores_1.length; index++) {
+  let x = 1 + (index / (scores_1.length - 1)) * width
+  let y = 32 + (1 - (scores_1[index].score - mnScore) / (maxScore - mnScore)) * height
+  points.push({ x, y })
+  path += `${index === 0 ? 'M' : 'L'} ${x.toFixed(4)} ${y.toFixed(4)}`
+  
+  let x2 = 1 + (index / (scores_2.length - 1)) * width
+  let y2 = 32 + (1 - (scores_2[index].score - mnScore) / (maxScore - mnScore)) * height
+  path2 += `${index === 0 ? 'M' : 'L'} ${x2.toFixed(4)} ${y2.toFixed(4)}`
+  points2.push({ x: x2, y: y2 })
+}
 
 function Chart({
   className,
@@ -116,20 +154,6 @@ function Chart({
   let pathWidth = useMotionValue(0)
   let [interactionEnabled, setInteractionEnabled] = useState(false)
 
-  let path = ''
-  let path2 = ''
-  let points = []
-
-  for (let index = 0; index < prices.length; index++) {
-    let x = paddingX + (index / (prices.length - 1)) * width
-    let y =
-      paddingY +
-      (1 - (prices[index] - minPrice) / (maxPrice - minPrice)) * height
-    points.push({ x, y })
-    path += `${index === 0 ? 'M' : 'L'} ${x.toFixed(4)} ${y.toFixed(4)}`
-    path2 += `${index === 0 ? 'M' : 'L'} ${x.toFixed(4)} ${y.toFixed(4)*1.15}`
-  }
-
   return (
     <svg
       ref={svgRef}
@@ -137,7 +161,7 @@ function Chart({
       className={clsx(className, 'overflow-visible')}
       {...(interactionEnabled
         ? {
-            onPointerLeave: () => onChangeActivePointIndex(null),
+            // onPointerLeave: () => onChangeActivePointIndex(null),
             onPointerMove: (event) => {
               let x = event.nativeEvent.offsetX
               let closestPointIndex
@@ -166,17 +190,9 @@ function Chart({
         <clipPath id={`${id}-clip`}>
           <path d={`${path} V ${height + paddingY} H ${paddingX} Z`} />
         </clipPath>
-        <linearGradient id={`${id}-gradient`} x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stopColor="#4966f5" />
-          <stop offset="100%" stopColor="#4966f5" stopOpacity="0" />
-        </linearGradient>
         <clipPath id={`${id}-clip2`}>
           <path d={`${path2} V ${height + paddingY} H ${paddingX} Z`} />
         </clipPath>
-        <linearGradient id={`${id}-gradient2`} x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stopColor="#ff3a20" />
-          <stop offset="100%" stopColor="#ff3a20" stopOpacity="0" />
-        </linearGradient>
       </defs>
       {[...Array(gridLines - 1).keys()].map((index) => (
         <line
@@ -201,7 +217,7 @@ function Chart({
         ref={pathRef}
         d={path}
         fill="none"
-        strokeWidth="2"
+        strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
         initial={{ pathLength: 0 }}
@@ -228,7 +244,7 @@ function Chart({
         ref={pathRef}
         d={path2}
         fill="none"
-        strokeWidth="2"
+        strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
         initial={{ pathLength: 0 }}
@@ -243,23 +259,23 @@ function Chart({
         }}
         onAnimationComplete={() => setInteractionEnabled(true)}
       />
-      {activePointIndex !== null && (
+      {interactionEnabled && activePointIndex !== null && (
         <>
-          <line
-            x1="0"
-            y1={points[activePointIndex].y}
-            x2={totalWidth}
-            y2={points[activePointIndex].y}
-            stroke="#06b6d4"
-            strokeDasharray="1 3"
-          />
           <circle
-            r="4"
+            r="6"
             cx={points[activePointIndex].x}
             cy={points[activePointIndex].y}
             fill="#fff"
-            strokeWidth="2"
-            stroke="#06b6d4"
+            strokeWidth="3"
+            stroke="#4966f5"
+          />
+          <circle
+            r="6"
+            cx={points2[activePointIndex].x}
+            cy={points2[activePointIndex].y}
+            fill="#fff"
+            strokeWidth="3"
+            stroke="#ff3a20"
           />
         </>
       )}
@@ -268,19 +284,18 @@ function Chart({
 }
 
 function AppDemo() {
-  let [activePointIndex, setActivePointIndex] = useState(null)
-  let activePriceIndex = activePointIndex ?? prices.length - 1
-  let activeValue = prices[activePriceIndex]
-  let previousValue = prices[activePriceIndex - 1]
-  let percentageChange =
-    activePriceIndex === 0
-      ? null
-      : ((activeValue - previousValue) / previousValue) * 100
+  let [activePointIndex, setActivePointIndex] = useState(0)
+  let activeIndex = activePointIndex ?? scores_1.length - 1
+  let activeScore1 = scores_1[activeIndex].score;
+  let activeTeam1 = scores_1[activeIndex].team;
+  let activeScore2 = scores_2[activeIndex].score;
+  let activeTeam2 = scores_2[activeIndex].team;
 
   return (
     <AppScreen>
+      <AppScreen.Header></AppScreen.Header>
       <AppScreen.Body>
-        <div className="p-4">
+        <div className="p-3 sm:p-4">
           <div className="flex gap-4">
             <Image src='/images/root.jpeg' width={64} height={50} className='rounded-md' alt='An image of the board game "Root"' />
             <div>
@@ -310,42 +325,47 @@ function AppDemo() {
                 <div className='bg-green-500 col-span-7 py-1'></div>
                 <div className='bg-red-500 col-span-5 py-1'></div>
               </div>
-              <div
-                className='flex justify-between text-gray-900 text-sm'>
-                  <span>21 wins</span>
-                  <span>15 losses</span>
+              <div className='flex justify-between text-gray-900 text-sm'>
+                <span>21 wins</span>
+                <span>15 losses</span>
               </div>
           </div>
-          {/* <div className="mt-3 border-t border-gray-200 pt-5">
-            <div className="flex items-baseline gap-2">
-              <div className="text-2xl tabular-nums tracking-tight text-gray-900">
-                {activeValue.toFixed(2)}
-              </div>
-              <div className="text-sm text-gray-900">USD</div>
-              {percentageChange && (
-                <div
-                  className={clsx(
-                    'ml-auto text-sm tabular-nums tracking-tight',
-                    percentageChange >= 0 ? 'text-cyan-500' : 'text-gray-500'
-                  )}
-                >
-                  {`${
-                    percentageChange >= 0 ? '+' : ''
-                  }${percentageChange.toFixed(2)}%`}
-                </div>
-              )}
+          <div className="mt-3 pt-3 border-t border-gray-200">
+            <div className='flex items-center'>
+              <p className='font-medium text-sm grow'>Results comparison</p>
+              <FunnelIcon className='h-5 w-5 text-gray-900' />
             </div>
-            <div className="mt-3 rounded-lg bg-gray-50 ring-1 ring-inset ring-black/5">
+            <div className="mb-2 rounded-lg bg-gray-50 ring-1 ring-inset ring-black/5">
               <Chart
                 width={286}
-                height={208}
+                height={180}
                 paddingX={1}
                 paddingY={32}
                 activePointIndex={activePointIndex}
                 onChangeActivePointIndex={setActivePointIndex}
               />
             </div>
-          </div> */}
+            <div className="flex gap-2">
+              <div className="grow text-md tabular-nums tracking-tight text-gray-900">
+                <div className='flex items-center gap-2 mb-1'>
+                  <div className='relative pt-1 pr-1 mr-2'>
+                    <div className='rounded-full w-8 h-8 bg-gg-blue-faint text-center p-1 text-sm font-semibold text-gg-blue'>EP</div>
+                    <div className='absolute top-0 right-0 border-solid border-gg-blue rounded-full bg-white' style={{ width: 14, height: 14, borderWidth: 3}}></div>
+                  </div>
+                  <p>{activeScore1} VP</p>
+                  <p>{activeTeam1}</p>
+                </div>
+                <div className='flex items-center gap-2'>
+                  <div className='relative pt-1 pr-1 mr-2'>
+                    <div className='rounded-full w-8 h-8 bg-gg-blue-faint text-center p-1 text-sm font-semibold text-gg-blue'>JB</div>
+                    <div className='absolute top-0 right-0 border-solid border-gg-red rounded-full bg-white' style={{ width: 14, height: 14, borderWidth: 3}}></div>
+                  </div>
+                  <p>{activeScore2} VP</p>
+                  <p>{activeTeam2}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </AppScreen.Body>
     </AppScreen>
@@ -379,7 +399,7 @@ export function Hero() {
           </div>
           <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="hidden lg:flex absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
-            <div className="-mx-4 h-[448px] px-9 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
+            <div className="-mx-4 h-[600px] px-2 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
               <PhoneFrame className="mx-auto max-w-[366px]" priority>
                 <AppDemo />
               </PhoneFrame>

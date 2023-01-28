@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
 import { Container } from '@/components/Container'
-import { CallToAction } from '@/components/CallToAction'
+import { Footer } from '@/sections/Footer'
+import { Header } from '@/sections/Header'
+import { CallToAction } from '@/sections/CallToAction'
 
 export default function About() {
   return (
@@ -17,7 +17,7 @@ export default function About() {
       </Head>
       <Header />
       <main className='pt-20'>
-        <Container className='py-32 lg:py-40'>
+        <Container className='py-32 lg:py-40 xl:pt-40 xl:pb-60'>
           <p className='text-center text-xl text-gray-500'>OUR MISSION</p>
           <h1 className='mt-4 text-center text-3xl lg:text-5xl xl:text-6xl tracking-tight xl:leading-snug lg:leading-snug leading-snug'>To organise the world’s <span className='text-gg-blue font-semibold'>game data</span> and make it <span className='text-gg-red font-semibold'>universally accessible</span> and useful</h1>
         </Container>

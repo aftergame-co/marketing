@@ -1,21 +1,21 @@
 import Head from 'next/head'
 
-import { CallToAction } from '@/components/CallToAction'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Splash } from '@/components/Splash'
+import { CallToAction } from '@/sections/CallToAction'
+import { Footer } from '@/sections/Footer'
+import { Header } from '@/sections/Header'
+import { Hero } from '@/sections/Hero'
+import { PrimaryFeatures } from '@/sections/PrimaryFeatures'
+import { SecondaryFeatures } from '@/sections/SecondaryFeatures'
+import { Splash } from '@/sections/Splash'
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Goodgame Data</title>
+        <title>Goodgame Data - Play tracking and statistics, reimagined</title>
         <meta
           name="description"
-          content="Goodgame Data. Coming soon."
+          content="Track the board games, sports, and video games you love on Goodgame to gain meaningful insights and share your gaming journey with friends."
         />
       </Head>
       {/* <Header /> */}

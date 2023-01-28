@@ -1,7 +1,7 @@
 import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
-import { WaitlistForm } from './WaitlistForm'
+import { WaitlistForm } from '@/components/WaitlistForm'
 
 export function CallToAction() {
   return (
@@ -19,14 +19,14 @@ export function CallToAction() {
             Be the first in line
           </h2>
           <p className="mt-4 text-lg text-white">
-            Goodgame is in active development and will launch soon. Get early access by signing up now. 
+            Goodgame is getting ready to launch. Get early access by signing up now. 
           </p>
           {/* <div className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-4 lg:gap-x-6">
             <AppStoreLink />
             <GooglePlayLink />
           </div> */}
           <div className="mt-8">
-            <WaitlistForm label="" lightMode={true} />
+            <WaitlistForm label="" darkMode={true} />
           </div>
         </div>
       </Container>

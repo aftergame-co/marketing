@@ -47,7 +47,7 @@ function MobileNavLink({ children, ...props }) {
   )
 }
 
-export function Header() {
+export function Header({darkMode}) {
   let [scrolled, setScrolled] = useState(false);
   useEffect(function mount() {
     setScrolled(window.pageYOffset > 30);
@@ -69,12 +69,12 @@ export function Header() {
           <Container className="relative z-50 flex justify-between">
             <div className="relative z-10 flex items-center gap-16 -m-2">
               <Link href="/" aria-label="Home">
-                <Logo className="h-16 w-auto" />
+                <Logo darkMode={!scrolled && darkMode} className="h-16 w-auto" />
               </Link>
             </div>
             <div className="flex items-center gap-10">
               <div className="hidden lg:flex lg:gap-10">
-                <NavLinks />
+                <NavLinks scrolled={scrolled} darkMode={darkMode} />
               </div>
               <Popover className="lg:hidden">
                 {({ open }) => (
@@ -115,10 +115,10 @@ export function Header() {
                             className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-24 -mt-4 shadow-2xl shadow-gray-900/20"
                           >
                             <div>
-                              <MobileNavLink href="#features">
+                              <MobileNavLink href="/">
                                 Features
                               </MobileNavLink>
-                              <MobileNavLink href="/designers">
+                              {/* <MobileNavLink href="/designers">
                                 Game Designers
                               </MobileNavLink>
                               <MobileNavLink href="/pricing">
@@ -126,16 +126,16 @@ export function Header() {
                               </MobileNavLink>
                               <MobileNavLink href="/blog">
                                 Blog
-                              </MobileNavLink>
+                              </MobileNavLink> */}
                               <MobileNavLink href="/about">
                                 About
                               </MobileNavLink>
                             </div>
-                            <div className="mt-8 flex flex-col gap-4">
+                            {/* <div className="mt-8 flex flex-col gap-4">
                               <Button href="#" className="bg-gg-blue hover:bg-gg-red active:bg-gg-red">
                                 Get Goodgame
                               </Button>
-                            </div>
+                            </div> */}
                           </Popover.Panel>
                         </>
                       )}

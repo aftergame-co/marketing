@@ -2,8 +2,9 @@ import { Fragment, useState } from 'react'
 import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Popover, Transition } from '@headlessui/react'
+import clsx from 'clsx'
 
-export function NavLinks() {
+export function NavLinks({scrolled, darkMode}) {
   const [isShowing, setIsShowing] = useState(false)
   const [hoveredIndex, setHoveredIndex] = useState(null)
   const navItems = [
@@ -22,26 +23,6 @@ export function NavLinks() {
     // {
       // name: 'Blog',
       // href: '/blog',
-      // menu: [
-      //   {
-      //     name: 'Insights',
-      //     description: 'Measure actions your users take',
-      //     href: '##',
-      //     icon: IconOne,
-      //   },
-      //   {
-      //     name: 'Automations',
-      //     description: 'Create your own targeted content',
-      //     href: '##',
-      //     icon: IconTwo,
-      //   },
-      //   {
-      //     name: 'Reports',
-      //     description: 'Keep track of your growth',
-      //     href: '##',
-      //     icon: IconThree,
-      //   },
-      // ]
     // },
     {
       name: 'About us',
@@ -74,14 +55,20 @@ export function NavLinks() {
     <Link
       key={item.name}
       href={item.href}
-      className="relative -my-2 -mx-3 rounded-lg px-3 py-2 text-md text-gray-500 transition-colors delay-150 hover:text-gray-700 hover:delay-[0ms]"
+      className={clsx(
+        'relative -my-2 -mx-3 rounded-lg px-3 py-2 text-md',
+        !scrolled && darkMode ? 'text-gray-100 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700',
+      )}
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}
     >
       <AnimatePresence>
         {hoveredIndex === index && (
           <motion.span
-            className="absolute inset-0 rounded-lg bg-gray-200"
+            className={clsx(
+              'absolute inset-0 rounded-lg',
+              !scrolled && darkMode ? 'bg-gray-700' : 'bg-gray-200',
+            )}
             layoutId="hoverBackground"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -166,12 +153,6 @@ export function NavLinks() {
       }
     </Link>
   ))
-
-  return (
-    <div className="w-full max-w-sm">
-      
-    </div>
-  )
 }
 
 function IconOne() {

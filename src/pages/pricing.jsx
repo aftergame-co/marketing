@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
-import { Faqs } from '@/components/Faqs'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { Plans } from '@/components/Plans'
+import { Faqs } from '@/sections/Faqs'
+import { Footer } from '@/sections/Footer'
+import { Header } from '@/sections/Header'
+import { Plans } from '@/sections/Plans'
 
 export default function Pricing() {
   return (
@@ -17,8 +17,8 @@ export default function Pricing() {
       </Head>
       <Header />
       <main className='pt-20'>
-        <Plans />
-        <Faqs />
+        {/* <Plans />
+        <Faqs /> */}
       </main>
       <Footer />
     </>

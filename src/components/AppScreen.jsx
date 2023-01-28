@@ -5,20 +5,6 @@ import { ArrowLeftIcon, EllipsisVerticalIcon, MagnifyingGlassIcon } from '@heroi
 export function AppScreen({ children, className, ...props }) {
   return (
     <div className={clsx('flex flex-col', className)} {...props}>
-      <div className="flex px-4 pt-4">
-        <ArrowLeftIcon 
-          className="h-8 w-8 text-gray-900"
-        />
-        <div 
-          className="w-full"
-        />
-        <MagnifyingGlassIcon 
-          className="h-8 w-8 text-gray-900"
-        />
-        <EllipsisVerticalIcon
-          className="ml-4 h-8 w-8 text-gray-900"
-        />
-      </div>
       {children}
     </div>
   )
@@ -26,24 +12,27 @@ export function AppScreen({ children, className, ...props }) {
 
 AppScreen.Header = forwardRef(function AppScreenHeader({ children }, ref) {
   return (
-    <div ref={ref} className="mt-6 px-4 text-white">
-      {children}
-    </div>
-  )
-})
-
-AppScreen.Title = forwardRef(function AppScreenTitle({ children }, ref) {
-  return (
-    <div ref={ref} className="text-2xl text-white">
-      {children}
-    </div>
-  )
-})
-
-AppScreen.Subtitle = forwardRef(function AppScreenSubtitle({ children }, ref) {
-  return (
-    <div ref={ref} className="text-sm text-gray-500">
-      {children}
+    <div>
+      {!children &&
+        <div className="flex items-center px-4 pt-4">
+          <ArrowLeftIcon 
+            className="h-8 w-8 text-gray-900"
+          />
+          <div className="w-full">
+          </div>
+          <MagnifyingGlassIcon 
+            className="h-8 w-8 text-gray-900"
+          />
+          <EllipsisVerticalIcon
+            className="ml-4 h-8 w-8 text-gray-900"
+          />
+        </div>
+      }
+      {children &&
+        <div className="flex items-center px-4 pt-4">
+            {children}
+        </div>
+      }
     </div>
   )
 })

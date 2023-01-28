@@ -11,7 +11,7 @@ const userTypeOptions = [
   { name: 'Game designer' },
 ]
 
-export function WaitlistForm({label, lightMode}) {
+export function WaitlistForm({label, darkMode}) {
   const supabase = useSupabaseClient()
   const recaptchaRef = useRef();
   const [loading, setLoading] = useState(false)
@@ -68,13 +68,11 @@ export function WaitlistForm({label, lightMode}) {
 
   return (
     <div>
-
       {success &&
         <div 
           className={clsx(
             'm-2 flex align-middle justify-center	',
-            lightMode ? 'text-white' : 'text-gg-blue',
-
+            darkMode ? 'text-white' : 'text-gg-blue',
           )}>
           <EnvelopeIcon className='h-6 w-6 mr-2'/>
           <p>You’re now on the Goodgame waiting list!</p>
@@ -99,8 +97,7 @@ export function WaitlistForm({label, lightMode}) {
             <TextField
               className={clsx(
                 '',
-                lightMode ? 'text-white' : 'text-gray-900',
-
+                darkMode ? 'text-white' : 'text-gray-900',
               )}
               id="waitlist-email"
               label={label}
@@ -112,7 +109,7 @@ export function WaitlistForm({label, lightMode}) {
             />
             <p className={clsx(
                 'xl:h-6 pl-3  text-sm font-semibold',
-                lightMode ? 'text-white' : 'text-gg-red'
+                darkMode ? 'text-white' : 'text-gg-red'
               )}>
                 {validationError}
               </p>
@@ -121,10 +118,10 @@ export function WaitlistForm({label, lightMode}) {
             <Button
               type="submit"
               onClick={signUpToWaitlist}
-              color={lightMode ? 'white' : 'gg'}
+              color={darkMode ? 'white' : 'gg'}
               className={clsx(
                 'disabled:bg-gray-400 hover:disabled:text-white disabled:text-white w-full',
-                lightMode ? 'text-gg-blue md:hover:text-gg-red active:text-gg-red' : 'bg-gg-blue md:hover:bg-gg-red active:bg-gg-red'
+                darkMode ? 'text-gg-blue md:hover:text-gg-red active:text-gg-red' : 'bg-gg-blue md:hover:bg-gg-red active:bg-gg-red'
               )}
               disabled={loading}
             >

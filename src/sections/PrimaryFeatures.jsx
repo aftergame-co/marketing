@@ -191,7 +191,8 @@ function InvestScreen({ custom, animated = false }) {
                   <ClockIcon 
                     className="h-4 w-4"
                   />
-                  <span className='ml-1 mr-3'>60-120min</span>
+                  <span className='ml-1 mr-3 hidden sm:block'>60-120min</span>
+                  <span className='ml-1 mr-3 block sm:hidden'>60-120m</span>
                   <UsersIcon
                     className="h-4 w-4"
                   />

@@ -100,42 +100,43 @@ function InviteScreen({ custom, animated = false }) {
       </MotionAppScreenHeader>
         <div className='absolute top-14 left-0 right-0 bg-white mt-4 bottom-0'></div>
         <div className='absolute top-0 left-0 right-0 bottom-0 bg-gray-900 opacity-25'></div>
-      <MotionAppScreenBody className='bg-transparent flex' {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="mt-6 px-4 pt-3 pb-6 bg-white rounded-t-3xl grow">
+      <MotionAppScreenBody className='bg-transparent z-10' {...(animated ? { ...bodyAnimation, custom } : {})}>
+        <div className="mt-6 px-4 pt-3 pb-6 bg-white rounded-t-3xl h-full">
           <div className='m-auto bg-gray-300 w-8 h-1 rounded-xl mb-3'></div>
           <div className='h-full'>
             <div className='flex w-full border-solid border border-gray-700 rounded-md p-2 mb-4'>
-              <div className='bg-gg-blue-faint rounded-lg p-2 mr-1 text-xs'>Eric Poulin</div>
-              <div className='bg-gg-blue-faint rounded-lg p-2 mr-2 text-xs'>John Brent</div>
+              <div className='bg-gg-blue-faint rounded-lg p-2 mr-1 text-xs'>Jerry Seinfeld</div>
+              <div className='bg-gg-blue-faint rounded-lg p-2 mr-2 text-xs'>Elaine Benes</div>
               <div className='w-0.5 h-5 bg-gray-500 self-center'></div>
             </div>
-            <div className='w-full rounded-md p-2 mb-6 bg-gg-blue-faint'>
+            <div className='w-full rounded-md p-1 sm:p-2 mb-6 bg-gg-blue-faint'>
               <p className='font-semibold text-xs mb-1'>Player added!</p>
               <p className='text-xs mb-1'>Send them an invite link so they can see this play on their device:</p>
               <div className='flex items-center bg-white p-1 rounded-md'>
-                <p className='grow text-gg-blue underline text-xs'>https://invited.gg/dg876gr87gyer</p>
-                <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl text-xs py-1 px-3 font-light' disabled>Copy</Button>
+                <p className='grow text-gg-blue underline text-xs sm:hidden'>invited.gg/dg876gr87gyer</p>
+                <p className='grow text-gg-blue underline text-xs hidden sm:block'>https://invited.gg/dg876gr87gyer</p>
+                <Button className='shrink-0 bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl text-xs py-1 px-2 sm:px-3 font-light' disabled>Copy</Button>
               </div>
             </div>
             <div className='flex mb-4'>
-              <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>EP</div>
-              <div className='text-sm self-center grow'>Eric Poulin</div>
+              <Image src='/images/jerry-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for Jerry' />
+              <div className='text-sm self-center grow'>Jerry Seinfeld</div>
               <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <div className='flex mb-4'>
-              <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>JB</div>
-              <div className='text-sm self-center grow'>John Brent</div>
+              <Image src='/images/george-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for George' />
+              <div className='text-sm self-center grow'>George Costanza</div>
+              <input checked={false} type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
+            </div>
+            <div className='flex mb-4'>
+              <Image src='/images/elaine-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for Elaine' />
+              <div className='text-sm self-center grow'>Elaine Benes</div>
               <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <div className='flex mb-4'>
-              <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>AP</div>
-              <div className='text-sm self-center grow'>Alex Poulin</div>
-              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
-            </div>
-            <div className='flex mb-4'>
-              <div className='rounded-full w-10 h-10 mr-3 bg-gg-blue-faint text-center p-2 font-semibold text-gg-blue'>EL</div>
-              <div className='text-sm self-center grow'>Eli Labes</div>
-              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
+              <Image src='/images/kramer-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for Cosmo' />
+              <div className='text-sm self-center grow'>Cosmo Kramer</div>
+              <input checked={false} type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <Button className='w-full bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl' disabled>Select</Button>
           </div>
@@ -156,12 +157,13 @@ function StocksScreen({ custom, animated = false }) {
         <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl text-sm px-6' disabled>Save</Button>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <Image
-          src='/images/scoresheet.png'
-          alt='A screenshot of the scoresheet interface for Goodgame' 
-          fill 
-          sizes='100vw'
-        />
+        <div className='relative h-full'>
+          <Image
+            src='/images/scoresheet.png'
+            alt='A screenshot of the scoresheet interface for Goodgame' 
+            fill
+          />
+        </div>
       </MotionAppScreenBody>
     </AppScreen>
   )
@@ -222,7 +224,7 @@ function InvestScreen({ custom, animated = false }) {
               <UserIcon
                 className="shrink-0 h-6 w-6"
               />
-              <p className='grow text-xs'>You have never won a game when Sideshow Bob is playing.</p>
+              <p className='grow text-xs'>You have never won a game when Cosmo Kramer is playing.</p>
             </div>
             <div className='my-1 flex items-center align-middle gap-2 border border-gg-blue bg-gg-blue-faint rounded-md p-2'>
               <GlobeEuropeAfricaIcon

@@ -214,33 +214,6 @@ function Chart({
         y={paddingY}
         width={pathWidth}
         height={height}
-        fill={`url(#${id}-gradient)`}
-        clipPath={`url(#${id}-clip)`}
-        opacity="0.5"
-      />
-      <motion.path
-        ref={pathRef}
-        d={path}
-        fill="none"
-        strokeWidth="4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        initial={{ pathLength: 0 }}
-        transition={{ duration: 1 }}
-        {...(isInView ? { stroke: '#4966f5', animate: { pathLength: 1 } } : {})}
-        onUpdate={({ pathLength }) => {
-          pathWidth.set(
-            pathRef.current.getPointAtLength(
-              pathLength * pathRef.current.getTotalLength()
-            ).x
-          )
-        }}
-        onAnimationComplete={() => setInteractionEnabled(true)}
-      />
-      <motion.rect
-        y={paddingY}
-        width={pathWidth}
-        height={height}
         fill={`url(#${id}-gradient2)`}
         clipPath={`url(#${id}-clip2)`}
         opacity="0.5"
@@ -255,6 +228,33 @@ function Chart({
         initial={{ pathLength: 0 }}
         transition={{ duration: 1 }}
         {...(isInView ? { stroke: '#ff3a20', animate: { pathLength: 1 } } : {})}
+        onUpdate={({ pathLength }) => {
+          pathWidth.set(
+            pathRef.current.getPointAtLength(
+              pathLength * pathRef.current.getTotalLength()
+            ).x
+          )
+        }}
+        onAnimationComplete={() => setInteractionEnabled(true)}
+      />
+      <motion.rect
+        y={paddingY}
+        width={pathWidth}
+        height={height}
+        fill={`url(#${id}-gradient)`}
+        clipPath={`url(#${id}-clip)`}
+        opacity="0.5"
+      />
+      <motion.path
+        ref={pathRef}
+        d={path}
+        fill="none"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        initial={{ pathLength: 0 }}
+        transition={{ duration: 1 }}
+        {...(isInView ? { stroke: '#4966f5', animate: { pathLength: 1 } } : {})}
         onUpdate={({ pathLength }) => {
           pathWidth.set(
             pathRef.current.getPointAtLength(
@@ -354,7 +354,8 @@ function AppDemo() {
               <div className="grow text-md tabular-nums tracking-tight text-gray-900">
                 <div className='flex items-center gap-2 mb-1'>
                   <div className='relative pt-1 pr-1 mr-2'>
-                    <div className='rounded-full w-8 h-8 bg-gg-blue-faint text-center p-1 text-sm font-semibold text-gg-blue'>EP</div>
+                    {/* <div className='rounded-full w-8 h-8 bg-gg-blue-faint text-center p-1 text-sm font-semibold text-gg-blue'>EP</div> */}
+                    <Image src='/images/jerry-photo.webp' width={32} height={32} className='rounded-full' alt='Profile photo for Jerry' />
                     <div className='absolute top-0 right-0 border-solid border-gg-blue rounded-full bg-white' style={{ width: 14, height: 14, borderWidth: 3}}></div>
                   </div>
                   <p>{activeScore1} VP</p>
@@ -362,7 +363,8 @@ function AppDemo() {
                 </div>
                 <div className='flex items-center gap-2'>
                   <div className='relative pt-1 pr-1 mr-2'>
-                    <div className='rounded-full w-8 h-8 bg-gg-blue-faint text-center p-1 text-sm font-semibold text-gg-blue'>JB</div>
+                    {/* <div className='rounded-full w-8 h-8 bg-gg-blue-faint text-center p-1 text-sm font-semibold text-gg-blue'>JB</div> */}
+                    <Image src='/images/elaine-photo.webp' width={32} height={32} className='rounded-full' alt='Profile photo for Elaine' />
                     <div className='absolute top-0 right-0 border-solid border-gg-red rounded-full bg-white' style={{ width: 14, height: 14, borderWidth: 3}}></div>
                   </div>
                   <p>{activeScore2} VP</p>

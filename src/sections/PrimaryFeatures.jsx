@@ -395,7 +395,7 @@ function FeaturesMobile() {
                 <feature.screen />
               </PhoneFrame>
               <div className="absolute inset-x-0 bottom-0 bg-white p-6 sm:p-10 border-t border-slate-200">
-                <feature.icon className="h-8 w-8" />
+                <feature.selectedicon className="h-8 w-8" />
                 <h3 className="mt-6 text-sm font-semibold text-black sm:text-lg">
                   {feature.name}
                 </h3>

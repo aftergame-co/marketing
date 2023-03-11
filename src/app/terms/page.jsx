@@ -1,21 +1,12 @@
-import Head from 'next/head'
+import { Container } from '@/components/Container';
 
-import { Footer } from '@/sections/Footer'
-import { Header } from '@/sections/Header'
-import { Container } from '@/components/Container'
+export const metadata = {
+  title: 'Terms of Service',
+};
 
 export default function Terms() {
   return (
-    <>
-      <Head>
-        <title>Terms of Service | Goodgame Data</title>
-        <meta
-          name="description"
-          content="Track the board games, sports, and video games you love on Goodgame to gain meaningful insights and share your gaming journey with friends."
-        />
-      </Head>
-      <Header />
-      <main className='pt-20'>
+    <main className='pt-20'>
         <section
           id="terms-of-service"
           aria-label="Terms of Service"
@@ -43,7 +34,5 @@ export default function Terms() {
           </Container>
         </section>
       </main>
-      <Footer />
-    </>
   )
 }

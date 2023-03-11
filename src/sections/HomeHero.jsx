@@ -1,3 +1,5 @@
+'use client';
+
 import { useId, useRef, useState } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
@@ -5,7 +7,6 @@ import { motion, useInView, useMotionValue } from 'framer-motion'
 
 import { AppScreen } from '@/components/AppScreen'
 import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
 import logoBbc from '@/images/logos/bbc.svg'
@@ -379,7 +380,7 @@ function AppDemo() {
   )
 }
 
-export function Hero() {
+export function HomeHero() {
   return (
     <div className="overflow-hidden py-16 sm:py-32 lg:pb-32">
       <Container>

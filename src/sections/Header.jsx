@@ -1,8 +1,8 @@
+'use client';
+
 import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
-
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
@@ -61,7 +61,7 @@ export function Header({darkMode}) {
     return function unMount() {
       window.removeEventListener("scroll", onScroll);
     };
-  });
+  }, []);
 
   return (
       <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', scrolled ? 'shadow-lg  bg-white py-4 lg:py-2' : 'py-4')}>

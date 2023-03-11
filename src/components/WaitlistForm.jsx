@@ -1,10 +1,12 @@
-import { useRef, useState } from 'react'
-import { ListField, TextField } from '@/components/Fields'
-import { Button } from './Button'
-import clsx from 'clsx'
-import { useSupabaseClient } from '@supabase/auth-helpers-react'
-import ReCAPTCHA from 'react-google-recaptcha'
-import { EnvelopeIcon } from '@heroicons/react/24/outline'
+'use client';
+
+import { useRef, useState } from 'react';
+import supabase from '@/utils/supabase';
+import { ListField, TextField } from '@/components/Fields';
+import { Button } from './Button';
+import clsx from 'clsx';
+import { useReCaptcha } from 'next-recaptcha-v3';
+import { EnvelopeIcon } from '@heroicons/react/24/outline';
 
 const userTypeOptions = [
   { name: 'Game player' },
@@ -12,12 +14,11 @@ const userTypeOptions = [
 ]
 
 export function WaitlistForm({label, darkMode}) {
-  const supabase = useSupabaseClient()
-  const recaptchaRef = useRef();
-  const [loading, setLoading] = useState(false)
-  const [success, setSuccess] = useState(false)
-  const [email, setEmail] = useState(null)
-  const [validationError, setValidationError] = useState(null)
+  const { executeRecaptcha, reCaptchaKey, grecaptcha, loaded, error } = useReCaptcha();
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [email, setEmail] = useState(null);
+  const [validationError, setValidationError] = useState(null);
   // const [selected, setSelected] = useState(userTypeOptions[0])
 
   const validateEmail = (email) => {
@@ -28,20 +29,20 @@ export function WaitlistForm({label, darkMode}) {
 
   async function signUpToWaitlist(e) {
     e.preventDefault();
-    setValidationError(null)
-    setLoading(true)
+    setValidationError(null);
+    setLoading(true);
 
     try {
-      const token = await recaptchaRef.current.executeAsync()
-      console.log(token)
+      const token = await executeRecaptcha("submitForm");
+      console.log(token);
 
       if (email === null || email == "") {
-        setValidationError('Please enter your email address')
-        return
+        setValidationError('Please enter your email address');
+        return;
       }
       if (!validateEmail(email)) {
-        setValidationError('Please enter a valid email address')
-        return
+        setValidationError('Please enter a valid email address');
+        return;
       }
 
       setLoading(true)
@@ -49,20 +50,20 @@ export function WaitlistForm({label, darkMode}) {
       const updates = {
         email,
         added_at: new Date().toISOString(),
-      }
+      };
 
-      let { error } = await supabase.from('waitlist').upsert(updates)
-      if (error) throw error
+      let { error } = await supabase.from('waitlist').upsert(updates);
+      if (error) throw error;
       
       setSuccess(true)
     } catch (error) {
-      if (error.code == "23505") {
-        setValidationError('Email address already on the waiting list')
+      if (error && error.code == "23505") {
+        setValidationError('Email address already on the waiting list');
       } else {
-        console.error(error)
+        console.error(error);
       }
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
   }
 
@@ -79,11 +80,6 @@ export function WaitlistForm({label, darkMode}) {
       </div>}
 
       {!success && <form noValidate={true}>
-        <ReCAPTCHA
-            ref={recaptchaRef}
-            size="invisible"
-            sitekey="6LesdyAkAAAAAB4gYlrAhrBPtzgbLI8anrQ7x1Yn"
-          />
         <div className="grid sm:grid-cols-6 grid-cols-1 gap-4 items-end text-left">
           {/* <ListField
             className="col-span-6"

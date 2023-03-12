@@ -1,25 +1,10 @@
 'use client';
 
-import { useId, useRef, useState } from 'react'
-import Image from 'next/image'
-import clsx from 'clsx'
-import { motion, useInView, useMotionValue } from 'framer-motion'
-
-import { AppScreen } from '@/components/AppScreen'
-import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { PhoneFrame } from '@/components/PhoneFrame'
-import logoBbc from '@/images/logos/bbc.svg'
-import logoCbs from '@/images/logos/cbs.svg'
-import logoCnn from '@/images/logos/cnn.svg'
-import logoFastCompany from '@/images/logos/fast-company.svg'
-import logoForbes from '@/images/logos/forbes.svg'
-import logoHuffpost from '@/images/logos/huffpost.svg'
-import logoTechcrunch from '@/images/logos/techcrunch.svg'
-import logoWired from '@/images/logos/wired.svg'
-import { WaitlistForm } from '@/components/WaitlistForm'
-import { ClockIcon, FunnelIcon, UserGroupIcon, UsersIcon } from '@heroicons/react/24/outline'
+import { useId, useRef, useState } from 'react';
+import Image from 'next/image';
+import { Button } from '@/components/Button';
+import { Container } from '@/components/Container';
+import { WaitlistForm } from '@/components/WaitlistForm';
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -92,19 +77,20 @@ function BackgroundIllustration(props) {
 
 export function DesignersHero() {
   return (
-    <div className="overflow-hidden pb-8 pt-16 sm:pt-32">
+    <div className="overflow-hidden pb-8 pt-16 sm:pt-32 lg:pb-20">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-7">
-            <p className='text-xl text-gray-600 mb-4'>GAME DESIGNERS</p>
+            <p className='text-xl text-gray-600 mb-4 uppercase'>Board Game Designers</p>
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
               <span className='text-gg-blue font-semibold'>Understand</span> how people<br />play <span className='text-gg-red font-semibold'>your games</span>
             </h1>
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
-              Goodgame Data gives you deep insights into how your games are being played so that you can track KPIs and discover ways to change your game for the better.
+              Get deep insights into how your board games are being played so that you can track KPIs and discover ways to further the development of your game.
               {/* Cut out the guesswork,  */}
               {/* You spend so much time developing and play-testing great games, so why s */}
             </p>
+            <p className="mt-6 lg:w-4/5 text-sm font-semibold">Want to be part of the feedback process?</p>
             <div className="pt-2 pb-16 xl:pb-0 lg:w-4/5">
               <Button
                 type="submit"
@@ -120,7 +106,7 @@ export function DesignersHero() {
             <div className="px-2 absolute left-0 top-4 h-[619px] w-[760px] -translate-x-1/3">
               <Image src='/images/designer-data.png' width={760} height={619} alt='Profile photo for Elaine' />
             </div>
-            <p className="p-2 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl font-semibold text-gray-800 bg-white/75 rounded-lg">PLACEHOLDER</p>
+            {/* <p className="p-2 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl font-semibold text-gray-800 bg-white/75 rounded-lg">PLACEHOLDER</p> */}
           </div>
           <div className='hidden lg:flex py-6'></div>
         </div>

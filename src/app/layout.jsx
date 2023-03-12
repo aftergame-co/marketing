@@ -22,7 +22,7 @@ export const metadata = {
     siteName: 'Goodgame Data',
     images: [
       {
-        url: 'https://www.goodgamedata.com/_next/image?url=/images/gg-thumbnail.png&w=1200',
+        url: 'https://www.goodgamedata.com/_next/image?url=/images/gg-thumbnail.png&w=1200&q=75',
         width: 1200,
         height: 630,
       },

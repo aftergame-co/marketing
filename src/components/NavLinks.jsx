@@ -13,12 +13,12 @@ export function NavLinks({scrolled, darkMode}) {
       href: '/',
     },
     // {
-    //   name: 'Game Designers',
+    //   name: 'Board Game Designers',
     //   href: '/designers',
     // },
     // {
-    //   name: 'Pricing',
-    //   href: '/pricing',
+    //   name: 'Premium',
+    //   href: '/premium',
     // },
     // {
       // name: 'Blog',

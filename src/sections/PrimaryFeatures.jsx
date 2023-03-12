@@ -98,7 +98,7 @@ function InviteScreen({ custom, animated = false }) {
           className="h-8 w-8 text-gray-900"
         />
         <div className='ml-2 grow'>Log play</div>
-        <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl text-sm px-6' disabled>Save</Button>
+        <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue !rounded-4xl !text-sm !px-6' disabled>Save</Button>
       </MotionAppScreenHeader>
         <div className='absolute top-14 left-0 right-0 bg-white mt-4 bottom-0'></div>
         <div className='absolute top-0 left-0 right-0 bottom-0 bg-gray-900 opacity-25'></div>
@@ -117,7 +117,7 @@ function InviteScreen({ custom, animated = false }) {
               <div className='flex items-center bg-white p-1 rounded-md'>
                 <p className='grow text-gg-blue underline text-xs sm:hidden'>invited.gg/dg876gr87gyer</p>
                 <p className='grow text-gg-blue underline text-xs hidden sm:block'>https://invited.gg/dg876gr87gyer</p>
-                <Button className='shrink-0 bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl text-xs py-1 px-2 sm:px-3 font-light' disabled>Copy</Button>
+                <Button className='shrink-0 bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue !rounded-4xl !text-xs !py-1 !px-2 !font-light' disabled>Copy</Button>
               </div>
             </div>
             <div className='flex mb-4'>
@@ -140,7 +140,7 @@ function InviteScreen({ custom, animated = false }) {
               <div className='text-sm self-center grow'>Cosmo Kramer</div>
               <input checked={false} type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
-            <Button className='w-full bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl' disabled>Select</Button>
+            <Button className='w-full bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue !rounded-4xl' disabled>Select</Button>
           </div>
         </div>
       </MotionAppScreenBody>
@@ -156,7 +156,7 @@ function StocksScreen({ custom, animated = false }) {
           className="h-8 w-8 text-gray-900"
         />
         <div className='ml-2 grow'>Log play</div>
-        <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue rounded-4xl text-sm px-6' disabled>Save</Button>
+        <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue !rounded-4xl !text-sm !px-6' disabled>Save</Button>
       </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className='relative h-full'>

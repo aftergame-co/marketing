@@ -119,10 +119,10 @@ export function Header({darkMode}) {
                                 Features
                               </MobileNavLink>
                               {/* <MobileNavLink href="/designers">
-                                Game Designers
-                              </MobileNavLink>
-                              <MobileNavLink href="/pricing">
-                                Pricing
+                                Board Game Designers
+                              </MobileNavLink> */}
+                              {/* <MobileNavLink href="/premium">
+                                Premium
                               </MobileNavLink>
                               <MobileNavLink href="/blog">
                                 Blog

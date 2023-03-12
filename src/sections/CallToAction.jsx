@@ -7,7 +7,7 @@ export function CallToAction() {
   return (
     <section
       id="get-free-shares-today"
-      className="relative overflow-hidden bg-gg-red py-20 sm:py-28"
+      className="relative overflow-hidden bg-gg-red py-20 sm:py-28 lg:py-40"
     >
       <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
         <CircleBackground color="#fff" className="animate-spin-slower" />

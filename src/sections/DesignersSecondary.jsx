@@ -3,44 +3,44 @@ import { DeviceArrowIcon, DeviceCardsIcon, DeviceClockIcon, DeviceNotificationIc
 
 const features = [
   {
-    name: 'Import plays with ease',
+    name: 'What do people think of my game?',
     description:
-      'Bring your past plays with you. Import from other tracking apps, spreadsheets and more!',
-    icon: DeviceArrowIcon,
-  },
-  {
-    name: 'Record what matters to you',
-    description:
-      'Log a play in just 3 taps! All details are optional for the ultimate personalisation of your plays.',
-    icon: DeviceClockIcon,
-  },
-  {
-    name: 'Forget about losing your data',
-    description:
-      'Plays are securely stored in the cloud, meaning no more saving backups or manual syncing.',
-    icon: DeviceCardsIcon,
-  },
-  {
-    name: 'Organise the group',
-    description:
-      'Choose which games to play, set up leagues and host events with your friends, family, and foes.',
+      'Players can record how much they enjoyed a game, and leave feedback at the time of playing.',
     icon: DeviceNotificationIcon,
   },
   {
-    name: 'Offline support',
+    name: 'Is my game balanced?',
     description:
-      'No internet? No problem! Goodgame works seamlessly online and offline.',
+      'Full scoring breakdowns and relevant data points are recorded. Now you will have quantative data to improve your game.',
     icon: DeviceOfflineIcon,
   },
   {
-    name: 'Fast and intuitive user experience',
+    name: 'How often are expansions played?',
     description:
-      'Employing the latest technology to offer a fast, accessible, and enjoyable experience. ',
+      'Find out which of your expansions are played together and which ones are most popular.',
+    icon: DeviceCardsIcon,
+  },
+  {
+    name: 'How long do games last?',
+    description:
+      'View the average play time along with how many people were playing.',
+    icon: DeviceArrowIcon,
+  },
+  {
+    name: 'Which role is played most?',
+    description:
+      'We track which roles were played so that you can view trends and identify what your users like.',
+    icon: DeviceClockIcon,
+  },
+  {
+    name: 'How often do people play?',
+    description:
+      "See if your game collects dust on the shelf or if it's a games night favourite.",
     icon: DeviceTouchIcon,
   },
 ]
 
-export function SecondaryFeatures() {
+export function DesignersSecondary() {
   return (
     <section
       id="secondary-features"
@@ -50,10 +50,11 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-          <span className='text-gg-blue font-semibold'>Smart features</span> so you can <span className='text-gg-red font-semibold'>keep on playing</span>
+          <span className='text-gg-blue font-semibold'>Powerful reports</span> to answer any question
+          {/* <span className='text-gg-blue font-semibold'>Smart features</span> so you can <span className='text-gg-red font-semibold'>keep on playing</span> */}
           </h2>
           <p className="mt-4 mx-6 text-lg text-gray-600">
-            You don’t want to have to be fumbling around with your phone while you’re playing games, so we made things easy.
+            Great games are built by teams who know their users. Go beneath the surface to learn which features are popular, who your users are, and what <span className='text-gg-red font-semibold'>keeps people playing your games</span>.
           </p>
         </div>
         <ul

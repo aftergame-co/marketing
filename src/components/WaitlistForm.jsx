@@ -117,7 +117,7 @@ export function WaitlistForm({label, darkMode}) {
               color={darkMode ? 'white' : 'gg'}
               className={clsx(
                 'disabled:bg-gray-400 hover:disabled:text-white disabled:text-white w-full',
-                darkMode ? 'text-gg-blue md:hover:text-gg-red active:text-gg-red' : 'bg-gg-blue md:hover:bg-gg-red active:bg-gg-red'
+                darkMode ? 'text-gray-900 md:hover:text-gg-red active:text-gg-red' : 'bg-gg-blue md:hover:bg-gg-red active:bg-gg-red'
               )}
               disabled={loading}
             >

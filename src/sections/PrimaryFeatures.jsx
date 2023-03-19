@@ -122,23 +122,23 @@ function InviteScreen({ custom, animated = false }) {
             </div>
             <div className='flex mb-4'>
               <Image src='/images/jerry-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for Jerry' />
-              <div className='text-sm self-center grow'>Jerry Seinfeld</div>
-              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
+              <label htmlFor="jerry-check" className='text-sm self-center grow'>Jerry Seinfeld</label>
+              <input id='jerry-check' checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <div className='flex mb-4'>
               <Image src='/images/george-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for George' />
-              <div className='text-sm self-center grow'>George Costanza</div>
-              <input checked={false} type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
+              <label htmlFor="george-check" className='text-sm self-center grow'>George Costanza</label>
+              <input id='george-check' checked={false} type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <div className='flex mb-4'>
               <Image src='/images/elaine-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for Elaine' />
-              <div className='text-sm self-center grow'>Elaine Benes</div>
-              <input checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
+              <label htmlFor="elaine-check" className='text-sm self-center grow'>Elaine Benes</label>
+              <input id='elaine-check' checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <div className='flex mb-4'>
               <Image src='/images/kramer-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for Cosmo' />
-              <div className='text-sm self-center grow'>Cosmo Kramer</div>
-              <input checked={false} type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
+              <label htmlFor="cosmo-check" className='text-sm self-center grow'>Cosmo Kramer</label>
+              <input id='cosmo-check' checked={false} type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
             </div>
             <Button className='w-full bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue !rounded-4xl' disabled>Select</Button>
           </div>

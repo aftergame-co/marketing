@@ -116,11 +116,11 @@ export function Header({darkMode}) {
                           >
                             <div>
                               <MobileNavLink href="/">
-                                Features
+                                Home
                               </MobileNavLink>
-                              {/* <MobileNavLink href="/designers">
+                              <MobileNavLink href="/designers">
                                 Board Game Designers
-                              </MobileNavLink> */}
+                              </MobileNavLink>
                               {/* <MobileNavLink href="/premium">
                                 Premium
                               </MobileNavLink>

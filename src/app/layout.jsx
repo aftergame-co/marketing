@@ -1,4 +1,5 @@
 import '@/styles/tailwind.css';
+import '@/styles/global.css';
 import 'focus-visible';
 import Script from 'next/script';
 import { Footer } from '@/sections/Footer';
@@ -52,6 +53,9 @@ export default function RootLayout({ children }) {
         <Header />
         <Providers>{children}</Providers>
         <Footer />
+        {/* <!-- Start of HubSpot Embed Code --> */}
+          {/* <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/23499985.js"></script> */}
+        {/* <!-- End of HubSpot Embed Code --> */}
       </body>
     </html>
   )

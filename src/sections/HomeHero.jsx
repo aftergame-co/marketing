@@ -35,11 +35,13 @@ function BackgroundIllustration(props) {
           d="M1025 513c0 282.77-229.23 512-512 512S1 795.77 1 513 230.23 1 513 1s512 229.23 512 512Z"
           stroke="#D4D4D4"
           strokeOpacity="0.7"
+          strokeWidth="2"
         />
         <path
           d="M513 1025C230.23 1025 1 795.77 1 513"
           stroke={`url(#${id}-gradient-1)`}
           strokeLinecap="round"
+          strokeWidth="2"
         />
         <defs>
           <linearGradient
@@ -65,11 +67,13 @@ function BackgroundIllustration(props) {
           d="M913 513c0 220.914-179.086 400-400 400S113 733.914 113 513s179.086-400 400-400 400 179.086 400 400Z"
           stroke="#D4D4D4"
           strokeOpacity="0.7"
+          strokeWidth="2"
         />
         <path
           d="M913 513c0 220.914-179.086 400-400 400"
           stroke={`url(#${id}-gradient-2)`}
           strokeLinecap="round"
+          strokeWidth="2"
         />
         <defs>
           <linearGradient

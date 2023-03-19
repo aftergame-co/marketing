@@ -6,11 +6,11 @@ import { WaitlistForm } from '@/components/WaitlistForm'
 export function CallToAction() {
   return (
     <section
-      id="get-free-shares-today"
+      id="call-to-action"
       className="relative overflow-hidden bg-gg-red py-20 sm:py-28 lg:py-40"
     >
       <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
-        <CircleBackground color="#fff" className="animate-spin-slower" />
+        <CircleBackground color="#fff" className="animate-spin-slower bg-gray-900/25 rounded-full" />
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">

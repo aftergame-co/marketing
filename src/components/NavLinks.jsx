@@ -9,13 +9,13 @@ export function NavLinks({scrolled, darkMode}) {
   const [hoveredIndex, setHoveredIndex] = useState(null)
   const navItems = [
     {
-      name: 'Features',
+      name: 'Home',
       href: '/',
     },
-    // {
-    //   name: 'Board Game Designers',
-    //   href: '/designers',
-    // },
+    {
+      name: 'Board Game Designers',
+      href: '/designers',
+    },
     // {
     //   name: 'Premium',
     //   href: '/premium',

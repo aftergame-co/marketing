@@ -4,6 +4,7 @@ const nextConfig = {
   distDir: 'out',
   experimental: {
     appDir: true,
+    scrollRestoration: true,
   },
 }
 

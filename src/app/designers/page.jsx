@@ -1,4 +1,4 @@
-import { CallToAction } from '@/sections/CallToAction';
+import { DesignersContact } from '@/sections/DesignersContact';
 import { DesignersHero } from '@/sections/DesignersHero';
 import { DesignersPrimary } from '@/sections/DesignersPrimary';
 import { DesignersSecondary } from '@/sections/DesignersSecondary';
@@ -13,7 +13,7 @@ export default function Designers() {
       <DesignersHero />
       <DesignersPrimary />
       <DesignersSecondary />
-      <CallToAction />
+      <DesignersContact />
     </main>
   )
 }

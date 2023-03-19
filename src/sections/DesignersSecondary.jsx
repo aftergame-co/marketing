@@ -11,7 +11,7 @@ const features = [
   {
     name: 'Is my game balanced?',
     description:
-      'Full scoring breakdowns and relevant data points are recorded. Now you will have quantative data to improve your game.',
+      'Scoring breakdowns and relevant data points. Get quantitative data to improve your game.',
     icon: DeviceOfflineIcon,
   },
   {
@@ -23,13 +23,13 @@ const features = [
   {
     name: 'How long do games last?',
     description:
-      'View the average play time along with how many people were playing.',
+      'View the average play time, how many people were playing and more.',
     icon: DeviceArrowIcon,
   },
   {
     name: 'Which role is played most?',
     description:
-      'We track which roles were played so that you can view trends and identify what your users like.',
+      'We track which roles were played so you can view trends and identify what your users like.',
     icon: DeviceClockIcon,
   },
   {
@@ -51,7 +51,6 @@ export function DesignersSecondary() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
           <span className='text-gg-blue font-semibold'>Powerful reports</span> to answer any question
-          {/* <span className='text-gg-blue font-semibold'>Smart features</span> so you can <span className='text-gg-red font-semibold'>keep on playing</span> */}
           </h2>
           <p className="mt-4 mx-6 text-lg text-gray-600">
             Great games are built by teams who know their users. Go beneath the surface to learn which features are popular, who your users are, and what <span className='text-gg-red font-semibold'>keeps people playing your games</span>.
@@ -66,7 +65,7 @@ export function DesignersSecondary() {
               key={feature.name}
               className="rounded-2xl border border-gray-200 p-8"
             >
-              <feature.icon className="h-16 w-16" />
+              {/* <feature.icon className="h-16 w-16" /> */}
               <h3 className="mt-6 font-semibold text-gray-900 text-lg">
                 {feature.name}
               </h3>

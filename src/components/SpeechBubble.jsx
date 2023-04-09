@@ -1,17 +1,3 @@
-// .speech-bubble:after {
-// 	content: '';
-// 	position: absolute;
-// 	bottom: 0;
-// 	left: 50%;
-// 	width: 0;
-// 	height: 0;
-// 	border: 30px solid transparent;
-// 	border-top-color: #00aabb;
-// 	border-bottom: 0;
-// 	margin-left: -30px;
-// 	margin-bottom: -30px;
-// }
-
 export function SpeechBubble({ children, className, ...props }) {
   return (
     <div className={className} {...props}>

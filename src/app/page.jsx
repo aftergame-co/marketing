@@ -1,7 +1,7 @@
-import { CallToAction } from '@/sections/CallToAction'
-import { HomeHero } from '@/sections/HomeHero'
-import { PrimaryFeatures } from '@/sections/PrimaryFeatures'
-import { SecondaryFeatures } from '@/sections/SecondaryFeatures'
+import { CallToAction } from '@/sections/CallToAction';
+import { HomeHero } from '@/sections/HomeHero';
+import { PrimaryFeatures } from '@/sections/PrimaryFeatures';
+import { SecondaryFeatures } from '@/sections/SecondaryFeatures';
 
 export default function Home() {
   return (

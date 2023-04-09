@@ -9,30 +9,29 @@ import { UserGroupIcon, ScaleIcon, IdentificationIcon, GlobeAmericasIcon, GlobeE
 
 function BackgroundIllustration(props) {
   let id = useId()
-
   return (
     <div {...props}>
-      <svg id="evYwQHs7ENb1" viewBox="0 0 863 596" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+      <svg id="evYwQHs7ENb1" viewBox="0 0 863 596">
         <defs>
           <linearGradient id="evYwQHs7ENb3-stroke" x1="0.000928" y1="0.473777" x2="1.220828" y2="0.473777" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0 0)">
-            <stop id="evYwQHs7ENb3-stroke-0" offset="20%" stop-color="#4966f5" />
-            <stop id="evYwQHs7ENb3-stroke-1" offset="100%" stop-color="rgba(73,102,245,0)" />
+            <stop id="evYwQHs7ENb3-stroke-0" offset="20%" stopColor="#4966f5" />
+            <stop id="evYwQHs7ENb3-stroke-1" offset="100%" stopColor="rgba(73,102,245,0)" />
           </linearGradient>
           <linearGradient id="evYwQHs7ENb5-stroke" x1="0" y1="0.5" x2="1.558074" y2="0.5" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0 0)">
-            <stop id="evYwQHs7ENb5-stroke-0" offset="20%" stop-color="#4966f5" />
-            <stop id="evYwQHs7ENb5-stroke-1" offset="100%" stop-color="rgba(73,102,245,0)" />
+            <stop id="evYwQHs7ENb5-stroke-0" offset="20%" stopColor="#4966f5" />
+            <stop id="evYwQHs7ENb5-stroke-1" offset="100%" stopColor="rgba(73,102,245,0)" />
           </linearGradient>
           <linearGradient id="evYwQHs7ENb7-stroke" x1="0.098175" y1="0.926575" x2="1.449693" y2="0.595145" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0 0)">
-            <stop id="evYwQHs7ENb7-stroke-0" offset="20%" stop-color="#4966f5" />
-            <stop id="evYwQHs7ENb7-stroke-1" offset="100%" stop-color="rgba(73,102,245, 0)" />
+            <stop id="evYwQHs7ENb7-stroke-0" offset="20%" stopColor="#4966f5" />
+            <stop id="evYwQHs7ENb7-stroke-1" offset="100%" stopColor="rgba(73,102,245, 0)" />
           </linearGradient>
         </defs>
-        <path d="M688.92,98.67L17.9777,561.678" transform="matrix(1.053589 0 0 1.053589-18.940969-17.693694)" fill="none" stroke="rgba(212,212,212,0.7)" stroke-width="2" />
-        <path id="evYwQHs7ENb3" d="M688.92,98.67L17.9777,561.678" transform="matrix(1.053589 0 0 1.053589-18.940969-17.693694)" fill="none" stroke="url(#evYwQHs7ENb3-stroke)" stroke-width="2" stroke-dashoffset="200" stroke-dasharray="200" />
-        <path d="M520.569,1.31232L445.146,53.6711c-2.29,1.5899-2.616,3.9317-.787,5.6525L551.773,160.375c1.828,1.719,1.504,4.06-.783,5.65L0.937854,548.381" transform="matrix(1.003398 0 0 1.003398-.94106-.933929)" fill="none" stroke="rgba(212,212,212,0.7)" stroke-width="2" stroke-linecap="round" />
-        <path id="evYwQHs7ENb5" d="M520.569,1.31232L445.146,53.6711c-2.29,1.5899-2.616,3.9317-.787,5.6525L551.773,160.375c1.828,1.719,1.504,4.06-.783,5.65L0.937854,548.381" transform="matrix(1.003398 0 0 1.003398-.94106-.933929)" filter="url(#evYwQHs7ENb5-filter)" fill="none" stroke="url(#evYwQHs7ENb5-stroke)" stroke-width="2" stroke-dashoffset="200" stroke-dasharray="200" />
-        <path d="M841.519,197.923l-95.418,62.355c-2.3,1.597-5.97,2.012-8.844,1.001L605.151,190.721c-2.863-1.007-6.518-.599-8.82.984L9.78607,595.122" transform="matrix(1.004336 0 0 1.004336-1.888989-1.702518)" fill="none" stroke="rgba(212,212,212,0.7)" stroke-width="2" />
-        <path id="evYwQHs7ENb7" d="M841.519,197.923l-95.418,62.355c-2.3,1.597-5.97,2.012-8.844,1.001L605.151,190.721c-2.863-1.007-6.518-.599-8.82.984L9.78607,595.122" transform="matrix(1.004336 0 0 1.004336-1.888989-1.702518)" fill="none" stroke="url(#evYwQHs7ENb7-stroke)" stroke-width="2" stroke-dashoffset="200" stroke-dasharray="200" />
+        <path d="M688.92,98.67L17.9777,561.678" transform="matrix(1.053589 0 0 1.053589-18.940969-17.693694)" fill="none" stroke="rgba(212,212,212,0.7)" strokeWidth="2" />
+        <path id="evYwQHs7ENb3" d="M688.92,98.67L17.9777,561.678" transform="matrix(1.053589 0 0 1.053589-18.940969-17.693694)" fill="none" stroke="url(#evYwQHs7ENb3-stroke)" strokeWidth="2" strokeDashoffset="200" strokeDasharray="200" />
+        <path d="M520.569,1.31232L445.146,53.6711c-2.29,1.5899-2.616,3.9317-.787,5.6525L551.773,160.375c1.828,1.719,1.504,4.06-.783,5.65L0.937854,548.381" transform="matrix(1.003398 0 0 1.003398-.94106-.933929)" fill="none" stroke="rgba(212,212,212,0.7)" strokeWidth="2" strokeLinecap="round" />
+        <path id="evYwQHs7ENb5" d="M520.569,1.31232L445.146,53.6711c-2.29,1.5899-2.616,3.9317-.787,5.6525L551.773,160.375c1.828,1.719,1.504,4.06-.783,5.65L0.937854,548.381" transform="matrix(1.003398 0 0 1.003398-.94106-.933929)" filter="url(#evYwQHs7ENb5-filter)" fill="none" stroke="url(#evYwQHs7ENb5-stroke)" strokeWidth="2" strokeDashoffset="200" strokeDasharray="200" />
+        <path d="M841.519,197.923l-95.418,62.355c-2.3,1.597-5.97,2.012-8.844,1.001L605.151,190.721c-2.863-1.007-6.518-.599-8.82.984L9.78607,595.122" transform="matrix(1.004336 0 0 1.004336-1.888989-1.702518)" fill="none" stroke="rgba(212,212,212,0.7)" strokeWidth="2" />
+        <path id="evYwQHs7ENb7" d="M841.519,197.923l-95.418,62.355c-2.3,1.597-5.97,2.012-8.844,1.001L605.151,190.721c-2.863-1.007-6.518-.599-8.82.984L9.78607,595.122" transform="matrix(1.004336 0 0 1.004336-1.888989-1.702518)" fill="none" stroke="url(#evYwQHs7ENb7-stroke)" strokeWidth="2" strokeDashoffset="200" strokeDasharray="200" />
       </svg>
     </div>
   )
@@ -57,7 +56,7 @@ export function DesignersHero() {
                 type="submit"
                 onClick={() => { }}
                 color='gg'
-                className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red'
+                className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
               >
                 Get in touch
               </Button></a>

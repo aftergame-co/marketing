@@ -38,7 +38,9 @@ module.exports = {
         'gg-blue': 'rgb(46, 78, 222)',
         'gg-blue-faint': 'rgb(237, 237, 252)',
         'gg-red': '#ff3a20',
-        'discord-blurple': '#5865F2'
+        'twitter-blue': '#1D9BF0',
+        'linkedin-blue': '#007EBB',
+        'discord-blurple': '#5865F2',
       }),
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],

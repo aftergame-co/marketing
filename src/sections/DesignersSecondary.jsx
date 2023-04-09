@@ -11,7 +11,7 @@ const features = [
   {
     name: 'Is my game balanced?',
     description:
-      'Scoring breakdowns and relevant data points. Get quantitative data to improve your game.',
+      'Access scoring breakdowns and relevant quantitative data points to improve your game.',
     icon: DeviceOfflineIcon,
   },
   {
@@ -53,7 +53,7 @@ export function DesignersSecondary() {
           <span className='text-gg-blue font-semibold'>Powerful reports</span> to answer any question
           </h2>
           <p className="mt-4 mx-6 text-lg text-gray-600">
-            Great games are built by teams who know their users. Go beneath the surface to learn which features are popular, who your users are, and what <span className='text-gg-red font-semibold'>keeps people playing your games</span>.
+            Great games are built by those who know their players. Go beneath the surface to learn which features are popular, who your users are, and what <span className='text-gg-red font-semibold'>keeps people playing your games</span>.
           </p>
         </div>
         <ul

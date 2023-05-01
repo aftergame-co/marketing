@@ -384,9 +384,9 @@ function AppDemo() {
   )
 }
 
-export function HomeHero() {
+export function HomeHero({ className }) {
   return (
-    <div className="overflow-hidden py-16 sm:py-32 lg:pb-20">
+    <div className={clsx("overflow-hidden py-16 sm:py-32 lg:pb-20", className)}>
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-6">

@@ -73,9 +73,9 @@ export function Footer() {
             <Link href="/privacy" aria-label="Privacy">
               Privacy
             </Link>
-            {/* <Link href="/terms" aria-label="Terms">
+            <Link href="/terms" aria-label="Terms">
               Terms
-            </Link> */}
+            </Link>
           </div>
           <p className="mt-6 text-sm text-gray-600 md:mt-0">
             &copy; {new Date().getFullYear()} Goodgame Data Ltd.

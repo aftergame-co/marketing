@@ -13,10 +13,10 @@ export const metadata = {
     template: '%s | Goodgame Data',
   },
   applicationName: 'Goodgame',
-  description: 'Track the board games, sports, and video games you love on Goodgame to gain meaningful insights and share your gaming journey with friends.',
+  description: 'Record the board games, sports, and video games you love on Goodgame to gain meaningful insights and share your gaming journey with friends.',
   openGraph: {
     title: 'Goodgame Data - Play tracking and statistics, reimagined',
-    description: 'Track the board games, sports, and video games you love on Goodgame to gain meaningful insights and share your gaming journey with friends.',
+    description: 'Record the board games, sports, and video games you love on Goodgame to gain meaningful insights and share your gaming journey with friends.',
     url: 'https://www.goodgamedata.com',
     siteName: 'Goodgame Data',
     images: [

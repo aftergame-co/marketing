@@ -13,8 +13,8 @@ export function NavLinks({scrolled, darkMode}) {
       href: '/',
     },
     {
-      name: 'Board Game Designers',
-      href: '/designers',
+      name: 'Publishers',
+      href: '/publishers',
     },
     // {
     //   name: 'Premium',

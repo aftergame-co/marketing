@@ -43,7 +43,7 @@ export function DesignersHero() {
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-7">
-            <p className='text-xl text-gray-600 mb-4 uppercase'>Board Game Designers</p>
+            <p className='text-xl text-gray-600 mb-4 uppercase'>Publishers</p>
             <h1 className="text-5xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
               <span className='text-gg-blue font-semibold'>Understand</span> how people <br className='hidden md:inline-block' />play <span className='text-gg-red font-semibold'>your games</span>
             </h1>

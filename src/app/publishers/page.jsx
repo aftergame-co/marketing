@@ -4,10 +4,10 @@ import { DesignersPrimary } from '@/sections/DesignersPrimary';
 import { DesignersSecondary } from '@/sections/DesignersSecondary';
 
 export const metadata = {
-  title: 'Game Designers',
+  title: 'Publishers',
 };
 
-export default function Designers() {
+export default function Publishers() {
   return (
     <main className='pt-20'>
       <DesignersHero />

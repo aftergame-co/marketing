@@ -118,8 +118,8 @@ export function Header({darkMode}) {
                               <MobileNavLink href="/">
                                 Home
                               </MobileNavLink>
-                              <MobileNavLink href="/designers">
-                                Board Game Designers
+                              <MobileNavLink href="/publishers">
+                                Publishers
                               </MobileNavLink>
                               {/* <MobileNavLink href="/premium">
                                 Premium

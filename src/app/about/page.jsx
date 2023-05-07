@@ -1,11 +1,22 @@
 import { Container } from '@/components/Container'
 import { CallToAction } from '@/sections/CallToAction'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'About us',
   description: 'Our mission is to organise the world’s game data and make it universally accessible and useful',
 };
+
+
+function LinkedInLogo(props) {
+  return (
+    <svg viewBox="0 0 72 72">
+      <path fill="currentColor" d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"/>
+      <path fill="#FFF" d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"/>
+    </svg>
+  )
+}
 
 export default function About() {
 
@@ -14,22 +25,25 @@ export default function About() {
       image: '/images/team/eric.jpg',
       name: 'Eric Poulin',
       role: 'CEO',
-    },
-    {
-      image: '/images/team/john.jpg',
-      name: 'John Brent',
-      role: 'Head of Operations',
+      linkedIn: 'https://www.linkedin.com/in/eric-poulin-nz',
     },
     {
       image: '/images/team/eli.jpg',
       name: 'Eli Labes',
       role: 'Head of Engineering',
+      linkedIn: 'https://www.linkedin.com/in/eli-labes-39a705164',
     },
     {
-      image: '/images/team/alex.jpg',
-      name: 'Alex Poulin',
-      role: 'Co-founder',
+      image: '/images/team/john.jpg',
+      name: 'John Brent',
+      role: 'Head of Operations',
+      linkedIn: 'https://www.linkedin.com/in/john-brent/',
     },
+    // {
+    //   image: '/images/team/alex.jpg',
+    //   name: 'Alex Poulin',
+    //   role: 'Co-founder',
+    // },
   ]
 
   return (
@@ -55,7 +69,7 @@ export default function About() {
 
             <p className='mt-6'>The scoring breakdown in 7 Wonders, the factions in Root, the scenarios in Betrayal at House on the Hill, and <i>“how do these two expansions work together!?”</i> could all be captured, made available as interesting data points to track and easy scoring. Having games played by friends all show up on their phones in real-time and personalised stats immediately available could be made possible.</p>
 
-            <p className='mt-6'>Partnering with co-founders Eli Labes and Alex Poulin, the team started talking to game players and building what would become <span className='text-gg-red font-bold'>Goodgame</span>.</p>
+            <p className='mt-6'>Partnering with co-founder Eli Labes, the team started talking to game players and building what would become <span className='text-gg-red font-bold'>Goodgame</span>.</p>
             {/* </div> */}
             {/* <div className='lg:col-span-6'>
                   <img src='../images/gg-0.1.png' className='border-2 border-gg-blue rounded-2xl' />
@@ -73,12 +87,12 @@ export default function About() {
           <p className='text-center text-xl text-gray-600'>OUR TEAM</p>
           <ul
             role="list"
-            className="mx-auto mt-10 grid max-w-2xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm md:gap-y-10 lg:max-w-none"
+            className="mx-auto mt-10 grid max-w-2xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm md:gap-y-10 lg:max-w-none"
           >
             {team.map((member) => (
               <li
                 key={member.name}
-                className="rounded-2xl border border-gray-200 p-8 text-center"
+                className="flex flex-col rounded-2xl border border-gray-200 p-8 text-center"
               >
                 <Image
                   src={member.image}
@@ -90,6 +104,14 @@ export default function About() {
                 <h3 className="mt-6 font-semibold text-gray-900">
                   {member.name}, {member.role}
                 </h3>
+                <Link
+                  href={member.linkedIn} 
+                  target='_blank' 
+                  aria-label={member.name + "'s LinkedIn"}
+                  className="flex align-middle self-center w-7 h-7 p-1 mt-2 text-gray-500 hover:text-linkedin-blue"
+                >
+                  <LinkedInLogo />
+                </Link>
               </li>
             ))}
           </ul>

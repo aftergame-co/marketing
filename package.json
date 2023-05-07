@@ -20,7 +20,7 @@
     "clsx": "^1.2.1",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.5.1",
-    "next": "^13.3.0",
+    "next": "^13.4.1",
     "next-recaptcha-v3": "^1.1.4",
     "postcss": "^8.4.21",
     "postcss-focus-visible": "^6.0.4",
@@ -33,7 +33,7 @@
   "devDependencies": {
     "encoding": "^0.1.13",
     "eslint": "8.26.0",
-    "eslint-config-next": "13.2.4",
+    "eslint-config-next": "^13.4.1",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13"
   }

@@ -8,20 +8,20 @@
   animation: evYwQHs7ENb3_s_do 1500ms linear infinite normal forwards;
 }
 @keyframes evYwQHs7ENb3_s_do {
-  0% {stroke-dashoffset: 200}
-  100% {stroke-dashoffset: -200}
+  0% {stroke-dashoffset: 600; }
+  100% {stroke-dashoffset: 200; }
 }
 #evYwQHs7ENb5 {
   animation: evYwQHs7ENb5_s_do 1500ms linear infinite normal forwards;
 }
 @keyframes evYwQHs7ENb5_s_do {
-  0% {stroke-dashoffset: 200}
-  100% {stroke-dashoffset: -200}
+  0% {stroke-dashoffset: 600; }
+  100% {stroke-dashoffset: 200; }
 }
 #evYwQHs7ENb7 {
   animation: evYwQHs7ENb7_s_do 1500ms linear infinite normal forwards;
 }
 @keyframes evYwQHs7ENb7_s_do {
-  0% {stroke-dashoffset: 200}
-  100% {stroke-dashoffset: -200}
+  0% {stroke-dashoffset: 600; }
+  100% {stroke-dashoffset: 200; }
 }

@@ -221,7 +221,7 @@ function Chart({
         height={height}
         fill={`url(#${id}-gradient2)`}
         clipPath={`url(#${id}-clip2)`}
-        opacity="0.5"
+        opacity="0.0"
       />
       <motion.path
         ref={pathRef}
@@ -248,7 +248,7 @@ function Chart({
         height={height}
         fill={`url(#${id}-gradient)`}
         clipPath={`url(#${id}-clip)`}
-        opacity="0.5"
+        opacity="0.0"
       />
       <motion.path
         ref={pathRef}

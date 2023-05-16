@@ -4,7 +4,8 @@ import clsx from 'clsx'
 export function AppStoreLink({ color = 'black' }) {
   return (
     <Link
-      href="#"
+      href="https://apps.apple.com/us/app/goodgame-record-together/id6446225790"
+      target='_blank' 
       aria-label="Download on the App Store"
       className={clsx(
         'rounded-lg transition-colors',
@@ -23,7 +24,8 @@ export function AppStoreLink({ color = 'black' }) {
 export function GooglePlayLink({ color = 'black' }) {
   return (
     <Link
-      href="#"
+      href="https://play.google.com/store/apps/details?id=com.goodgamedata.goodgame#"
+      target='_blank' 
       aria-label="Download on Google Play"
       className={clsx(
         'rounded-lg transition-colors',

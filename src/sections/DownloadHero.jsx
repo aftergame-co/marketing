@@ -386,16 +386,17 @@ export function DownloadHero({ className }) {
             {/* Remember every epic moment and track your gaming journey */}
             Remember <span className='text-gg-blue font-semibold'>every</span><br /><span className='text-gg-red font-semibold'>epic</span> moment
             </h1>
-            <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
-            {/* Unlock the full potential of your gaming passion with our app, where you can easily record, share, and gain valuable insights into the games you love - taking your gameplay to the next level. */}
-            Record the games you love on Goodgame to gain meaningful insights and share your gaming journey with friends.
-            {/* ecord, share, and gain valuable insights into the games you love */}
-            </p>
-
-            <div className="pt-6 pb-16 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4 lg:gap-x-6 justify-center lg:justify-start">
-              <AppStoreLink />
-              <GooglePlayLink />
-            </div>
+            <ol className="list-decimal list-inside mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
+              <li className="ml-6 mb-3">Download the app</li>
+              <div className="pl-12 pb-6 flex flex-wrap gap-x-2 gap-y-2">
+                <AppStoreLink />
+                <GooglePlayLink />
+              </div>
+              <li className="ml-6 mb-3">Create your free account</li>
+              <li className="ml-6 mb-3">Enter the invite code</li>
+              <div className="ml-12 mb-6 py-2 px-4 rounded-md bg-gg-blue-faint inline-block select-all">let-me-in</div>
+              <li className="ml-6 mb-3">Record your first play!</li>
+            </ol>
           </div>
           <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="hidden lg:flex absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />

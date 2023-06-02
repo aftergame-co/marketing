@@ -35,8 +35,8 @@ module.exports = {
       },
       colors: ({ colors }) => ({
         gray: colors.neutral,
-        'gg-blue': 'rgb(46, 78, 222)',
-        'gg-blue-faint': 'rgb(237, 237, 252)',
+        'gg-blue': 'rgb(73, 102, 245)',
+        'gg-blue-faint': 'rgb(222, 224, 255)',
         'gg-red': '#ff3a20',
         'twitter-blue': '#1D9BF0',
         'linkedin-blue': '#007EBB',

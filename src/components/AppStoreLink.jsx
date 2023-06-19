@@ -4,7 +4,7 @@ import clsx from 'clsx'
 export function AppStoreLink({ color = 'black' }) {
   return (
     <Link
-      href="https://apps.apple.com/us/app/goodgame-record-together/id6446225790"
+      href="https://apps.apple.com/us/app/aftergame/id6446225790"
       target='_blank' 
       aria-label="Download on the App Store"
       className={clsx(

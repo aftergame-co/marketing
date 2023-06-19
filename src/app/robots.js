@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.goodgamedata.com/sitemap.xml',
+    sitemap: 'https://www.aftergame.co/sitemap.xml',
   };
 }

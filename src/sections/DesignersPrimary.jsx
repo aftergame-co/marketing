@@ -18,8 +18,8 @@ function Slider() {
   return (
     <ReactBeforeSliderComponent
       className='rounded-2xl overflow-hidden'
-      firstImage={{ imageUrl: '/images/with-gg.png', alt: 'With Goodgame Data' }}
-      secondImage={{ imageUrl: '/images/without-gg.png', alt: 'Without Goodgame Data' }}
+      firstImage={{ imageUrl: '/images/with-ag.png', alt: 'With Aftergame' }}
+      secondImage={{ imageUrl: '/images/without-ag.png', alt: 'Without Aftergame' }}
       currentPercentPosition={sliderPosition}
       delimiterColor='rgb(237, 237, 252)'
       delimiterIconStyles={{
@@ -47,7 +47,7 @@ export function DesignersPrimary() {
             Go beyond sales data
           </h2>
           <p className="mt-2 text-xl text-gray-200">
-            Remove the guesswork when releasing new content for your games. Goodgame Data gives you access to usage of your games like never before.
+            Remove the guesswork when releasing new content for your games. Aftergame gives you access to usage of your games like never before.
           </p>
         </div>
       </Container>

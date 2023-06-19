@@ -133,7 +133,7 @@ export function Header({darkMode}) {
                             </div>
                             {/* <div className="mt-8 flex flex-col gap-4">
                               <Button href="#" className="bg-gg-blue hover:bg-gg-red active:bg-gg-red">
-                                Get Goodgame
+                                Get Aftergame
                               </Button>
                             </div> */}
                           </Popover.Panel>
@@ -144,7 +144,7 @@ export function Header({darkMode}) {
                 )}
               </Popover>
               {/* <Button href="#" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
-                Get Goodgame
+                Get Aftergame
               </Button> */}
             </div>
           </Container>

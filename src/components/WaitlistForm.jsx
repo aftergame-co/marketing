@@ -76,7 +76,7 @@ export function WaitlistForm({label, darkMode}) {
             darkMode ? 'text-white' : 'text-gg-blue',
           )}>
           <EnvelopeIcon className='h-6 w-6 mr-2'/>
-          <p>You’re now on the Goodgame waiting list!</p>
+          <p>You’re now on the Aftergame waiting list!</p>
       </div>}
 
       {!success && <form noValidate={true}>

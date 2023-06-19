@@ -42,7 +42,7 @@ export function Footer() {
         <div className="flex flex-col items-center pt-6 pb-8 md:pt-6 md:pb-6 md:flex-row-reverse md:justify-between">
           <div className='flex gap-1'>
             <Link 
-              href="https://twitter.com/GoodgameData" 
+              href="https://twitter.com/aftergame_co" 
               target='_blank' 
               aria-label="Twitter" 
               className="flex align-middle self-center w-7 h-7 p-1 text-gray-500 hover:text-twitter-blue"
@@ -50,7 +50,7 @@ export function Footer() {
               <TwitterLogo />
             </Link>
             <Link 
-              href="https://www.linkedin.com/company/goodgame-data" 
+              href="https://www.linkedin.com/company/aftergame-co" 
               target='_blank' 
               aria-label="LinkedIn" 
               className="flex align-middle self-center w-7 h-7 p-1 text-gray-500 hover:text-linkedin-blue"
@@ -78,7 +78,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-gray-600 md:mt-0">
-            &copy; {new Date().getFullYear()} Goodgame Data Ltd.
+            &copy; {new Date().getFullYear()} Aftergame Ltd.
           </p>
         </div>
       </Container>

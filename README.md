@@ -1,4 +1,4 @@
-# Goodgame Data Marketing site
+# Aftergame Marketing site
 
 Uses [Tailwind UI](https://tailwindui.com), [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 

@@ -12,7 +12,7 @@ const plans = [
     featured: false,
     price: { Monthly: '$0/month', Annually: '$0' },
     button: {
-      label: 'Get Goodgame',
+      label: 'Get Aftergame',
       href: '#',
     },
     features: [

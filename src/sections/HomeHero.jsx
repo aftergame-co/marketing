@@ -397,7 +397,7 @@ export function HomeHero({ className }) {
             </h1>
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
             {/* Unlock the full potential of your gaming passion with our app, where you can easily record, share, and gain valuable insights into the games you love - taking your gameplay to the next level. */}
-            Record the games you love on Goodgame to gain meaningful insights and share your gaming journey with friends.
+            Record the games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.
             {/* ecord, share, and gain valuable insights into the games you love */}
             </p>
             <div className="pt-6 pb-16 xl:pb-0 lg:w-4/5">

@@ -50,7 +50,7 @@ export default function About() {
     <main className='pt-20'>
       <Container className='py-32 lg:py-40 xl:pt-40 xl:pb-60'>
         <p className='text-center text-xl text-gray-600'>OUR MISSION</p>
-        <h1 className='mt-4 text-center text-3xl lg:text-5xl xl:text-6xl tracking-tight xl:leading-snug lg:leading-snug leading-snug'>To organise the world’s <span className='text-gg-blue font-semibold'>game data</span> and make it <span className='text-gg-red font-semibold'>universally accessible</span> and useful</h1>
+        <h1 className='mt-4 text-center text-3xl lg:text-5xl xl:text-6xl tracking-tight xl:leading-snug lg:leading-snug leading-snug'>To organise the world’s <span className='text-gg-blue font-semibold'>game data</span> <br className='hidden sm:flex' />and <span className='text-gg-red font-semibold'>make it useful</span></h1>
       </Container>
       <section
         id="our-story"
@@ -69,7 +69,7 @@ export default function About() {
 
             <p className='mt-6'>The scoring breakdown in 7 Wonders, the factions in Root, the scenarios in Betrayal at House on the Hill, and <i>“how do these two expansions work together!?”</i> could all be captured, made available as interesting data points to track and easy scoring. Having games played by friends all show up on their phones in real-time and personalised stats immediately available could be made possible.</p>
 
-            <p className='mt-6'>Partnering with co-founder Eli Labes, the team started talking to game players and building what would become <span className='text-gg-red font-bold'>Goodgame</span>.</p>
+            <p className='mt-6'>Partnering with co-founder Eli Labes, the team started talking to game players and building what would become <span className='text-gg-red font-bold'>Aftergame</span>.</p>
             {/* </div> */}
             {/* <div className='lg:col-span-6'>
                   <img src='../images/gg-0.1.png' className='border-2 border-gg-blue rounded-2xl' />

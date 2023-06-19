@@ -29,7 +29,7 @@ const features = [
   {
     name: 'Offline support',
     description:
-      'No internet? No problem! Goodgame works seamlessly online and offline.',
+      'No internet? No problem! Aftergame works seamlessly online and offline.',
     icon: DeviceOfflineIcon,
   },
   {

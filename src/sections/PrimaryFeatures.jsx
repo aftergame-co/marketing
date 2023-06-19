@@ -162,7 +162,7 @@ function StocksScreen({ custom, animated = false }) {
         <div className='relative h-full'>
           <Image
             src='/images/scoresheet.png'
-            alt='A screenshot of the scoresheet interface for Goodgame' 
+            alt='A screenshot of the scoresheet interface for Aftergame' 
             fill
           />
         </div>

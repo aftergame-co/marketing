@@ -17,11 +17,11 @@ export function DesignersContact() {
             Have your say
           </h2>
           <p className="mt-4 text-lg text-white">
-            We want board game designers to tell us what we should build. If Goodgame Data sounds interesting to you, drop us a line!
+            We want board game publishers to tell us what we should build. If Aftergame sounds interesting to you, drop us a line!
           </p>
           <div className="mt-8 flex align-middle justify-center">
             <EnvelopeIcon className='text-white h-10 w-10 mr-2'/>
-            <p className='text-white text-xl font-semibold m-0 p-0 self-center select-all'>designers@goodgamedata.com</p>
+            <p className='text-white text-xl font-semibold m-0 p-0 self-center select-all'>publishers@aftergame.co</p>
           </div>
         </div>
       </Container>

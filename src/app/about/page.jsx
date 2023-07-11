@@ -28,22 +28,23 @@ export default function About() {
       linkedIn: 'https://www.linkedin.com/in/eric-poulin-nz',
     },
     {
+      image: '/images/team/john.jpg',
+      name: 'John Brent',
+      role: 'Head of Operations',
+      linkedIn: 'https://www.linkedin.com/in/john-brent/',
+    },
+    {
       image: '/images/team/eli.jpg',
       name: 'Eli Labes',
       role: 'Head of Engineering',
       linkedIn: 'https://www.linkedin.com/in/eli-labes-39a705164',
     },
     {
-      image: '/images/team/john.jpg',
-      name: 'John Brent',
-      role: 'Head of Operations',
-      linkedIn: 'https://www.linkedin.com/in/john-brent/',
+      image: '/images/team/chalene.jpg',
+      name: 'Chalene Scott',
+      role: 'Head of Community',
+      // linkedIn: 'https://www.linkedin.com/in/john-brent/',
     },
-    // {
-    //   image: '/images/team/alex.jpg',
-    //   name: 'Alex Poulin',
-    //   role: 'Co-founder',
-    // },
   ]
 
   return (
@@ -69,7 +70,7 @@ export default function About() {
 
             <p className='mt-6'>The scoring breakdown in 7 Wonders, the factions in Root, the scenarios in Betrayal at House on the Hill, and <i>“how do these two expansions work together!?”</i> could all be captured, made available as interesting data points to track and easy scoring. Having games played by friends all show up on their phones in real-time and personalised stats immediately available could be made possible.</p>
 
-            <p className='mt-6'>Partnering with co-founder Eli Labes, the team started talking to game players and building what would become <span className='text-gg-red font-bold'>Aftergame</span>.</p>
+            <p className='mt-6'>Partnering with co-founder Eli Labes and then Chalene Scott, the team started talking to game players and building what would become <span className='text-gg-red font-bold'>Aftergame</span>.</p>
             {/* </div> */}
             {/* <div className='lg:col-span-6'>
                   <img src='../images/gg-0.1.png' className='border-2 border-gg-blue rounded-2xl' />
@@ -87,7 +88,7 @@ export default function About() {
           <p className='text-center text-xl text-gray-600'>OUR TEAM</p>
           <ul
             role="list"
-            className="mx-auto mt-10 grid max-w-2xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm md:gap-y-10 lg:max-w-none"
+            className="mx-auto mt-10 grid max-w-2xl grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 text-sm md:gap-y-10 lg:max-w-4xl xl:max-w-none"
           >
             {team.map((member) => (
               <li
@@ -104,14 +105,15 @@ export default function About() {
                 <h3 className="mt-6 font-semibold text-gray-900">
                   {member.name}, {member.role}
                 </h3>
-                <Link
+                {!member.linkedIn && (<span className="h-9 xl:h-3"></span>)}
+                {member.linkedIn && (<Link
                   href={member.linkedIn} 
                   target='_blank' 
                   aria-label={member.name + "'s LinkedIn"}
                   className="flex align-middle self-center w-7 h-7 p-1 mt-2 text-gray-500 hover:text-linkedin-blue"
                 >
                   <LinkedInLogo />
-                </Link>
+                </Link>)}
               </li>
             ))}
           </ul>

@@ -36,14 +36,14 @@ export default function RootLayout({ children }) {
   return (
     <html className="h-full bg-gray-50 antialiased" lang="en">
       <head>
-        <script type="application/ld+json">
+        <Script id="site-meta" type="application/ld+json" >
           {`{
             "@context" : "https://schema.org",
             "@type" : "WebSite",
             "name" : "Aftergame",
             "url" : "https://www.aftergame.co"
           }`}
-        </script>
+        </Script>
         {/* <!-- Google tag (gtag.js) --> */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-C15BKR7SR5"  strategy="afterInteractive"></Script>
         <Script id="google-analytics" strategy="afterInteractive">

@@ -42,6 +42,7 @@ function BackgroundIllustration(props) {
           stroke={`url(#${id}-gradient-1)`}
           strokeLinecap="round"
           strokeWidth="2"
+          suppressHydrationWarning
         />
         <defs>
           <linearGradient
@@ -51,6 +52,7 @@ function BackgroundIllustration(props) {
             x2="1"
             y2="1025"
             gradientUnits="userSpaceOnUse"
+            suppressHydrationWarning
           >
             <stop stopColor="#4966f5" />
             <stop offset="1" stopColor="#4966f5" stopOpacity="0" />
@@ -74,6 +76,7 @@ function BackgroundIllustration(props) {
           stroke={`url(#${id}-gradient-2)`}
           strokeLinecap="round"
           strokeWidth="2"
+          suppressHydrationWarning
         />
         <defs>
           <linearGradient
@@ -83,6 +86,7 @@ function BackgroundIllustration(props) {
             x2="913"
             y2="913"
             gradientUnits="userSpaceOnUse"
+            suppressHydrationWarning
           >
             <stop stopColor="#ff3a20" />
             <stop offset="1" stopColor="#ff3a20" stopOpacity="0" />
@@ -197,10 +201,10 @@ function Chart({
       {...props}
     >
       <defs>
-        <clipPath id={`${id}-clip`}>
+        <clipPath id={`${id}-clip`} suppressHydrationWarning>
           <path d={`${path} V ${height + paddingY} H ${paddingX} Z`} />
         </clipPath>
-        <clipPath id={`${id}-clip2`}>
+        <clipPath id={`${id}-clip2`} suppressHydrationWarning>
           <path d={`${path2} V ${height + paddingY} H ${paddingX} Z`} />
         </clipPath>
       </defs>
@@ -222,6 +226,7 @@ function Chart({
         fill={`url(#${id}-gradient2)`}
         clipPath={`url(#${id}-clip2)`}
         opacity="0.0"
+        suppressHydrationWarning
       />
       <motion.path
         ref={pathRef}
@@ -249,6 +254,7 @@ function Chart({
         fill={`url(#${id}-gradient)`}
         clipPath={`url(#${id}-clip)`}
         opacity="0.0"
+        suppressHydrationWarning
       />
       <motion.path
         ref={pathRef}

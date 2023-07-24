@@ -6,22 +6,23 @@ import { Footer } from '@/sections/Footer';
 import { Header } from '@/sections/Header';
 import Providers from '../utils/providers';
 
-
 export const metadata = {
   title: {
-    default: 'Aftergame - Play tracking and statistics, reimagined',
+    default: 'Aftergame | Play tracking and statistics, reimagined',
     template: '%s | Aftergame',
   },
   applicationName: 'Aftergame',
   description: 'Record the board games, sports, and video games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.',
+  keywords: ['board game', 'boardgames', 'boardgame', 'board', 'games', 'play logging', 'statistics', 'leaderboard'],
   openGraph: {
-    title: 'Aftergame - Play tracking and statistics, reimagined',
+    title: 'Aftergame | Play tracking and statistics, reimagined',
     description: 'Record the board games, sports, and video games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.',
     url: 'https://www.aftergame.co',
     siteName: 'Aftergame',
     images: [
       {
         url: 'https://www.aftergame.co/_next/image?url=/images/ag-thumbnail.png&w=1200&q=75',
+        alt: 'Aftergame | Play tracking and statistics, reimagined',
         width: 1200,
         height: 630,
       },
@@ -35,6 +36,14 @@ export default function RootLayout({ children }) {
   return (
     <html className="h-full bg-gray-50 antialiased" lang="en">
       <head>
+        <script type="application/ld+json">
+          {`{
+            "@context" : "https://schema.org",
+            "@type" : "WebSite",
+            "name" : "Aftergame",
+            "url" : "https://www.aftergame.co"
+          }`}
+        </script>
         {/* <!-- Google tag (gtag.js) --> */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-C15BKR7SR5"  strategy="afterInteractive"></Script>
         <Script id="google-analytics" strategy="afterInteractive">

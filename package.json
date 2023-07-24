@@ -20,7 +20,7 @@
     "clsx": "^1.2.1",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.5.1",
-    "next": "^13.4.1",
+    "next": "^13.4.12",
     "next-recaptcha-v3": "^1.1.4",
     "postcss": "^8.4.21",
     "postcss-focus-visible": "^6.0.4",

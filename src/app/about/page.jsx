@@ -43,7 +43,7 @@ export default function About() {
       image: '/images/team/chalene.jpg',
       name: 'Chalene Scott',
       role: 'Head of Community',
-      // linkedIn: 'https://www.linkedin.com/in/john-brent/',
+      linkedIn: 'https://www.linkedin.com/in/chalene-scott-5571a879/',
     },
   ]
 
@@ -93,16 +93,16 @@ export default function About() {
             {team.map((member) => (
               <li
                 key={member.name}
-                className="flex flex-col rounded-2xl border border-gray-200 p-8 text-center"
+                className="flex flex-col rounded-2xl border border-gray-200 p-4 text-center"
               >
                 <Image
                   src={member.image}
                   alt={'Team member: ' + member.name}
                   width={200}
                   height={200}
-                  className='rounded-full m-auto'
+                  className='rounded-full m-auto p-4'
                 />
-                <h3 className="mt-6 font-semibold text-gray-900">
+                <h3 className="mt-2 font-semibold text-gray-900">
                   {member.name}, {member.role}
                 </h3>
                 {!member.linkedIn && (<span className="h-9 xl:h-3"></span>)}

@@ -32,18 +32,18 @@ export const metadata = {
   },
 };
 
+const structuredData = {
+  "@context" : "https://schema.org",
+  "@type" : "WebSite",
+  "name" : "Aftergame",
+  "url" : "https://www.aftergame.co"
+};
+
 export default function RootLayout({ children }) {
   return (
     <html className="h-full bg-gray-50 antialiased" lang="en">
       <head>
-        <Script id="site-meta" type="application/ld+json" >
-          {`{
-            "@context" : "https://schema.org",
-            "@type" : "WebSite",
-            "name" : "Aftergame",
-            "url" : "https://www.aftergame.co"
-          }`}
-        </Script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         {/* <!-- Google tag (gtag.js) --> */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-C15BKR7SR5"  strategy="afterInteractive"></Script>
         <Script id="google-analytics" strategy="afterInteractive">

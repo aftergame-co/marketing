@@ -34,16 +34,16 @@ export default function About() {
       linkedIn: 'https://www.linkedin.com/in/john-brent/',
     },
     {
-      image: '/images/team/eli.jpg',
-      name: 'Eli Labes',
-      role: 'Head of Engineering',
-      linkedIn: 'https://www.linkedin.com/in/eli-labes-39a705164',
-    },
-    {
       image: '/images/team/chalene.jpg',
       name: 'Chalene Scott',
       role: 'Head of Community',
       linkedIn: 'https://www.linkedin.com/in/chalene-scott-5571a879/',
+    },
+    {
+      image: '/images/team/eli.jpg',
+      name: 'Eli Labes',
+      role: 'Technical Advisor',
+      linkedIn: 'https://www.linkedin.com/in/eli-labes-39a705164',
     },
   ]
 

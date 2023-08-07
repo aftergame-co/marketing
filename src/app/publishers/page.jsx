@@ -5,6 +5,9 @@ import { DesignersSecondary } from '@/sections/DesignersSecondary';
 
 export const metadata = {
   title: 'Publishers',
+  alternates: {
+    canonical: '/publishers'
+  },
 };
 
 export default function Publishers() {

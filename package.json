@@ -3,9 +3,8 @@
   "version": "0.3.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "start:dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "lint": "next lint"
   },
   "browserslist": "defaults, not ie <= 11",

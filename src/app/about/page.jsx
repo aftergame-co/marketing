@@ -5,7 +5,10 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'About us',
-  description: 'Our mission is to organise the world’s game data and make it universally accessible and useful',
+  description: 'Our mission is to organise the world’s game data and make it useful',
+  alternates: {
+    canonical: '/about'
+  },
 };
 
 

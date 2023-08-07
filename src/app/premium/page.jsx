@@ -1,6 +1,9 @@
 
 export const metadata = {
   title: 'Premium',
+  alternates: {
+    canonical: '/premium'
+  },
 };
 
 export default function Premium() {

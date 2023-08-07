@@ -2,6 +2,9 @@ import { DownloadHero } from '@/sections/DownloadHero';
 
 export const metadata = {
   title: 'Download Aftergame',
+  alternates: {
+    canonical: '/download'
+  },
 };
 
 export default function Download() {

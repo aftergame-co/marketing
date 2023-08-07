@@ -2,6 +2,9 @@ import { HomeHero } from '@/sections/HomeHero';
 
 export const metadata = {
   title: 'Join the waitlist',
+  alternates: {
+    canonical: '/waitlist'
+  },
 };
 
 export default function Waitlist() {

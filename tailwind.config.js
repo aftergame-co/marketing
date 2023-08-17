@@ -39,6 +39,7 @@ module.exports = {
         'gg-blue-faint': 'rgb(222, 224, 255)',
         'gg-red': '#ff3a20',
         'twitter-blue': '#1D9BF0',
+        'facebook-blue': '#4267B2',
         'linkedin-blue': '#007EBB',
         'discord-blurple': '#5865F2',
       }),

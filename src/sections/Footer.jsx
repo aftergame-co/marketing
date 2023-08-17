@@ -5,8 +5,17 @@ import { Logo } from '@/components/Logo'
 
 function TwitterLogo(props) {
   return (
-    <svg  viewBox="0 0 248 204">
+    <svg viewBox="0 0 248 204">
       <path fill="currentColor" d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"/>
+    </svg>
+  )
+}
+
+function FacebookLogo(props) {
+  return (
+    <svg viewBox="0 0 40 40">
+      <path fill="currentColor" d="M16.7,39.8C7.2,38.1,0,29.9,0,20C0,9,9,0,20,0s20,9,20,20c0,9.9-7.2,18.1-16.7,19.8l-1.1-0.9h-4.4L16.7,39.8z" />
+      <path fill="#FFF" d="M27.8,25.6l0.9-5.6h-5.3v-3.9c0-1.6,0.6-2.8,3-2.8h2.6V8.2c-1.4-0.2-3-0.4-4.4-0.4c-4.6,0-7.8,2.8-7.8,7.8V20h-5v5.6h5v14.1c1.1,0.2,2.2,0.3,3.3,0.3c1.1,0,2.2-0.1,3.3-0.3V25.6H27.8z" />
     </svg>
   )
 }
@@ -40,20 +49,28 @@ export function Footer() {
           </div>
         </div>*/}
         <div className="flex flex-col items-center pt-6 pb-8 md:pt-6 md:pb-6 md:flex-row-reverse md:justify-between">
-          <div className='flex gap-1'>
-            <Link 
+          <div className='flex gap-1.5'>
+            {/* <Link 
               href="https://twitter.com/aftergame_co" 
               target='_blank' 
               aria-label="Twitter" 
               className="flex align-middle self-center w-7 h-7 p-1 text-gray-500 hover:text-twitter-blue"
             >
               <TwitterLogo />
+            </Link> */}
+            <Link 
+              href="https://www.facebook.com/Aftergame.co" 
+              target='_blank' 
+              aria-label="Facebook" 
+              className="flex align-middle self-center w-8 h-8 p-1 text-gray-500 hover:text-facebook-blue"
+            >
+              <FacebookLogo />
             </Link>
             <Link 
               href="https://www.linkedin.com/company/aftergame-co" 
               target='_blank' 
               aria-label="LinkedIn" 
-              className="flex align-middle self-center w-7 h-7 p-1 text-gray-500 hover:text-linkedin-blue"
+              className="flex align-middle self-center w-8 h-8 p-1 text-gray-500 hover:text-linkedin-blue"
             >
               <LinkedInLogo />
             </Link>
@@ -61,7 +78,7 @@ export function Footer() {
               href="https://discord.gg/XMYxvJ3ge2" 
               target='_blank' 
               aria-label="Discord" 
-              className="flex align-middle self-center w-8 h-8 p-1 text-gray-500 hover:text-discord-blurple"
+              className="flex align-middle self-center w-8 h-8 p-0.5 ml-0.5 text-gray-500 hover:text-discord-blurple"
             >
               <DiscordLogo />
             </Link>

@@ -101,8 +101,8 @@ function InviteScreen({ custom, animated = false }) {
         <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue !rounded-4xl !text-sm !px-6' disabled>Save</Button>
       </MotionAppScreenHeader>
         <div className='absolute top-14 left-0 right-0 bg-white mt-4 bottom-0'></div>
-        <div className='absolute top-0 left-0 right-0 bottom-0 bg-gray-900 opacity-25'></div>
-      <MotionAppScreenBody className='bg-transparent z-10' {...(animated ? { ...bodyAnimation, custom } : {})}>
+        <div className='absolute -top-8 left-0 right-0 bottom-0 bg-gray-900 opacity-25'></div>
+      <MotionAppScreenBody className='!bg-transparent z-10' {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className="mt-6 px-4 pt-3 pb-6 bg-white rounded-t-3xl h-full">
           <div className='m-auto bg-gray-300 w-8 h-1 rounded-xl mb-3'></div>
           <div className='h-full'>

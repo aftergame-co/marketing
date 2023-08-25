@@ -2,6 +2,7 @@ import { Container } from '@/components/Container';
 import Link from 'next/link';
 import { EnvelopeIcon } from '@heroicons/react/24/outline';
 import { TwitterLogo, FacebookLogo, LinkedInLogo, DiscordLogo } from '@/components/SocialLogos';
+import { CallToAction } from '@/sections/CallToAction';
 
 export const metadata = {
   title: 'Contact',
@@ -42,7 +43,7 @@ export default function Contact() {
               Join us in our community
             </h2>
 
-            <div className='mt-4 flex gap-2'>
+            <div className='mt-4 flex flex-wrap gap-2'>
               <Link 
                 href="https://www.facebook.com/Aftergame.co" 
                 target='_blank' 
@@ -85,6 +86,7 @@ export default function Contact() {
         </div>
       </Container>
       </section>
+      <CallToAction />
     </main>
   )
 }

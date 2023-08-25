@@ -1,6 +1,7 @@
 import { Container } from '@/components/Container';
 import Link from 'next/link';
 import { FaqSection } from '@/sections/FaqSection';
+import { CallToAction } from '@/sections/CallToAction';
 
 export const metadata = {
   title: 'FAQ',
@@ -155,6 +156,7 @@ export default function Faq() {
       {questionContent.map((section, sectionIndex) => (
         <FaqSection key={sectionIndex} content={section} />
       ))}
+      <CallToAction />
     </main>
   )
 }

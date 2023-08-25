@@ -1,6 +1,7 @@
 import { Container } from '@/components/Container';
 import Link from 'next/link';
 import { Button } from '@/components/Button';
+import { CallToAction } from '@/sections/CallToAction';
 
 export const metadata = {
   title: 'Premium',
@@ -11,9 +12,9 @@ export const metadata = {
 
 export default function Premium() {
   return (
-    <main className='py-40'>
+    <main className='pt-40'>
     <Container>
-      <div className="mx-auto max-w-2xl text-center">
+      <div className="mx-auto max-w-2xl text-center pb-40">
         <h1 className="text-5xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
           Premium
         </h1>
@@ -38,6 +39,7 @@ export default function Premium() {
         </Link>
       </div>
     </Container>
+    <CallToAction />
     </main>
   )
 }

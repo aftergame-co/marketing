@@ -4,6 +4,7 @@ import { useId, useRef, useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
+import Link from 'next/link';
 import { SpeechBubble } from '@/components/SpeechBubble';
 import { UserGroupIcon, ScaleIcon, IdentificationIcon, GlobeAmericasIcon, GlobeEuropeAfricaIcon, GlobeAsiaAustraliaIcon } from '@heroicons/react/24/outline';
 
@@ -52,14 +53,15 @@ export function DesignersHero() {
             </p>
             <p className="pt-6 lg:w-4/5 text-sm font-semibold">Want to be part of the feedback process?</p>
             <div className="pt-2 pb-16 xl:pb-0 lg:w-4/5">
-              <a href='#contact'><Button
-                type="submit"
-                onClick={() => { }}
-                color='gg'
-                className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
-              >
-                Get in touch
-              </Button></a>
+              <Link href='#contact'>
+                <Button
+                  type="submit"
+                  color='gg'
+                  className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
+                >
+                  Get in touch
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-5">

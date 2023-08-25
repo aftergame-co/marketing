@@ -1,4 +1,5 @@
-import { HomeHero } from '@/sections/HomeHero';
+import { Container } from '@/components/Container';
+import { WaitlistForm } from '@/components/WaitlistForm';
 
 export const metadata = {
   title: 'Join the waitlist',
@@ -9,8 +10,12 @@ export const metadata = {
 
 export default function Waitlist() {
   return (
-    <main className='pt-20'>
-      <HomeHero className="!pb-40" />
+    <main className='py-52'>
+      <Container>
+        <div className="pt-6 pb-16 m-auto lg:w-3/5">
+          <WaitlistForm label="Sign up for early access" />
+        </div>
+      </Container>
     </main>
   )
 }

@@ -1,13 +1,12 @@
-import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
-import { CircleBackground } from '@/components/CircleBackground'
-import { Container } from '@/components/Container'
-import { WaitlistForm } from '@/components/WaitlistForm'
+import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink';
+import { CircleBackground } from '@/components/CircleBackground';
+import { Container } from '@/components/Container';
 
 export function CallToAction() {
   return (
     <section
       id="call-to-action"
-      className="relative overflow-hidden bg-gg-red py-20 sm:py-28 lg:py-44"
+      className="relative overflow-hidden bg-gg-red py-16"
     >
       <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
         <CircleBackground color="#fff" className="animate-spin-slower bg-gray-900/25 rounded-full" />
@@ -15,18 +14,14 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            {/* Record your first play today */}
-            Be the first in line
+            Ready to see who wins?
           </h2>
           <p className="mt-4 text-lg text-white">
-          Aftergame is getting ready to launch. Get early insights and app access by signing up now. 
+            Download the free Aftergame app to start sharing your gaming journey with friends. 
           </p>
-          {/* <div className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-4 lg:gap-x-6">
+          <div className="mt-8 flex flex-wrap sm:justify-center gap-x-4 gap-y-4">
             <AppStoreLink />
             <GooglePlayLink />
-          </div> */}
-          <div className="mt-8">
-            <WaitlistForm label="" darkMode={true} />
           </div>
         </div>
       </Container>

@@ -4,7 +4,6 @@ import 'focus-visible';
 import Script from 'next/script';
 import { Footer } from '@/sections/Footer';
 import { Header } from '@/sections/Header';
-import Providers from '../utils/providers';
 
 export const metadata = {
   title: {
@@ -62,7 +61,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className="flex flex-col">
         <Header />
-        <Providers>{children}</Providers>
+        {/* <Providers>{children}</Providers> */}
+        {children}
         <Footer />
         {/* <!-- Start of HubSpot Embed Code --> */}
           {/* <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/23499985.js"></script> */}

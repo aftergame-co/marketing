@@ -8,6 +8,7 @@ import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import clsx from 'clsx'
 import { useEffect, useState } from 'react'
+import { Button } from '@/components/Button';
 
 function MenuIcon(props) {
   return (
@@ -64,7 +65,7 @@ export function Header({darkMode}) {
   }, []);
 
   return (
-      <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', scrolled ? 'shadow-lg  bg-white py-4 lg:py-2' : 'py-4')}>
+      <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', scrolled ? 'shadow-lg  bg-white py-4 lg:py-3' : 'py-4')}>
         <nav>
           <Container className="relative z-50 flex justify-between">
             <div className="relative z-10 flex items-center gap-16 -m-2">
@@ -118,24 +119,27 @@ export function Header({darkMode}) {
                               <MobileNavLink href="/">
                                 Home
                               </MobileNavLink>
+                              {/* <MobileNavLink href="/premium">
+                                Why Aftergame?
+                              </MobileNavLink> */}
+                              <MobileNavLink href="/premium">
+                                Premium
+                              </MobileNavLink>
                               <MobileNavLink href="/publishers">
                                 Publishers
                               </MobileNavLink>
-                              {/* <MobileNavLink href="/premium">
-                                Premium
-                              </MobileNavLink>
-                              <MobileNavLink href="/blog">
+                              {/* <MobileNavLink href="/blog">
                                 Blog
                               </MobileNavLink> */}
                               <MobileNavLink href="/about">
                                 About
                               </MobileNavLink>
                             </div>
-                            {/* <div className="mt-8 flex flex-col gap-4">
-                              <Button href="#" className="bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+                            <div className="mt-8 flex flex-col gap-4">
+                              <Button href="/download" className="bg-gg-blue hover:bg-gg-red active:bg-gg-red">
                                 Get Aftergame
                               </Button>
-                            </div> */}
+                            </div>
                           </Popover.Panel>
                         </>
                       )}
@@ -143,9 +147,9 @@ export function Header({darkMode}) {
                   </>
                 )}
               </Popover>
-              {/* <Button href="#" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+              <Button href="/download" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
                 Get Aftergame
-              </Button> */}
+              </Button>
             </div>
           </Container>
         </nav>

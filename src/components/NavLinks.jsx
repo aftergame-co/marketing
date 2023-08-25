@@ -12,20 +12,24 @@ export function NavLinks({scrolled, darkMode}) {
       name: 'Home',
       href: '/',
     },
+    // {
+    //   name: 'Why Aftergame?',
+    //   href: '/why-aftergame',
+    // },
+    {
+      name: 'Premium',
+      href: '/premium',
+    },
     {
       name: 'Publishers',
       href: '/publishers',
     },
     // {
-    //   name: 'Premium',
-    //   href: '/premium',
-    // },
-    // {
       // name: 'Blog',
       // href: '/blog',
     // },
     {
-      name: 'About us',
+      name: 'About',
       href: '/about',
       // menu: [
       //   {

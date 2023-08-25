@@ -1,6 +1,6 @@
 export default async function sitemap() {
 
-  const routes = ['', '/publishers', '/about', '/privacy', '/terms', '/waitlist'].map((route) => ({
+  const routes = ['', '/publishers', '/premium', '/about', '/privacy', '/terms', '/download', '/contact', '/faq', '/releases'].map((route) => ({
     url: `https://www.aftergame.co${route}`,
     lastModified: new Date().toISOString(),
   }));

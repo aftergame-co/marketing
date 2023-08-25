@@ -33,7 +33,7 @@ const questionContent =
           answer:
             (<>
               We put you in control of your data. You have visibility controls for your profile, game collection, play history, and friends, so that you choose who sees your information. 
-              <br /><br />We work with community organiser, game publishers and designers. To help enable a better playing experience through better board game design, or game availability, Aftergame provides aggregate information relevant only to the specific games played. There is never any identifiable information shared unless you specify in your visibility settings.
+              <br /><br />We work with community organisers, game publishers and designers. To help enable a better playing experience through better board game design, or game availability, Aftergame provides aggregate information relevant only to the specific games played. There is never any identifiable information shared unless you specify in your visibility settings.
             </>),
         },
         {
@@ -41,7 +41,7 @@ const questionContent =
           answer:
             (<>
               We offer Aftergame for free and with no ads. This is something that our team are proud of and committed to continue. We love board games and are happy to be creating tools to help people have fun playing board games.
-              <br /><br />However we need to keep the lights on. We intend to offer a premium plan which will offer additional features and insights for players. We are also working with community organiser, game publishers and designers to provide products and services which enable better game play.
+              <br /><br />However we need to keep the lights on. We intend to offer a premium plan which will offer additional features and insights for players. We are also working with community organisers, game publishers and designers to provide products and services which enable better game play.
             </>),
         },
         {
@@ -65,14 +65,14 @@ const questionContent =
           question: 'How do I link a play with my friend’s account?',
           answer:
             (<>
-              The true power of Aftergame unlocks when you have a shared record with the people you play with. To connect someone to a player in your app, simple click on the player and press the “Send invite” button. This will give you a link to share which when they click on it, will get them all set up and connected. You can now link them to future plays and they will instantly appear on their phone!
+              The true power of Aftergame unlocks when you have a shared record with the people you play with. To connect someone to a player in your app, simply click on the player and press the “Send invite” button. This will give you a link to share which when they click on it, will get them all set up and connected. You can now link them to future plays and those plays will instantly appear on their phone!
             </>),
         },
         {
           question: 'How can I import my existing collection and play history?',
           answer:
             (<>
-              Like you, we were tracking our collection and plays before we built Aftergame. So we know the importance of keeping your play history when switching to a new app. To make the process as easy as possible we have built an intuitive import process which allows you to import from multiple sources (currently from BoardGameGeek, with BG Stats and spreadsheet uploads coming soon).
+              Like you, we were tracking our collection and plays before we built Aftergame, so we know the importance of keeping your play history when switching to a new app. To make the process as easy as possible we have built an intuitive import process which allows you to import from multiple sources (currently from BoardGameGeek, with BG Stats and spreadsheet uploads coming soon).
               <br /><br />You can access imports from within the app under the “Profile” tab and then following the “Import” link. Here you will be directed where to import from, with easy steps on what to do. You can import multiple times from the same source, this will update new records without creating any duplicates.
             </>),
         },

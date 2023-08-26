@@ -25,7 +25,7 @@ const questionContent =
           answer:
             (<>
               Having an account on Aftergame enables our core functionality (having a shared record, inviting people to events, planning games, etc). To ensure that you should have access to the data, we need to authenticate you with a user account.
-              <br /><br />We may explore ways to not require an account for a more browsing / solo recording use-case in the future, but at this stage we feel to get value, you need an account.
+              <br /><br />We may explore ways to not require an account for a more browsing / solo recording use-case in the future, but at this stage we believe that an account is necessary to make sure we can deliver the best value to our users.
             </>),
         },
         {
@@ -65,7 +65,7 @@ const questionContent =
           question: 'How do I link a play with my friend’s account?',
           answer:
             (<>
-              The true power of Aftergame unlocks when you have a shared record with the people you play with. To connect someone to a player in your app, simply click on the player and press the “Send invite” button. This will give you a link to share which when they click on it, will get them all set up and connected. You can now link them to future plays and those plays will instantly appear on their phone!
+              The true power of Aftergame unlocks when you have a shared record with the people you play with. To connect someone to a player in your app, simply click on the player and press the “Send invite” button. This will provide you with a link to share with them. When they click on it, they will be set up and connected. You can now link them to future plays and those plays will instantly appear on their phone!
             </>),
         },
         {
@@ -73,7 +73,7 @@ const questionContent =
           answer:
             (<>
               Like you, we were tracking our collection and plays before we built Aftergame, so we know the importance of keeping your play history when switching to a new app. To make the process as easy as possible we have built an intuitive import process which allows you to import from multiple sources (currently from BoardGameGeek, with BG Stats and spreadsheet uploads coming soon).
-              <br /><br />You can access imports from within the app under the “Profile” tab and then following the “Import” link. Here you will be directed where to import from, with easy steps on what to do. You can import multiple times from the same source, this will update new records without creating any duplicates.
+              <br /><br />You can access imports from within the app under the “Profile” tab and then following the “Import” link. Here you will be directed to the sources you can import from, with easy steps on what to do. You can import multiple times from the same source, this will update new records without creating any duplicates.
             </>),
         },
         {
@@ -81,7 +81,7 @@ const questionContent =
           answer:
             (<>
               We are a small team which has required that we focus our time and resources. The main use of our product will generally be away from a computer, so to provide the most value we have prioritised a mobile app available on both iOS and Android.
-              <br /><br />We intend on launching a dedicated Aftergame web app in the future. To help with this, we have built our product in a way where much of our codebase can be shared with a future website.
+              <br /><br />We intend to launch a dedicated Aftergame web app in the future. To help with this, we have built our product in a way where much of our codebase can be shared with a future website.
             </>),
         },
         {
@@ -125,7 +125,7 @@ const questionContent =
           question: 'How can I remove a game that I published?',
           answer:
             (<>
-              To ensure the best player experience, we strive to have as many games listed in our library as possible. We assume that game publishers generally are happy for their game image and information to be shown as long as it is correct (free marketing!).
+              To ensure the best player experience, we strive to have as many games listed in our library as possible. We assume that game publishers are generally happy for their game image and information to be shown as long as it is correct (free marketing!).
               <br /><br />However, if you are a publisher or rights holder of a game found in our library and you do not wish for it to be displayed on our product, please send an email to <Link href="mailto:publishers@aftergame.co" className="text-gg-blue font-medium hover:underline">publishers@aftergame.co</Link> with proof of ownership and we will remove any relevant information as soon as possible.
             </>),
         },

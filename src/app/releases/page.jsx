@@ -12,6 +12,24 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.4.0",
+    versionNumber: 10,
+    date: "August 30, 2023",
+    blurb:
+      "Add friends, get notified of new plays and the ability to import from BGG all features in this massive update.",
+    features: [
+      `Stay connected with friends! We now allow you to connect with fellow players.`,
+      `Keep up-to-date with a new notifications section: friend requests and new plays you've been added to will show up here.`,
+      `There's a new import section where you can bring your collection and play history from BoardGameGeek and more coming soon.`,
+      `Invite codes are no longer required to access Aftergame!`,
+    ],
+    fixes: [
+      `We now show two lines for long game titles.`,
+      `Fixed an issue searching for a game when logging a play.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.3.4",
     versionNumber: 9,
     date: "August 17, 2023",

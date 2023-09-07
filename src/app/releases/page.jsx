@@ -12,6 +12,23 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.4.1",
+    versionNumber: 11,
+    date: "September 8, 2023",
+    blurb:
+      "Set the location of where you played a game and it's now much easier to invite your friends to join Aftergame.",
+    features: [
+      `You can now add the location when logging a play, for now just a named location, but adding to a map is coming soon.`,
+      `We have added a way to invite all your friends with a single link which will connect them to you.`,
+    ],
+    fixes: [
+      `Fixed an issue with the accept friend button not showing any label (iOS only).`,
+      `Pressing / swiping back when a bottom sheet is open closes it (Android only).`,
+      `Fixed issues with play history for when someone in the play log deleted their account.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.4.0",
     versionNumber: 10,
     date: "August 30, 2023",

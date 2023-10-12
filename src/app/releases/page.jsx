@@ -12,6 +12,60 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.6.0",
+    versionNumber: 14,
+    date: "October 13, 2023",
+    blurb:
+      "Select the role you played as, properly track cooperative games, and see the games you played at specific locations now available!",
+    features: [
+      `You can now select the role you played as with pre-built lists supported for over 300 games!`,
+      `We now support cooperative games, and give you the ability to set when there was a draw or no winners.`,
+      `There are new location pages where you can see the most recent plays at that location.`,
+      `Ability to edit and delete locations.`,
+    ],
+    fixes: [
+      `Fixed the games library sorting, it is now alphabetical order.`,
+      `Fixed a bug where clicking on certain notifications could cause the app to crash.`,
+      `Various other fixes and usability improvements.`,
+    ],
+  },
+  {
+    version: "0.5.0",
+    versionNumber: 13,
+    date: "October 4, 2023",
+    blurb:
+      "Plan your next game on Aftergame!\n\nPlay with friends or find people to join in your favourite games in the Events tab.",
+    features: [
+      `The new 'Plan a game' feature allows you to select the game you want to play, set when and where, and invite others to join in.`,
+      `The 'Events' tab allows you to browse events and games being played, joining those that interest you.`,
+      `Log a play and view scores directly from the event page.`,
+      `Add events to your calendar so you never miss out.`,
+    ],
+    fixes: [
+      `The 'Players' tab has been moved to under the 'Profile' tab.`,
+      `Greatly improved the speed of loading games and plays.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "0.4.2",
+    versionNumber: 12,
+    date: "September 20, 2023",
+    blurb:
+      "Update your name and profile photo, new profile pages with handy shortcuts, and the ability to manage players.",
+    features: [
+      `You can now update or remove your profile photo, as well as editing your name, username, and a new 'bio'.`,
+      `New profile pages with a way to quickly log a play with a friend among many other improvements.`,
+      `You can now delete a player or edit their name (only if they are not connected to a user account).`,
+      `Added the ability to cancel a friend request.`,
+    ],
+    fixes: [
+      `Fixed issues with deleting your user account.`,
+      `We now handle when you accidentally click on your own invite link.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.4.1",
     versionNumber: 11,
     date: "September 8, 2023",

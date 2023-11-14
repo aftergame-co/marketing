@@ -36,7 +36,7 @@ export default function About() {
     {
       image: '/images/team/eli.jpg',
       name: 'Eli Labes',
-      role: 'Technical Advisor',
+      role: 'Head of Engineering',
       linkedIn: 'https://www.linkedin.com/in/eli-labes-39a705164',
     },
   ]
@@ -87,7 +87,7 @@ export default function About() {
             {team.map((member) => (
               <li
                 key={member.name}
-                className="flex flex-col rounded-2xl border border-gray-200 p-4 text-center"
+                className="flex flex-col rounded-2xl p-4 text-center bg-white"
               >
                 <Image
                   src={member.image}

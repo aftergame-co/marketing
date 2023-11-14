@@ -12,6 +12,23 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.6.3",
+    versionNumber: 15,
+    date: "November 12, 2023",
+    blurb:
+      "Coordinate for events by chatting with other attendees, better game library management, and easier player search.",
+    features: [
+      `Event discussions have been added to make it easier to plan a game or event.`,
+      `We have created two new default collection lists to auto-track games you have played as well as games you want to play.`,
+      `Ability to hide or show expansions in your games collection (hidden by default).`,
+      `See the counts of the number of games in each list.`,
+    ],
+    fixes: [
+      `The app should load faster when showing any pages you've viewed in the past.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.6.0",
     versionNumber: 14,
     date: "October 13, 2023",

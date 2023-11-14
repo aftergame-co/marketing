@@ -4,7 +4,7 @@ import { DesignersPrimary } from '@/sections/DesignersPrimary';
 import { DesignersSecondary } from '@/sections/DesignersSecondary';
 
 export const metadata = {
-  title: 'Publishers',
+  title: 'Publishers use Aftergame to understand and reach players globally',
   alternates: {
     canonical: '/publishers'
   },

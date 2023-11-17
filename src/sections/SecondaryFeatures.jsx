@@ -63,7 +63,7 @@ export function SecondaryFeatures() {
           {features.map((feature) => (
             <li
               key={feature.name}
-              className="rounded-2xl border border-gray-200 p-8"
+              className="rounded-2xl p-8 bg-white"
             >
               <feature.icon className="h-16 w-16" />
               <h3 className="mt-6 font-semibold text-gray-900 text-lg">

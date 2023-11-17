@@ -23,7 +23,7 @@ export function DesignersContact() {
           <div className="mt-8 flex align-middle justify-center">
             <EnvelopeIcon className='text-white h-9 w-9 mr-2'/>
             <Link 
-                href="mailto:hello@aftergame.co"
+                href="mailto:publishers@aftergame.co"
                 aria-label="Email us" 
                 className="flex align-middle justify-center w-auto h-9 p-2 text-white hover:bg-gray-200/10 rounded-lg"
               >

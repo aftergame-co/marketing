@@ -9,25 +9,21 @@ export function NavLinks({scrolled, darkMode}) {
   const [hoveredIndex, setHoveredIndex] = useState(null)
   const navItems = [
     {
-      name: 'Home',
-      href: '/',
-    },
-    // {
-    //   name: 'Why Aftergame?',
-    //   href: '/why-aftergame',
-    // },
-    {
       name: 'Premium',
       href: '/premium',
     },
+    // {
+    //   name: 'Communities',
+    //   href: '/communities',
+    // },
     {
       name: 'Publishers',
       href: '/publishers',
     },
-    // {
-      // name: 'Blog',
-      // href: '/blog',
-    // },
+    {
+      name: 'Blog',
+      href: '/blog',
+    },
     {
       name: 'About',
       href: '/about',
@@ -61,7 +57,7 @@ export function NavLinks({scrolled, darkMode}) {
       href={item.href}
       className={clsx(
         'relative -my-2 -mx-3 rounded-lg px-3 py-2 text-md',
-        !scrolled && darkMode ? 'text-gray-100 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700',
+        !scrolled && darkMode ? 'text-gray-100 hover:text-gray-300' : 'text-gray-500 hover:text-gg-blue',
       )}
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}

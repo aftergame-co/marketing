@@ -12,6 +12,24 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.6.4",
+    versionNumber: 16,
+    date: "November 17, 2023",
+    blurb:
+      "Adding your friends is much easier and you can now set your profile visibility to only show to your friends.",
+    features: [
+      `The new 'Add friends' page shows friend requests, players not connected to a user account, and people you may know.`,
+      `We added a new 'Friends' option for the visibility of your collection, play logs, and players.`,
+      `There's a new 'Don't remember' option when joining a game that you've played before but don't remember the rules.`,
+      `You can now search for friends by their email address.`,
+    ],
+    fixes: [
+      `Fixed a UI bug when sending larger comments.`,
+      `Fixed when we ask for notification permissions and added an explanation.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.6.3",
     versionNumber: 15,
     date: "November 12, 2023",

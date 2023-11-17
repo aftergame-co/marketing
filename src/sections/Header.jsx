@@ -65,10 +65,10 @@ export function Header({darkMode}) {
   }, []);
 
   return (
-      <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', scrolled ? 'shadow-lg  bg-white py-4 lg:py-3' : 'py-4')}>
+      <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', scrolled ? 'shadow-lg  bg-white py-4 lg:py-3' : 'py-4 lg:py-5')}>
         <nav>
           <Container className="relative z-50 flex justify-between">
-            <div className="relative z-10 flex items-center gap-16 -m-2">
+            <div className="relative z-10 flex items-center gap-16 -mt-2.5 -ml-2.5 -mb-1.5">
               <Link href="/" aria-label="Home">
                 <Logo darkMode={!scrolled && darkMode} className="h-16 w-auto" />
               </Link>
@@ -116,21 +116,18 @@ export function Header({darkMode}) {
                             className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-24 -mt-4 shadow-2xl shadow-gray-900/20"
                           >
                             <div>
-                              <MobileNavLink href="/">
-                                Home
-                              </MobileNavLink>
-                              {/* <MobileNavLink href="/premium">
-                                Why Aftergame?
-                              </MobileNavLink> */}
                               <MobileNavLink href="/premium">
                                 Premium
                               </MobileNavLink>
+                              {/* <MobileNavLink href="/communities">
+                                Communities
+                              </MobileNavLink> */}
                               <MobileNavLink href="/publishers">
                                 Publishers
                               </MobileNavLink>
-                              {/* <MobileNavLink href="/blog">
+                              <MobileNavLink href="/blog">
                                 Blog
-                              </MobileNavLink> */}
+                              </MobileNavLink>
                               <MobileNavLink href="/about">
                                 About
                               </MobileNavLink>

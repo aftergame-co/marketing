@@ -7,8 +7,8 @@ export function Footer() {
   return (
     <footer className="bg-gray-100">
       <Container>
-        <div className="grid grid-col-1 md:grid-cols-6 lg:grid-cols-10 gap-y-6 pt-6 pb-12">
-          <div className='col-span-5 lg:col-span-4'>
+        <div className="grid grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-y-6 pt-6 pb-12">
+          <div className='col-span-4 md:col-span-8 lg:col-span-4'>
             <div className='flex justify-start'>
               <Link href="/" aria-label="Home" className='-ml-2 mt-1 overflow-hidden'>
                 <Logo className="h-16 w-auto -my-1" />
@@ -57,24 +57,19 @@ export function Footer() {
               Product
             </h3>
             <ul>
-              {/* <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/why" aria-label="Why Aftergame?">
-                  Why Aftergame?
-                </Link>
-              </li> */}
-              <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/publishers" aria-label="Publishers">
-                  Publishers
-                </Link>
-              </li>
-              <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/releases" aria-label="What’s new">
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/releases" aria-label="What’s new">
                   What’s new
                 </Link>
               </li>
-              <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/download" aria-label="Download">
-                  Download
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://apps.apple.com/us/app/aftergame/id6446225790" aria-label="Download for iOS" target='_blank'>
+                  Download for iOS
+                </Link>
+              </li>
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://play.google.com/store/apps/details?id=com.goodgamedata.goodgame#" aria-label="Download for Android" target='_blank'>
+                  Download for Android
                 </Link>
               </li>
             </ul>
@@ -84,21 +79,52 @@ export function Footer() {
               id="faqs-title"
               className="mt-5 mb-2 text-lg font-semibold leading-6 text-gray-900"
             >
+              Solution
+            </h3>
+            <ul>
+              {/* <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/players" aria-label="Players">
+                  Players
+                </Link>
+              </li> */}
+              {/* <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/communities" aria-label="Communities">
+                  Communities
+                </Link>
+              </li> */}
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/publishers" aria-label="Publishers">
+                  Publishers
+                </Link>
+              </li>
+              {/* <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/distributors" aria-label="Distributors">
+                  Distributors
+                </Link>
+              </li> */}
+            </ul>
+          </div>
+          <div className='hidden col-span-4 lg:block xl:hidden'></div>
+          <div className='col-span-2'>
+            <h3
+              id="faqs-title"
+              className="mt-5 mb-2 text-lg font-semibold leading-6 text-gray-900"
+            >
               Resources
             </h3>
             <ul>
-              <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/contact" aria-label="Contact">
-                  Contact
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/blog" aria-label="Blog">
+                  Blog
                 </Link>
               </li>
-              <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/faq" aria-label="FAQ">
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/faq" aria-label="FAQ">
                   FAQ
                 </Link>
               </li>
-              <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/premium" aria-label="Premium">
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/premium" aria-label="Premium">
                   Premium
                 </Link>
               </li>
@@ -112,28 +138,33 @@ export function Footer() {
               Company
             </h3>
             <ul>
-              <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/about" aria-label="About">
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/about" aria-label="About">
                   About
                 </Link>
               </li>
-              <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/about#our-story" aria-label="About">
+              {/* <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/about#our-story" aria-label="About">
                   Our story
                 </Link>
+              </li> */}
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/contact" aria-label="Contact">
+                  Contact
+                </Link>
               </li>
-              {/* <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/media" aria-label="Media kit">
+              {/* <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/media" aria-label="Media kit">
                   Media kit
                 </Link>
               </li> */}
-              <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/privacy" aria-label="Privacy">
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/privacy" aria-label="Privacy">
                   Privacy Policy
                 </Link>
               </li>
-              <li className='py-1 text-sm text-gray-700 hover:text-gray-900'>
-                <Link href="/terms" aria-label="Terms">
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/terms" aria-label="Terms">
                   Terms of Service
                 </Link>
               </li>

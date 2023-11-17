@@ -2,6 +2,7 @@ import { Container } from '@/components/Container';
 import Image from 'next/image';
 import Date from '@/components/Date';
 import { getPostData } from '@/utils/posts';
+import { Metadata } from 'next'
 
 export async function generateMetadata({ params }) {
   const postData = await getPostData(params.id)
@@ -9,6 +10,9 @@ export async function generateMetadata({ params }) {
   return {
     title: postData.title,
     description: postData.intro,
+    alternates: {
+      canonical: `/blog/${postData.id}`
+    },
     openGraph: {
       title: postData.title,
       description: postData.intro,

@@ -46,6 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html className="h-full bg-gray-50 antialiased" lang="en">
       <head>
+        <meta property="fb:app_id" content="317542250869616" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         {/* <!-- Google tag (gtag.js) --> */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-C15BKR7SR5"  strategy="afterInteractive"></Script>

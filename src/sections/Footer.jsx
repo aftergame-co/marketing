@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="bg-gray-100">
       <Container>
-        <div className="grid grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-y-6 pt-6 pb-12">
+        <div className="grid grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-y-6 pt-8 pb-12">
           <div className='col-span-4 md:col-span-8 lg:col-span-4'>
             <div className='flex justify-start'>
               <Link href="/" aria-label="Home" className='-ml-2 mt-1 overflow-hidden'>
@@ -64,12 +64,12 @@ export function Footer() {
               </li>
               <li>
                 <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://apps.apple.com/us/app/aftergame/id6446225790" aria-label="Download for iOS" target='_blank'>
-                  Download for iOS
+                  Download on iOS
                 </Link>
               </li>
               <li>
                 <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://play.google.com/store/apps/details?id=com.goodgamedata.goodgame#" aria-label="Download for Android" target='_blank'>
-                  Download for Android
+                  Download on Android
                 </Link>
               </li>
             </ul>
@@ -87,9 +87,14 @@ export function Footer() {
                   Players
                 </Link>
               </li> */}
-              {/* <li>
+              <li>
                 <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/communities" aria-label="Communities">
                   Communities
+                </Link>
+              </li>
+              {/* <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/events" aria-label="Conventions and Events">
+                  Events
                 </Link>
               </li> */}
               <li>

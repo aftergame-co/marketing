@@ -5,7 +5,7 @@ const features = [
   {
     name: 'What do people think of my game?',
     description:
-      'Players can record how much they enjoyed a game, and leave feedback at the time of playing.',
+      'Players record how much they enjoyed a game, and leave feedback at the time of playing.',
     icon: DeviceNotificationIcon,
   },
   {
@@ -27,7 +27,7 @@ const features = [
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Which role is played most?',
+    name: 'Which role is played the most?',
     description:
       'We track which roles were played so you can view trends and identify what your users like.',
     icon: DeviceClockIcon,
@@ -63,10 +63,10 @@ export function DesignersSecondary() {
           {features.map((feature) => (
             <li
               key={feature.name}
-              className="rounded-2xl p-8 bg-white"
+              className="rounded-2xl p-8 bg-white border-2 border-gray-100"
             >
               {/* <feature.icon className="h-16 w-16" /> */}
-              <h3 className="mt-6 font-semibold text-gray-900 text-lg">
+              <h3 className="font-semibold text-gray-900 text-lg">
                 {feature.name}
               </h3>
               <p className="mt-2 text-gray-700">{feature.description}</p>

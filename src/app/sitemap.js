@@ -2,7 +2,7 @@ export default async function sitemap() {
   const routes = [
     '',
     '/publishers',
-    // '/communities',
+    '/communities',
     '/premium',
     '/blog',
     '/about',

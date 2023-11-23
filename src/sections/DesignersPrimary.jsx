@@ -18,12 +18,12 @@ function Slider() {
   return (
     <ReactBeforeSliderComponent
       className='rounded-2xl overflow-hidden'
-      firstImage={{ imageUrl: '/images/with-ag.png', alt: 'With Aftergame' }}
-      secondImage={{ imageUrl: '/images/without-ag.png', alt: 'Without Aftergame' }}
+      firstImage={{ imageUrl: '/images/publishers/with-ag.png', alt: 'With Aftergame' }}
+      secondImage={{ imageUrl: '/images/publishers/without-ag.png', alt: 'Without Aftergame' }}
       currentPercentPosition={sliderPosition}
       delimiterColor='rgb(237, 237, 252)'
       delimiterIconStyles={{
-        backgroundImage: 'url(/images/expand.png)',
+        backgroundImage: 'url(/images/publishers/expand.png)',
         backgroundSize: 25,
         cursor: 'col-resize'
       }}
@@ -36,8 +36,8 @@ export function DesignersPrimary() {
   let isInView = useInView(containerRef, { once: true, amount: 0.4 });
   return (
     <section
-      id="features"
-      aria-label="Play tracking and statistics, reimagined"
+      id="graph"
+      aria-label="Go beyond sales data"
       className="bg-gg-blue py-20 sm:py-32"
       ref={containerRef}
     >
@@ -46,7 +46,7 @@ export function DesignersPrimary() {
           <h2 className="text-4xl font-medium tracking-tighter lg:tracking-tight text-white">
             Go beyond sales data
           </h2>
-          <p className="mt-2 text-xl text-gray-200">
+          <p className="mt-2 text-xl text-gray-100">
             Remove the guesswork when releasing new content for your games. Aftergame gives you access to usage of your games like never before.
           </p>
         </div>

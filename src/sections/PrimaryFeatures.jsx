@@ -205,7 +205,7 @@ function InvestScreen({ custom, animated = false }) {
           <div>
             <p className='mt-4 mb-3 text-gray-600 text-xs'>Last played yesterday</p>
             <div className='grid grid-cols-10 rounded-md overflow-hidden'>
-              <div className='bg-green-500 col-span-6 py-1'></div>
+              <div className='bg-green-500 col-span-6 py-1 mr-1'></div>
               <div className='bg-red-500 col-span-4 py-1'></div>
             </div>
             <div className='flex justify-between text-gray-900 text-sm'>
@@ -309,7 +309,7 @@ function FeaturesDesktop() {
                 </Tab>
               </h3>
               <p className={clsx('mt-2 text-sm transition-colors delay-100',
-                    featureIndex === selectedIndex ? 'text-gray-600' : 'text-gray-200')}>
+                    featureIndex === selectedIndex ? 'text-gray-600' : 'text-gray-100')}>
                 {feature.description}
               </p>
             </div>
@@ -446,7 +446,7 @@ export function PrimaryFeatures() {
           <h2 className="text-4xl font-medium tracking-tighter lg:tracking-tight text-white">
             Play tracking and statistics, reimagined
           </h2>
-          <p className="mt-2 text-xl text-gray-200">
+          <p className="mt-2 text-xl text-gray-100">
             We are building the play tracking app for today packed with features made possible by using the latest technologies.
           </p>
         </div>

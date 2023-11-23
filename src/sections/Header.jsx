@@ -116,14 +116,17 @@ export function Header({darkMode}) {
                             className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-24 -mt-4 shadow-2xl shadow-gray-900/20"
                           >
                             <div>
-                              <MobileNavLink href="/premium">
-                                Premium
-                              </MobileNavLink>
-                              {/* <MobileNavLink href="/communities">
+                              <MobileNavLink href="/communities">
                                 Communities
+                              </MobileNavLink>
+                              {/* <MobileNavLink href="/events">
+                                Events
                               </MobileNavLink> */}
                               <MobileNavLink href="/publishers">
                                 Publishers
+                              </MobileNavLink>
+                              <MobileNavLink href="/premium">
+                                Premium
                               </MobileNavLink>
                               <MobileNavLink href="/blog">
                                 Blog

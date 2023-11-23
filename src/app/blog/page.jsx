@@ -21,12 +21,15 @@ export default function Blog() {
         className="py-20 sm:py-32"
       >
         <Container>
-        <h1 className="mb-12 text-5xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
-          The Aftergame Blog
-        </h1>
+          <h1 className="text-5xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
+            The Aftergamer
+          </h1>
+          <p className="mt-6 mb-16 lg:w-4/5 text-xl text-gray-600">
+            Thoughts on the future of social tabletop gaming, from the people helping to create it.
+          </p>
           <ul className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
             {allPostsData.map(({ id, date, title, intro, image }) => (
-              <li className='group col-span-1 rounded-2xl bg-white text-gray-900 hover:bg-gray-200 hover:text-gg-blue' key={id}>
+              <li className='group col-span-1 rounded-2xl bg-white text-gray-900 hover:bg-gray-100 border-2 border-gray-100' key={id}>
                 <Link href={`/blog/${id}`}>
                   {image && (
                     <Image

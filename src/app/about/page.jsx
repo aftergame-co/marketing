@@ -16,25 +16,25 @@ export default function About() {
 
   const team = [
     {
-      image: '/images/team/eric.jpg',
+      image: '/images/about/team/eric.jpg',
       name: 'Eric Poulin',
       role: 'CEO',
       linkedIn: 'https://www.linkedin.com/in/eric-poulin-nz',
     },
     {
-      image: '/images/team/john.jpg',
+      image: '/images/about/team/john.jpg',
       name: 'John Brent',
       role: 'Head of Operations',
       linkedIn: 'https://www.linkedin.com/in/john-brent/',
     },
     {
-      image: '/images/team/chalene.jpg',
+      image: '/images/about/team/chalene.jpg',
       name: 'Chalene Scott',
       role: 'Head of Community',
       linkedIn: 'https://www.linkedin.com/in/chalene-scott-5571a879/',
     },
     {
-      image: '/images/team/eli.jpg',
+      image: '/images/about/team/eli.jpg',
       name: 'Eli Labes',
       role: 'Head of Engineering',
       linkedIn: 'https://www.linkedin.com/in/eli-labes-39a705164',
@@ -87,7 +87,7 @@ export default function About() {
             {team.map((member) => (
               <li
                 key={member.name}
-                className="flex flex-col rounded-2xl p-4 text-center bg-white"
+                className="flex flex-col rounded-2xl p-4 text-center bg-white border-2 border-gray-100"
               >
                 <Image
                   src={member.image}

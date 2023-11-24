@@ -15,7 +15,7 @@ const features = [
     icon: DeviceOfflineIcon,
   },
   {
-    name: 'Easy sharing to other social media',
+    name: 'Connect to social media platforms',
     description:
       'Cross-post your events, game library and leaderboards directly to other social channels.',
     icon: DeviceCardsIcon,

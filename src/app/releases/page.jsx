@@ -12,6 +12,26 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.7.0",
+    versionNumber: 17,
+    date: "November 29, 2023",
+    blurb:
+      "The game and profile screens have been completely rebuilt adding a lot more useful information and filters.",
+    features: [
+      `Profiles and game pages have been completely rebuilt, with a much cleaner look and new quick actions.`,
+      `Added categories, mechanics, themes, designers, artists, and publisher information to game pages.`,
+      `We now show the game's complexity and you can also filter your library by this to find the right games.`,
+      `Personal best and average scores are now shown for games where it's relevant.`,
+      `You can now view your friends' collections and filter them by players, duration, complexity, and more!`,
+      `We have added some overall stats to the profile screen`,
+      `All expansions are now shown for games, not just the ones you own.`,
+    ],
+    fixes: [
+      `Fixed an issue with the host not coming down correctly for events.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.6.4",
     versionNumber: 16,
     date: "November 17, 2023",

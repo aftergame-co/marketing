@@ -36,7 +36,7 @@ export default function About() {
     {
       image: '/images/about/team/eli.jpg',
       name: 'Eli Labes',
-      role: 'Head of Engineering',
+      role: 'Technical Advisor',
       linkedIn: 'https://www.linkedin.com/in/eli-labes-39a705164',
     },
   ]

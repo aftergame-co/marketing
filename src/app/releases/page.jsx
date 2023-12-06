@@ -12,6 +12,23 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.7.1",
+    versionNumber: 18,
+    date: "December 6, 2023",
+    blurb: "Connect full addresses to locations, share links to events, and many other small improvements.",
+    features: [
+      `You can now search for an address to connect to a location. This will make organising events easier and enable future features.`,
+      `There is now an easy way to share an event link so other can quickly join.`,
+      `We have added a view in the events tab to see all the events attending and games you are joining in one place.`,
+    ],
+    fixes: [
+      `Deep links into our app were not always taking people to the right place - whoops!`,
+      `Fixed an issue with trying to remove scores on play logs.`,
+      `Fixed an issue on some devices where the keyboard covered half the comment box.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.7.0",
     versionNumber: 17,
     date: "November 29, 2023",

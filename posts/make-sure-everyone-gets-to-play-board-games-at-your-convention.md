@@ -33,7 +33,7 @@ As a player, Todd can go into your AwesomeCon event within Aftergame and make a 
 - and what experience level with the chosen game he’d like the other players to have.
 - He can also invite specific people if he wants to, leaving some or none of the seats open to be claimed by other attendees.
 
-![Alt text: screenshot of an event on Aftergame app](/images/posts/2023-11-24-2.png)
+![Screenshot of an event on Aftergame app](/images/posts/2023-11-24-2.png)
 
 The game he’s just created will show up in the list of games being played at AwesomeCon, ordered by the scheduled time so the first ones people see are happening soonest. Now anyone looking for a game to join (Alex, perhaps?) has the option of claiming a seat at the table for his agriculture game.
 

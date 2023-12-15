@@ -12,6 +12,44 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.7.4",
+    versionNumber: 19,
+    date: "December 14, 2023",
+    blurb:
+      "Events are now easier to navigate, with many new features, and BGG import has been rebuilt; now much more reliable and over 20x faster!",
+    features: [
+      `It is now easier to explore events quickly, with less clicks and a new local games tab (watch this space!).`,
+      `You can now hide your address when planning a game, giving you greater control.`,
+      `When planning games at conventions, you can now add instructions and even drop a pin on the floor plan!`,
+      `Importing from BGG should now just work, without lag, even for huge collections and play histories.`,
+      `Shared locations now show up when logging a play.`,
+      `Missing a game on Aftergame? You can now submit games from the menu in the profile screen.`,
+    ],
+    fixes: [
+      `Fixed a bunch of crashes and reasons for discrepancies in BGG imports.`,
+      `Fixed an issue when scrolling through other people's play logs.`,
+      `Added a missing pull-to-refresh on the play log screen.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "0.7.2",
+    versionNumber: 18,
+    date: "December 6, 2023",
+    blurb: "Connect full addresses to locations, share links to events, and many other small improvements.",
+    features: [
+      `You can now search for an address to connect to a location. This will make organising events easier and enable future features.`,
+      `There is now an easy way to share an event link so other can quickly join.`,
+      `We have added a view in the events tab to see all the events attending and games you are joining in one place.`,
+    ],
+    fixes: [
+      `Deep links into our app were not always taking people to the right place - whoops!`,
+      `Fixed an issue with trying to remove scores on play logs.`,
+      `Fixed an issue on some devices where the keyboard covered half the comment box.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.7.1",
     versionNumber: 18,
     date: "December 6, 2023",

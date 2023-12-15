@@ -2,7 +2,6 @@ import { Container } from '@/components/Container';
 import Image from 'next/image';
 import Date from '@/components/Date';
 import { getPostData } from '@/utils/posts';
-import { Metadata } from 'next'
 
 export async function generateMetadata({ params }) {
   const postData = await getPostData(params.id)
@@ -18,7 +17,7 @@ export async function generateMetadata({ params }) {
       description: postData.intro,
       images: [
         {
-          url: `https://www.aftergame.co/_next/image?url=${postData.image}`,
+          url: `https://www.aftergame.co${postData.image}`,
           alt: postData.title,
           width: 1200,
           height: 630,

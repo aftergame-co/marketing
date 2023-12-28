@@ -12,6 +12,26 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.7.5",
+    versionNumber: 20,
+    date: "December 27, 2023",
+    blurb:
+      "Find and plan local games easier by setting your current city and we have improved how you browse your play history.",
+    features: [
+      `You can now set your current city which filters local games to just those near you.`,
+      `The play history is now broken into days and better shows who won, even when it wasn't you.`,
+      `The home screen got some updates, we now show a featured event and you can keep scrolling through all your plays.`,
+      `You can now add your pronouns to your profile.`,
+      `Automatic winner selection now handles games where the lowest score wins.`,
+      `Viewing a player who's not connected to a user will now show all the plays they are in.`,
+    ],
+    fixes: [
+      `Fixed issues with notification permissions.`,
+      `Fixed an issue where the bottom option in roles selection was not shown.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.7.4",
     versionNumber: 19,
     date: "December 14, 2023",

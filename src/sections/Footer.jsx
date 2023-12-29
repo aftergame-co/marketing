@@ -16,7 +16,7 @@ export function Footer() {
             </div>
             <div className='ml-12 pl-px mt-4 flex gap-1'>
               <Link 
-                href="https://www.facebook.com/Aftergame.co" 
+                href="https://www.facebook.com/AftergameApp" 
                 target='_blank' 
                 aria-label="Facebook" 
                 className="flex align-middle self-center w-9 h-9 p-2 text-gray-500 hover:text-facebook-blue hover:bg-gray-200 rounded-lg"
@@ -40,7 +40,7 @@ export function Footer() {
                 <DiscordLogo />
               </Link>
               <Link 
-                href="https://twitter.com/aftergame_co" 
+                href="https://twitter.com/AftergameApp" 
                 target='_blank' 
                 aria-label="Twitter" 
                 className="flex align-middle self-center w-9 h-9 p-2 text-gray-500 hover:text-twitter-blue hover:bg-gray-200 rounded-lg"

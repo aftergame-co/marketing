@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Container } from '@/components/Container';
 import { Logo } from '@/components/Logo';
-import { TwitterLogo, FacebookLogo, LinkedInLogo, DiscordLogo } from '@/components/SocialLogos';
+import { FacebookLogo, LinkedInLogo, DiscordLogo, InstagramLogo } from '@/components/SocialLogos';
 
 export function Footer() {
   return (
@@ -40,12 +40,12 @@ export function Footer() {
                 <DiscordLogo />
               </Link>
               <Link 
-                href="https://twitter.com/AftergameApp" 
+                href="https://www.instagram.com/aftergameapp" 
                 target='_blank' 
-                aria-label="Twitter" 
-                className="flex align-middle self-center w-9 h-9 p-2 text-gray-500 hover:text-twitter-blue hover:bg-gray-200 rounded-lg"
+                aria-label="Instagram" 
+                className="flex align-middle self-center w-9 h-9 p-0.5 text-gray-500 hover:text-instagram-pink hover:bg-gray-200 rounded-lg"
               >
-                <TwitterLogo />
+                <InstagramLogo />
               </Link>
             </div>
           </div>
@@ -92,11 +92,11 @@ export function Footer() {
                   Communities
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/events" aria-label="Conventions and Events">
-                  Events
+                  Tabletop Events
                 </Link>
-              </li> */}
+              </li>
               <li>
                 <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/publishers" aria-label="Publishers">
                   Publishers

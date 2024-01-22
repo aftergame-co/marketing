@@ -41,6 +41,7 @@ module.exports = {
         'twitter-blue': '#1D9BF0',
         'facebook-blue': '#4267B2',
         'linkedin-blue': '#007EBB',
+        'instagram-pink': '#D62976',
         'discord-blurple': '#5865F2',
       }),
       fontFamily: {

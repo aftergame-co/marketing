@@ -119,9 +119,9 @@ export function Header({darkMode}) {
                               <MobileNavLink href="/communities">
                                 Communities
                               </MobileNavLink>
-                              {/* <MobileNavLink href="/events">
-                                Events
-                              </MobileNavLink> */}
+                              <MobileNavLink href="/events">
+                                Tabletop Events
+                              </MobileNavLink>
                               <MobileNavLink href="/publishers">
                                 Publishers
                               </MobileNavLink>

@@ -4,7 +4,7 @@ import { CommunitiesPrimary } from '@/sections/CommunitiesPrimary';
 import { CommunitiesSecondary } from '@/sections/CommunitiesSecondary';
 
 export const metadata = {
-  title: 'Communities grow and connect over board games with Aftergame',
+  title: 'Communities connect over tabletop games with Aftergame',
   alternates: {
     canonical: '/communities'
   },

@@ -66,10 +66,10 @@ export function CommunitiesSecondary() {
       <Container>
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            We’re here for the <span className='text-gg-blue font-semibold'>board game communities</span>
+            We’re here for the <span className='text-gg-blue font-semibold'>tabletop game communities</span>
           </h2>
           <p className="mt-4 mx-6 text-lg text-gray-600">
-            There is so much involved in running a great community and space for people to enjoy playing games. Aftergame is <span className='text-gg-red font-semibold'>built for board gamers by board gamers</span>.
+            There is so much involved in running a great community and space for people to enjoy playing games. Aftergame is <span className='text-gg-red font-semibold'>built for tabletop gamers by tabletop gamers</span>.
           </p>
         </div>
         <ul

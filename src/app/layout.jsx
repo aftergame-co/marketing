@@ -11,15 +11,15 @@ export const metadata = {
     template: '%s | Aftergame',
   },
   applicationName: 'Aftergame',
-  description: 'Record the board games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.',
-  keywords: ['After game', 'board game', 'boardgames', 'boardgame', 'board', 'games', 'play logging', 'statistics', 'leaderboard'],
+  description: 'Record the tabletop games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.',
+  keywords: ['After game', 'tabletop game', 'board game', 'boardgames', 'boardgame', 'board', 'games', 'play logging', 'statistics', 'leaderboard'],
   metadataBase: new URL('https://www.aftergame.co'),
   alternates: {
     canonical: '/'
   },
   openGraph: {
     title: 'Aftergame | Play tracking and statistics, reimagined',
-    description: 'Record the board games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.',
+    description: 'Record the tabletop games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.',
     url: 'https://www.aftergame.co',
     siteName: 'Aftergame',
     images: [

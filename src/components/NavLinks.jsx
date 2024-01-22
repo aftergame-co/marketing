@@ -18,12 +18,12 @@ export function NavLinks({scrolled, darkMode}) {
           href: '/communities',
           icon: IconOne,
         },
-        // {
-        //   name: 'Events',
-        //   description: 'Allow attendees to plan and join games',
-        //   href: '/events',
-        //   icon: IconTwo,
-        // },
+        {
+          name: 'Tabletop Events',
+          description: 'Allow attendees to plan and join games',
+          href: '/events',
+          icon: IconTwo,
+        },
         {
           name: 'Publishers',
           description: 'Understand and reach players globally',

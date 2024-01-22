@@ -18,7 +18,7 @@ export function CommunitiesContact() {
             More games to table
           </h2>
           <p className="mt-4 text-lg text-white">
-            Are you looking to grow your community and get more people connecting over board games? We’d love to chat!
+            Are you looking to grow your community and get more people connecting over tabletop games? We’d love to chat!
           </p>
           <div className="mt-8 flex align-middle justify-center">
             <EnvelopeIcon className='text-white h-9 w-9 mr-2'/>

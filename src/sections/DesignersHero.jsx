@@ -49,7 +49,7 @@ export function DesignersHero() {
               <span className='text-gg-blue font-semibold'>Understand</span> how people <br className='hidden md:inline-block' />play <span className='text-gg-red font-semibold'>your games</span>
             </h1>
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
-              Get deep insights into how your board games are being played so that you can track KPIs and discover ways to further the development of your game.
+              Get deep insights into how your tabletop games are being played so that you can track KPIs and discover ways to further the development of your game.
             </p>
             <p className="pt-6 lg:w-4/5 text-sm font-semibold">Want to be part of the feedback process?</p>
             <div className="pt-2 pb-16 xl:pb-0 lg:w-4/5">

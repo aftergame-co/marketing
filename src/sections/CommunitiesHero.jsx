@@ -88,7 +88,7 @@ export function CommunitiesHero() {
   return (
     <div className="overflow-hidden pb-8 pt-16 sm:pt-32 lg:pb-8">
       <Container>
-        <div className="lg:grid lg:grid-cols-12 lg:gap-y-20">
+        <div className="lg:grid lg:grid-cols-12">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none">
             <p className='text-xl text-gray-600 mb-4 uppercase'>Communities</p>
             <h1 className="text-5xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
@@ -108,6 +108,44 @@ export function CommunitiesHero() {
                   Get in touch
                 </Button>
               </Link>
+            </div>
+            <div className="flex flex-row items-center gap-x-8 py-6">
+
+              <Image
+                src='/temp/bgbbq-logo.png'
+                alt='Board Game BBQ'
+                width={96}
+                height={96}
+                className='flex-shrink-0'
+              />
+              <Image
+                src='/temp/meepleopolis.png'
+                alt='Meepleopolis'
+                width={80}
+                height={80}
+                className='flex-shrink-0 mt-0.5'
+              />
+              <Image
+                src='/temp/csg.png'
+                alt='Canberra Games Society'
+                width={64}
+                height={64}
+                className='flex-shrink-0'
+              />
+              <Image
+                src='/temp/cc.webp'
+                alt='Counter Culture'
+                width={96}
+                height={96}
+                className='flex-shrink-0'
+              />
+              <Image
+                src='/temp/bggw-logo.png'
+                alt='Board Game Gateway'
+                width={80}
+                height={80}
+                className='flex-shrink-0'
+              />
             </div>
           </div>
           <div className="relative mt-8 lg:col-span-5 lg:row-span-2 lg:mt-0 lg:-mr-6">

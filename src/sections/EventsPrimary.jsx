@@ -44,7 +44,7 @@ export function EventsPrimary() {
               Plan the game
             </h3>
             <p className='mt-2 text-md lg:text-lg transition-colors delay-100 text-gray-100'>
-              Schedule game demos, learn to play sessions, and more as the event organiser, or let attendees plan the games they want to play.
+              Schedule game demos, learn to play sessions, and more as the event organiser, or let your attendees plan the games they want to play.
             </p>
           </div>
         </div>

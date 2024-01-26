@@ -12,6 +12,35 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.8.0",
+    versionNumber: 22,
+    date: "January 25, 2024",
+    blurb: "Teams, custom roles, scenarios, and RPGs are now supported in this massive release!",
+    features: [
+      `Teams! You can you set which teams players were on, assigning team roles and scores when the game allows it.`,
+      `Custom roles! We now allow you to enter your own roles, perfect for games we haven't defined, or where the roles are player-created.`,
+      `Scenarios! Set the mission your team went on and more with a new way to log the scenario you played.`,
+      `RPGs! We have added over 11k RPGs to the platform meaning you can now record the plays for a whole bunch more tabletop games.`,
+    ],
+    fixes: [
+      `Improved game search for games with apostrophes. More improvements coming soon.`,
+      `Fixed an issue with the last location not showing up.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "0.7.7",
+    versionNumber: 21,
+    date: "January 10, 2024",
+    blurb:
+      "Know what to expect at events! You can now view the games library available at an event and have a look at the floor plan.",
+    features: [
+      `The games library is now shown for events (when provided by the host). You can filter the library based on player count, time, complexity, and more!`,
+      `We now show an event’s floor plan (when provided by the host).`,
+    ],
+    fixes: [`Various other fixes and performance improvements.`],
+  },
+  {
     version: "0.7.5",
     versionNumber: 20,
     date: "December 27, 2023",

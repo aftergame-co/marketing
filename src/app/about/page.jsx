@@ -22,16 +22,22 @@ export default function About() {
       linkedIn: 'https://www.linkedin.com/in/eric-poulin-nz',
     },
     {
+      image: '/images/about/team/stephane.jpg',
+      name: 'Stéphane Busso',
+      role: 'CTO',
+      linkedIn: 'https://www.linkedin.com/in/stephanebusso',
+    },
+    {
       image: '/images/about/team/john.jpg',
       name: 'John Brent',
       role: 'Head of Operations',
-      linkedIn: 'https://www.linkedin.com/in/john-brent/',
+      linkedIn: 'https://www.linkedin.com/in/john-brent',
     },
     {
       image: '/images/about/team/chalene.jpg',
       name: 'Chalene Scott',
       role: 'Head of Community',
-      linkedIn: 'https://www.linkedin.com/in/chalene-scott-5571a879/',
+      linkedIn: 'https://www.linkedin.com/in/chalene-scott-5571a879',
     },
     {
       image: '/images/about/team/eli.jpg',
@@ -82,7 +88,7 @@ export default function About() {
           <p className='text-center text-xl text-gray-600'>OUR TEAM</p>
           <ul
             role="list"
-            className="mx-auto mt-10 grid max-w-2xl grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 text-sm md:gap-y-10 lg:max-w-4xl xl:max-w-none"
+            className="mx-auto mt-10 grid max-w-2xl grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 text-sm md:gap-y-10 lg:max-w-4xl xl:max-w-none"
           >
             {team.map((member) => (
               <li

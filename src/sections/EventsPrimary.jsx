@@ -28,10 +28,10 @@ export function EventsPrimary() {
             Let chaos organise itself
           </h2>
           <p className="mt-2 lg:mb-16 text-xl text-gray-100">
-            You and the people attending your event can plan games which fills up the schedule for everyone to see and claim a seat.
+            You and the people attending your event can plan games which creates a schedule of games that everyone can see and claim seats in.
           </p>
         </div>
-        <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-32 lg:pb-24 lg:px-24`}>
+        <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/events/plan.png'
             alt='Want to play list'
@@ -44,11 +44,11 @@ export function EventsPrimary() {
               Plan the game
             </h3>
             <p className='mt-2 text-md lg:text-lg transition-colors delay-100 text-gray-100'>
-              Schedule game demos, learn to play sessions, and more as the event organiser, or let your attendees plan the games they want to play.
+              Schedule game demos, learn to play sessions, playtests, and more as the event organiser, while also letting your attendees plan games they want to play.
             </p>
           </div>
         </div>
-        <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-32 lg:pb-24 lg:px-24`}>
+        <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/events/schedule.png'
             alt='Want to play list'
@@ -65,7 +65,7 @@ export function EventsPrimary() {
             </p>
           </div>
         </div>
-        <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-32 lg:pb-24 lg:px-24`}>
+        <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/events/claim.png'
             alt='Want to play list'
@@ -82,7 +82,7 @@ export function EventsPrimary() {
             </p>
           </div>
         </div>
-        <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-32 lg:pb-24 lg:px-24`}>
+        <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/events/communicate.png'
             alt='Want to play list'

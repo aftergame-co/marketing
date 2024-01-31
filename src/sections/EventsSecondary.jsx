@@ -17,7 +17,7 @@ const features = [
   {
     name: 'Floor plans as a guide',
     description:
-      'Let attendees drop the pin for where to meet so no one gets lost in the busy hall.',
+      'Let attendees drop a pin for where to meet so no one gets lost in the busy hall.',
     icon: DeviceCardsIcon,
   },
   {
@@ -35,7 +35,7 @@ const features = [
   {
     name: 'Notify gamers nearby',
     description:
-      "Spread the word to people in your area and get games planned early for a seamless event.",
+      "Spread the word to people in your area and get games planned early to maximise play time.",
     icon: DeviceTouchIcon,
   },
 ]

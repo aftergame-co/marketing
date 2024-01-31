@@ -31,7 +31,7 @@ export function CommunitiesPrimary() {
             Host your own events, or let people self-organise their own games at your friendly space. Aftergame ensures like-minded people find their way to you.
           </p>
         </div>
-        <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-32 lg:pb-24 lg:px-24`}>
+        <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/communities/notify.png'
             alt='Want to play list'
@@ -48,7 +48,7 @@ export function CommunitiesPrimary() {
             </p>
           </div>
         </div>
-        <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-32 lg:pb-24 lg:px-24`}>
+        <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/communities/location.png'
             alt='Want to play list'
@@ -65,7 +65,7 @@ export function CommunitiesPrimary() {
             </p>
           </div>
         </div>
-        <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-32 lg:pb-24 lg:px-24`}>
+        <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/communities/notification.png'
             alt='Want to play list'
@@ -82,7 +82,7 @@ export function CommunitiesPrimary() {
             </p>
           </div>
         </div>
-        <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-32 lg:pb-24 lg:px-24`}>
+        <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/communities/events.png'
             alt='Want to play list'

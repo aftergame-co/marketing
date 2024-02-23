@@ -123,7 +123,7 @@ export async function getPostData(id) {
         p: 'text-md mb-4',
         ul: 'list-disc list-inside mb-4',
         ol: 'list-decimal list-inside mb-4',
-        li: 'ml-6 mb-2',
+        li: 'ml-6 mb-4',
         strong: 'font-semibold',
         a: 'text-gg-blue font-medium hover:underline',
     })

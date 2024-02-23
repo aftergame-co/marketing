@@ -27,18 +27,22 @@ export default function Blog() {
           <p className="mt-6 mb-16 lg:w-4/5 text-xl text-gray-600">
             Thoughts on the future of social tabletop gaming, from the people helping to create it.
           </p>
-          <ul className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
+          <ul className='grid grid-cols-1 md:grid-cols-2 gap-8'>
             {allPostsData.map(({ id, date, title, intro, image }) => (
               <li className='group col-span-1 rounded-2xl bg-white text-gray-900 hover:bg-gray-100 border-2 border-gray-100' key={id}>
                 <Link href={`/blog/${id}`}>
                   {image && (
-                    <Image
-                      src={image}
-                      alt={title}
-                      width={600}
-                      height={300}
-                      className='rounded-t-2xl group-hover:opacity-80'
-                    />
+                    <div className="relative h-80">
+                      <Image
+                        src={image}
+                        alt={title}
+                        // width={600}
+                        // height={300}
+                        layout="fill"
+                        objectFit="cover"
+                        className='rounded-t-2xl group-hover:opacity-80'
+                      />
+                    </div>
                   )}
 
                   <h3 className="mt-8 mx-8 font-semibold text-lg">

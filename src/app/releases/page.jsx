@@ -12,6 +12,40 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.8.4",
+    versionNumber: 24,
+    date: "February 23, 2024",
+    blurb: "Get notified about games on your Want to Play list that are happening in your area!",
+    features: [
+      `When a game is planned near you, if it's on your 'Want to Play' list, you'll get notified so you can join the fun! Likewise, if you are planning a public game, this notification can bring more people to your game.`,
+      `Added a way to sign in from our web app as a workaround for those having Google sign in issues.`,
+    ],
+    fixes: [
+      `Fixed an issue with incorrect options showing when logging a play for a game with both a player and team role.`,
+      `Fixed issues with larger imports not bringing over the entire collection.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "0.8.3",
+    versionNumber: 23,
+    date: "February 15, 2024",
+    blurb:
+      "See a list of all the games you've played with play counts, improved search, and more options when planning a game.",
+    features: [
+      `From your profile you can now view all games you've played, with play counts, time played, wins, and your H-Index.`,
+      `We have greatly improved search. We handle typos, accents, and should give more relevant results.`,
+      `You can now post playtests, learn to play sessions, or demo games when planning a game.`,
+    ],
+    fixes: [
+      `You can now keep scrolling through all expansions when logging a play.`,
+      `Fixed the ordering of games when logging a play from the home screen.`,
+      `A loss now shows up correctly in a 1-player game.`,
+      `Updating a player's name now works correctly.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.8.0",
     versionNumber: 22,
     date: "January 25, 2024",

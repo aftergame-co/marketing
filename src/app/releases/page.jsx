@@ -12,6 +12,26 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.8.5",
+    versionNumber: 25,
+    date: "March 5, 2024",
+    blurb:
+      "We've added a bunch of improvements for events like claiming multiple seats and have now added in RPG systems.",
+    features: [
+      `Add guests when claiming a seat at a scheduled game.`,
+      `Set whether a teacher is wanted when planning a game.`,
+      `RPG systems, settings, mechanics, and themes have been added for all tabletop RGPs.`,
+      `A link for buying tickets has been added for relevant events.`,
+      `Links within event descriptions, discussion messages, and play log notes can now be clicked.`,
+      `New messages now automatically appear when viewing an event.`,
+    ],
+    fixes: [
+      `Fixed some UI issues with event discussions.`,
+      `Fixed some UI issues in the planned games list.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.8.4",
     versionNumber: 24,
     date: "February 23, 2024",

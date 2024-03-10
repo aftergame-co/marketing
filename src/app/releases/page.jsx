@@ -12,6 +12,19 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.8.8",
+    versionNumber: 26,
+    date: "March 9, 2024",
+    blurb: "We have fixed some annoying bugs with bottom sheets not showing / closing properly.",
+    features: [],
+    fixes: [
+      `Fixed issues some annoying bugs with bottom sheets not showing / closing properly.`,
+      `Improved changing your current city UI.`,
+      `Now correctly show a game creator if they were both an artist and designer.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.8.5",
     versionNumber: 25,
     date: "March 5, 2024",

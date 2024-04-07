@@ -12,6 +12,53 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.8.13",
+    versionNumber: 29,
+    date: "April 5, 2024",
+    blurb: "We have made small fixes to events and added the ability to delete previous searches.",
+    features: [`Added the ability to delete previous searches.`],
+    fixes: [
+      `Fixed a crash in some edge cases when trying to change the date and time of an event.`,
+      `Fixed an issue when editing an event where it would revert to the game's name.`,
+      `Fixed an issue where some ticket links were showing as an invalid URL.`,
+      `We now correctly link to the event games planned when viewing an event's game library.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "0.8.12",
+    versionNumber: 28,
+    date: "April 2, 2024",
+    blurb:
+      "We have improved the design and options when creating events and added better information when play logs are updated.",
+    features: [
+      `We have done a big revamp of the design for all form elements.`,
+      `You can now change the event name of a planned game`,
+      `We now show when a play log was created and edited and who did it.`,
+      `A notification is sent whenever a play log you're in was edited by one of the other players.`,
+      `A link for where to buy tickets can be added to events.`,
+      `The end time is now shown for planned games.`,
+    ],
+    fixes: [`Various other fixes and performance improvements.`],
+  },
+  {
+    version: "0.8.9",
+    versionNumber: 27,
+    date: "March 21, 2024",
+    blurb: "We added a new game timer to track the time when logging a play and many improvements to events.",
+    features: [
+      `When logging a play, you can now start / pause a timer to track the duration. You can still manually edit the time.`,
+      `You can now specify how long a planned game should last (overriding what's written on the box).`,
+      `When planning a game, you can now require that players have read the rules.`,
+      `The game library for events has had visual improvements.`,
+      `Simplified the UI when planning a game.`,
+    ],
+    fixes: [
+      `Speed improvements when logging a play from the game screen.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.8.8",
     versionNumber: 26,
     date: "March 9, 2024",

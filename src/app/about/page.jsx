@@ -22,12 +22,6 @@ export default function About() {
       linkedIn: 'https://www.linkedin.com/in/eric-poulin-nz',
     },
     {
-      image: '/images/about/team/stephane.jpg',
-      name: 'Stéphane Busso',
-      role: 'CTO',
-      linkedIn: 'https://www.linkedin.com/in/stephanebusso',
-    },
-    {
       image: '/images/about/team/john.jpg',
       name: 'John Brent',
       role: 'Head of Operations',
@@ -38,6 +32,12 @@ export default function About() {
       name: 'Chalene Scott',
       role: 'Head of Community',
       linkedIn: 'https://www.linkedin.com/in/chalene-scott-5571a879',
+    },
+    {
+      image: '/images/about/team/stephane.jpg',
+      name: 'Stéphane Busso',
+      role: 'Technical Advisor',
+      linkedIn: 'https://www.linkedin.com/in/stephanebusso',
     },
     {
       image: '/images/about/team/eli.jpg',

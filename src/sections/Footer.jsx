@@ -124,6 +124,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://aftergame.notion.site/Help-Centre-a6dea7a1b2e64c4c8ee1223f04f63a65?pvs=4" aria-label="Help" target='_blank'>
+                  Help
+                </Link>
+              </li>
+              <li>
                 <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/faq" aria-label="FAQ">
                   FAQ
                 </Link>

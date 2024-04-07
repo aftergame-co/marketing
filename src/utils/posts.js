@@ -126,6 +126,7 @@ export async function getPostData(id) {
         li: 'ml-6 mb-4',
         strong: 'font-semibold',
         a: 'text-gg-blue font-medium hover:underline',
+        hr: 'my-8',
     })
     .process(matterResult.content)
   const contentHtml = processedContent.toString()

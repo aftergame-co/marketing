@@ -12,6 +12,32 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.9.0",
+    versionNumber: 30,
+    date: "April 25, 2024",
+    blurb:
+      "Creating meetups is now open to everyone, a complete rebuild of search and filters, the ability to sort your games, our new premium subscription (Aftergame+) and much more!",
+    features: [
+      `Everyone now has the ability to create events and meetups! This is still early access, be sure to send us feedback.`,
+      `The events tab has been completely rebuilt to better show local events and give you better ways to find events.`,
+      `Search and filtering has been built from the ground up to enable a better user experience and more filters`,
+      `Added game filters for the game domain, which games you have (or have not) played in a time period, expansions, reimplementation, and compilations.`,
+      `Added event filters for when, where, the duration, and many options to filter planned games.`,
+      `Added play log filters for time period breakdowns, where you played, and the result.`,
+      `Quickly cycle through time periods (weekly, monthly, yearly) when viewing play logs or games played.`,
+      `Sort your games list by alphabetical order, most played, recently played, and newly added.`,
+      `Aftergame+ has launched! We have been building Aftergame for free and with no ads. This will always be true, but to help support ongoing development, we have launched a new subscription which will give access to more features.`,
+      `We have made it easier to import or request new games through pressing the "Add games" button.`,
+    ],
+    fixes: [
+      `Fixed issues with editing event dates.`,
+      `Improved the UX of adding/changing/removing your current city.`,
+      `Improved the welcome screen on the home tab for new users.`,
+      `We now correctly show which account provider you used to sign in with.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.8.13",
     versionNumber: 29,
     date: "April 5, 2024",

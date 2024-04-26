@@ -62,12 +62,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className="flex flex-col">
         <Header />
-        {/* <Providers>{children}</Providers> */}
         {children}
         <Footer />
-        {/* <!-- Start of HubSpot Embed Code --> */}
-          {/* <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/23499985.js"></script> */}
-        {/* <!-- End of HubSpot Embed Code --> */}
       </body>
     </html>
   )

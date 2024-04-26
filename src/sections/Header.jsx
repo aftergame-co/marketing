@@ -1,14 +1,15 @@
 'use client';
 
-import Link from 'next/link'
-import { Popover } from '@headlessui/react'
-import { AnimatePresence, motion } from 'framer-motion'
-import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
-import { NavLinks } from '@/components/NavLinks'
-import clsx from 'clsx'
-import { useEffect, useState } from 'react'
+import Link from 'next/link';
+import { Popover } from '@headlessui/react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Container } from '@/components/Container';
+import { Logo } from '@/components/Logo';
+import { NavLinks } from '@/components/NavLinks';
+import clsx from 'clsx';
+import { useEffect, useState } from 'react';
 import { Button } from '@/components/Button';
+import { usePathname } from 'next/navigation';
 
 function MenuIcon(props) {
   return (
@@ -49,6 +50,7 @@ function MobileNavLink({ children, ...props }) {
 }
 
 export function Header({darkMode}) {
+  const pathname = usePathname()
   let [scrolled, setScrolled] = useState(false);
   useEffect(function mount() {
     setScrolled(window.pageYOffset > 30);
@@ -65,7 +67,7 @@ export function Header({darkMode}) {
   }, []);
 
   return (
-      <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', scrolled ? 'shadow-lg  bg-white py-4 lg:py-3' : 'py-4 lg:py-5')}>
+      <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', (scrolled || pathname.indexOf('/plus') !== -1) ? 'shadow-lg  bg-white py-4 lg:py-3' : 'py-4 lg:py-5')}>
         <nav>
           <Container className="relative z-50 flex justify-between">
             <div className="relative z-10 flex items-center gap-16 -mt-2.5 -ml-2.5 -mb-1.5">
@@ -125,8 +127,8 @@ export function Header({darkMode}) {
                               <MobileNavLink href="/publishers">
                                 Publishers
                               </MobileNavLink>
-                              <MobileNavLink href="/premium">
-                                Premium
+                              <MobileNavLink href="/plus">
+                                Aftergame+
                               </MobileNavLink>
                               <MobileNavLink href="/blog">
                                 Blog

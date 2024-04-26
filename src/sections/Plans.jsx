@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
 import clsx from 'clsx'
@@ -8,12 +10,12 @@ import { Logomark } from '@/components/Logo'
 
 const plans = [
   {
-    name: 'Lite',
+    name: 'Aftergame',
     featured: false,
-    price: { Monthly: '$0/month', Annually: '$0' },
+    price: { Monthly: 'Free forever', Annually: 'Free forever' },
     button: {
       label: 'Get Aftergame',
-      href: '#',
+      href: '/download?ref=free',
     },
     features: [
       'No ads, ever.',
@@ -22,15 +24,14 @@ const plans = [
       'Join groups and play with friends',
       'Easy import of your games collection and play logs',
     ],
-    logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Premium',
+    name: 'Aftergame+ Monthly',
     featured: true,
-    price: { Monthly: '$4.99/month', Annually: '$49.99' },
+    price: { Monthly: '$2.49', Annually: '$17.99' },
     button: {
-      label: 'Subscribe',
-      href: '#',
+      label: 'Subscribe in app',
+      href: '/download?ref=plus',
     },
     features: [
       'Analytics for all your game plays',
@@ -39,8 +40,39 @@ const plans = [
       'Ability to host events, create tournaments, and start leagues.',
       'Access new features early',
     ],
-    logomarkClassName: 'fill-cyan-500',
   },
+  {
+    name: 'Aftergame+ Yearly',
+    featured: true,
+    price: { Monthly: '$2.49', Annually: '$17.99' },
+    button: {
+      label: 'Subscribe in app',
+      href: '/download?ref=plus',
+    },
+    features: [
+      'Analytics for all your game plays',
+      'Deeper insights, custom graphs, and reports',
+      'Track your own datapoints on your game plays',
+      'Ability to host events, create tournaments, and start leagues.',
+      'Access new features early',
+    ],
+  },
+  // {
+  //   name: 'Premium Community',
+  //   featured: false,
+  //   price: { Monthly: '$14.99', Annually: '$129.99' },
+  //   button: {
+  //     label: 'Subscribe',
+  //     href: '#',
+  //   },
+  //   features: [
+  //     'Analytics for all your game plays',
+  //     'Deeper insights, custom graphs, and reports',
+  //     'Track your own datapoints on your game plays',
+  //     'Ability to host events, create tournaments, and start leagues.',
+  //     'Access new features early',
+  //   ],
+  // },
 ]
 
 function CheckIcon(props) {
@@ -72,12 +104,11 @@ function Plan({
   features,
   featured = false,
   activePeriod,
-  logomarkClassName,
 }) {
   return (
     <section
       className={clsx(
-        'flex flex-col overflow-hidden rounded-3xl p-6 shadow-lg shadow-gray-900/5',
+        'flex flex-col overflow-hidden rounded-3xl p-6 border-2 border-gray-100',
         featured ? 'order-first bg-gg-blue lg:order-none' : 'bg-white'
       )}
     >
@@ -107,7 +138,13 @@ function Plan({
                   'pointer-events-none translate-x-6 select-none opacity-0'
               )}
             >
+              <span className={clsx(
+                'pt-2 pr-1 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
+              )}>US</span>
               {price.Monthly}
+              <span className={clsx(
+                'pt-2 pl-2 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
+              )}>/ month</span>
             </span>
             <span
               aria-hidden={activePeriod === 'Monthly'}
@@ -117,7 +154,13 @@ function Plan({
                   'pointer-events-none -translate-x-6 select-none opacity-0'
               )}
             >
+              <span className={clsx(
+                'pt-2 pr-1 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
+              )}>US</span>
               {price.Annually}
+              <span className={clsx(
+                'pt-2 pl-2 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
+              )}>/ year</span>
             </span>
           </>
         )}
@@ -158,7 +201,7 @@ function Plan({
 }
 
 export function Plans() {
-  let [activePeriod, setActivePeriod] = useState('Monthly')
+  let [activePeriod, setActivePeriod] = useState('Annually')
 
   return (
     <section
@@ -175,7 +218,7 @@ export function Plans() {
             Pricing intro
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            1-2 lines
+            We are proud to offer Aftergame for free and with no ads. 
           </p>
         </div>
 
@@ -191,7 +234,7 @@ export function Plans() {
                   key={period}
                   value={period}
                   className={clsx(
-                    'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
+                    'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-0px)] px-[calc(theme(spacing.3)-0px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
                     period === 'Monthly'
                       ? 'rounded-l-lg'
                       : '-ml-px rounded-r-lg'

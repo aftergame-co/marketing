@@ -4,7 +4,7 @@ export default async function sitemap() {
     '/communities',
     '/events',
     '/publishers',
-    '/premium',
+    '/plus',
     '/blog',
     '/about',
     '/privacy',

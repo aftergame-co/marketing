@@ -33,8 +33,8 @@ export function NavLinks({scrolled, darkMode}) {
       ]
     },
     {
-      name: 'Premium',
-      href: '/premium',
+      name: 'Aftergame+',
+      href: '/plus',
     },
     {
       name: 'Blog',

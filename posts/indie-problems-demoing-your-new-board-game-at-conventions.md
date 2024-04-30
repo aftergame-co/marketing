@@ -60,7 +60,7 @@ If your game has been published, it’s probably already in the Aftergame app, b
 
 ## Tips for keeping your game demo tables full on the day
 
-If the convention you’re at is using Aftergame, [schedule some demo times](https://www.notion.so/plan-a-game-f7c32e95085545688a3303484c3dd9f8?pvs=21) in the convention’s event page. One of Aftergame’s main features at an event is helping people find others to play with, so you’ll get your game in front of people who are not only open to playing something new, they’re actively searching for a game to join. 
+If the convention you’re at is using Aftergame, [schedule some demo times](https://aftergame.notion.site/plan-a-game-4368c884e2ae4d40ba0b6d5598bf3bd8?pvs=4) in the convention’s event page. One of Aftergame’s main features at an event is helping people find others to play with, so you’ll get your game in front of people who are not only open to playing something new, they’re actively searching for a game to join. 
 
 If you’re planning to play full games during your demos, make sure to schedule more time than you think you’ll need. You don’t want to be rushing the current group to finish once the next group starts to assemble. Plus, if you rush them out, you’ll be missing the opportunity to close a sale or give them a pen or encourage them to sign up to the mailing list. 
 

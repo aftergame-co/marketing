@@ -12,6 +12,19 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.9.1",
+    versionNumber: 31,
+    date: "April 29, 2024",
+    blurb:
+      "Share the games you have been playing with new shareable images, some new filters, and some new badges for Aftergame+ subscribers.",
+    features: [
+      `Shareable images allow you to create a grid of the games you have been playing, along with many filters and options to share exactly what you want.`,
+      `Added the ability to filter our expansions, reimplementations, and compilations in your played games list.`,
+      `Aftergame+ subscribers now have a badge which shows that they are supporting our development - stay tuned for more badges for those who are early bird supporters.`,
+    ],
+    fixes: [`Fixed a small issue with icon colours.`, `Various other fixes and performance improvements.`],
+  },
+  {
     version: "0.9.0",
     versionNumber: 30,
     date: "April 25, 2024",

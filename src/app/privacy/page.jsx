@@ -18,7 +18,7 @@ export default function Privacy() {
         <Container>
           <div className='md:mx-16 xl:mx-24'>
             <h1 className="mb-6 text-4xl font-medium">Privacy Policy</h1>
-            <p className="mb-10"><strong className="font-semibold">Last updated: May 2, 2023.</strong></p>
+            <p className="mb-10"><strong className="font-semibold">Last updated: May 4, 2024.</strong></p>
             <p className="mb-4">Your privacy is critically important to us. At Aftergame we have a few fundamental principles:</p>
             <ul className="list-disc list-inside mb-4">
               <li className="ml-6 mb-2">We don’t ask you for personal information unless we truly need it.</li>
@@ -48,8 +48,8 @@ export default function Privacy() {
             <h4 className="mt-10 mb-2 text-xl font-medium">WHAT PERSONAL INFORMATION DO WE COLLECT</h4>
             <h5 className="mt-6 mb-2 font-semibold">Directly from you</h5>
             <p className="mb-4">We collect the following information directly from you.</p>
-            <p className="mb-4">When you sign up for, or login to, an account on our Website, App, or related services, we collect your first name, surname, email address, password, location, country, city, IP address, and any other information we require or ask for to set you up with an account. We may collect some of this information using third party authentication services (as described further in the from third party sources section below).</p>
-            <p className="mb-4">When you set up a profile, we collect your name, email address, profile photo, IP address and any other information we require or ask for to set you up a profile. You acknowledge and agree that parts of your profile may be publicly available with your consent.</p>
+            <p className="mb-4">When you sign up for, or login to, an account on our Website, App, or related services, we collect your email address, country, city, IP address, and any other information we require or ask for to set you up with an account. We may collect some of this information using third party authentication services (as described further in the from third party sources section below).</p>
+            <p className="mb-4">When you set up a profile, we collect your display name, email address, profile photo, IP address and any other information we require or ask for to set you up a profile. You acknowledge and agree that parts of your profile may be publicly available with your consent.</p>
             <p className="mb-4">When you use our App, we collect information about the smartphone and Internet connection you used, such as device IDs (Device tokens), IP address, advertising ID (e.g. IDFA, Google Advertising ID), country and language.</p>
             <p className="mb-4">When you log a play in our App, we collect information on the game you played, the people you played with, and where the game was played. We use this information to provide our analytics and insights. We do not share this information in any way that can be related back to you without your prior consent.</p>
             <p className="mb-4">When you fill in a contact or enquiry form on our Website, call us, meet us in person or otherwise contact us, we collect your name/email address and any other information you choose to provide to us.</p>
@@ -199,7 +199,7 @@ export default function Privacy() {
             <h4 className="mt-10 mb-2 text-xl font-medium">GOOGLE COOKIES</h4>
             <p className="mb-4">We use Google Analytics to collect information about visitors to our Website. Google Analytics collects information related to your device, browser, IP address, network location, and website activities to measure and report statistics about your interactions on our website. We use this information to help us manage the performance and design of our website and to improve our website.</p>
             <p className="mb-4">We use Google Analytics Advertising Features, including Remarketing with Analytics, Demographic and Interests reporting in Analytics, Campaign Manager integration (formerly known as DoubleClick), Display &amp; Video 360 integration, Google Display Network (GDN) Impression Reporting and Segments. We also use Google Ads.</p>
-            <p className="mb-4">For further information on how Google uses your personal information when you use our website and how to opt out of Google’s use of cookies, see <a className="text-gg-blue font-medium hover:underline" href="https://policies.google.com/?hl=en" target="_blank" rel="noreferrer">here</a>. In addition to the process described in this link, you can opt out using the process described below.</p>
+            <p className="mb-4">For further information on how Google uses your personal information when you use our website and how to opt out of Google’s use of cookies, see <a className="text-gg-blue font-medium hover:underline" href="https://policies.google.com/?hl=en" target="_blank" rel="noreferrer">Google’s policies</a>. In addition to the process described in this link, you can opt out using the process described below.</p>
             
             <h4 className="mt-10 mb-2 text-xl font-medium">HOW TO CONTROL OR OPT OUT OF COOKIES AND TARGETED ADVERTISING</h4>
             <p className="mb-4">You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. However, if you do this, you may have to manually adjust some preferences every time you visit our website and attempt to use our services, you may not be able to access certain parts of our website or services, and some functionalities may not work.</p>

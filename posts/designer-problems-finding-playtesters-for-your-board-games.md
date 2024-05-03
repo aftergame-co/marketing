@@ -83,7 +83,7 @@ You get to plan a playtest and invite players to try something unpublished but w
 ### Board game convention or other large tabletop gaming event
 If you have the opportunity, getting a table or time slot at a large board game event to playtest your game is a great way to get it in front of a LOT of new players. You could do this at any stage, but you’ll probably earn more buzz for your game the closer it is to a finished product.
 
-We’ve already covered [how to demo your game at a convention](https://www.aftergame.co/blog/indie-problems-emoing-your-new-board-game-at-conventions) and most of the advice also applies to playtesting. 
+We’ve already covered [how to demo your game at a convention](https://www.aftergame.co/blog/indie-problems-demoing-your-new-board-game-at-conventions) and most of the advice also applies to playtesting. 
 
 - The point I’d **add** is that you want to make sure people understand what stage of testing you’re in. If they sit down expecting to play a mostly finished game but you’re still working with a paper prototype, they may leave disappointed for reasons that have nothing to do with the content of your game.
 - The point I’d **take away** is that you probably don’t want to put much time and money into printed and promo materials, especially if you’re not at the stage of having an artistic through line. It’s more important right now to get feedback so you can make sure you have a game rather than hyping up an idea that might look very different by the end. The thing that’s most worth doing is having either a sign-up sheet or a QR code so people can join your mailing list and get updates as your game develops.

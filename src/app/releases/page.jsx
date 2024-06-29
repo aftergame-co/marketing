@@ -12,6 +12,92 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.9.8",
+    versionNumber: 35,
+    date: "June 24, 2024",
+    blurb: "We have added search additions and improvements throughout the app.",
+    features: [
+      `Added the ability to search for events from the main search bar.`,
+      `You can now search the schedule at an event.`,
+      `Search for games within any list (including the game library at an event).`,
+      `Browse and search all game expansions.`,
+      `Your games now show up as the first results when searching for games or expansions.`,
+      `Your friends now show up as the first results when searching for players.`,
+      `We now show a banner for unpublished games.`,
+      `UI Improvements to event guests list.`,
+    ],
+    fixes: [
+      `BGG username is remembered when importing.`,
+      `Profile bios can now be 2,000 characters long.`,
+      `[Android] Potential fix for the bottom bar showing up as white while in dark mode.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "0.9.7",
+    versionNumber: 34,
+    date: "June 14, 2024",
+    blurb: "More features and improvements for events, including recurring events, discussions in meetups, and more.",
+    features: [
+      `[Aftergame+] Copy and paste no longer, you can now create events which repeat daily, weekly, fortnightly, or monthly.`,
+      `Meetups now have discussions, so you can chat outside of a planned game.`,
+      `You can now view the guest list in any event.`,
+      `We now show who invited you to an event.`,
+      `[Behind the scenes] We have made good progress on the new groups feature - watch this space!`,
+    ],
+    fixes: [
+      `Fixed a bug when logging a play from a planned game where there were guests.`,
+      `When using "Play again" on a team game, we now correctly pre-fill teams.`,
+      `Fixed a bug which blocked the ability to remove an event banner.`,
+      `Improved the reliability of uploading images.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "0.9.3",
+    versionNumber: 33,
+    date: "May 29, 2024",
+    blurb:
+      "A large batch of improvement to events, some handy new filters, default locations, and more in this large quality of life update.",
+    features: [
+      `Added an easy way to see which games have available seats at an event.`,
+      `Added a quick way to view which games you are attending at an event.`,
+      `You can now set a location to use by default when logging plays or creating events.`,
+      `[Aftergame+] You are now able to add a Games library to an event for guests to browse.`,
+      `Added a filter when viewing play history or planned games to show results for a specific game.`,
+      `Added a search box when selecting roles / scenarios while logging a play.`,
+    ],
+    fixes: [
+      `Fixed a bug where changing your response wouldn't update.`,
+      `Fixed a bug which would cause editing meetups to break in some instances.`,
+      `Fixed a bug where your group options weren't showing in the "Posting as" dropdown.`,
+      `Fixed a bug which showed "undefined" when we were missing game info.`,
+      `Fixed an issue where public games could be seen from within a private event.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "0.9.2",
+    versionNumber: 32,
+    date: "May 9, 2024",
+    blurb:
+      "A whole bunch of additions and improvements to events (including assigning game masters or teachers) and a fast new way to log a play again!",
+    features: [
+      `We have improved the events list, adding in guest numbers and better showing all the information at a glance.`,
+      `When planning a game, you can now assign a game master or teacher to let everyone know who will be running the session.`,
+      `You can now mark yourself as attending and invite friends to conventions and meetups.`,
+      `It's now possible for event hosts to set a guest limit for the event.`,
+      `When viewing a play log, or directly after logging a play, there's now a handy "Play again" button which pre-fills all info.`,
+      `Event hosts can now remove themselves from events.`,
+      `You can now unfriend people 💔`,
+    ],
+    fixes: [
+      `Fixed the Suitable age filter to make it more obvious.`,
+      `Fixed some bugs when merging players.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.9.1",
     versionNumber: 31,
     date: "April 29, 2024",

@@ -57,7 +57,7 @@ export default function About() {
     <main className='pt-20'>
       <Container className='py-32 lg:py-40 xl:pt-40 xl:pb-60'>
         <p className='text-center text-xl text-gray-600'>OUR MISSION</p>
-        <h1 className='mt-4 text-center text-3xl lg:text-5xl xl:text-6xl tracking-tight xl:leading-snug lg:leading-snug leading-snug'>To organise the world’s <span className='text-gg-blue font-semibold'>game data</span> <br className='hidden sm:flex' />and <span className='text-gg-red font-semibold'>make it useful</span></h1>
+        <h1 className='mt-4 text-center text-4xl lg:text-6xl xl:text-7xl font-medium tracking-tight xl:leading-snug lg:leading-snug leading-snug'>To <span className='text-gg-blue font-semibold'>organise</span> the world’s <span className='text-gg-red font-semibold'>games</span></h1>
       </Container>
       <section
         id="our-story"

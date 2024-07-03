@@ -1,7 +1,7 @@
 import { Container } from '@/components/Container';
 import Link from 'next/link';
 import { EnvelopeIcon } from '@heroicons/react/24/outline';
-import { TwitterLogo, FacebookLogo, LinkedInLogo, DiscordLogo } from '@/components/SocialLogos';
+import { InstagramLogo, FacebookLogo, LinkedInLogo, DiscordLogo } from '@/components/SocialLogos';
 import { CallToAction } from '@/sections/CallToAction';
 
 export const metadata = {
@@ -45,7 +45,7 @@ export default function Contact() {
 
             <div className='mt-4 flex flex-wrap gap-2'>
               <Link 
-                href="https://www.facebook.com/Aftergame.co" 
+                href="https://www.facebook.com/AftergameApp" 
                 target='_blank' 
                 aria-label="Facebook" 
                 className="flex align-middle justify-center w-auto h-9 p-2 text-gray-500 hover:text-facebook-blue hover:bg-gray-200 rounded-lg"
@@ -72,13 +72,13 @@ export default function Contact() {
                 <p className="text-lg ml-2 leading-tight">Discord</p>
               </Link>
               <Link 
-                href="https://twitter.com/aftergame_co" 
+                href="https://www.instagram.com/aftergameapp" 
                 target='_blank' 
                 aria-label="Twitter" 
-                className="flex align-middle justify-center w-auto h-9 p-2 text-gray-500 hover:text-twitter-blue hover:bg-gray-200 rounded-lg"
+                className="flex align-middle justify-center w-auto h-9 pl-0.5 pr-2 py-0.5 text-gray-500 hover:text-instagram-pink hover:bg-gray-200 rounded-lg"
               >
-                <TwitterLogo />
-                <p className="text-lg ml-2 leading-tight">Twitter</p>
+                <InstagramLogo />
+                <p className="text-lg ml-0.5 mt-1.5 leading-tight">Instagram</p>
               </Link>
             </div>
             <div className='hidden lg:flex py-8'></div>

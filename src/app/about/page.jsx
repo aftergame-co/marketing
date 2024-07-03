@@ -34,6 +34,12 @@ export default function About() {
       linkedIn: 'https://www.linkedin.com/in/chalene-scott-5571a879',
     },
     {
+      image: '/images/about/team/andrew.jpg',
+      name: 'Andrew Marks',
+      role: 'Advisor',
+      linkedIn: 'https://www.linkedin.com/in/andrewjohnmarks/',
+    },
+    {
       image: '/images/about/team/stephane.jpg',
       name: 'Stéphane Busso',
       role: 'Technical Advisor',

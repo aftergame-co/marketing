@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Plans } from '@/sections/Plans';
 import { CallToAction } from '@/sections/CallToAction';
-import { HeartIcon, AdjustmentsVerticalIcon, StarIcon } from '@heroicons/react/24/outline';
+import { HeartIcon, AdjustmentsVerticalIcon, StarIcon, CalendarDaysIcon } from '@heroicons/react/24/outline';
 
 export const metadata = {
   title: 'Aftergame+',
@@ -71,6 +71,18 @@ export default function Plus() {
         </div>
 
         <div className='flex flex-row items-center gap-x-8 p-8 pr-6 rounded-2xl bg-white border-2 border-gray-100 mb-4'>
+          <CalendarDaysIcon className='w-10 h-10 flex-shrink-0' />
+          <div className='flex-1 text-left'>
+            <p variant="titleMedium" className="text-lg font-bold">
+              Add to your events
+            </p>
+            <p className='text-lg leading-6 text-gray-700'>
+              Let people know which games will be at your event with the games library and unlock the ability to creating recurring events.
+            </p>
+          </div>
+        </div>
+
+        <div className='flex flex-row items-center gap-x-8 p-8 pr-6 rounded-2xl bg-white border-2 border-gray-100 mb-4'>
           <AdjustmentsVerticalIcon className='w-10 h-10 flex-shrink-0' />
           <div className='flex-1 text-left'>
             <p variant="titleMedium" className="text-lg font-bold">
@@ -95,7 +107,7 @@ export default function Plus() {
         </div>
         <Button
           href="/download?ref=plus"
-          className="mt-16 !text-xl !px-16 !py-5"
+          className="mt-16 !text-xl !px-16 !py-5 bg-gg-blue hover:bg-gg-red active:bg-gg-red"
           aria-label="Subscribe to Aftergame+"
         >
           Subscribe in app

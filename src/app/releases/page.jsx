@@ -12,6 +12,43 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "0.9.12",
+    versionNumber: 37,
+    date: "July 13, 2024",
+    blurb: "A whole bunch of bug fixes and you can now edit or delete your custom roles and scenarios.",
+    features: [`Edit and delete any play log property options (like roles, scenarios, etc) you created in the past.`],
+    fixes: [
+      `Fixed an issue where locations couldn't be selected.`,
+      `Scores no longer reset when you add more players to a play log.`,
+      `Fixed an issue with the play log timer not correctly recording the time when the app is in the background.`,
+      `You will no longer receive comment notifications for events you are no longer going to.`,
+      `Blocked the ability to edit locations you did not create.`,
+      `Recent searches will no longer show partial queries.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "0.9.10",
+    versionNumber: 36,
+    date: "July 7, 2024",
+    blurb: "Add photos to play logs, get notified for games and events you've joined, and more general improvements.",
+    features: [
+      `You can now add photos to play logs.`,
+      `Play log history now shows photos, along with new filters to find play logs with or without attached images.`,
+      `Get notified when events you're going to are happening soon (15 mins before for games at an event and the day before for events).`,
+      `Added a handy list of your upcoming events to the home screen.`,
+      `Added the ability to edit / remove game lists.`,
+      `Made editing / removing locations a lot easier.`,
+    ],
+    fixes: [
+      `A bunch of fixes for event game schedules.`,
+      `Fixed the 'Seats available' filter.`,
+      `A bunch of fixes and improvements to share images.`,
+      `[Android] Fixed incorrectly positioned dropdown menus.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.9.8",
     versionNumber: 35,
     date: "June 24, 2024",

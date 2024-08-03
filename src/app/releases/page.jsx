@@ -12,6 +12,50 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "1.1.0",
+    versionNumber: 39,
+    date: "July 27, 2024",
+    blurb:
+      "Add scores on the fly with a new score calculator keyboard, log scores for each player in team-based games and many fixes.",
+    features: [
+      `Added a new keyboard to allow for easy addition, subtraction, and tabbing to the previous/next score.`,
+      `We now save the input (e.g. "4+5-3+7") and output (e.g. "13") scores so you can come back to edit any part.`,
+      `Team-based games can now have a per-team score, per-player score, neither, or both, to better allow logging for all team games.`,
+      `Added your friendship status of players in group member and event attendee lists.`,
+      `Added a new notification when new events are created within your group.`,
+      `It is now more obvious when there are new group discussions.`,
+      `Private groups now correctly show lock information if non-group members try accessing it.`,
+    ],
+    fixes: [
+      `We no longer show duplicate players in the group member list.`,
+      `Fixed bug where you were not selected by default when logging a play.`,
+      `Fixed bug which did not select your default location when logging a play.`,
+      `Fixed bugs with selecting roles & scenarios.`,
+      `Fixed bugs with deleting teams from a play log.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "1.0.0",
+    versionNumber: 38,
+    date: "July 19, 2024",
+    blurb:
+      "MAJOR RELEASE! Today we launch groups. Join local communities or create your own public and private groups to share and plan events.",
+    features: [
+      `Groups are here! We have moved history into your profile and added a new groups tab.`,
+      `Groups show all events, planned games, and member posts. Game lists, stats, shared history, and challenges are coming in the future!`,
+      `Added the ability to create and customise your own groups, adding locations so that people in your group can plan or log games at the right place.`,
+      `Added the ability to create posts. Currently only text, but soon you can attach images, play logs, and game lists.`,
+      `Added the ability to like comments and posts.`,
+      `You can now click on group names wherever you see them to go to the group page.`,
+      `Made logging plays from a planned game easier to access.`,
+    ],
+    fixes: [
+      `Fixed a bug in the event attendance bottom sheet where it would not scroll for small devices.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "0.9.12",
     versionNumber: 37,
     date: "July 13, 2024",

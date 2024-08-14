@@ -2,6 +2,7 @@ import { CallToAction } from '@/sections/CallToAction';
 import { HomeHero } from '@/sections/HomeHero';
 import { PrimaryFeatures } from '@/sections/PrimaryFeatures';
 import { SecondaryFeatures } from '@/sections/SecondaryFeatures';
+import { Reviews } from '@/sections/Reviews';
 
 export default function Home() {
   return (
@@ -9,8 +10,8 @@ export default function Home() {
       <HomeHero />
       <PrimaryFeatures />
       <SecondaryFeatures />
+      <Reviews />
       <CallToAction />
-      {/* <Reviews /> */}
     </main>
   )
 }

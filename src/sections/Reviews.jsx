@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useMemo, useRef, useState } from 'react'
 import clsx from 'clsx'
 import {
@@ -13,87 +15,93 @@ import { Container } from '@/components/Container'
 
 const reviews = [
   {
-    title: 'It really works.',
-    body: 'I downloaded Pocket today and turned $5000 into $25,000 in half an hour.',
-    author: 'CrazyInvestor',
+    title: 'Top tool',
+    body: 'We have a growing game group and this has been a marvelous help in organizing our games and adding to the reach of people that see us. The developer is helpful and responsive. Worth every bit of the five stars.',
+    author: 'Amanal',
     rating: 5,
   },
   {
-    title: 'You need this app.',
-    body: 'I didn’t understand the stock market at all before Pocket. I still don’t, but at least I’m rich now.',
-    author: 'CluelessButRich',
+    title: 'Great app',
+    body: 'Used it at Wellycon to join and create several boardgames. Made the whole experience a lot less stressful and enjoyable.',
+    author: 'Jagg8n',
     rating: 5,
   },
   {
-    title: 'This shouldn’t be legal.',
-    body: 'Pocket makes it so easy to win big in the stock market that I can’t believe it’s actually legal.',
-    author: 'LivingDaDream',
+    title: 'Amazing!',
+    body: 'We are using this for our meets and it has just grown and grown into a fabulous tool. We will certainly be using it going forward for all our events. Developers are amazing, responsive to feedback and always friendly and helpful. If you are a board game club or event, look into this for sure!',
+    author: 'Tinsoup',
     rating: 5,
   },
   {
-    title: 'Screw financial advisors.',
-    body: 'I barely made any money investing in mutual funds. With Pocket, I’m doubling my net-worth every single month.',
-    author: 'JordanBelfort1962',
+    title: 'Great potential',
+    body: 'Atfergame is easily my preferred app for recording plays, scheduling games, and planning events. The developers are very responsive and eager to include improvements an developments when they can. I believe this app has the potential to keep growing and improving and will become even better over time.',
+    author: 'Mitch',
     rating: 5,
   },
   {
     title: 'I love it!',
-    body: 'I started providing insider information myself and now I get new insider tips every 5 minutes. I don’t even have time to act on all of them. New Lamborghini is being delivered next week!',
-    author: 'MrBurns',
+    body: 'Great app, wonderful platform to manage my games and play experience. Well done to the team!',
+    author: 'Robert',
     rating: 5,
   },
   {
-    title: 'Too good to be true.',
-    body: 'I was making money so fast with Pocket that it felt like a scam. But I sold my shares and withdrew the money and it’s really there, right in my bank account. This app is crazy!',
-    author: 'LazyRich99',
+    title: 'Easy to use',
+    body: 'UI is simple and super easy to use. Excited for the future of Aftergame!',
+    author: 'Rhys',
     rating: 5,
   },
   {
-    title: 'Wish I could give 6 stars',
-    body: 'This is literally the most important app you will ever download in your life. Get on this before it’s so popular that everyone else is getting these tips too.',
-    author: 'SarahLuvzCash',
+    title: 'Highly recommended!',
+    body: 'Great app, it helps us keep track of our collection of games as well as our game scores.',
+    author: 'Sophie',
     rating: 5,
   },
   {
-    title: 'Bought an island.',
-    body: 'Yeah, you read that right. Want your own island too? Get Pocket.',
-    author: 'ScroogeMcduck',
+    title: 'Great for Game Days',
+    body: 'We have used this app for our last few game days and it’s worked so well! Lets people plan to meet up for games prior and on the day. If you can organise for the map to be added if you’re planning a big event it lets people find the table very easily.',
+    author: 'CnrDvn',
     rating: 5,
   },
   {
-    title: 'No more debt!',
-    body: 'After 2 weeks of trading on Pocket I was debt-free. Why did I even go to school at all when Pocket exists?',
-    author: 'BruceWayne',
+    title: 'What da, no ads',
+    body: 'And yet a decent app. This is amazing and look forward to seeing what else you bring to the app in future updates. Keep it up.',
+    author: 'Maverick Jeske',
     rating: 5,
   },
   {
-    title: 'I’m 13 and I’m rich.',
-    body: 'I love that with Pocket’s transaction anonymization I could sign up and start trading when I was 12 years old. I had a million dollars before I had armpit hair!',
-    author: 'RichieRich',
+    title: 'Great for cons',
+    body: 'Very easy to use at supported cons to create and join planned games. Able to find a great 3P game of Ark Nova with experienced players (not always assured at a con) that finished in 75 minutes.',
+    author: 'Graeme',
     rating: 5,
   },
   {
-    title: 'Started an investment firm.',
-    body: 'I charge clients a 3% management fee and just throw all their investments into Pocket. Easy money!',
-    author: 'TheCountOfMonteChristo',
+    title: 'Local board game club loving it',
+    body: 'This app is fabulous for organising games with friends, recording your plays, tracking the games in your collection and connecting with gaming friends! The developer is very responsive to feedback and each update makes this app even better. Our local Board Game club is now using the app and they create an event and we can schedule our games for people to join. Keep up the great work!',
+    author: 'Christine',
     rating: 5,
   },
   {
-    title: 'It’s like a superpower.',
-    body: 'Every tip Pocket has sent me has paid off. It’s like playing Blackjack but knowing exactly what card is coming next!',
-    author: 'ClarkKent',
+    title: 'Fantastic',
+    body: 'Fantastic app for tracking gameplay and my game collection. Amazing team and really impressive community support!',
+    author: 'Andrew',
     rating: 5,
   },
   {
-    title: 'Quit my job.',
-    body: 'I downloaded Pocket three days ago and quit my job today. I can’t believe no one else thought to build a stock trading app that works this way!',
-    author: 'GeorgeCostanza',
+    title: 'Very happy',
+    body: 'Brilliant app and responsive development team!',
+    author: 'Jessica',
     rating: 5,
   },
   {
-    title: 'Don’t download this app',
-    body: 'Unless you want to have the best life ever! I am literally writing this from a yacht.',
-    author: 'JeffBezos',
+    title: 'Only getting better',
+    body: 'Still early days for this app, but I like what I see! The ability to see venue’s game libraries, members’ game collections and being able to preplan individual games makes it so much easier to connect with other members and play the games you want to play. There’s still a few improvements to be made but that’s to be expected with an app this new. The development team have proven very approachable when suggesting improvements and reporting bugs. It will only get better as more people use it!',
+    author: 'Matthew',
+    rating: 5,
+  },
+  {
+    title: 'Love it!',
+    body: 'So happy with this app! Great for events and planning games too!',
+    author: 'Dana',
     rating: 5,
   },
 ]
@@ -114,7 +122,7 @@ function StarRating({ rating }) {
           key={index}
           className={clsx(
             'h-5 w-5',
-            rating > index ? 'fill-cyan-500' : 'fill-gray-300'
+            rating > index ? 'fill-gg-blue' : 'fill-gray-300'
           )}
         />
       ))}
@@ -262,10 +270,10 @@ export function Reviews() {
           id="reviews-title"
           className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
         >
-          Everyone is changing their life with Pocket.
+          Join the party and elevate your gaming.
         </h2>
         <p className="mt-2 text-lg text-gray-600 sm:text-center">
-          Thousands of people have doubled their net-worth in the last 30 days.
+          We constantly improve and always take on feedback to deliver the platform our hobby deserves.
         </p>
         <ReviewGrid />
       </Container>

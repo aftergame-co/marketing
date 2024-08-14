@@ -391,24 +391,26 @@ function AppDemo() {
 
 export function HomeHero({ className }) {
   return (
-    <div className={clsx("overflow-hidden py-16 sm:py-32 lg:pb-32", className)}>
+    <div className={clsx("overflow-hidden py-16 sm:py-32 lg:pb-24", className)}>
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-6">
             <h1 className="text-5xl md:text-6xl xl:text-7xl font-medium tracking-tighter md:tracking-tight text-gray-900">
-            {/* Record, share, and analyse your game playing. */}
+            {/* Never miss a game */}
+            {/* Every game matters */}
+            {/* Social gaming like never before */}
             {/* Remember every epic moment and track your gaming journey */}
             Remember <span className='text-gg-blue font-semibold'>every</span><br /><span className='text-gg-red font-semibold'>epic</span> moment
             </h1>
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
             {/* Unlock the full potential of your gaming passion with our app, where you can easily record, share, and gain valuable insights into the games you love - taking your gameplay to the next level. */}
-            Record the games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.
+            {/* Record the games you love on Aftergame to gain meaningful insights and share your gaming journey with friends. */}
+            {/* With shared play logs, easily managed collections, and built-in planning for epic game nights and events, and group organisation tools, Aftergame lets you dive into social gaming like never before. */}
+            Gather your group, find events, plan epic game nights, create shared play logs, and easily manage your collection on Aftergame.
+            {/* Aftergame lets you dive into social gaming like never before. */}
+            {/* With shared play logs, easily managed collections, and built-in planning for epic game nights and events, and group organisation tools, Aftergame lets you dive into social gaming like never before. */}
             {/* ecord, share, and gain valuable insights into the games you love */}
             </p>
-            {/* <div className="pt-6 pb-16 xl:pb-0 lg:w-4/5">
-              <WaitlistForm label="Sign up for early access" />
-            </div> */}
-
             <div className="pt-6 pb-16 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4">
               <AppStoreLink />
               <GooglePlayLink />

@@ -12,6 +12,30 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "1.2.0",
+    versionNumber: 40,
+    date: "August 28, 2024",
+    blurb:
+      "We have rebuilt how we store collections from the ground up, enabling many new features to manage your games.\n\nThere should be no changes to the games in your collection, but please email our support if you have issues.",
+    features: [
+      `We have streamlined the process for adding new games to your collection.`,
+      `You can now add multiple copies of the same game.`,
+      `You can now add more details to your game copies, like price, where you acquired it from and more. (not yet synced with BGG)`,
+      `Filters have been added to the game sheet when logging a play or planning a game.`,
+      `We better summarise and show all game copy and expansion details in a new collection section of game pages.`,
+      `The profile screen and game list tiles have received some visual upgrades with more info shown.`,
+      `Importing from BGG can now handle multiple copies in your game collection.`,
+    ],
+    fixes: [
+      `Importing from BGG will now correctly update the lists your games are in.`,
+      `Connecting an address to a location now works from the event screen.`,
+      `The events and game schedule lists should now always show all events correctly.`,
+      `Fixed a lot of bugs to do with loading game libraries and other players' collections.`,
+      `We reduced how far you will see events when the "Near me" filter turned on.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "1.1.0",
     versionNumber: 39,
     date: "July 27, 2024",

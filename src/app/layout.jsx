@@ -7,7 +7,7 @@ import { Header } from '@/sections/Header';
 
 export const metadata = {
   title: {
-    default: 'Aftergame | Play tracking and statistics, reimagined',
+    default: 'Aftergame | The social tabletop gaming app',
     template: '%s | Aftergame',
   },
   applicationName: 'Aftergame',
@@ -18,14 +18,14 @@ export const metadata = {
     canonical: '/'
   },
   openGraph: {
-    title: 'Aftergame | Play tracking and statistics, reimagined',
+    title: 'Aftergame | The social tabletop gaming app',
     description: 'Record the tabletop games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.',
     url: 'https://www.aftergame.co',
     siteName: 'Aftergame',
     images: [
       {
         url: 'https://www.aftergame.co/_next/image?url=/images/ag-thumbnail.png&w=1200&q=75',
-        alt: 'Aftergame | Play tracking and statistics, reimagined',
+        alt: 'Aftergame | The social tabletop gaming app',
         width: 1200,
         height: 630,
       },

@@ -12,6 +12,49 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "1.3.0",
+    versionNumber: 42,
+    date: "September 19, 2024",
+    blurb:
+      "Post game lists and play log results in discussions, the event schedule is rebuilt, sign up with Discord and much more!",
+    features: [
+      `Share more! Posts can now have game lists or play log results embedded in them.`,
+      `You can now post discussions in events.`,
+      `The event schedule has been rebuilt from the ground up to make for easier browsing at larger events.`,
+      `You can now sign up to Aftergame with Discord.`,
+      `Event hosts have the ability to block attendee created games and posts.`,
+      `Events can now have multiple game lists attached to them.`,
+    ],
+    fixes: [
+      `Fixed a bug where you could not change the acquired date for a game copy.`,
+      `Fixed the date picker in dark mode.`,
+      `Play log results should now load instantly.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "1.2.1",
+    versionNumber: 41,
+    date: "September 4, 2024",
+    blurb:
+      "Time zones, content ratings, better event permissions, and many more quality of life improvements for events in today's release.",
+    features: [
+      `We now support time zones for events. Set the time zone when creating an event, and all times will be shown in the correct time at the event.`,
+      `You can now add a content rating to planned games to let potential players know the age suitability.`,
+      `Game Masters and teachers can now edit the details for events they are assigned to, even if they are not the host.`,
+      `Host and group admins can now edit any game on the schedule, even those created by attendees.`,
+      `You can now view the event location in your device's map app as well as copy the address.`,
+      `We now show the RPG game system being used in a planned game for an RPG.`,
+    ],
+    fixes: [
+      `Fixed a bug with repeating events not taking into account daylight savings.`,
+      `Fixed a bug which sometimes showed a public group as private.`,
+      `Expansions are now excluded from your games list by default.`,
+      `Fixed a bug which meant you couldn't remove the price paid from a game copy.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "1.2.0",
     versionNumber: 40,
     date: "August 28, 2024",

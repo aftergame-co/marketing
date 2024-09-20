@@ -18,7 +18,7 @@ export function EventsPrimary() {
   return (
     <section
       id="features"
-      aria-label="Play tracking and statistics, reimagined"
+      aria-label="The social tabletop gaming app"
       className="bg-gg-blue py-20 sm:py-32"
       ref={containerRef}
     >

@@ -2,6 +2,7 @@ import { CommunitiesContact } from '@/sections/CommunitiesContact';
 import { CommunitiesHero } from '@/sections/CommunitiesHero';
 import { CommunitiesPrimary } from '@/sections/CommunitiesPrimary';
 import { CommunitiesSecondary } from '@/sections/CommunitiesSecondary';
+import { CommunitiesPosts } from '@/sections/CommunitiesPosts';
 
 export const metadata = {
   title: 'Communities connect over tabletop games with Aftergame',
@@ -16,6 +17,7 @@ export default function Communities() {
       <CommunitiesHero />
       <CommunitiesPrimary />
       <CommunitiesSecondary />
+      <CommunitiesPosts />
       <CommunitiesContact />
     </main>
   )

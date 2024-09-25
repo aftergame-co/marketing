@@ -10,9 +10,12 @@ import matter from 'gray-matter';
 // Import 'remark', library for rendering markdown
 import { remark } from 'remark';
 import remarkParse from 'remark-parse';
+import remarkGfm from 'remark-gfm';
+import { remarkExtendedTable, extendedTableHandlers } from 'remark-extended-table';
 import rehypeStringify from 'rehype-stringify';
 import remarkRehype from 'remark-rehype';
 import addClasses from 'rehype-add-classes';
+import { table } from 'console';
 
 // --------------------------------
 // GET THE PATH OF THE POSTS FOLDER
@@ -114,7 +117,12 @@ export async function getPostData(id) {
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
     .use(remarkParse)
-    .use(remarkRehype, {allowDangerousHtml: true})
+    .use(remarkGfm)
+    .use(remarkExtendedTable)
+    .use(remarkRehype, {allowDangerousHtml: true, handlers: {
+      // any other handlers
+      ...extendedTableHandlers,
+    }})
     .use(rehypeStringify, {allowDangerousHtml: true})
     .use(addClasses, {
         h1: 'mt-10 mb-2 text-3xl font-medium text-gray-900',
@@ -123,10 +131,14 @@ export async function getPostData(id) {
         p: 'text-md mb-4',
         ul: 'list-disc list-inside mb-4',
         ol: 'list-decimal list-inside mb-4',
-        li: 'ml-6 mb-4',
+        li: 'ml-6 mb-3',
         strong: 'font-semibold',
         a: 'text-gg-blue font-medium hover:underline',
         hr: 'my-8',
+        blockquote: 'pt-4 px-4 pb-px bg-gray-200 rounded-lg text-lg font-medium',
+        table: 'table-auto block sm:table',
+        td: 'inline-block min-w-full sm:table-cell sm:min-w-32 lg:min-w-64 p-2 pb-6',
+        img: 'mx-auto rounded',
     })
     .process(matterResult.content)
   const contentHtml = processedContent.toString()

@@ -3,7 +3,7 @@ title: 'Playtesting your board game: How to find playtesters  for every stage of
 date: '2024-04-08'
 image: '/images/posts/2024-04-08.png'
 intro: 'Most great games aren’t created in a vacuum. You might design a tabletop game by yourself but if you’re not Friedemann Friese, you’re going to need some people to help you test it. Who are the best people to help you at each stage of development and how do you find them?'
-category: 'designers'
+category: ['designers']
 author_name: 'Chalene Scott'
 author_image: '/images/about/team/chalene.jpg'
 author_title: 'Head of Community'

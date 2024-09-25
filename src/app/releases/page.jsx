@@ -12,6 +12,24 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "1.3.2",
+    versionNumber: 43,
+    date: "September 24, 2024",
+    blurb: "Featured events, improvements to event schedules, plus some notification and performance improvements.",
+    features: [
+      `Featured events show off the biggest events happening in your area, making them easy to find.`,
+      `We now scroll to the next up event in the event schedule, and show an indicator of where "now" is.`,
+      `Added a notification in meetups for when someone is planning a new game.`,
+    ],
+    fixes: [
+      `We now scroll to the comments section when you click into a comment notification.`,
+      `The events tab and event schedules should have better performance.`,
+      `Added a permission check for push notification when you view the notification screen.`,
+      `Fixed event section header timezones.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "1.3.0",
     versionNumber: 42,
     date: "September 19, 2024",

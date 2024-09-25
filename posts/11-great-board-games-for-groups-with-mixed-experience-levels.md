@@ -3,7 +3,7 @@ title: '11 Great Board Games for Groups with Mixed Experience Levels'
 date: '2023-12-16'
 image: '/images/posts/2023-12-16-6.jpg'
 intro: 'Don’t worry about inviting your serious gamer friends and your new gamer friends to the same game night; check out these fantastic options to keep everyone happy.'
-category: 'players'
+category: ['players']
 author_name: 'Chalene Scott'
 author_image: '/images/about/team/chalene.jpg'
 author_title: 'Head of Community'

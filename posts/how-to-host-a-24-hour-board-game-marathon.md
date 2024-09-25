@@ -3,7 +3,7 @@ title: 'How to Host a 24-Hour Board Game Marathon'
 date: '2024-01-23'
 image: '/images/posts/2024-01-23.jpg'
 intro: 'Take board gaming to the next level with a 24-hour marathon. The people may come and go (because 24 hours is a long game night) but you’ll have the memories forever.'
-category: 'players'
+category: ['players']
 author_name: 'Chalene Scott'
 author_image: '/images/about/team/chalene.jpg'
 author_title: 'Head of Community'

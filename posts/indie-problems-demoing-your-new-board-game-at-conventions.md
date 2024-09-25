@@ -3,7 +3,7 @@ title: 'Indie Problems: Demoing your new board game at conventions'
 date: '2024-02-24'
 image: '/images/posts/2024-02-24.jpg'
 intro: 'Congratulations, you’ve got a great tabletop game ready for players to engage with! Now you just have to sift through a convention hall full of people to find the ones who want the game you’re selling.'
-category: 'designers'
+category: ['designers']
 author_name: 'Chalene Scott'
 author_image: '/images/about/team/chalene.jpg'
 author_title: 'Head of Community'

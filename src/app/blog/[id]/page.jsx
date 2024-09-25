@@ -39,7 +39,7 @@ export default async function Post({ params }) {
         className="pt-12 pb-20"
       >
         <Container>
-          <div className='md:px-24 xl:px-32'>
+          <div className='sm:px-8 md:px-36 xl:px-48'>
             {postData.image && (
               <Image
                 src={postData.image}

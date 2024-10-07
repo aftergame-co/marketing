@@ -108,11 +108,10 @@ export function EventsHero() {
                 </Button>
               </Link>
             </div>
-            <div className="flex flex-row items-center gap-x-8 py-6">
-
+            <div className="flex flex-row items-center gap-x-8 lg:pl-10 pt-6">
               <Image
-                src='/temp/csg.png'
-                alt='Canberra Games Society'
+                src='/temp/lpg.png'
+                alt='Lets Play Games'
                 width={64}
                 height={64}
                 className='flex-shrink-0 mr-2'
@@ -124,15 +123,22 @@ export function EventsHero() {
                 height={96}
                 className='flex-shrink-0'
               />
-
+              <Image
+                src='/temp/vr.png'
+                alt='VR Distribution'
+                width={112}
+                height={112}
+                className='flex-shrink-0'
+              />
+            </div>
+            <div className="flex flex-row items-center gap-x-8 lg:pl-16 pb-6">
               <Image
                 src='/temp/ttcon.webp'
                 alt='TabletopCon'
                 width={104}
                 height={104}
-                className='flex-shrink-0'
+                className='flex-shrink-0 mr-2'
               />
-
               <Image
                 src='/temp/wellycon.webp'
                 alt='Wellycon'

@@ -12,6 +12,27 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "1.3.7",
+    versionNumber: 44,
+    date: "October 16, 2024",
+    blurb:
+      "Early support for Play To Win (see changelog for details), discussion moderation, and more performance improvements.",
+    features: [
+      `We now have the ability to open up a form right from a QR code! This enables play to win, playtesting feedback, and much more. Contact hello@aftergame.co for more details.`,
+      `Added the ability for group admins and event hosts to delete posts and comments`,
+      `You can now report offensive posts / comments.`,
+    ],
+    fixes: [
+      `You can now delete guest players even if they are attending events or members of groups.`,
+      `When setting yourself as 'Not going' to an event, it will also free up any claimed seats for games at that event.`,
+      `Fixed a bug which didn't always select expansions correctly in play logs.`,
+      `We now load less data from our server, speeding up load times for many screens.`,
+      `[Android] Removed some unnecessary app permissions.`,
+      `[Android] Added a monochrome app icon to support theming.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "1.3.2",
     versionNumber: 43,
     date: "September 24, 2024",

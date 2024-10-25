@@ -59,7 +59,7 @@ export default function About() {
       description: 'Just like in cooperative games, we know success comes from combining strengths. We encourage open communication and collaboration to achieve our shared goals.',
     },
     {
-      name: 'Progress, Not Perfection',
+      name: 'Every Turn Matters',
       description: 'The best games are won through steady progress, not waiting for the perfect hand. We focus on moving forward with each action.',
     },
     {
@@ -95,15 +95,11 @@ export default function About() {
           <p className='mb-10 text-center text-xl text-gray-100'>THE AFTERGAME STORY</p>
           <div className='bg-white rounded-2xl md:mx-20 xl:mx-40 p-6 md:p-20'>{/* lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20"> */}
             {/* <div className='lg:col-span-6 text-lg text-gray-900'> */}
-            <p><span className='text-gg-blue font-bold'>In late-2022</span>, founders John Brent and Eric Poulin decided to start recording the games they played. Their first instinct was a spreadsheet, but it had to be easy to enter results with dropdowns… and formulas… <i>and pivot tables!</i> At first it was very simple, letting you choose a winner and keeping a tally. This quickly got more complex as they added more and more things to track.</p>
+            <p><span className='text-gg-blue font-bold'>In late-2022</span>, founders John Brent and Eric Poulin decided to start recording the games they played. Their first instinct was a spreadsheet, but it had to be easy to enter and view results with dropdowns... and formulas... <i>and pivot tables!</i> At first it was simple, letting you choose a winner and keeping a tally. This quickly got more complex as they started tracking more things. Soon, the penny dropped… there’s definitely an app for this! A quick search found a handful of apps that seemed to do some of what they were building, though none had everything they wanted.</p>
 
-            <p className='mt-6'>It was soon that the penny dropped… there’s definitely an app for this! A quick search found a handful of apps that seemed to do what they were building. Though as good as some of these apps were, there were some opportunities missed.</p>
+            <p className='mt-6'>Their spreadsheet allowed either of them to log a game from their phone and for it to be immediately shown to the other. None of the apps did this. The spreadsheet also had dropdowns pre-built with relevant information for the game they were playing. Again, none of the other apps had this for all the games they wanted. The scoring breakdown in 7 Wonders, the factions in Root, the scenarios in Betrayal at House on the Hill, and <i>“how do these two expansions work together!?”</i> could all be done automatically to simplify tracking their games. They got to work building a solution.</p>
 
-            <p className='mt-6'>Their spreadsheet allowed either of them to log a game from their phone in two taps and for it to be immediately shown to the other. None of the apps did this. The spreadsheet also had dropdowns pre-built with relevant information for the game they were playing. Again, none of the other apps had this for all the games they wanted.</p>
-
-            <p className='mt-6'>The scoring breakdown in 7 Wonders, the factions in Root, the scenarios in Betrayal at House on the Hill, and <i>“how do these two expansions work together!?”</i> could all be captured, made available as interesting data points to track and easy scoring. Having games played by friends all show up on their phones in real-time and personalised stats immediately available could be made possible.</p>
-
-            <p className='mt-6'>Partnering with co-founder Eli Labes and then Chalene Scott, the team started talking to game players and building what would become <span className='text-gg-red font-bold'>Aftergame</span>.</p>
+            <p className='mt-6'>With a basic app, they made the trip to Wellycon to see how it would work in the wild and what else about tabletop gaming their app may be able to enhance (this is where they met Chalene Scott, who soon joined the team). They encountered some difficulty in finding a game to join and discovered, in talking to other players and event organisers, that they were not alone in facing this challenge. Helping people who want to play the same games find each other at events and meetups soon became a core part of the platform. With all these puzzle pieces in place—shared game logs, collection tracking, events, and groups—<span className='text-gg-red font-bold'>Aftergame was born</span>.</p>
             {/* </div> */}
             {/* <div className='lg:col-span-6'>
                   <img src='../images/gg-0.1.png' className='border-2 border-gg-blue rounded-2xl' />

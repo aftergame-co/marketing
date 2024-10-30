@@ -12,6 +12,32 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "1.4.0",
+    versionNumber: 45,
+    date: "October 30, 2024",
+    blurb:
+      "Add group game lists, generate QR codes, see the combined collection of group members, a refresh of the group page and much more!",
+    features: [
+      `Groups have had a massive refresh, making common actions more accessible while allowing the page to grow with new and upcoming features.`,
+      `Added the ability to add "official" group lists to let members know what's available to the group.`,
+      `Easily browse the combined collections of all group members to see what everyone owns, has played, and wants to play!`,
+      `Generate invite QR codes for both events and groups.`,
+      `Added a way to search for groups on the groups page.`,
+      `Event hosts can now control who is going to an event (including removing themselves as "Going")`,
+      `Added a new filter when browsing planned games to not show games as part of a wider event.`,
+    ],
+    fixes: [
+      `All pages now load in a full view to give more space and focus to the content.`,
+      `Fixed group and event filters in global search.`,
+      `Fixed a bug which would cut off the bottom of the textbox for longer comments.`,
+      `You can now delete empty game lists.`,
+      `It's now possible to re-invite players to a game or event.`,
+      `Adding a game now keeps you in the game list for a better UX.`,
+      `Fixed a bug with loading more games when sorted by newly added.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "1.3.7",
     versionNumber: 44,
     date: "October 16, 2024",

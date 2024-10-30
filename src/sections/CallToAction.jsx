@@ -14,7 +14,7 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            Ready to see who wins?
+            Never miss a game
           </h2>
           <p className="mt-4 text-lg text-white">
             Download the free Aftergame app to start sharing your gaming journey with friends. 

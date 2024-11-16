@@ -11,7 +11,7 @@ export const metadata = {
     template: '%s | Aftergame',
   },
   applicationName: 'Aftergame',
-  description: 'Record the tabletop games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.',
+  description: 'Gather your group, find events, plan epic game nights, create shared play logs, and easily manage your collection on Aftergame.',
   keywords: ['After game', 'tabletop game', 'board game', 'boardgames', 'boardgame', 'board', 'games', 'play logging', 'statistics', 'leaderboard'],
   metadataBase: new URL('https://www.aftergame.co'),
   alternates: {
@@ -19,7 +19,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Aftergame | The social tabletop gaming app',
-    description: 'Record the tabletop games you love on Aftergame to gain meaningful insights and share your gaming journey with friends.',
+    description: 'Gather your group, find events, plan epic game nights, create shared play logs, and easily manage your collection on Aftergame.',
     url: 'https://www.aftergame.co',
     siteName: 'Aftergame',
     images: [

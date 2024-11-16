@@ -12,6 +12,27 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "1.4.1",
+    versionNumber: 46,
+    date: "November 6, 2024",
+    blurb:
+      "Edit all repeat events at once, post events that can only be seen by group members, and many important fixes.",
+    features: [
+      `Added the ability to edit all future events at once in a repeating event series.`,
+      `Added 'Group' as a privacy setting for events, to only show the event to group members.`,
+      `When creating 'official' posted events, you can now set yourself to not going.`,
+    ],
+    fixes: [
+      `Fixed a crash that could occur in rare instances when loading a group.`,
+      `Fixed up some privacy issues for publicly posted games within a private event.`,
+      `Made privacy settings more obvious when posting games within a private event.`,
+      `Is it now more obvious that you can import your collection when you have an empty profile.`,
+      `We better handle current city information (previously it did not always pick up a city).`,
+      `It stays on the same tab when performing multiple global searches.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "1.4.0",
     versionNumber: 45,
     date: "October 30, 2024",

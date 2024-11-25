@@ -12,6 +12,35 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "1.5.0",
+    versionNumber: 47,
+    date: "November 25, 2024",
+    blurb:
+      "Plan games that are happening online, a new distance filter when finding local games, import game lists via spreadsheet, and many improvements throughout the app.",
+    features: [
+      `You can now choose whether a game or event is happening in person or virtually and add a link if the latter.`,
+      `Locations can now be tagged with whether they are a private home, business, public space, or region.`,
+      `Added an easy way to search for venues rather than manually typing in the address.`,
+      `You can now filter events by distance from a location.`,
+      `We now (finally) allow importing games into a specific list via a spreadsheet. For now, a BGG ID is required for each game.`,
+      `We have greatly improved the UX of importing.`,
+      `The collection/play toggles settings you chose are remembered when you next import.`,
+      `Adding an event to your calendar now opens your default calendar app to give you more control.`,
+      `Added the player count filter to the combined group lists.`,
+      `Improved the "Play again" UX and now allow games to be planned from a play log.`,
+    ],
+    fixes: [
+      `Recent locations are now ordered much more sensibly and more is loaded when you reach the end of the list.`,
+      `Fixed an issue which allowed people to get invited to groups or events multiple times.`,
+      `Fixed issues with imports not correctly updating the lists games were in.`,
+      `Fixed issues with setting a game within an event to be group-visible.`,
+      `Fixed an issue generating monthly repeat events.`,
+      `You can now remove ticket links from an event as expected.`,
+      `We should no longer consistently ask for notification permissions on iOS.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "1.4.1",
     versionNumber: 46,
     date: "November 6, 2024",

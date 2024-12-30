@@ -12,6 +12,58 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.0.1",
+    versionNumber: 49,
+    date: "December 30, 2024",
+    blurb: "Fixed some app crashes and the applied 'Where' filter on the events tab is now saved.",
+    features: [`The distance filter and whether to show virtual events is now remembered between app sessions.`],
+    fixes: [
+      `Fixed some app crashes that could occur when loading the feed, groups, and group member lists.`,
+      `We made it easier to remove selected players when creating play logs or inviting people to events and groups.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.0.0",
+    versionNumber: 48,
+    date: "December 21, 2024",
+    blurb:
+      "Aftergame 2.0 is here! We have tied all parts of the platform together in a brand new home screen, new group and event feeds, and you can now post photos and polls 📸📊",
+    features: [
+      `The new home screen adds a chronological feed of everything relevant to you in one place. See posts, events, planned games, and play logs all in one place!`,
+      `You can now post polls! Select games or just type out your options and get people to vote!`,
+      `You can now post photos to groups, events, or friends!`,
+      `Posts now can be sent to friends as well as in groups or events.`,
+      `Play logs can now have comment threads and be liked, great for when you post these to the group with photos!.`,
+      `We now show when new games are planned at an event or within a group in the feed.`,
+      `It's now easier to create posts and plan games straight from the home screen.`,
+      `We have added quick access to your groups right from the home screen.`,
+      `It's now very easy to create a play log right from a planned game within your feed with a single click!`,
+      `We have given play logs a visual upgrade and also show when they were posted as part of an event or group.`,
+      `New users will get an improved onboarding experience.`,
+    ],
+    fixes: [
+      `Fixed a bug when importing games from BGG that were not in any lists.`,
+      `We have continued with performance improvements throughout the app which should make more screens feel more snappy.`,
+    ],
+  },
+  {
+    version: "1.5.1",
+    versionNumber: 47,
+    date: "December 11, 2024",
+    blurb:
+      "Your new personal event calendar, performance improvements, and a lot of groundwork for our next major release.",
+    features: [
+      `You now have easy access to all your upcoming and past events right from the home screen.`,
+      `Added a filter to exclude virtual events when browsing events.`,
+    ],
+    fixes: [
+      `Improved the quality of photos and images uploaded to Aftergame.`,
+      `We now wait until all images are uploaded before posting a play log.`,
+      `We have made many performance optimisations throughout the app which should combine to make a noticeable impact.`,
+    ],
+  },
+  {
     version: "1.5.0",
     versionNumber: 47,
     date: "November 25, 2024",

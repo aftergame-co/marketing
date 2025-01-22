@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Container } from '@/components/Container';
 import { Logo } from '@/components/Logo';
-import { FacebookLogo, LinkedInLogo, DiscordLogo, InstagramLogo } from '@/components/SocialLogos';
+import { FacebookLogo, LinkedInLogo, DiscordLogo, InstagramLogo, BlueksyLogo } from '@/components/SocialLogos';
 
 export function Footer() {
   return (
@@ -11,15 +11,15 @@ export function Footer() {
           <div className='col-span-4 md:col-span-8 lg:col-span-4'>
             <div className='flex justify-start'>
               <Link href="/" aria-label="Home" className='-ml-2 mt-1 overflow-hidden'>
-                <Logo className="h-16 w-auto -my-1" />
+                <Logo className="h-[72px] w-auto -my-1" />
               </Link>
             </div>
-            <div className='ml-12 pl-px mt-4 flex gap-1'>
+            <div className='ml-[59px] pl-px mt-4 flex gap-0.5'>
               <Link 
                 href="https://www.facebook.com/AftergameApp" 
                 target='_blank' 
                 aria-label="Facebook" 
-                className="flex align-middle self-center w-9 h-9 p-2 text-gray-500 hover:text-facebook-blue hover:bg-gray-200 rounded-lg"
+                className="flex align-middle self-center w-8 h-8 p-1.5 text-gray-500 hover:text-facebook-blue hover:bg-gray-200 rounded-lg"
               >
                 <FacebookLogo />
               </Link>
@@ -27,7 +27,7 @@ export function Footer() {
                 href="https://www.linkedin.com/company/aftergame-co" 
                 target='_blank' 
                 aria-label="LinkedIn" 
-                className="flex align-middle self-center w-9 h-9 p-2 text-gray-500 hover:text-linkedin-blue hover:bg-gray-200 rounded-lg"
+                className="flex align-middle self-center w-8 h-8 p-[7px] text-gray-500 hover:text-linkedin-blue hover:bg-gray-200 rounded-lg"
               >
                 <LinkedInLogo />
               </Link>
@@ -35,7 +35,7 @@ export function Footer() {
                 href="https://discord.gg/XMYxvJ3ge2" 
                 target='_blank' 
                 aria-label="Discord" 
-                className="flex align-middle self-center w-9 h-9 p-2 text-gray-500 hover:text-discord-blurple hover:bg-gray-200 rounded-lg"
+                className="flex align-middle self-center w-8 h-8 p-[5px] text-gray-500 hover:text-discord-blurple hover:bg-gray-200 rounded-lg"
               >
                 <DiscordLogo />
               </Link>
@@ -43,9 +43,17 @@ export function Footer() {
                 href="https://www.instagram.com/aftergameapp" 
                 target='_blank' 
                 aria-label="Instagram" 
-                className="flex align-middle self-center w-9 h-9 p-0.5 text-gray-500 hover:text-instagram-pink hover:bg-gray-200 rounded-lg"
+                className="flex align-middle self-center w-8 h-8 text-gray-500 hover:text-instagram-pink hover:bg-gray-200 rounded-lg"
               >
                 <InstagramLogo />
+              </Link>
+              <Link 
+                href="https://bsky.app/profile/aftergame.app" 
+                target='_blank' 
+                aria-label="Bluesky" 
+                className="flex align-middle self-center w-8 h-8 p-1.5 text-gray-500 hover:text-bluesky-blue hover:bg-gray-200 rounded-lg"
+              >
+                <BlueksyLogo />
               </Link>
             </div>
           </div>

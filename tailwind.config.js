@@ -43,6 +43,7 @@ module.exports = {
         'linkedin-blue': '#007EBB',
         'instagram-pink': '#D62976',
         'discord-blurple': '#5865F2',
+        'bluesky-blue': "#0085FF",
       }),
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],

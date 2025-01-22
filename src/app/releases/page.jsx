@@ -1,5 +1,5 @@
 import { Container } from '@/components/Container';
-import { InstagramLogo, FacebookLogo, DiscordLogo } from '@/components/SocialLogos';
+import { InstagramLogo, FacebookLogo, DiscordLogo, BlueksyLogo } from '@/components/SocialLogos';
 import { CallToAction } from '@/sections/CallToAction';
 import Link from 'next/link';
 
@@ -11,6 +11,28 @@ export const metadata = {
 };
 
 const changelogs = [
+  {
+    version: "2.1.2",
+    versionNumber: 50,
+    date: "January 15, 2025",
+    blurb:
+      "We've added the ability to feature group posts and require new members to get approved by admins. There has also been a lot behind the scenes work for our upcoming web version! 👀",
+    features: [
+      `Groups can now be set to a "Listed" visibility which sits between Public and Private. These groups are findable, but all content is hidden and new members are approved by admins.`,
+      `Added a new "Request to join" flow for groups. This allows admins to approve or reject new group members.`,
+      `Group admins can now pin posts to a featured section of groups to keep important information at the top .`,
+      `Group admins can now edit any event or games posted in a group they manage.`,
+    ],
+    fixes: [
+      `Quickly tapping an item will no longer open a page twice.`,
+      `Events that were posted as a group will now show correctly in the feed.`,
+      `Fixed an issue that broke editing a copy of an expansion.`,
+      `Fixed issues with deleting play logs not properly removing them.`,
+      `Fixed an issue which would mean the unread notification icon would not go away.`,
+      `Fixed a bug causing errors when loading recent players.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
   {
     version: "2.0.1",
     versionNumber: 49,
@@ -988,7 +1010,7 @@ export default function About() {
                 href="https://discord.gg/XMYxvJ3ge2" 
                 target='_blank' 
                 aria-label="Discord" 
-                className="flex align-middle justify-center w-auto h-9 p-2 text-gray-500 hover:text-discord-blurple hover:bg-gray-200 rounded-lg"
+                className="flex align-middle justify-center w-auto h-9 p-[9px] text-gray-500 hover:text-discord-blurple hover:bg-gray-200 rounded-lg"
               >
                 <DiscordLogo />
                 <p className="text-lg ml-2 leading-tight">Discord</p>
@@ -996,11 +1018,20 @@ export default function About() {
               <Link 
                 href="https://www.instagram.com/aftergameapp" 
                 target='_blank' 
-                aria-label="Twitter" 
+                aria-label="Instagram" 
                 className="flex align-middle justify-center w-auto h-9 pl-0.5 pr-2 py-0.5 text-gray-500 hover:text-instagram-pink hover:bg-gray-200 rounded-lg"
               >
                 <InstagramLogo />
                 <p className="text-lg ml-0.5 mt-1.5 leading-tight">Instagram</p>
+              </Link>
+              <Link 
+                href="https://bsky.app/profile/aftergame.app" 
+                target='_blank' 
+                aria-label="Bluesky" 
+                className="flex align-middle justify-center w-auto h-9 p-2 text-gray-500 hover:text-bluesky-blue hover:bg-gray-200 rounded-lg"
+              >
+                <BlueksyLogo />
+                <p className="text-lg ml-2 leading-tight">Bluesky</p>
               </Link>
             </div>
         </div>

@@ -12,6 +12,28 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.1.4",
+    versionNumber: 51,
+    date: "January 23, 2025",
+    blurb:
+      "Added a new setting to override the app's theme and a lot of bug fixes while we work in the background on the upcoming web version of Aftergame! 🔜",
+    features: [
+      `Set whether the app should use the system default, light mode, or dark mode.`,
+      `Added a confirmation step before deleting a post.`,
+      `Added a confirmation step before rejecting a group join request.`,
+      `We now always show which event a planned game is in (helpful when you open an event link).`,
+    ],
+    fixes: [
+      `Fixed a bug which would sometimes block creating a post.`,
+      `Fixed a bug that was recently introduced which didn't show the play duration.`,
+      `Fixed issues with listed group information in the details screen.`,
+      `Fixed the poll option textbox in dark mode and we now allow copying/pasting.`,
+      `Fixed a bug which didn't show the selected scenario when logging a play.`,
+      `We improved how we handle redirecting you to the right screen after signing in.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.1.2",
     versionNumber: 50,
     date: "January 15, 2025",

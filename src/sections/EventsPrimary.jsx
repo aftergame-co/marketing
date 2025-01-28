@@ -19,7 +19,7 @@ export function EventsPrimary() {
     <section
       id="features"
       aria-label="The social tabletop gaming app"
-      className="bg-gg-blue py-20 sm:py-32"
+      className="bg-gg-blue py-20 sm:pt-32 sm:pb-20"
       ref={containerRef}
     >
       <Container>
@@ -27,11 +27,11 @@ export function EventsPrimary() {
           <h2 className="text-4xl font-medium tracking-tighter lg:tracking-tight text-white">
             Let chaos organise itself
           </h2>
-          <p className="mt-2 lg:mb-16 text-xl text-gray-100">
+          <p className="mt-2 lg:mb-10 text-xl text-gray-100">
             You and the people attending your event can plan games which creates a schedule of games that everyone can see and claim seats in.
           </p>
         </div>
-        <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
+        <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-20 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/events/plan.png'
             alt='Want to play list'
@@ -48,7 +48,7 @@ export function EventsPrimary() {
             </p>
           </div>
         </div>
-        <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
+        <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-20 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/events/schedule.png'
             alt='Want to play list'
@@ -65,7 +65,7 @@ export function EventsPrimary() {
             </p>
           </div>
         </div>
-        <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
+        <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-20 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/events/claim.png'
             alt='Want to play list'
@@ -82,7 +82,7 @@ export function EventsPrimary() {
             </p>
           </div>
         </div>
-        <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
+        <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-20 lg:pb-16 lg:px-24`}>
           <Image
             src='/images/events/communicate.png'
             alt='Want to play list'

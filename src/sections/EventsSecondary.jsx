@@ -15,9 +15,9 @@ const features = [
     icon: DeviceOfflineIcon,
   },
   {
-    name: 'Floor plans as a guide',
+    name: 'Keep everyone in the loop',
     description:
-      'Let attendees drop a pin for where to meet so no one gets lost in the busy hall.',
+      'Threaded discussions and push notifications for all updates ensures no one misses outs.',
     icon: DeviceCardsIcon,
   },
   {
@@ -25,6 +25,24 @@ const features = [
     description:
       'Post a schedule of learn to plays, play testing and more for a seamless way to claim seats.',
     icon: DeviceArrowIcon,
+  },
+  {
+    name: 'Floor plans as a guide',
+    description:
+      'Let attendees drop a pin for where to meet so no one gets lost in the busy hall.',
+    icon: DeviceCardsIcon,
+  },
+  {
+    name: 'Play to Win',
+    description:
+      'Add fun for attendees and a cheap promotion option for publishers, fully managed in the app.',
+    icon: DeviceCardsIcon,
+  },
+  {
+    name: 'Easy onboarding',
+    description:
+      'We automatically generate QR codes for every event and game to make joining a snap away.',
+    icon: DeviceCardsIcon,
   },
   {
     name: 'Data report of plays at the event',
@@ -45,7 +63,7 @@ export function EventsSecondary() {
     <section
       id="secondary-features"
       aria-label="Smart features so you can keep on playing"
-      className="bg-gg-blue py-20 sm:py-32"
+      className="bg-gg-blue py-20 sm:pt-20 sm:pb-32"
     >
       <Container>
         <div className="mx-auto max-w-3xl text-center">

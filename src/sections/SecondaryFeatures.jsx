@@ -1,7 +1,13 @@
 import { Container } from '@/components/Container'
-import { DeviceArrowIcon, DeviceCardsIcon, DeviceClockIcon, DeviceNotificationIcon, DeviceOfflineIcon, DeviceTouchIcon } from '@/components/DeviceIcons'
+import { DeviceArrowIcon, DeviceCardsIcon, DeviceClockIcon, DeviceNotificationIcon, DeviceOfflineIcon, DeviceTouchIcon, DeviceUserIcon, DeviceListIcon, DeviceChartIcon } from '@/components/DeviceIcons'
 
 const features = [
+  {
+    name: 'A chronological feed',
+    description:
+      'Your personal hub! View all your plays, new games, plus posts from friends and groups.',
+    icon: DeviceCardsIcon,
+  },
   {
     name: 'Import plays with ease',
     description:
@@ -9,22 +15,34 @@ const features = [
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Record what matters to you',
+    name: 'Share your gaming',
     description:
-      'Log a play in just 3 taps! All details are optional for the ultimate personalisation of your plays.',
-    icon: DeviceClockIcon,
+      'Post your latest game photos, take a poll, discuss with the group and plan game nights.',
+    icon: DeviceNotificationIcon,
   },
   {
     name: 'Forget about losing your data',
     description:
       'Plays are securely stored in the cloud, meaning no more saving backups or manual syncing.',
-    icon: DeviceCardsIcon,
+    icon: DeviceUserIcon,
   },
   {
-    name: 'Organise the group',
+    name: 'Smart lists enhance your collection',
     description:
-      'Choose which games to play, set up leagues and host events with your friends, family, and foes.',
-    icon: DeviceNotificationIcon,
+      'Add games to your Want to Play list to be notified if someone nearby plans to play them.',
+    icon: DeviceListIcon,
+  },
+  {
+    name: 'Plan ahead',
+    description:
+      'See what’s being played, browse event schedules, and get your games to the table.',
+    icon: DeviceClockIcon,
+  },
+  {
+    name: 'Your month in review',
+    description:
+      'Dig into which games you’ve been playing and share your month’s accomplishments.',
+    icon: DeviceChartIcon,
   },
   {
     name: 'Offline support',
@@ -65,7 +83,7 @@ export function SecondaryFeatures() {
               key={feature.name}
               className="rounded-2xl p-8 bg-white border-2 border-gray-100"
             >
-              <feature.icon className="h-16 w-16" />
+              <feature.icon className="h-14 w-14" />
               <h3 className="mt-6 font-semibold text-gray-900 text-lg">
                 {feature.name}
               </h3>

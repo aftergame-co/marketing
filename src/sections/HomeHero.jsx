@@ -9,14 +9,6 @@ import { AppScreen } from '@/components/AppScreen'
 import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
-import logoBbc from '@/images/logos/bbc.svg'
-import logoCbs from '@/images/logos/cbs.svg'
-import logoCnn from '@/images/logos/cnn.svg'
-import logoFastCompany from '@/images/logos/fast-company.svg'
-import logoForbes from '@/images/logos/forbes.svg'
-import logoHuffpost from '@/images/logos/huffpost.svg'
-import logoTechcrunch from '@/images/logos/techcrunch.svg'
-import logoWired from '@/images/logos/wired.svg'
 import { ClockIcon, FunnelIcon, UserGroupIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 function BackgroundIllustration(props) {
@@ -397,9 +389,6 @@ export function HomeHero({ className }) {
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-6">
             <h1 className="text-5xl md:text-6xl xl:text-7xl font-medium tracking-tighter md:tracking-tight text-gray-900">
             {/* Never miss a game */}
-            {/* Every game matters */}
-            {/* Social gaming like never before */}
-            {/* Remember every epic moment and track your gaming journey */}
             Remember <span className='text-gg-blue font-semibold'>every</span><br /><span className='text-gg-red font-semibold'>epic</span> moment
             </h1>
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
@@ -425,30 +414,6 @@ export function HomeHero({ className }) {
             </div>
           </div>
           <div className='hidden lg:flex py-6'></div>
-          {/* <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
-            <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
-              As featured in
-            </p>
-            <ul
-              role="list"
-              className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
-            >
-              {[
-                ['Forbes', logoForbes],
-                ['TechCrunch', logoTechcrunch],
-                ['Wired', logoWired],
-                ['CNN', logoCnn, 'hidden xl:block'],
-                ['BBC', logoBbc],
-                ['CBS', logoCbs],
-                ['Fast Company', logoFastCompany],
-                ['HuffPost', logoHuffpost, 'hidden xl:block'],
-              ].map(([name, logo, className]) => (
-                <li key={name} className={clsx('flex', className)}>
-                  <Image src={logo} alt={name} className="h-8" unoptimized />
-                </li>
-              ))}
-            </ul>
-          </div> */}
         </div>
       </Container>
     </div>

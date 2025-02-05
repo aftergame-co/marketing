@@ -3,12 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import clsx from 'clsx'
 import {
-  motion,
-  useAnimationFrame,
   useInView,
-  useMotionValue,
-  useSpring,
-  useTransform,
 } from 'framer-motion'
 
 import { Container } from '@/components/Container'
@@ -215,7 +210,7 @@ function ReviewColumn({
 
 function ReviewGrid() {
   let containerRef = useRef()
-  let isInView = useInView(containerRef, { once: true, amount: 0.4 })
+  let isInView = useInView(containerRef, { once: true, amount: "some" })
   let columns = splitArray(reviews, 3)
   columns = [columns[0], columns[1], splitArray(columns[2], 2)]
 
@@ -263,7 +258,7 @@ export function Reviews() {
     <section
       id="reviews"
       aria-labelledby="reviews-title"
-      className="pt-20 pb-16 sm:pt-32 sm:pb-24"
+      className="pt-20 pb-16 sm:p-24"
     >
       <Container>
         <h2

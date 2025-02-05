@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useEffect, useId, useRef, useState } from 'react'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -9,63 +9,50 @@ import { useDebouncedCallback } from 'use-debounce'
 import { AppScreen } from '@/components/AppScreen'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
-import { Button } from '@/components/Button'
 import { PhoneFrame } from '@/components/PhoneFrame'
 import { DeviceChartIconDark, DeviceChartIconLight, DeviceListIconDark, DeviceListIconLight, DeviceUserIconDark, DeviceUserIconLight } from '@/components/DeviceIcons'
-import { XMarkIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
-import { ClockIcon, GlobeEuropeAfricaIcon, LightBulbIcon, UserGroupIcon, UserIcon, UsersIcon } from '@heroicons/react/24/outline'
 
-const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'Link up with friends',
+    name: 'Gather your people',
     description:
-      // 'Sending files is a thing of the past. Share plays with live scoring updates all in real-time without leaving the app.',
-      'Sending files is a thing of the past. Share plays with real-time scoring updates, all without leaving the app.',
-    icon: DeviceUserIconLight,
-    selectedicon: DeviceUserIconDark,
-    screen: InviteScreen,
-  },
-  {
-    name: 'Use tailored, pre-built scoresheets',
-    description:
-      'We research and define every game to save you time and allow any data-points relevant to the specific game you are playing to be recorded.',
+      'Attend events, plan games, browse your combined collections, and share your gaming moments.',
     icon: DeviceListIconLight,
     selectedicon: DeviceListIconDark,
-    screen: StocksScreen,
+    screen: GroupScreen,
   },
   {
-    name: 'Access unrivalled analytics and insights',
+    name: 'Bring your collection',
     description:
-      'With our standardised data structure, we can go deeper on meaningful statistics and use all plays globally to surface unique insights.',
+      'Import your games or easily add them, create custom lists and sort them the way you want.',
+    icon: DeviceUserIconLight,
+    selectedicon: DeviceUserIconDark,
+    screen: ProfileScreen,
+  },
+  {
+    name: 'Play tracking and statistics, reimagined',
+    description:
+      'Record what matters to you, add photos, notes, game details, and more — all automatically synced with everyone at the table.',
     icon: DeviceChartIconLight,
     selectedicon: DeviceChartIconDark,
-    screen: InvestScreen,
+    screen: PlayScreen,
   },
 ]
-
-const headerAnimation = {
-  initial: { opacity: 0, transition: { duration: 0.3 } },
-  animate: { opacity: 1, transition: { duration: 0.3, delay: 0.3 } },
-  exit: { opacity: 0, transition: { duration: 0.3 } },
-}
 
 const maxZIndex = 2147483647
 
 const bodyVariantBackwards = {
-  opacity: 0.4,
-  scale: 0.8,
-  zIndex: 0,
+  opacity: 0,
   filter: 'blur(4px)',
   zIndex: 0,
   transition: { duration: 0.4 },
 }
 
 const bodyVariantForwards = (custom) => ({
-  y: '100%',
+  opacity: 0,
   zIndex: maxZIndex - custom.changeCount,
   transition: { duration: 0.4 },
 })
@@ -78,7 +65,6 @@ const bodyAnimation = {
     initial: (custom) =>
       custom.isForwards ? bodyVariantForwards(custom) : bodyVariantBackwards,
     animate: (custom) => ({
-      y: '0%',
       opacity: 1,
       scale: 1,
       zIndex: maxZIndex / 2 - custom.changeCount,
@@ -90,78 +76,30 @@ const bodyAnimation = {
   },
 }
 
-function InviteScreen({ custom, animated = false }) {
+function GroupScreen({ custom, animated = false }) {
   return (
     <AppScreen className="relative w-full">
-      <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <XMarkIcon
-          className="h-8 w-8 text-gray-900"
-        />
-        <div className='ml-2 grow'>Log play</div>
-        <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue !rounded-4xl !text-sm !px-6' disabled>Save</Button>
-      </MotionAppScreenHeader>
-        <div className='absolute top-14 left-0 right-0 bg-white mt-4 bottom-0'></div>
-        <div className='absolute -top-8 left-0 right-0 bottom-0 bg-gray-900 opacity-25'></div>
-      <MotionAppScreenBody className='!bg-transparent z-10' {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="mt-6 px-4 pt-3 pb-6 bg-white rounded-t-3xl h-full">
-          <div className='m-auto bg-gray-300 w-8 h-1 rounded-xl mb-3'></div>
-          <div className='h-full'>
-            <div className='flex w-full border-solid border border-gray-700 rounded-md p-2 mb-4'>
-              <div className='bg-gg-blue-faint rounded-lg p-2 mr-1 text-xs'>Jerry Seinfeld</div>
-              <div className='bg-gg-blue-faint rounded-lg p-2 mr-2 text-xs'>Elaine Benes</div>
-              <div className='w-0.5 h-5 bg-gray-500 self-center'></div>
-            </div>
-            <div className='w-full rounded-md p-1 sm:p-2 mb-6 bg-gg-blue-faint'>
-              <p className='font-semibold text-xs mb-1'>Player added!</p>
-              <p className='text-xs mb-1'>Send them an invite link so they can see this play on their device:</p>
-              <div className='flex items-center bg-white p-1 rounded-md'>
-                <p className='grow text-gg-blue underline text-xs sm:hidden'>invited.gg/dg876gr87gyer</p>
-                <p className='grow text-gg-blue underline text-xs hidden sm:block'>https://invited.gg/dg876gr87gyer</p>
-                <Button className='shrink-0 bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue !rounded-4xl !text-xs !py-1 !px-2 !font-light' disabled>Copy</Button>
-              </div>
-            </div>
-            <div className='flex mb-4'>
-              <Image src='/images/jerry-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for Jerry' />
-              <label htmlFor="jerry-check" className='text-sm self-center grow'>Jerry Seinfeld</label>
-              <input id='jerry-check' checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
-            </div>
-            <div className='flex mb-4'>
-              <Image src='/images/george-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for George' />
-              <label htmlFor="george-check" className='text-sm self-center grow'>George Costanza</label>
-              <input id='george-check' checked={false} type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
-            </div>
-            <div className='flex mb-4'>
-              <Image src='/images/elaine-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for Elaine' />
-              <label htmlFor="elaine-check" className='text-sm self-center grow'>Elaine Benes</label>
-              <input id='elaine-check' checked type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
-            </div>
-            <div className='flex mb-4'>
-              <Image src='/images/kramer-photo.webp' width={40} height={40} className='rounded-full mr-3 border border-gray-300' alt='Profile photo for Cosmo' />
-              <label htmlFor="cosmo-check" className='text-sm self-center grow'>Cosmo Kramer</label>
-              <input id='cosmo-check' checked={false} type="checkbox" value="" className="w-5 h-5 text-gg-blue bg-gray-100 border-gray-300 rounded self-center" readOnly />
-            </div>
-            <Button className='w-full bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue !rounded-4xl' disabled>Select</Button>
-          </div>
+      <MotionAppScreenBody className='!bg-transparent  z-10' {...(animated ? { ...bodyAnimation, custom } : {})}>
+        <div className='relative h-full'>
+          <Image
+            src='/images/home/group.png'
+            alt='A screenshot of the scoresheet interface for Aftergame' 
+            fill
+            className="pointer-events-none"
+          />
         </div>
       </MotionAppScreenBody>
     </AppScreen>
   )
 }
 
-function StocksScreen({ custom, animated = false }) {
+function ProfileScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
-      <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-        <XMarkIcon
-          className="h-8 w-8 text-gray-900"
-        />
-        <div className='ml-2 grow'>Log play</div>
-        <Button className='bg-gg-blue active:text-white active:bg-gg-blue hover:bg-gg-blue !rounded-4xl !text-sm !px-6' disabled>Save</Button>
-      </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className='relative h-full'>
           <Image
-            src='/images/scoresheet.png'
+            src='/images/home/profile.png'
             alt='A screenshot of the scoresheet interface for Aftergame' 
             fill
           />
@@ -171,77 +109,16 @@ function StocksScreen({ custom, animated = false }) {
   )
 }
 
-function InvestScreen({ custom, animated = false }) {
+function PlayScreen({ custom, animated = false }) {
   return (
     <AppScreen className="w-full">
-      <MotionAppScreenHeader {...(animated ? headerAnimation : {})}>
-      </MotionAppScreenHeader>
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
-        <div className="p-3 sm:p-4">
-          <div className="flex gap-4">
-            <Image src='/images/catan.webp' width={64} height={50} className='rounded-md' alt='An image of the board game "Root"' />
-            <div>
-              <h3 className="text-lg font-medium leading-6 text-black">
-                Catan
-              </h3>
-              <div
-                className='mt-2 flex align-middle text-gray-600 text-xs'>
-                  <UserGroupIcon
-                    className="h-4 w-4"
-                  />
-                  <span className='ml-1 mr-3'>3-4</span>
-                  <ClockIcon 
-                    className="h-4 w-4"
-                  />
-                  <span className='ml-1 mr-3 hidden sm:block'>60-120min</span>
-                  <span className='ml-1 mr-3 block sm:hidden'>60-120m</span>
-                  <UsersIcon
-                    className="h-4 w-4"
-                  />
-                  <span className='ml-1 mr-3'>10+</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <p className='mt-4 mb-3 text-gray-600 text-xs'>Last played yesterday</p>
-            <div className='grid grid-cols-10 rounded-md overflow-hidden'>
-              <div className='bg-green-500 col-span-6 py-1 mr-1'></div>
-              <div className='bg-red-500 col-span-4 py-1'></div>
-            </div>
-            <div className='flex justify-between text-gray-900 text-sm'>
-              <span>33 wins</span>
-              <span>22 losses</span>
-            </div>
-          </div>
-          <div className="mt-3 pt-3 border-t border-gray-200">
-            <div className='flex items-center mb-1'>
-              <p className='font-medium text-sm grow'>Insights</p>
-            </div>
-            <div className='my-1 flex items-center align-middle gap-2 border border-gg-blue bg-gg-blue-faint rounded-md p-2'>
-              <LightBulbIcon 
-                className="shrink-0 h-6 w-6"
-              />
-              <p className='grow text-xs'>80% of the time when you get ’The Longest Road’ you will win the game.</p>
-            </div>
-            <div className='my-1 flex items-center align-middle gap-2 border border-gg-blue bg-gg-blue-faint rounded-md p-2'>
-              <UserIcon
-                className="shrink-0 h-6 w-6"
-              />
-              <p className='grow text-xs'>You have never won a game when Cosmo Kramer is playing.</p>
-            </div>
-            <div className='my-1 flex items-center align-middle gap-2 border border-gg-blue bg-gg-blue-faint rounded-md p-2'>
-              <GlobeEuropeAfricaIcon
-                className="shrink-0 h-6 w-6"
-              />
-              <p className='grow text-xs'>Players are more likely to win with ’The Longest Road’ than ’The Largest Army’, though when players have both they win 95% of the time.</p>
-            </div>
-            <p className='text-center text-sm text-gg-blue'>more...</p>
-          </div>
-          <div className="mt-3 pt-3 border-t border-gray-200">
-            <div className='flex items-center mb-1'>
-              <p className='font-medium text-sm grow'>Score breakdown</p>
-            </div>
-          </div>
+        <div className='relative h-full'>
+          <Image
+            src='/images/home/play.png'
+            alt='A screenshot of the scoresheet interface for Aftergame' 
+            fill
+          />
         </div>
       </MotionAppScreenBody>
     </AppScreen>
@@ -320,28 +197,30 @@ function FeaturesDesktop() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <CircleBackground color="#fff" className="animate-spin-slower" />
         </div>
-        <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
-          <Tab.Panels as={Fragment}>
-            <AnimatePresence
-              initial={false}
-              custom={{ isForwards, changeCount }}
-            >
-              {features.map((feature, featureIndex) =>
-                selectedIndex === featureIndex ? (
-                  <Tab.Panel
-                    static
-                    key={feature.name + changeCount}
-                    className="col-start-1 row-start-1 flex focus:outline-offset-[32px] [&:not(:focus-visible)]:focus:outline-none"
-                  >
-                    <feature.screen
-                      animated
-                      custom={{ isForwards, changeCount }}
-                    />
-                  </Tab.Panel>
-                ) : null
-              )}
-            </AnimatePresence>
-          </Tab.Panels>
+        <PhoneFrame showHeader={false} className="z-10 mx-auto w-full max-w-[366px]">
+          <div className="bg-white mt-2 h-full rounded-2xl overflow-hidden">
+            <Tab.Panels className="h-full" as={Fragment} >
+              <AnimatePresence
+                initial={false}
+                custom={{ isForwards, changeCount }}
+              >
+                {features.map((feature, featureIndex) =>
+                  selectedIndex === featureIndex ? (
+                    <Tab.Panel
+                      static
+                      key={feature.name + changeCount}
+                      className="h-full col-start-1 row-start-1 flex focus:outline-offset-[32px] [&:not(:focus-visible)]:focus:outline-none"
+                    >
+                      <feature.screen
+                        animated
+                        custom={{ isForwards, changeCount }}
+                      />
+                    </Tab.Panel>
+                  ) : null
+                )}
+              </AnimatePresence>
+            </Tab.Panels>
+          </div>
         </PhoneFrame>
       </div>
     </Tab.Group>
@@ -393,7 +272,7 @@ function FeaturesMobile() {
             className="w-full flex-none snap-center px-4 sm:px-6"
           >
             <div className="relative transform overflow-hidden bg-white/20 rounded-2xl px-5 py-6">
-              <PhoneFrame className="relative mx-auto w-full max-w-[366px]">
+              <PhoneFrame showHeader={false} className="relative mx-auto w-full max-w-[366px]">
                 <feature.screen />
               </PhoneFrame>
               <div className="absolute inset-x-0 bottom-0 bg-white p-6 sm:p-10 border-t border-slate-200">
@@ -438,16 +317,16 @@ export function PrimaryFeatures() {
   return (
     <section
       id="features"
-      aria-label="Play tracking and statistics, reimagined"
+      aria-label="The social tabletop gaming app"
       className="bg-gg-blue py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-4xl font-medium tracking-tighter lg:tracking-tight text-white">
-            Play tracking and statistics, reimagined
+            The social tabletop gaming app
           </h2>
           <p className="mt-2 text-xl text-gray-100">
-            We are building the play tracking app for today packed with features made possible by using the latest technologies.
+            We’re excited to be your companion at the table — helping you plan, enjoy, and share your gaming moments.
           </p>
         </div>
       </Container>

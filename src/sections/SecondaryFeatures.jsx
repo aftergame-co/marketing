@@ -45,7 +45,7 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Smart features so you can keep on playing"
-      className="py-20 sm:py-32"
+      className="py-20 sm:pt-32 sm:pb-20"
     >
       <Container>
         <div className="mx-auto max-w-2xl text-center">

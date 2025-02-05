@@ -1,15 +1,11 @@
 'use client';
 
-import { useId, useRef, useState } from 'react'
+import { useId } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
-import { motion, useInView, useMotionValue } from 'framer-motion'
-
-import { AppScreen } from '@/components/AppScreen'
 import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
 import { Container } from '@/components/Container'
-import { PhoneFrame } from '@/components/PhoneFrame'
-import { ClockIcon, FunnelIcon, UserGroupIcon, UsersIcon } from '@heroicons/react/24/outline'
+import { MegaphoneIcon } from '@heroicons/react/24/solid'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -133,254 +129,6 @@ for (let index = 0; index < scores_1.length; index++) {
   points2.push({ x: x2, y: y2 })
 }
 
-
-// function timedCount() {
-//   timeout = setTimeout(timedCount, 1000);
-// }
-
-function Chart({
-  className,
-  activePointIndex,
-  onChangeActivePointIndex,
-  width: totalWidth,
-  height: totalHeight,
-  paddingX = 0,
-  paddingY = 0,
-  gridLines = 6,
-  ...props
-}) {
-  let width = totalWidth - paddingX * 2
-  let height = totalHeight - paddingY * 2
-
-  let id = useId()
-  let svgRef = useRef()
-  let pathRef = useRef()
-  let isInView = useInView(svgRef, { amount: 0.5, once: true })
-  let pathWidth = useMotionValue(0)
-  let [interactionEnabled, setInteractionEnabled] = useState(false)
-
-  return (
-    <svg
-      ref={svgRef}
-      viewBox={`0 0 ${totalWidth} ${totalHeight}`}
-      className={clsx(className, 'overflow-visible')}
-      {...(interactionEnabled
-        ? {
-            // onPointerLeave: () => onChangeActivePointIndex(null),
-            onPointerMove: (event) => {
-              let x = event.nativeEvent.offsetX
-              let closestPointIndex
-              let closestDistance = Infinity
-              for (
-                let pointIndex = 0;
-                pointIndex < points.length;
-                pointIndex++
-              ) {
-                let point = points[pointIndex]
-                let distance = Math.abs(point.x - x)
-                if (distance < closestDistance) {
-                  closestDistance = distance
-                  closestPointIndex = pointIndex
-                } else {
-                  break
-                }
-              }
-              onChangeActivePointIndex(closestPointIndex)
-            },
-          }
-        : {})}
-      {...props}
-    >
-      <defs>
-        <clipPath id={`${id}-clip`} suppressHydrationWarning>
-          <path d={`${path} V ${height + paddingY} H ${paddingX} Z`} />
-        </clipPath>
-        <clipPath id={`${id}-clip2`} suppressHydrationWarning>
-          <path d={`${path2} V ${height + paddingY} H ${paddingX} Z`} />
-        </clipPath>
-      </defs>
-      {[...Array(gridLines - 1).keys()].map((index) => (
-        <line
-          key={index}
-          stroke="#a3a3a3"
-          opacity="0.1"
-          x1="0"
-          y1={(totalHeight / gridLines) * (index + 1)}
-          x2={totalWidth}
-          y2={(totalHeight / gridLines) * (index + 1)}
-        />
-      ))}
-      <motion.rect
-        y={paddingY}
-        width={pathWidth}
-        height={height}
-        fill={`url(#${id}-gradient2)`}
-        clipPath={`url(#${id}-clip2)`}
-        opacity="0.0"
-        suppressHydrationWarning
-      />
-      <motion.path
-        ref={pathRef}
-        d={path2}
-        fill="none"
-        strokeWidth="4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        initial={{ pathLength: 0 }}
-        transition={{ duration: 1 }}
-        {...(isInView ? { stroke: '#ff3a20', animate: { pathLength: 1 } } : {})}
-        onUpdate={({ pathLength }) => {
-          pathWidth.set(
-            pathRef.current.getPointAtLength(
-              pathLength * pathRef.current.getTotalLength()
-            ).x
-          )
-        }}
-        onAnimationComplete={() => setInteractionEnabled(true)}
-      />
-      <motion.rect
-        y={paddingY}
-        width={pathWidth}
-        height={height}
-        fill={`url(#${id}-gradient)`}
-        clipPath={`url(#${id}-clip)`}
-        opacity="0.0"
-        suppressHydrationWarning
-      />
-      <motion.path
-        ref={pathRef}
-        d={path}
-        fill="none"
-        strokeWidth="4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        initial={{ pathLength: 0 }}
-        transition={{ duration: 1 }}
-        {...(isInView ? { stroke: '#4966f5', animate: { pathLength: 1 } } : {})}
-        onUpdate={({ pathLength }) => {
-          pathWidth.set(
-            pathRef.current.getPointAtLength(
-              pathLength * pathRef.current.getTotalLength()
-            ).x
-          )
-        }}
-        onAnimationComplete={() => setInteractionEnabled(true)}
-      />
-      {interactionEnabled && activePointIndex !== null && (
-        <>
-          <circle
-            r="6"
-            cx={points[activePointIndex].x}
-            cy={points[activePointIndex].y}
-            fill="#fff"
-            strokeWidth="3"
-            stroke="#4966f5"
-          />
-          <circle
-            r="6"
-            cx={points2[activePointIndex].x}
-            cy={points2[activePointIndex].y}
-            fill="#fff"
-            strokeWidth="3"
-            stroke="#ff3a20"
-          />
-        </>
-      )}
-    </svg>
-  )
-}
-
-function AppDemo() {
-  let [activePointIndex, setActivePointIndex] = useState(0)
-  let activeIndex = activePointIndex ?? scores_1.length - 1
-  let activeScore1 = scores_1[activeIndex].score;
-  let activeTeam1 = scores_1[activeIndex].team;
-  let activeScore2 = scores_2[activeIndex].score;
-  let activeTeam2 = scores_2[activeIndex].team;
-
-  return (
-    <AppScreen>
-      <AppScreen.Header></AppScreen.Header>
-      <AppScreen.Body>
-        <div className="p-3 sm:p-4">
-          <div className="flex gap-4">
-            <Image src='/images/root.jpeg' width={64} height={50} className='rounded-md' alt='An image of the board game "Root"' />
-            <div>
-              <h3 className="text-lg font-medium leading-6 text-black">
-                Root
-              </h3>
-              <div
-                className='mt-2 flex align-middle text-gray-600 text-xs'>
-                  <UserGroupIcon
-                    className="h-4 w-4"
-                  />
-                  <span className='ml-1 mr-3'>2-4</span>
-                  <ClockIcon 
-                    className="h-4 w-4"
-                  />
-                  <span className='ml-1 mr-3'>60-90min</span>
-                  <UsersIcon
-                    className="h-4 w-4"
-                  />
-                  <span className='ml-1 mr-3'>10+</span>
-              </div>
-            </div>
-          </div>
-          <div>
-              <p className='mt-4 mb-3 text-gray-600 text-xs'>Last played 3 days ago</p>
-              <div className='grid grid-cols-12 rounded-md overflow-hidden'>
-                <div className='bg-green-500 col-span-7 py-1'></div>
-                <div className='bg-red-500 col-span-5 py-1'></div>
-              </div>
-              <div className='flex justify-between text-gray-900 text-sm'>
-                <span>21 wins</span>
-                <span>15 losses</span>
-              </div>
-          </div>
-          <div className="mt-3 pt-3 border-t border-gray-200">
-            <div className='flex items-center'>
-              <p className='font-medium text-sm grow'>Results comparison</p>
-              <FunnelIcon className='h-5 w-5 text-gray-900' />
-            </div>
-            <div className="mb-2 rounded-lg bg-gray-50 ring-1 ring-inset ring-black/5">
-              <Chart
-                width={286}
-                height={180}
-                paddingX={1}
-                paddingY={32}
-                activePointIndex={activePointIndex}
-                onChangeActivePointIndex={setActivePointIndex}
-              />
-            </div>
-            <div className="flex gap-2">
-              <div className="grow text-md tabular-nums tracking-tight text-gray-900">
-                <div className='flex items-center gap-2 mb-1'>
-                  <div className='relative pt-1 pr-1 mr-2'>
-                    {/* <div className='rounded-full w-8 h-8 bg-gg-blue-faint text-center p-1 text-sm font-semibold text-gg-blue'>EP</div> */}
-                    <Image src='/images/jerry-photo.webp' width={32} height={32} className='rounded-full' alt='Profile photo for Jerry' />
-                    <div className='absolute top-0 right-0 border-solid border-gg-blue rounded-full bg-white' style={{ width: 14, height: 14, borderWidth: 3}}></div>
-                  </div>
-                  <p>{activeScore1} VP</p>
-                  <p>{activeTeam1}</p>
-                </div>
-                <div className='flex items-center gap-2'>
-                  <div className='relative pt-1 pr-1 mr-2'>
-                    {/* <div className='rounded-full w-8 h-8 bg-gg-blue-faint text-center p-1 text-sm font-semibold text-gg-blue'>JB</div> */}
-                    <Image src='/images/elaine-photo.webp' width={32} height={32} className='rounded-full' alt='Profile photo for Elaine' />
-                    <div className='absolute top-0 right-0 border-solid border-gg-red rounded-full bg-white' style={{ width: 14, height: 14, borderWidth: 3}}></div>
-                  </div>
-                  <p>{activeScore2} VP</p>
-                  <p>{activeTeam2}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </AppScreen.Body>
-    </AppScreen>
-  )
-}
-
 export function DownloadHero({ className }) {
   return (
     <div className={clsx("overflow-hidden py-16 sm:py-32 lg:pb-32", className)}>
@@ -388,7 +136,7 @@ export function DownloadHero({ className }) {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-6">
             <h1 className="text-5xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
-              <span className='text-gg-blue font-semibold'>Smart features</span> so you can <span className='text-gg-red font-semibold'>keep on playing</span>.
+              <span className='text-gg-blue font-semibold'>Smart features</span> so you can <span className='text-gg-red font-semibold'>keep on playing</span>
             </h1>
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
               Download the free Aftergame app to get more games to the table and to start sharing your gaming journey with friends. 
@@ -396,6 +144,12 @@ export function DownloadHero({ className }) {
             <div className="pt-6 pb-16 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4">
               <AppStoreLink />
               <GooglePlayLink />
+            </div>
+            <div className="-mt-8 xl:mt-8 flex flex-row items-center bg-gg-blue-faint rounded lg:w-4/5 py-1 px-3">
+              <MegaphoneIcon className="h-6 w-6" />
+              <p className="ml-2 text-xl text-gray-600">
+                The web app is being launched this month! 
+              </p>
             </div>
           </div>
           <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:mt-0">

@@ -21,7 +21,7 @@ export function EventsPosts() {
         </div>
         <ul className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-8'>
           {allPostsData.filter(p => p.category.includes("events")).map(({ id, date, title, intro, image }) => (
-            <li className='group col-span-1 rounded-2xl bg-white text-gray-900 hover:bg-gray-100 border-2 border-gray-100' key={id}>
+            <li className='group col-span-1 rounded-2xl bg-white text-gray-900 hover:bg-gg-blue-faint border-2 border-gray-100 transition-colors' key={id}>
               <Link href={`/blog/${id}`}>
                 {image && (
                   <div className="relative h-80">
@@ -30,7 +30,7 @@ export function EventsPosts() {
                       alt={title}
                       layout="fill"
                       objectFit="cover"
-                        className='rounded-t-2xl group-hover:opacity-80'
+                        className='rounded-t-2xl group-hover:opacity-80 transition-opacity'
                     />
                   </div>
                 )}

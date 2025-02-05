@@ -12,6 +12,29 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.2.1",
+    versionNumber: 52,
+    date: "February 5, 2025",
+    blurb:
+      "This release brings notification settings and general notification improvements as well as many of the final pieces needed for the Aftergame web app.",
+    features: [
+      `Notification settings have been added, allowing you to fine-tune which notifications you receive both to your device and in-app.`,
+      `We now show a badge on our app icon with a count of notifications for devices which support this.`,
+      `[Android] We now separate our notifications into different channels so that you can change these permissions at the OS level. NOTE: this will take a few days to roll-out as our backend switches to using these new channels.`,
+      `The creator of a play log can now delete the play log for everyone in it with a notification now sent.`,
+      `Added a link to our help site from the settings screen.`,
+    ],
+    fixes: [
+      `The unread notification count within the app is now cleared when you click the icon (without needing to mark each as read).`,
+      `We now correct the unread notification count when viewing a notification from a push notification.`,
+      `Fixed an issue where scheduled notifications were being shown before they were sent.`,
+      `We no longer show groups you are invited to but not yet joined on your profile.`,
+      `Better handle Discord users signing up without an Avatar.`,
+      `[Android] Fixed an issue which didn't allow for scheduling of events more than 6 months in the future.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.1.4",
     versionNumber: 51,
     date: "January 23, 2025",

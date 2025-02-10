@@ -127,7 +127,8 @@ export async function getPostData(id) {
     .use(addClasses, {
         h1: 'mt-10 mb-2 text-3xl font-medium text-gray-900',
         h2: 'mt-10 mb-2 text-2xl font-medium text-gray-900',
-        h3: 'mt-10 mb-2 text-xl font-medium text-gray-900',
+        h3: 'mt-10 mb-2 text-xl font-medium text-gray-800',
+        h4: 'mt-10 mb-2 text-lg font-medium text-gray-700',
         p: 'text-md mb-4',
         ul: 'list-disc list-inside mb-4',
         ol: 'list-decimal list-inside mb-4',

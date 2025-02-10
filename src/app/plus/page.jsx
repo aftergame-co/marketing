@@ -106,7 +106,7 @@ export default function Plus() {
           </div>
         </div>
         <Button
-          href="/download?ref=plus"
+          href="/download"
           className="mt-16 !text-xl !px-16 !py-5 bg-gg-blue hover:bg-gg-red active:bg-gg-red"
           aria-label="Subscribe to Aftergame+"
         >

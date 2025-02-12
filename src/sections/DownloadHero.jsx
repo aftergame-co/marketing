@@ -5,7 +5,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
 import { Container } from '@/components/Container'
-import { MegaphoneIcon } from '@heroicons/react/24/solid'
+import { GlobeAltIcon } from '@heroicons/react/24/outline'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -146,9 +146,9 @@ export function DownloadHero({ className }) {
               <GooglePlayLink />
             </div>
             <div className="-mt-8 xl:mt-8 flex flex-row items-center bg-gg-blue-faint rounded lg:w-4/5 py-1 px-3">
-              <MegaphoneIcon className="h-6 w-6" />
+              <GlobeAltIcon className="h-6 w-6" />
               <p className="ml-2 text-xl text-gray-600">
-                The web app is being launched this month! 
+                Aftergame is also available <a href="https://aftergame.app" className='text-gg-blue font-medium hover:underline'>on the web</a>! 
               </p>
             </div>
           </div>

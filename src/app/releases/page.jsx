@@ -12,6 +12,25 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.2.2",
+    versionNumber: 53,
+    date: "February 11, 2025",
+    blurb:
+      "The web version of Aftergame has launched and is in early access! We also added the ability to change group URLs and added email settings.",
+    features: [
+      `The Aftergame web app has launched, you can load it from any browser at https://aftergame.app. It is still in early access and will have some missing features.`,
+      `We now send new users a welcome email giving them a helpful launch point.`,
+      `[Aftergame+] Group admins can now edit their group URL. This gives you a better URL to share.`,
+      `New email settings to control when Aftergame can email you. We are starting off basic before we add more emails to better notify web users.`,
+      `Added a share button to games and play logs allowing you to link them to friends.`,
+    ],
+    fixes: [
+      `We now properly handle loading invalid event, group, and player links.`,
+      `Fixed small UI issues with loading play logs.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.2.1",
     versionNumber: 52,
     date: "February 5, 2025",

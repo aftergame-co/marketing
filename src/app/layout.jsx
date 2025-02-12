@@ -18,7 +18,10 @@ export const metadata = {
     canonical: '/'
   },
   openGraph: {
-    title: 'Aftergame | The social tabletop gaming app',
+    title: {
+      default: 'Aftergame | The social tabletop gaming app',
+      template: '%s | Aftergame',
+    },
     description: 'Gather your group, find events, plan epic game nights, create shared play logs, and easily manage your collection on Aftergame.',
     url: 'https://www.aftergame.co',
     siteName: 'Aftergame',

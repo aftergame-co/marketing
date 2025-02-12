@@ -54,7 +54,7 @@ We’re constantly evolving Aftergame to meet the needs of organizers and attend
 
 If you’re looking to elevate your next event and create an exceptional experience for attendees, Aftergame is here to help. Let’s make your events unforgettable!
 
-## **Try Aftergame for your next event! [Available now on Android and iOS](https://www.aftergame.co/download).**
+## **Try Aftergame for your next event! Available now on [Android and iOS](https://www.aftergame.co/download) or [on the web](https://aftergame.app).**
 
 ### **Going further**
 

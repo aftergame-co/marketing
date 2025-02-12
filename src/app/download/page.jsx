@@ -2,7 +2,7 @@
 import { DownloadHero } from '@/sections/DownloadHero';
 
 export const metadata = {
-  title: 'Download the Aftergame app - Do it to see who wins',
+  title: 'Download the Aftergame app - Never miss a game',
   alternates: {
     canonical: '/download'
   },

@@ -110,7 +110,7 @@ From Chris: _“At Melbourne Meeples we're only really getting started with Afte
 
 You shouldn’t have to pay through the nose for an inferior product. Join Aftergame and see what groups all over ANZ have already learned: Organising board game and tabletop events can be easy and economical.
 
-## **You can try Aftergame for your next event or check out what’s already happening in your area! [Available now on Android and iOS.](https://www.aftergame.co/download)**
+## **You can try Aftergame for your next event or check out what’s already happening in your area! Available now on [Android and iOS](https://www.aftergame.co/download) or [on the web](https://aftergame.app).**
 
 ### Going further
 

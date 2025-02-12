@@ -15,7 +15,7 @@ const plans = [
     price: { Monthly: 'Free forever', Annually: 'Free forever' },
     button: {
       label: 'Get Aftergame',
-      href: '/download?ref=free',
+      href: '/download',
     },
     features: [
       'No ads, ever.',
@@ -31,7 +31,7 @@ const plans = [
     price: { Monthly: '$2.49', Annually: '$17.99' },
     button: {
       label: 'Subscribe in app',
-      href: '/download?ref=plus',
+      href: '/download',
     },
     features: [
       'Analytics for all your game plays',
@@ -47,7 +47,7 @@ const plans = [
     price: { Monthly: '$2.49', Annually: '$17.99' },
     button: {
       label: 'Subscribe in app',
-      href: '/download?ref=plus',
+      href: '/download',
     },
     features: [
       'Analytics for all your game plays',

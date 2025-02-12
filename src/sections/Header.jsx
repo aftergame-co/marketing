@@ -138,8 +138,8 @@ export function Header({darkMode}) {
                               </MobileNavLink>
                             </div>
                             <div className="mt-8 flex flex-col gap-4">
-                              <Button href="/download" className="bg-gg-blue hover:bg-gg-red active:bg-gg-red">
-                                Get Aftergame
+                              <Button href="https://aftergame.app" className="bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+                                Get Started
                               </Button>
                             </div>
                           </Popover.Panel>
@@ -149,8 +149,8 @@ export function Header({darkMode}) {
                   </>
                 )}
               </Popover>
-              <Button href="/download" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
-                Get Aftergame
+              <Button href="https://aftergame.app" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+                Get Started
               </Button>
             </div>
           </Container>

@@ -1,6 +1,6 @@
 import { CircleBackground } from '@/components/CircleBackground';
 import { Container } from '@/components/Container';
-import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import { Button } from '@/components/Button';
 import Link from 'next/link';
 
 export function DesignersContact() {
@@ -15,20 +15,21 @@ export function DesignersContact() {
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            Have your say
+            Be part of the future
           </h2>
           <p className="mt-4 text-lg text-white">
-            We want tabletop game publishers to tell us what we should build. If Aftergame sounds interesting to you, drop us a line!
+            Book a demo today and see how our toolkit can transform your events and community strategy!
           </p>
           <div className="mt-8 flex align-middle justify-center">
-            <EnvelopeIcon className='text-white h-9 w-9 mr-2'/>
-            <Link 
-                href="mailto:publishers@aftergame.co"
-                aria-label="Email us" 
-                className="flex align-middle justify-center w-auto h-9 p-2 text-white hover:bg-gray-200/10 rounded-lg"
-              >
-              <p className='text-xl font-semibold m-0 p-0 self-center'>publishers@aftergame.co</p>
-            </Link>
+              <Link href='/contact/demo'>
+                <Button
+                  type="submit"
+                  color='black'
+                  className='bg-white hover:bg-gray-100 active:bg-gray-100 hover:text-gg-blue active:text-gg-blue !text-lg !px-6 !py-3'
+                >
+                  Book Demo
+                </Button>
+              </Link>
           </div>
         </div>
       </Container>

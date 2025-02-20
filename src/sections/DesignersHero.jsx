@@ -45,21 +45,21 @@ export function DesignersHero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-7">
             <p className='text-xl text-gray-600 mb-4 uppercase'>Publishers</p>
-            <h1 className="text-5xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
-              <span className='text-gg-blue font-semibold'>Understand</span> how people <br className='hidden md:inline-block' />play <span className='text-gg-red font-semibold'>your games</span>
+            <h1 className="text-4xl md:text-4xl xl:text-5xl font-medium tracking-tighter md:tracking-tight text-gray-900">
+              <span className='text-gg-blue font-semibold'>Powerful tools</span> to grow & engage <span className='text-gg-red font-semibold'>your community</span>
             </h1>
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
-              Get deep insights into how your tabletop games are being played so that you can track KPIs and discover ways to further the development of your game.
+            Manage your events, connect deeply with players, and get the insights you need—all in one easy-to-use platform. Aftergame keeps your community connected long after the game leaves the shelf. 
             </p>
-            <p className="pt-6 lg:w-4/5 text-sm font-semibold">Want to be part of the feedback process?</p>
+            <p className="pt-6 lg:w-4/5 text-sm"><span className='font-semibold'>Want to be part of building the future of tabletop community growth?</span> Book a demo today and see how our toolkit can transform your events and community strategy.</p>
             <div className="pt-2 pb-16 xl:pb-0 lg:w-4/5">
-              <Link href='#contact'>
+              <Link href='/contact/demo'>
                 <Button
                   type="submit"
                   color='gg'
                   className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
                 >
-                  Get in touch
+                  Book Demo
                 </Button>
               </Link>
             </div>

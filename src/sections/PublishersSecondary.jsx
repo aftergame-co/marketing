@@ -40,7 +40,7 @@ const features = [
   },
 ]
 
-export function DesignersSecondary() {
+export function PublishersSecondary() {
   return (
     <section
       id="secondary-features"

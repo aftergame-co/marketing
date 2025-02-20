@@ -5,54 +5,60 @@ import { Button } from '@/components/Button';
 import { getPostData } from '@/utils/posts';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
-export async function HomeEventsFeature() {
+export async function PublisherEventsFeature() {
   const caseStudyPost = await getPostData("how-aftergame-transformed-play-con-a-game-changer-for-event-organizers");
 
   return (
     <section
       id="features"
-      aria-label="Over 7,000 events hosted"
+      aria-label="Effortless & All-in-one Tabletop Event Management"
       className="bg-gg-blue py-20"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-4xl font-medium tracking-tighter lg:tracking-tight text-white">
-            Over 7,000 events hosted
+            Effortless & All-in-one Tabletop Event Management
           </h2>
           <p className="mt-2 text-xl text-gray-100">
-            No matter how large or small, set up your event in minutes and discover why a growing number of board game and tabletop events choose Aftergame.
+            We’ve worked with some of the largest gaming conventions to schedule thousands of games, and have built a toolkit that enables on-site event management of all sizes. 
           </p>
         </div>
       </Container>
       <Container className="mt-10 md:mt-16">
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
           <div className="col-span-1 lg:col-span-2 pr-0 sm:pr-6 lg:pr-20">
-            <h3 className="text-xl font-medium text-white mb-2">
-              A unified schedule
+            <h3 className="text-xl font-medium text-white mb-1.5">
+              Seamless Demo Scheduling
             </h3>
             <p className="text-sm text-gray-100">
-              Schedule game demos, learn to play sessions, playtests, and more as the event organiser, while also letting your attendees plan games they want to play.
+              Plan and manage game demos with ease, ensuring players always have a seat at the table.
             </p>
-            <h3 className="text-xl font-medium text-white mt-6 mb-2">
-              Keep everyone in the loop
+            <h3 className="text-xl font-medium text-white mt-5 mb-1.5">
+              Play-to-Win, Simplified
             </h3>
             <p className="text-sm text-gray-100">
-              Post announcements, threaded discussions for every post, game, or event and push notifications for all updates ensures no one misses outs.
+              Run exciting Play-to-Win activations, track participation, and reward players with no hassle. 
             </p>
-            <h3 className="text-xl font-medium text-white mt-6 mb-2">
-              We understand what tabletop events need
+            <h3 className="text-xl font-medium text-white mt-5 mb-1.5">
+              Track ROI with Confidence
             </h3>
             <p className="text-sm text-gray-100">
-              Add your game library, manage Play to Win competitions, auto generated QR codes, floor plans, TV-mode, data reports, and more packed into a simple and modern interface.
+              Measure event success with real player data – see what works, optimize your approach, and boost your return on investment.
             </p>
-            <div className="pt-8 sm:pt-12 lg:pt-14 lg:w-4/5">
-              <Link href='/events'>
+            <h3 className="text-xl font-medium text-white mt-5 mb-1.5">
+              Turn Attendees into Fans
+            </h3>
+            <p className="text-sm text-gray-100">
+              Capture attendee details, follow up effortlessly, and track the impact long after the event ends.
+            </p>
+            <div className="pt-6 sm:pt-8 lg:pt-10 lg:w-4/5">
+              <Link href='/contact/demo'>
                 <Button
                   type="submit"
                   color='gg'
                   className='bg-white !text-gg-blue md:hover:bg-gg-blue-faint active:bg-gray-100 !text-lg !px-6 !py-3'
                 >
-                  Learn more
+                  Book Demo
                 </Button>
               </Link>
             </div>

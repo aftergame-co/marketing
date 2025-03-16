@@ -11,13 +11,13 @@ export async function HomeEventsFeature() {
   return (
     <section
       id="features"
-      aria-label="Over 7,000 events hosted"
+      aria-label="Over 8,000 events hosted"
       className="bg-gg-blue py-20"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-4xl font-medium tracking-tighter lg:tracking-tight text-white">
-            Over 7,000 events hosted
+            Over 8,000 events hosted
           </h2>
           <p className="mt-2 text-xl text-gray-100">
             No matter how large or small, set up your event in minutes and discover why a growing number of board game and tabletop events choose Aftergame.

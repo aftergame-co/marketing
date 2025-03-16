@@ -12,6 +12,30 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.3.1",
+    versionNumber: 54,
+    date: "March 14, 2025",
+    blurb:
+      "A massive update to play logging, bringing support for non-players, multiple roles, multiple scenarios, a start player/team picker, group-posted play logs and more.",
+    features: [
+      `You can now set the Game Master, Teacher, or Judge for a play while logging a play.`,
+      `For games where there are different role or scenario properties you may want to set, we now support setting all these details!`,
+      `We now have a widget to randomly select a starting player/team. You can also set this manually.`,
+      `When logging a play again, we now copy over more details (rulesets, roles, and scenarios).`,
+      `You can now choose to post a play log to one of your groups to share your fun games!`,
+      `We now keep the screen awake when on the play logging screen.`,
+      `Virtual events will now only show when you are in a nearby time zone.`,
+      `We have greatly improved how repeat events show up in the feed and how notifications are sent out to keep the most relevant events at the front.`,
+      `Notifications for new events posted in your group now factor in your location.`,
+    ],
+    fixes: [
+      `Fixed an edge case which could break some larger imports.`,
+      `Fixed a bug when trying to filter by a specific game.`,
+      `Fixed UI issues with events and event descriptions.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.2.2",
     versionNumber: 53,
     date: "February 11, 2025",

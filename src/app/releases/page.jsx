@@ -12,6 +12,32 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.3.2",
+    versionNumber: 55,
+    date: "March 19, 2025",
+    blurb:
+      "Event hosts can now add non-game events to the schedule, as well as many usability fixes and stability improvements to the app.",
+    features: [
+      `Event hosts can now add generic events that are not needing a game attached to the schedule. Perfect for adding seminars, prize announcements, shared meals or anything else to the schedule!`,
+      `Event hosts can now set an event to be automatically added to all attendee's schedules.`,
+      `For all events, we now show the two next games with free seats so attendees are able to quickly join.`,
+    ],
+    fixes: [
+      `Fixed a bug which caused the home feed to show older items when returning to the screen.`,
+      `Fixed a bug where accepting an invite to a merge a player would cause an infinite load.`,
+      `We now block Google Sign In and give an explanation when trying to sign in from the Facebook or Instagram inbuilt browser. For reasons beyond our control, Google blocks their sign in method when users try to access it from Meta's browsers...`,
+      `Fixed a bug with the 'available seats' filter in event schedules sometimes showing full games.`,
+      `GMs or teachers who are also the event host will no longer receive double notifications.`,
+      `Fixed a bug blocking Aftergame+ features when editing an event.`,
+      `When freeing up a claimed seat, we now have a more accurate label on the button.`,
+      `Significantly increased the character limit for comments.`,
+      `Improved the reliability of keeping you signed in.`,
+      `Fixed a bug which sometimes didn't select a tab when performing a global search.`,
+      `A whole lot of style and UX improvements for the web app (with the time picker and bottom sheets in particular).`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.3.1",
     versionNumber: 54,
     date: "March 14, 2025",

@@ -141,14 +141,14 @@ export function DownloadHero({ className }) {
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
               Download the free Aftergame app to get more games to the table and to start sharing your gaming journey with friends. 
             </p>
-            <div className="pt-6 pb-16 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4">
+            <div className="pt-6 pb-4 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4">
               <AppStoreLink />
               <GooglePlayLink />
             </div>
-            <div className="-mt-8 xl:mt-8 flex flex-row items-center bg-gg-blue-faint rounded lg:w-4/5 py-1 px-3">
+            <div className="xl:mt-4 mb-8 xl:mb-0 flex flex-row items-center bg-gg-blue-faint rounded w-full max-w-[376px] py-1 px-3">
               <GlobeAltIcon className="h-6 w-6" />
               <p className="ml-2 text-xl text-gray-600">
-                Aftergame is also available <a href="https://aftergame.app" className='text-gg-blue font-medium hover:underline'>on the web</a>! 
+                Now available <a href="https://aftergame.app" className='text-gg-blue font-medium hover:underline'>on the web</a>! 
               </p>
             </div>
           </div>

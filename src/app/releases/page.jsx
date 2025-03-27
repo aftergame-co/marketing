@@ -12,6 +12,28 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.3.3",
+    versionNumber: 56,
+    date: "March 27, 2025",
+    blurb:
+      "We now detect when you may have timing clashes when claiming a seat to a game as well as a whole raft of bug fixes and improvements.",
+    features: [
+      `When claiming a seat to a game at an event, we now detect if you have other games or events scheduled at the same time and warn you of the potential clash.`,
+      `We have given the event schedule a small UI uplift to make things look cleaner and more consistent.`,
+      `Spreadsheet imports now accept "objectname" and "objectid” column names and maps to “name” and “bgg_id” respectively to accept the BGG export format.`,
+    ],
+    fixes: [
+      `Fixed a bug which would crash the app when linking directly to a profile.`,
+      `Fixed a handful of bugs where we incorrectly would say all seats were claimed when trying to invite people to a game with an open seat.`,
+      `Fixed a bug which would incorrectly port roles when pressing log again and then changing the game.`,
+      `Fixed the location validation when creating an event.`,
+      `Fixed some bugs which lead to incorrect attendee counts at an event.`,
+      `Fixed a bug which didn't let you remove an acquired date for a game copy.`,
+      `Fixed floor plan location selection on the web app.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.3.2",
     versionNumber: 55,
     date: "March 19, 2025",

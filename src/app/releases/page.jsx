@@ -12,6 +12,50 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.4.1",
+    versionNumber: 58,
+    date: "April 22, 2025",
+    blurb:
+      "This update contains many bug fixes and a lot of behind-the-scenes changes to support some exciting upcoming features.",
+    features: [
+      `View all the "Interested" players for a game.`,
+      `Group admins can now give a reason when rejecting a join request.`,
+      `You can now like play logs from the play log screen.`,
+    ],
+    fixes: [
+      `Fixed many a handful of bugs which did not update the group members screen when making membership changes.`,
+      `Fixed bugs where events were not showing the most up-to-date data.`,
+      `The upcoming group events count has been corrected to not include games at events.`,
+      `Fixed a bug which meant the "Can't go" button did nothing.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.4.0",
+    versionNumber: 57,
+    date: "April 8, 2025",
+    blurb:
+      "Discover groups nearby, set yourself as 'Interested' for games or events, duplicate events and a whole lot of improvements throughout the app.",
+    features: [
+      `The Groups tab has been completely rebuilt to better showcase local groups and improve discoverability.`,
+      `There is now an option to set yourself as 'Interested' to a planned game or event. This will save the event but not yet reserve you a seat.`,
+      `Event hosts and group admins can now quickly duplicate any game or event.`,
+      `We now show all nearby planned games when viewing a game.`,
+      `You can now post multiple game lists in a single post.`,
+      `We now show more games on the main event page.`,
+      `[Web] Horizontally scrolling sections now have left and right buttons to easily scroll the view.`,
+    ],
+    fixes: [
+      `Fixed a bug in game event cards which showed an extra empty seat.`,
+      `Fixed a bug with collapsible text where in some cases, you could expand to see all.`,
+      `Fixed a bug which did not show game lists linked to sub-events.`,
+      `We have improved the import process to immediately update your collection.`,
+      `Fixed a bug which would wipe the score when editing a play which was imported from BGG.`,
+      `Fixed the source of a few app crashes.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.3.3",
     versionNumber: 56,
     date: "March 27, 2025",

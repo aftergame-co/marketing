@@ -142,6 +142,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://aftergame.notion.site/media-kit?pvs=4" aria-label="Media kit" target='_blank'>
+                  Media kit
+                </Link>
+              </li>
+              <li>
                 <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://aftergame.notion.site/faq?pvs=4" aria-label="FAQ" target='_blank'>
                   FAQ
                 </Link>
@@ -171,11 +176,6 @@ export function Footer() {
                   Contact
                 </Link>
               </li>
-              {/* <li>
-                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/media" aria-label="Media kit">
-                  Media kit
-                </Link>
-              </li> */}
               <li>
                 <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/privacy" aria-label="Privacy">
                   Privacy Policy

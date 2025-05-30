@@ -137,17 +137,22 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://aftergame.notion.site/?pvs=4" aria-label="App help" target='_blank'>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://aftergame.notion.site/" aria-label="App help" target='_blank'>
                   Help site
                 </Link>
               </li>
               <li>
-                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://aftergame.notion.site/media-kit?pvs=4" aria-label="Media kit" target='_blank'>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://aftergame.notion.site/organizers" aria-label="Organizer help" target='_blank'>
+                  Organizer help
+                </Link>
+              </li>
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://aftergame.notion.site/media-kit" aria-label="Media kit" target='_blank'>
                   Media kit
                 </Link>
               </li>
               <li>
-                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://aftergame.notion.site/faq?pvs=4" aria-label="FAQ" target='_blank'>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="https://aftergame.notion.site/faq" aria-label="FAQ" target='_blank'>
                   FAQ
                 </Link>
               </li>

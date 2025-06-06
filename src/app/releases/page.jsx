@@ -12,6 +12,36 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.5.1",
+    versionNumber: 60,
+    date: "June 5, 2025",
+    blurb:
+      "The Aftergame web app is out of early access, collection management has been streamlined, sharing to people without the Aftergame app is much better and some large under-the-hood resulting in big performance improvements.",
+    features: [
+      `The Aftergame web app (https://aftergame.app) is out of early access! This means 'app.aftergame.co' is being discontinued in favour of the new and improved 'aftergame.app' sharing URL.`,
+      `Events, groups, and games can now be loaded without being signed into an Aftergame account.`,
+      `Added a new 'Collection' menu when viewing a game to quickly manage your collection.`,
+      `When adding a game already in your collection, we will prompt if you want to add a new copy or update your existing copy.`,
+      `A new 'Competitions' section is added to large events running Play to Win competitions.`,
+      `Added the ability to copy the invite link for groups and events, particularly useful on web.`,
+      `You can now remove other players from a play log (and they will be notified).`,
+      `We have improved empty states in many lists and sections for better readability.`,
+    ],
+    fixes: [
+      `We have fixed dozens of performance and routing issues throughout the app.`,
+      `Loading the web app on subsequent loads should be far better.`,
+      `Removed the broken 'Plan a game' button on the empty events view.`,
+      `Fixed some issues with viewing an event schedule in a different time zone.`,
+      `Fixed a bug which showed events you were interested in as 'Attended' in the feed.`,
+      `Fixed a bug which cleared the attached game list when editing an event with a game list someone else added.`,
+      `Fixed a bug which wiped your current city when changing your avatar.`,
+      `Fixed a bug which in some cases would reverse the digits you typed in the score input while logging a play.`,
+      `Fixed a crash which could happen when loading up a user's profile.`,
+      `Fixed a UI bug causing long group member names to hide some buttons.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.4.1",
     versionNumber: 58,
     date: "April 22, 2025",

@@ -12,6 +12,34 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.6.0",
+    versionNumber: 61,
+    date: "July 3, 2025",
+    blurb:
+      "Event creation, inviting players, and managing event attendance has been greatly improved in this update packed with quality of life improvements.",
+    features: [
+      `You can now browse group members or limit your search to just friends when inviting people to games and events.`,
+      `Invited people no longer automatically fill a seat. Instead, you are given the choice to invite or secure a seat when inviting players to a game.`,
+      `Add a note when responding to an invite or attending games and events.`,
+      `The minimum needed players is now shown in a planned game's player list.`,
+      `Creating events has been simplified and the distinction between a "Meetup" and "Convention" removed.`,
+      `Aftergame+ subscribers now have the ability to create events with 100 attendees.`,
+      `View your total games, plays, and hours played for a given filter in the play stats screen.`,
+      `We now confirm if you want to exit the screen when trying to leave an event, play log, group, or game creation screens.`,
+      `Event hosts can now manage attendees from the attendees screen.`,
+      `You can now search for group members or event attendees when viewing the full list.`,
+      `Recent group events now show up in the group feed with a prompt to add photos.`,
+      `You can now dismiss group invites.`,
+      `The play log score input keyboard now has a dismiss button.`,
+    ],
+    fixes: [
+      `Fixed some app crashes particularly affecting iOS devices.`,
+      `Fixed a crash when validating ticket links during event creation.`,
+      `Fixed a handful of bugs when submitting Play to Win entries.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.5.1",
     versionNumber: 60,
     date: "June 5, 2025",

@@ -12,7 +12,7 @@ export const metadata = {
 
 const changelogs = [
   {
-    version: "2.6.0",
+    version: "2.6.1",
     versionNumber: 61,
     date: "July 3, 2025",
     blurb:
@@ -36,6 +36,8 @@ const changelogs = [
       `Fixed some app crashes particularly affecting iOS devices.`,
       `Fixed a crash when validating ticket links during event creation.`,
       `Fixed a handful of bugs when submitting Play to Win entries.`,
+      `Fixed an issue where the event "Where" filter was not able to be updated.`,
+      `Added nicer loading effects throughout many pages in the app.`,
       `Various other fixes and performance improvements.`,
     ],
   },

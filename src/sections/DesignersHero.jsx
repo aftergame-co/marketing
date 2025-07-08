@@ -51,7 +51,7 @@ export function DesignersHero() {
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
             Manage your events, connect deeply with players, and get the insights you need—all in one easy-to-use platform. Aftergame keeps your community connected long after the game leaves the shelf. 
             </p>
-            <p className="pt-6 lg:w-4/5 text-sm"><span className='font-semibold'>Want to be part of building the future of tabletop community growth?</span> Book a demo today and see how our toolkit can transform your events and community strategy.</p>
+            <p className="pt-6 lg:w-4/5 text-sm font-semibold">See how our toolkit can transform your events and community strategy.</p>
             <div className="pt-2 pb-16 xl:pb-0 lg:w-4/5">
               <Link href='/contact/demo'>
                 <Button
@@ -62,6 +62,29 @@ export function DesignersHero() {
                   Book Demo
                 </Button>
               </Link>
+            </div>
+            <div className="flex flex-row items-center gap-x-8 lg:pl-8 pt-8">
+              <Image
+                src='/images/publishers/restoration.jpg'
+                alt='Restoration Games'
+                width={64}
+                height={64}
+                className='flex-shrink-0 mr-2 rounded-lg'
+              />
+              <Image
+                src='/images/publishers/vr.png'
+                alt='VR Distribution'
+                width={112}
+                height={112}
+                className='flex-shrink-0'
+              />
+              <Image
+                src='/images/publishers/lpg.png'
+                alt='Lets Play Games'
+                width={64}
+                height={64}
+                className='flex-shrink-0 mr-2'
+              />
             </div>
           </div>
           <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-5">

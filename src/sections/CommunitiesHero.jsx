@@ -109,42 +109,41 @@ export function CommunitiesHero() {
                 </Button>
               </Link>
             </div>
-            <div className="flex flex-row items-center gap-x-8 py-6">
-
+            <div className="flex flex-row items-center gap-x-8 pt-8">
               <Image
-                src='/temp/bgbbq-logo.png'
+                src='/images/communities/behold.png'
+                alt='Behold Games'
+                width={64}
+                height={64}
+                className='flex-shrink-0 mt-2'
+              />
+              <Image
+                src='/images/communities/bgbbq.png'
                 alt='Board Game BBQ'
                 width={96}
                 height={96}
                 className='flex-shrink-0'
               />
               <Image
-                src='/temp/meepleopolis.png'
-                alt='Meepleopolis'
-                width={80}
-                height={80}
-                className='flex-shrink-0 mt-0.5'
+                src='/images/communities/mm.png'
+                alt='Melbourne Meeples'
+                width={60}
+                height={60}
+                className='flex-shrink-0'
               />
               <Image
-                src='/temp/csg.png'
-                alt='Canberra Games Society'
+                src='/images/communities/rsg.png'
+                alt='Ringwood Social Games'
                 width={64}
                 height={64}
                 className='flex-shrink-0'
               />
               <Image
-                src='/temp/cc.webp'
-                alt='Counter Culture'
-                width={96}
+                src='/images/communities/ltn.png'
+                alt='Love Thy Nerd'
+                width={110}
                 height={96}
-                className='flex-shrink-0'
-              />
-              <Image
-                src='/temp/bggw-logo.png'
-                alt='Board Game Gateway'
-                width={80}
-                height={80}
-                className='flex-shrink-0'
+                className='flex-shrink-0 mt-1'
               />
             </div>
           </div>

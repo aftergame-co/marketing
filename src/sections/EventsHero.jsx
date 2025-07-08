@@ -108,43 +108,50 @@ export function EventsHero() {
                 </Button>
               </Link>
             </div>
-            <div className="flex flex-row items-center gap-x-8 lg:pl-10 pt-6">
-              <Image
+            <div className="flex flex-row items-center gap-x-8 lg:pl-8 pt-6">
+              {/* <Image
                 src='/temp/lpg.png'
                 alt='Lets Play Games'
                 width={64}
                 height={64}
                 className='flex-shrink-0 mr-2'
-              />
+              /> */}
               <Image
-                src='/temp/play-con.png'
+                src='/images/events/playcon.png'
                 alt='Play Con'
                 width={96}
                 height={96}
                 className='flex-shrink-0'
               />
               <Image
-                src='/temp/vr.png'
-                alt='VR Distribution'
+                src='/images/events/tantrumcon.png'
+                alt='Tantrum Con'
+                width={96}
+                height={96}
+                className='flex-shrink-0'
+              />
+              <Image
+                src='/images/events/wellycon.webp'
+                alt='Wellycon'
                 width={112}
                 height={112}
                 className='flex-shrink-0'
               />
             </div>
-            <div className="flex flex-row items-center gap-x-8 lg:pl-16 pb-6">
+            <div className="flex flex-row items-center gap-x-8 lg:pl-16 pb-4">
+              <Image
+                src='/images/events/mas.png'
+                alt='Meeples at Sea'
+                width={128}
+                height={96}
+                className='flex-shrink-0'
+              />
               <Image
                 src='/temp/ttcon.webp'
                 alt='TabletopCon'
                 width={104}
                 height={104}
                 className='flex-shrink-0 mr-2'
-              />
-              <Image
-                src='/temp/wellycon.webp'
-                alt='Wellycon'
-                width={112}
-                height={112}
-                className='flex-shrink-0'
               />
             </div>
           </div>

@@ -109,7 +109,7 @@ export function CommunitiesHero() {
                 </Button>
               </Link>
             </div>
-            <div className="flex flex-row items-center gap-x-8 pt-8">
+            <div className="flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-6 pt-8 max-w-[480px]">
               <Image
                 src='/images/communities/behold.png'
                 alt='Behold Games'
@@ -132,18 +132,25 @@ export function CommunitiesHero() {
                 className='flex-shrink-0'
               />
               <Image
-                src='/images/communities/rsg.png'
-                alt='Ringwood Social Games'
-                width={64}
-                height={64}
-                className='flex-shrink-0'
-              />
-              <Image
                 src='/images/communities/ltn.png'
                 alt='Love Thy Nerd'
                 width={110}
                 height={96}
                 className='flex-shrink-0 mt-1'
+              />
+              <Image
+                src='/images/communities/kg.png'
+                alt='Kimberley Gamers'
+                width={110}
+                height={64}
+                className='flex-shrink-0'
+              />
+              <Image
+                src='/images/communities/rsg.png'
+                alt='Ringwood Social Games'
+                width={64}
+                height={64}
+                className='flex-shrink-0'
               />
             </div>
           </div>

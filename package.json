@@ -3,9 +3,6 @@
   "version": "0.3.0",
   "private": true,
   "packageManager": "yarn@1.22.22",
-  "engines": {
-    "node": "22.x"
-  },
   "scripts": {
     "start:dev": "next dev",
     "build": "next build",

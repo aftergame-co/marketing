@@ -12,6 +12,30 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.7.0",
+    versionNumber: 62,
+    date: "July 17, 2025",
+    blurb:
+      "The wait for waitlists is over! Let players join a waitlist once games fill up. Also connect guest players via QR code and many fixes included in today's release.",
+    features: [
+      `Aftergame+ subscribers can now enable waitlists for games and events for players to join once a game fills up. If a seat comes free, the first player on the waitlist gets added.`,
+      `An easy QR code option has been added for connecting guest players to a real person.`,
+      `We now label who created a guest player.`,
+      `Added new options for repeat events for the last day of month and for every four weeks.`,
+    ],
+    fixes: [
+      `Fixed issues with groups not loading.`,
+      `Scrolling to the bottom of the player list when inviting now correctly loads more players.`,
+      `Fixed a bug which clipped the bottom of the player select list.`,
+      `We now correctly check if the parent event hasn't passed its attendee limit when trying to join a child event.`,
+      `Fixed a bug which incorrectly categorised RPGs as expansions and hid them when expansions was unticked in the filters.`,
+      `We have a potential fix for importing a very large play history from BGG.`,
+      `Events and games load better with loading animations.`,
+      `Some wording changes throughout the app to reduce confusion.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.6.1",
     versionNumber: 61,
     date: "July 3, 2025",

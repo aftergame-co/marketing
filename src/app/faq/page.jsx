@@ -126,7 +126,7 @@ const questionContent =
           answer:
             (<>
               To ensure the best player experience, we strive to have as many games listed in our library as possible. We assume that game publishers are generally happy for their game image and information to be shown as long as it is correct (free marketing!).
-              <br /><br />However, if you are a publisher or rights holder of a game found in our library and you do not wish for it to be displayed on our product, please send an email to <Link href="mailto:publishers@aftergame.co" className="text-gg-blue font-medium hover:underline">publishers@aftergame.co</Link> with proof of ownership and we will remove any relevant information as soon as possible.
+              <br /><br />However, if you are a publisher or rights holder of a game found in our library and you do not wish for it to be displayed on our product, please send an email to <Link href="mailto:hello@aftergame.co" className="text-gg-blue font-medium hover:underline">hello@aftergame.co</Link> with proof of ownership and we will remove any relevant information as soon as possible.
             </>),
         },
       ],

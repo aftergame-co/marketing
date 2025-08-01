@@ -7,15 +7,6 @@ const nextConfig = {
     appDir: true,
     scrollRestoration: true,
   },
-  async redirects() {
-    return [
-      {
-        source: '/designers',
-        destination: '/publishers',
-        permanent: true,
-      },
-    ];
-  },
 }
 
 module.exports = nextConfig

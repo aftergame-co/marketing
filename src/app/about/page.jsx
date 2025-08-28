@@ -39,18 +39,6 @@ export default function About() {
       role: 'Advisor',
       linkedIn: 'https://www.linkedin.com/in/andrewjohnmarks/',
     },
-    {
-      image: '/images/about/team/stephane.jpg',
-      name: 'Stéphane Busso',
-      role: 'Technical Advisor',
-      linkedIn: 'https://www.linkedin.com/in/stephanebusso',
-    },
-    {
-      image: '/images/about/team/eli.jpg',
-      name: 'Eli Labes',
-      role: 'Technical Advisor',
-      linkedIn: 'https://www.linkedin.com/in/eli-labes-39a705164',
-    },
   ];
 
   const values = [
@@ -93,17 +81,39 @@ export default function About() {
       >
         <Container>
           <p className='mb-10 text-center text-xl text-gray-100'>THE AFTERGAME STORY</p>
-          <div className='bg-white rounded-2xl md:mx-20 xl:mx-40 p-6 md:p-20'>{/* lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20"> */}
-            {/* <div className='lg:col-span-6 text-lg text-gray-900'> */}
-            <p><span className='text-gg-blue font-bold'>In late-2022</span>, founders John Brent and Eric Poulin decided to start recording the games they played. Their first instinct was a spreadsheet, but it had to be easy to enter and view results with dropdowns... and formulas... <i>and pivot tables!</i> At first it was simple, letting you choose a winner and keeping a tally. This quickly got more complex as they started tracking more things. Soon, the penny dropped… there’s definitely an app for this! A quick search found a handful of apps that seemed to do some of what they were building, though none had everything they wanted.</p>
+          <div className='lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
+            <div className='bg-white rounded-2xl p-6 md:p-12 col-span-6'>
+              {/* <div className='lg:col-span-6 text-lg text-gray-900'> */}
+              <p><span className='text-gg-blue font-bold'>In late-2022</span>, founders John Brent and Eric Poulin decided to start recording the games they played. Their first instinct was a spreadsheet, but it had to be easy to enter and view results with dropdowns... and formulas... <i>and pivot tables!</i> At first it was simple, letting you choose a winner and keeping a tally. This quickly got more complex as they started tracking more things. Soon, the penny dropped… there’s definitely an app for this! A quick search found a handful of apps that seemed to do some of what they were building, though none had everything they wanted.</p>
 
-            <p className='mt-6'>Their spreadsheet allowed either of them to log a game from their phone and for it to be immediately shown to the other. None of the apps did this. The spreadsheet also had dropdowns pre-built with relevant information for the game they were playing. Again, none of the other apps had this for all the games they wanted. The scoring breakdown in 7 Wonders, the factions in Root, the scenarios in Betrayal at House on the Hill, and <i>“how do these two expansions work together!?”</i> could all be done automatically to simplify tracking their games. They got to work building a solution.</p>
+              <p className='mt-6'>Their spreadsheet allowed either of them to log a game from their phone and for it to be immediately shown to the other. None of the apps did this. The spreadsheet also had dropdowns pre-built with relevant information for the game they were playing. Again, none of the other apps had this for all the games they wanted. The scoring breakdown in 7 Wonders, the factions in Root, the scenarios in Betrayal at House on the Hill, and <i>“how do these two expansions work together!?”</i> could all be done automatically to simplify tracking their games. They got to work building a solution.</p>
 
-            <p className='mt-6'>With a basic app, they made the trip to Wellycon to see how it would work in the wild and what else about tabletop gaming their app may be able to enhance (this is where they met Chalene Scott, who soon joined the team). They encountered some difficulty in finding a game to join and discovered, in talking to other players and event organisers, that they were not alone in facing this challenge. Helping people who want to play the same games find each other at events and meetups soon became a core part of the platform. With all these puzzle pieces in place—shared game logs, collection tracking, events, and groups—<span className='text-gg-red font-bold'>Aftergame was born</span>.</p>
-            {/* </div> */}
-            {/* <div className='lg:col-span-6'>
-                  <img src='../images/gg-0.1.png' className='border-2 border-gg-blue rounded-2xl' />
-                </div> */}
+              <p className='mt-6'>With a basic app, they made the trip to Wellycon to see how it would work in the wild and what else about tabletop gaming their app may be able to enhance (this is where they met Chalene Scott, who soon joined the team). They encountered some difficulty in finding a game to join and discovered, in talking to other players and event organisers, that they were not alone in facing this challenge. Helping people who want to play the same games find each other at events and meetups soon became a core part of the platform. With all these puzzle pieces in place—shared game logs, collection tracking, events, and groups—<span className='text-gg-red font-bold'>Aftergame was born</span>.</p>
+              {/* </div> */}
+              {/* <div className='lg:col-span-6'>
+                    <img src='../images/gg-0.1.png' className='border-2 border-gg-blue rounded-2xl' />
+                  </div> */}
+            </div>
+            <div className='col-span-6'>
+              <div className='relative h-96 mt-8 mb-8 lg:mt-0'>
+                <Image
+                    src="/images/about/eric-john-media.jpg"
+                    alt="Eric and John in the local paper"
+                    layout="fill"
+                    objectFit="cover"
+                    className='rounded-2xl'
+                  />
+              </div>
+              <div className='relative h-[480px]'>
+                <Image
+                    src="/images/about/eli-chalene-convention.jpg"
+                    alt="Eric and John in the local paper"
+                    layout="fill"
+                    objectFit="cover"
+                    className='rounded-2xl object-top'
+                  />
+              </div>
+            </div>
           </div>
 
         </Container>

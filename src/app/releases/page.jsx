@@ -12,6 +12,60 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.8.3",
+    versionNumber: 65,
+    date: "August 27, 2025",
+    blurb:
+      "A small release which fixes some app crashes which occurred while logging plays and push notifications on iOS.",
+    features: [],
+    fixes: [
+      `A recent change on iOS meant that push notifications were no longer being sent. This has been fixed!`,
+      `Fixed a bug when turning on the play timer and leaving the app, the app would crash when you return.`,
+    ],
+  },
+  {
+    version: "2.8.1",
+    versionNumber: 64,
+    date: "August 19, 2025",
+    blurb:
+      "A small release with bug fixes which also includes some under-the-hood changes in preparation for some upcoming features.",
+    features: [],
+    fixes: [
+      `Made a bunch of improvements which should fix issues where you would get signed out.`,
+      `Fixed a few issues with sharing event links.`,
+      `Clicking an Aftergame link within a post will now open it within the app rather than a new browser window.`,
+      `[Web] The post input field now expands to the full screen height.`,
+      `Improved the UX for deleting events or games.`,
+      `Fixed a few instances where the keyboard would not be hidden.`,
+      `Improved the display of the Aftergame logo for embedded pages.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.8.0",
+    versionNumber: 63,
+    date: "August 7, 2025",
+    blurb:
+      "Email sign up is now supported, embed event and game lists into your website, as well as improvements to group and event screens.",
+    features: [
+      `We finally support email signup, so new users no longer need to connect their Google, Apple, or Discord account to Aftergame.`,
+      `Aftergame+ subscribers are now able to embed event schedules, group event calendars, and game lists directly into their websites.`,
+      `If a group or event has a game library, we now prompt if you would like to plan a game using a copy from the library.`,
+      `Group and event actions have been standardised and cleaned up.`,
+      `You can now set a password on your account to use email+password sign in.`,
+    ],
+    fixes: [
+      `Fixed the display of waitlist ordering to correctly show who is next in line.`,
+      `Players who were rejected from joining a group can now be re-invited.`,
+      `Fixed some bugs which clipped the bottom of some sheets.`,
+      `Fixed a bug when creating a custom role or scenario, it would show up when opening a different role field.`,
+      `[Web] You can now click next/previous through images in posts.`,
+      `[Web] Better display of floor plans and ability to zoom in/out.`,
+      `Fixed a potential edge-case which may have meant push notifications were not sent to a device.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.7.0",
     versionNumber: 62,
     date: "July 17, 2025",

@@ -34,6 +34,12 @@ export default function About() {
       linkedIn: 'https://www.linkedin.com/in/chalene-scott-5571a879',
     },
     {
+      image: '/images/about/team/daniel.jpg',
+      name: 'Daniel Lewis',
+      role: 'Founding Engineer',
+      linkedIn: 'https://www.linkedin.com/in/aubusinessdad',
+    },
+    {
       image: '/images/about/team/andrew.jpg',
       name: 'Andrew Marks',
       role: 'Advisor',
@@ -83,16 +89,9 @@ export default function About() {
           <p className='mb-10 text-center text-xl text-gray-100'>THE AFTERGAME STORY</p>
           <div className='lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
             <div className='bg-white rounded-2xl p-6 md:p-12 col-span-6'>
-              {/* <div className='lg:col-span-6 text-lg text-gray-900'> */}
               <p><span className='text-gg-blue font-bold'>In late-2022</span>, founders John Brent and Eric Poulin decided to start recording the games they played. Their first instinct was a spreadsheet, but it had to be easy to enter and view results with dropdowns... and formulas... <i>and pivot tables!</i> At first it was simple, letting you choose a winner and keeping a tally. This quickly got more complex as they started tracking more things. Soon, the penny dropped… there’s definitely an app for this! A quick search found a handful of apps that seemed to do some of what they were building, though none had everything they wanted.</p>
-
               <p className='mt-6'>Their spreadsheet allowed either of them to log a game from their phone and for it to be immediately shown to the other. None of the apps did this. The spreadsheet also had dropdowns pre-built with relevant information for the game they were playing. Again, none of the other apps had this for all the games they wanted. The scoring breakdown in 7 Wonders, the factions in Root, the scenarios in Betrayal at House on the Hill, and <i>“how do these two expansions work together!?”</i> could all be done automatically to simplify tracking their games. They got to work building a solution.</p>
-
               <p className='mt-6'>With a basic app, they made the trip to Wellycon to see how it would work in the wild and what else about tabletop gaming their app may be able to enhance (this is where they met Chalene Scott, who soon joined the team). They encountered some difficulty in finding a game to join and discovered, in talking to other players and event organisers, that they were not alone in facing this challenge. Helping people who want to play the same games find each other at events and meetups soon became a core part of the platform. With all these puzzle pieces in place—shared game logs, collection tracking, events, and groups—<span className='text-gg-red font-bold'>Aftergame was born</span>.</p>
-              {/* </div> */}
-              {/* <div className='lg:col-span-6'>
-                    <img src='../images/gg-0.1.png' className='border-2 border-gg-blue rounded-2xl' />
-                  </div> */}
             </div>
             <div className='col-span-6'>
               <div className='relative h-96 mt-8 mb-8 lg:mt-0'>
@@ -134,7 +133,6 @@ export default function About() {
                 key={value.name}
                 className="rounded-2xl p-8 bg-white border-2 border-gray-100"
               >
-                {/* <feature.icon className="h-16 w-16" /> */}
                 <h3 className="mt-6 font-semibold text-gray-900 text-lg">
                   {value.name}
                 </h3>

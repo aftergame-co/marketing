@@ -63,7 +63,21 @@ export function DesignersHero() {
                 </Button>
               </Link>
             </div>
-            <div className="flex flex-row items-center gap-x-8 lg:pl-8 pt-8">
+            <div className="flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-6 pt-8 max-w-[420px]">
+              <Image
+                src='/images/publishers/asmodee.png'
+                alt='asmodee'
+                width={112}
+                height={112}
+                className='flex-shrink-0'
+              />
+              <Image
+                src='/images/publishers/ledergames.webp'
+                alt='Leder Games'
+                width={112}
+                height={112}
+                className='flex-shrink-0 mr-2 rounded-lg'
+              />
               <Image
                 src='/images/publishers/restoration.jpg'
                 alt='Restoration Games'

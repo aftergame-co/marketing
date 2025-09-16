@@ -12,6 +12,50 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.9.115",
+    versionNumber: 67,
+    date: "September 15, 2025",
+    blurb:
+      "We have packed many improvements and bug fixes to events and groups as well as preparing for upcoming features in today's release.",
+    features: [
+      `We now support events having multiple rooms with floor plans and have implemented many improvements to this UX.`,
+      `When claiming seats on behalf of someone else, instead of setting those players to "Going", they will now be set to "Reserved".`,
+      `When a seat is freed up, the next person on the waitlist will be set to "Reserved" rather than "Going", which still holds their seat but requires a response.`,
+      `Event and group descriptions, play log notes, and profile bios now support markdown and the text area expands as you type.`,
+      `Event hosts can now disable the ability for attendees to bring un-named "+1s" to an event.`,
+      `You can now easily set yourself to "Not going" without first needing to set yourself as going when RSVPing to an event.`,
+    ],
+    fixes: [
+      `[Web] Fixed a bug in events which would infinitely scroll the feed to the bottom when you were not signed in.`,
+      `[Web] Fixed a bug which cut off the player invite screen.`,
+      `Fix to ensure a 2:1 image ratio on all screens for event/group banners.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.9.112",
+    versionNumber: 66,
+    date: "September 3, 2025",
+    blurb:
+      "Tag people in posts and comments, leaderboards get a big upgrade, and our initial launch of the group stats page are all included in today's release!",
+    features: [
+      `You can now type @ to mention any Aftergame user. Admins/event hosts can also tag @everyone.`,
+      `Leaderboards have been completely rebuilt. You can now browse and filter game leaderboards on a new page.`,
+      `View group leaderboards and filter leaderboards to specific time periods.`,
+      `Aftergame+ subscribers can also filter leaderboards by the player count, expansions played, ruleset used, and locations played.`,
+      `The first version of the group stats page is here with some overall stats and a list of the most played games in the group.`,
+      `The location filter is now multi-select for all play and stat pages.`,
+      `Hosts and game masters can now move people to the event waitlist.`,
+    ],
+    fixes: [
+      `Changing an event's location will now correctly update all child events/games to that location.`,
+      `Fixed a bug when planning a game where it would sometimes set the max players to 50.`,
+      `New post notifications are now delayed by 15 minutes to non-admins to give time for spam posts to be deleted before everyone gets pinged.`,
+      `Greatly improved the quality of shareable games-played images, particularly for web.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.8.3",
     versionNumber: 65,
     date: "August 27, 2025",

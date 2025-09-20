@@ -12,6 +12,28 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.9.116",
+    versionNumber: 66,
+    date: "September 18, 2025",
+    blurb: "This release brings support for official publisher groups as well as a few important bug fixes.",
+    features: [
+      `Publishers can now apply to get their official group for their events, games, and community.`,
+      `Publisher groups show all their published games rather than the group collection, and stats are filtered to just their games.`,
+      `Find and join publisher groups in the Groups tab.`,
+      `When viewing a location, we now show all events and planned games happening there.`,
+      `Group admins can now add a website link to their group.`,
+      `Group admins can now disable game leaderboards for their group.`,
+    ],
+    fixes: [
+      `When creating events or planning games within a paid event, event hosts now correctly get access to all the paid features / attendee limits.`,
+      `Fixed a crash which could happen when moving between recurring event instances.`,
+      `Fixed a bug where the event attendees would not all display correctly.`,
+      `Fixed some edge-case crashes when we have not properly loaded an event date from the server.`,
+      `Fixed the "see more" for group/event details cutting off too soon in some instances.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.9.115",
     versionNumber: 67,
     date: "September 15, 2025",

@@ -12,6 +12,33 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.10.118",
+    versionNumber: 67,
+    date: "October 2, 2025",
+    blurb:
+      "This release brings more controls and fixes. Set notification preferences per group, control who can join your games or events, and much more!",
+    features: [
+      `You can now manage notifications at a group level, overriding your global notification settings for notifications from that group.`,
+      `Event hosts can now control who can join an event, setting whether an event is open, for group members, or invite only.`,
+      `Game and event sign up access can also be controlled by time, set when RSVPs open and when they are close.`,
+      `Want your events to show up at a specific time? You can now set when your event will become visible.`,
+      `A new setting has been added to block attendees from inviting others, leaving it controlled by hosts.`,
+      `When a person joins a game or event hosted by a group they are not part of, we now have an unobtrusive prompt to join the group.`,
+      `Play to Win competitions now have an option to only allow one entry per game per person.`,
+      `When you lock in the results for a Play to Win competition, we now send a csv of all winners and a csv of all responses automatically.`,
+      `We now show images for roles, or scenarios when they are available.`,
+    ],
+    fixes: [
+      `Fixed a bug where mention notifications were sometimes attributed to the wrong user.`,
+      `Deleting a game list will now correctly clean up any games that were in your collection and only in that list.`,
+      `Liking a post or play log in the feed now correctly updates the heart icon.`,
+      `Fixed a crash which could occur when viewing a list of plays.`,
+      `Fixed a bug which could lead to Aftergame+ features not being immediately available to new subscribers in the web app.`,
+      `Play logs of cooperative plays could get in a situation where a player was marked as "winning".`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.9.116",
     versionNumber: 66,
     date: "September 18, 2025",

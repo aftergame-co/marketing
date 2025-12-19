@@ -12,17 +12,40 @@ export const metadata = {
 
 const changelogs = [
   {
-    version: "2.13.125",
+    version: "2.13.128",
+    versionNumber: 72,
+    date: "December 15, 2025",
+    blurb:
+      "We have pushed out a few smaller updates fixing bugs and adding small quality of life improvements while we work on our next big update in the background.",
+    features: [
+      `Added the ability to update event attendees/players to be reserving a space.`,
+      `We now show more clearly the details if an event has controls on who can view/join an event and when access is open.`,
+      `We now show if there is a waitlist for a game or event.`,
+      `Game masters and teachers have been added to the event cards list.`,
+      `Limited deleting a group to be something only the group creator (and not just any admin) can do.`,
+    ],
+    fixes: [
+      `Fixed more issues with the 'Log again' feature.`,
+      `Fixed a bug where setting the join/view access for an event wouldn't 'stick'.`,
+      `Improved loading of notifications and scoreboards.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.13.126",
     versionNumber: 71,
     date: "December 3, 2025",
     blurb:
       "We have released a major upgrade to the core platform, a refresh of the home screen, big improvements to collection management, the ability to merge players, and dozens of bug fixes!",
     features: [
       `We now show the games and events happening in a specific room when viewing a room in the Venue section of an event.`,
+      `When viewing your own profile, we now show if you have friend requests needing a response.`,
     ],
     fixes: [
       `Fixed many display bugs introduced in the previous version.`,
+      `Fixed play logs not showing up when viewing plays for a specific game.`,
       `Fixed the 'Log again' button not always working as intended from the feed.`,
+      `Fixed issues with scrolling down the combined group collection view.`,
       `Fixed adding a bug which would not always add new content to the top of the feed.`,
       `Improved startup launch times.`,
       `Improved loading more items in the feed, games, and play log lists.`,

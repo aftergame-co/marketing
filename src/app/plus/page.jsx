@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Plans } from '@/sections/Plans';
 import { CallToAction } from '@/sections/CallToAction';
-import { HeartIcon, AdjustmentsVerticalIcon, StarIcon, CalendarDaysIcon } from '@heroicons/react/24/outline';
+import { ArrowsPointingOutIcon, HeartIcon, AdjustmentsVerticalIcon, CalendarDaysIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 
 export const metadata = {
   title: 'Aftergame+',
@@ -59,13 +59,13 @@ export default function Plus() {
         </p>
 
         <div className='flex flex-row items-center gap-x-8 p-8 pr-6 rounded-2xl bg-white border-2 border-gray-100 mb-4'>
-          <HeartIcon className='w-10 h-10 flex-shrink-0' />
+          <ArrowsPointingOutIcon className='w-10 h-10 flex-shrink-0' />
           <div className='flex-1 text-left'>
             <p variant="titleMedium" className="text-lg font-bold">
-              Support future development
+              Go larger
             </p>
             <p className='text-lg leading-6 text-gray-700'>
-              We are just getting started! Help us unlock the true potential of a world-class platform built for tabletop gamers, by tabletop gamers.
+              Host events up to 100 attendees, enable waitlists, event check-ins, and embed rich event or game lists directly on your website.
             </p>
           </div>
         </div>
@@ -89,22 +89,35 @@ export default function Plus() {
               Filter everything
             </p>
             <p className='text-lg leading-6 text-gray-700'>
-              See which games are no longer getting to the table, all plays with specific players + results, and much more coming soon.
+              See which games are no longer getting to the table, filter leaderboards to specific players or expansions, plays with specific players + results, and much more constantly being added.
             </p>
           </div>
         </div>
 
-        <div className='flex flex-row items-center gap-x-8 p-8 pr-6 rounded-2xl bg-white border-2 border-gray-100'>
-          <StarIcon className='w-10 h-10 flex-shrink-0' />
+        <div className='flex flex-row items-center gap-x-8 p-8 pr-6 rounded-2xl bg-white border-2 border-gray-100 mb-4'>
+          <UserGroupIcon className='w-10 h-10 flex-shrink-0' />
           <div className='flex-1 text-left'>
             <p variant="titleMedium" className="text-lg font-bold">
-              Early feature access
+              Groups that pop
             </p>
-            <p className='text-lg leading-6 text-gray-7600'>
-              Help shape our future with access to features not yet available to everyone
+            <p className='text-lg leading-6 text-gray-700'>
+              Create a custom group URL, add official group lists, and embed a rich event calendar directly on your website.
             </p>
           </div>
         </div>
+
+        <div className='flex flex-row items-center gap-x-8 p-8 pr-6 rounded-2xl bg-white border-2 border-gray-100 mb-4'>
+          <HeartIcon className='w-10 h-10 flex-shrink-0' />
+          <div className='flex-1 text-left'>
+            <p variant="titleMedium" className="text-lg font-bold">
+              Support future development
+            </p>
+            <p className='text-lg leading-6 text-gray-700'>
+              We are just getting started! Help us unlock the true potential of a world-class platform built for tabletop gamers, by tabletop gamers.
+            </p>
+          </div>
+        </div>
+
         <Button
           href="/download"
           className="mt-16 !text-xl !px-16 !py-5 bg-gg-blue hover:bg-gg-red active:bg-gg-red"

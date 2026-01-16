@@ -12,6 +12,81 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.14.133",
+    versionNumber: 76,
+    date: "January 14, 2026",
+    blurb:
+      "The events screen has received some improvements, you can now block other user accounts, and some more fixes.",
+    features: [
+      `On the events screen, there is now a 'My groups' button which allows you to filter to events happening in any of your groups.`,
+      `We have combined events and planned games into a single list on the events screen by default. You can still filter to just events or games if desired.`,
+      `You can now block other user accounts. This will stop that account from being able to find you in search, invite you to groups or events, or send you notifications.`,
+    ],
+    fixes: [
+      `Fixed long-standing issues with accuracy in "nearby" events or groups, this has also improved the load speeds.`,
+      `Fixed a bug where copying a planned game with a custom name would revert the name.`,
+      `Fixed a bug which wouldn't let you update your profile details if you did not have a date of birth already set.`,
+      `[Web] Fixed a UI bug when selecting your date of birth.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.13.132",
+    versionNumber: 75,
+    date: "January 11, 2026",
+    blurb:
+      "We have fixed some further crashes and added the ability to filter the content of group and event activity feeds.",
+    features: [
+      `You can now filter the activity feed for both events and groups to show just the type of content you want.`,
+      `We now show which position in the waitlist each player is in.`,
+    ],
+    fixes: [
+      `Fixed a crash which could happen when editing an event.`,
+      `Improved the load speed when opening a post.`,
+      `Implemented a potential fix to a crash when navigating away from the search screen.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.13.131",
+    versionNumber: 74,
+    date: "January 9, 2026",
+    blurb: "This update includes some important fixes aimed to fix some recent crashes and stability problems.",
+    features: [`Event hosts can now move attendees to the waitlist.`],
+    fixes: [
+      `Fixed some crashes which could happen when loading an event.`,
+      `Fixed crashes which could occur when moving between screens.`,
+      `Performance improvements during initial loading of the app.`,
+      `Fixed some visual bugs with loading the feed and events.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.13.129",
+    versionNumber: 73,
+    date: "January 7, 2026",
+    blurb:
+      "Happy New Year! We kick off the year with big improvements to search along with a big batch of bug fixes and quality of life improvements.",
+    features: [
+      `Game search has gotten a lot faster and more relevant with a new relevance sorting and better exact match results.`,
+      `You can now sort the leaderboard by any column so you can easily see the most wins, or best score.`,
+      `For games that are just win/loss, we now show the number of draws in the leaderboard.`,
+      `You can now sort the group stats by number of plays or number of players.`,
+    ],
+    fixes: [
+      `Fixed some crashes which could happen while loading the feed.`,
+      `Fixed some timezone bugs for event join/view access times.`,
+      `Fixed a bug where you could not edit play logs that had an image in it.`,
+      `Fixed a bug where the roles option would show up for play logs where it was not relevant.`,
+      `The event schedule better handles events that end at midnight on the previous day.`,
+      `We no longer block creating places with the same name as one of your deleted places.`,
+      `Fixed a bug which would not allow you to change your current city.`,
+      `Scrolling through game search results would sometimes not allow you to keep going past a few screens.`,
+      `We have made it more obvious that you can edit or delete a comment on desktops.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.13.128",
     versionNumber: 72,
     date: "December 15, 2025",

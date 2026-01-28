@@ -12,6 +12,31 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.15.134",
+    versionNumber: 77,
+    date: "January 23, 2026",
+    blurb:
+      "Event hosts can now check-in attendees, filter event schedules by games your friends are in, filter events by room, and more!",
+    features: [
+      `[Aftergame+] Event hosts can now check-in attendees, marking them present or absent. This can be done both by scanning QR codes or manually in the list of attendees.`,
+      `Attendees now have a screen with their event check-in details and unique QR code.`,
+      `You can now filter event schedules to show events your friends are attending. This should make navigating large events easier to coordinate!`,
+      `You can now filter event schedules by room.`,
+      `We now show the room and table a game or event is in while viewing the schedule.`,
+      `The sorting UX has been improved in game lists and the event schedule.`,
+      `From within a planned game, you can now @mention anyone attending the parent event, not just those within the game.`,
+      `Improved the relevance of games when searching for games using the plan a game or log play game selector.`,
+    ],
+    fixes: [
+      `Fixed some possible bugs where we would not send push notifications to a device if the permission was granted at the OS-level.`,
+      `Fixed an issue where clicking a notification would sometimes load the page multiple times.`,
+      `Fixed a bug where unscheduled games within a parent event would show up even after the parent event ended.`,
+      `Fixed a bug in leaderboards which could lead to odd sorting when sorting by average score or best score.`,
+      `Fixed a bug where the leaderboard preview would not show enough rows.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.14.133",
     versionNumber: 76,
     date: "January 14, 2026",

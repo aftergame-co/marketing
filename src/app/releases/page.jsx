@@ -12,6 +12,33 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.15.135",
+    versionNumber: 78,
+    date: "January 29, 2026",
+    blurb:
+      "We have completely rebuilt filters throughout the app, improving the UX and adding a number of new highly requested filter options!",
+    features: [
+      `We have updated the look of all filter sheets, making it easier to navigate and see all available filters.`,
+      `You can now filter games by Category, Mechanics, Designer, Artist, Publisher, and Theme.`,
+      `You can now filter by the number of seats available when viewing an event's schedule.`,
+      `The range filters (e.g. for number of players) now allows you to put the range on the same number (so you can now say where number of players = 5).`,
+      `You can now clear a single filter without having to clear all filters.`,
+      `We have added filters in more places where the game selector is shown.`,
+      `We now add players from the waitlist to a game or event when the attendee limit is increased.`,
+      `We now show who invited an attendee or player in the check-in screen.`,
+      `When adding a game from a game list, we now pre-select that game list.`,
+    ],
+    fixes: [
+      `Fixed a bug where pressing "Remove" on a filter would not do anything.`,
+      `Fixed a bug where loading more games beyond the first page of search results would clear the list completely.`,
+      `Fixed a bug where the selected game list would not show when re-opening the game list sheet.`,
+      `Fixed a bug where the selected location would not show when re-opening the locations sheet.`,
+      `There were certain situations where inviting was not correctly blocked in child events when the parent event had the option blocked.`,
+      `The number of players you have played with in a game now includes yourself.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.15.134",
     versionNumber: 77,
     date: "January 23, 2026",

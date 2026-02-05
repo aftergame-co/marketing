@@ -12,6 +12,42 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.15.137",
+    versionNumber: 80,
+    date: "February 5, 2026",
+    blurb:
+      "Added the ability to filter event schedules by suitable age and the type of game event, as well as some important authentication fixes.",
+    features: [
+      `Filter event schedules by suitable age. This looks at both the recommended age of the game as well as any content rating set by the host.`,
+      `Filter event schedules by the type of game, e.g. Learn to Play, Playtests, Demos, etc.`,
+    ],
+    fixes: [
+      `Patched a possible exploit when using Discord signup.`,
+      `Fixed an issue where the same email address with different casing would come up as different accounts when authenticating.`,
+      `Fixed some bugs with the new filter bottom sheet.`,
+      `Some fixes and improvements for the event ticketing beta.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.15.136",
+    versionNumber: 79,
+    date: "February 2, 2026",
+    blurb:
+      "Sharing game lists got a lot easier, a handful of bug fixes, and a lot of behind-the-scenes work for our upcoming ticketing feature.",
+    features: [
+      `There is now the option to share any game list available while viewing your lists, event game libraries, or group game lists.`,
+    ],
+    fixes: [
+      `Fixed a bug on iOS 26.2 which errored when selecting certain photos (HEIC/HEIF file types).`,
+      `Fixed a bug which blocked the ability to open the photo selector on Safari browsers.`,
+      `We now automatically expand a filter when there is only one filter option.`,
+      `Fixed bugs with showing which players are invited to an event.`,
+      `Fixed the display of user accounts that are banned on Aftergame.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.15.135",
     versionNumber: 78,
     date: "January 29, 2026",

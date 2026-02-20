@@ -12,6 +12,48 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.16.139",
+    versionNumber: 82,
+    date: "February 21, 2026",
+    blurb: "A small release with a bunch of important fixes and improvements for the ticketing beta.",
+    features: [
+      `Ticketing beta: added the ability to connect your group to an existing Stripe account.`,
+      `Ticketing beta: you can now join the beta from within the app.`,
+    ],
+    fixes: [
+      `Ticketing beta: fixed some validation on the minimum ticket value.`,
+      `Ticketing beta: fixed some edge cases where people could set themselves as "Going" without a ticket.`,
+      `Ticketing beta: clarified some wording and some buttons.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.16.138",
+    versionNumber: 82,
+    date: "February 11, 2026",
+    blurb:
+      "Today brings the Group Photo Gallery, an easy way to browse all photos posted to your group and events. Also included is the ability to pin posts in events and many fixes.",
+    features: [
+      `Group Photo Gallery: view all the photos posted in your group, or posted to events / play logs within your group. `,
+      `Group Photo Gallery: Filter to any past event or just to photos you uploaded.`,
+      `Added the ability to pin posts within events.`,
+      `Updated where the "Pinned" button shows up, placing it closer to the feed.`,
+      `Added the ability to "Add to calendar" on web. This will create a .ics file which you can import to any Calendar app.`,
+      `We now show the start of the post's message directly in post notifications.`,
+      `Improved the UI for the event time, making it more clear you can add it to your calendar.`,
+      `Improved the UI of the image viewer, adding keyboard shortcuts and better dismissing.`,
+    ],
+    fixes: [
+      `Fixed some bugs with loading players in large event schedules.`,
+      `Fixed a bug where copying an event with child events being copied would cause issues.`,
+      `Fixed a bug where if the last player within the limit was 'Reserved', they could not be set to 'Going'.`,
+      `Fixed a bug where not all game lists were loading in some cases.`,
+      `Fixed a bug for games with many rulesets, where some were not showing on web.`,
+      `Many fixes and improvements for the event ticketing beta.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.15.137",
     versionNumber: 80,
     date: "February 5, 2026",

@@ -99,7 +99,7 @@ export function ConventionsHero() {
             </p>
             <p className="lg:w-4/5 text-sm font-semibold">Bring people back next year, add your event to Aftergame.</p>
             <div className="pt-1 lg:w-4/5">
-              <Link href='#communities-contact'>
+              <Link href='/contact/organizer'>
                 <Button
                   type="submit"
                   color='gg'

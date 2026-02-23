@@ -3,7 +3,7 @@ import { Container } from '@/components/Container';
 import { Button } from '@/components/Button';
 import Link from 'next/link';
 
-export function DesignersContact() {
+export function PublishersContact() {
   return (
     <section
       id="contact"

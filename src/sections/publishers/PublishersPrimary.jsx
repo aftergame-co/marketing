@@ -31,7 +31,7 @@ function Slider() {
   )
 }
 
-export function DesignersPrimary() {
+export function PublishersPrimary() {
   let containerRef = useRef();
   let isInView = useInView(containerRef, { once: true, amount: 0.4 });
   return (

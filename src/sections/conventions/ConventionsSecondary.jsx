@@ -5,7 +5,7 @@ const features = [
   {
     name: 'Waitlists',
     description:
-      'Enable waitlists to help manage popular games and events.',
+      'Enable waitlists to help manage popular games and events. Vacated seats are automatically reserved for the next player in line.',
     icon: DeviceNotificationIcon,
   },
   // {
@@ -17,7 +17,7 @@ const features = [
   {
     name: 'Schedule on the big screen',
     description:
-      'With a TV mode that shows the schedule of games and claimed seats in realtime.',
+      'With a TV mode that shows the schedule of games and claimed seats in realtime for a more communal experience.',
     icon: DeviceOfflineIcon,
   },
   {
@@ -35,7 +35,7 @@ const features = [
   {
     name: 'Floor plans as a guide',
     description:
-      'Let attendees drop a pin for where to meet so no one gets lost in the busy hall.',
+      'Include a floor plan so attendees can drop a pin wherever they find a free table, ensuring  no one gets lost in the busy hall.',
     icon: DeviceCardsIcon,
   },
   {
@@ -47,13 +47,13 @@ const features = [
   {
     name: 'Easy onboarding',
     description:
-      'We automatically generate QR codes for every event and game to make joining a snap away.',
+      'We automatically generate QR codes and unique URLs for every event and game so you can share the fun any way you like.',
     icon: DeviceCardsIcon,
   },
   {
     name: 'Customize hosting options',
     description:
-      'Choose whether to allow attendees to bring guests or plan games.',
+      'Not all events are created the same! Choose whether to allow attendees to bring guests or plan games.',
     icon: DeviceCardsIcon,
   },
   {
@@ -65,13 +65,13 @@ const features = [
   {
     name: 'Attendee schedules',
     description:
-      'Each attendee has a personalised schedule filled in by the events they’ve joined.',
+      'Each attendee has a personalised schedule filled in by the games, events, and tournaments they’ve joined and created.',
     icon: DeviceCardsIcon,
   },
   {
     name: 'Upcoming game notice',
     description:
-      'Push notifications are sent before each game or event so players never miss out.',
+      'Push notifications are sent before each game or event the attendee has joined so they never miss something they were excited for.',
     icon: DeviceCardsIcon,
   },
   {
@@ -89,25 +89,25 @@ const features = [
   {
     name: 'Granular scheduling',
     description:
-      'Add rooms and tables that can be booked/scheduled.',
+      'Add all the venue rooms and all the tables in each room, which can all be booked or scheduled.',
     icon: DeviceCardsIcon,
   },
   {
     name: 'Enjoy a broader audience',
     description:
-      'You get featured status on the events list, which shows your event to a larger area.',
+      'Your event gets featured status on the events list, which shows your event to a larger area than.',
     icon: DeviceCardsIcon,
   },
   {
     name: 'Add events to all schedules',
     description:
-      'Add generic events to everyone’s personal schedule, like ’Prize Draw’ or ’Awards’.',
+      'Add generic events that you can push to everyone’s personal schedule, like ’Prize Draw’ or ’Awards’.',
     icon: DeviceCardsIcon,
   },
   {
     name: 'Polls',
     description:
-      'Post polls to gauge interest in certain events or games to help you decide what to schedule.',
+      'Post polls to gauge interest in certain events or games to help you and your attendees decide what to schedule.',
     icon: DeviceArrowIcon,
   },
   {

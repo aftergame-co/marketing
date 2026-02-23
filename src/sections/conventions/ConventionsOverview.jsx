@@ -28,10 +28,10 @@ export function ConventionsOverview() {
             Smoother events, way less effort
           </h2>
           <p className="mt-2 lg:mb-10 text-xl text-gray-100">
-            Set your event up the way you want it and let our custom built tools keep everything on track, because your biggest issue on game day should be “what will I play next?”
+            On web or mobile, set up your event the way you want it and let our custom built tools keep everything on track, because your biggest issue on game day should be “what will I play next?”
           </p>
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 py-8 lg:py-12'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 pt-8 pb-16'>
           <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
             <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
               <Image
@@ -77,7 +77,7 @@ export function ConventionsOverview() {
           <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
             <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
               <Image
-                src='/images/conventions/overview-3.png'
+                src='/images/conventions/overview-3.webp'
                 alt='Check-in your attendees'
                 layout="fill"
                 objectFit="scale-down"
@@ -95,7 +95,7 @@ export function ConventionsOverview() {
           <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
             <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
               <Image
-                src='/images/conventions/overview-4.png'
+                src='/images/conventions/overview-4.webp'
                 alt='Central communication hub'
                 layout="fill"
                 objectFit="scale-down"

@@ -10,7 +10,7 @@ import { AppScreen } from '@/components/AppScreen'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
-import { DeviceChartIconDark, DeviceChartIconLight, DeviceListIconDark, DeviceListIconLight, DeviceUserIconDark, DeviceUserIconLight } from '@/components/DeviceIcons'
+import { DeviceTouchIconDark, DeviceTouchIconLight, DeviceListIconDark, DeviceListIconLight, DeviceUserIconDark, DeviceUserIconLight, DeviceMessageIconLight, DeviceMessageIconDark } from '@/components/DeviceIcons'
 import Image from 'next/image'
 
 const MotionAppScreenBody = motion(AppScreen.Body)
@@ -19,33 +19,33 @@ const features = [
   {
     name: 'Plan a game',
     description:
-      'You can choose to allow your attendees to plan games that will be added to the full schedule.',
-    icon: DeviceListIconLight,
-    selectedicon: DeviceListIconDark,
+      'You can choose to allow your attendees to plan games for others to join that will be added to the full schedule.',
+    icon: DeviceUserIconLight,
+    selectedicon: DeviceUserIconDark,
     screen: Screen1,
   },
   {
     name: 'Build your schedule',
     description:
-      'Filters for things like available seats, average play time, and suggested age help players maximise their game time. ',
-    icon: DeviceUserIconLight,
-    selectedicon: DeviceUserIconDark,
+      'Filters for things like available seats, average play time, and suggested age help players maximise their game time.',
+    icon: DeviceListIconLight,
+    selectedicon: DeviceListIconDark,
     screen: Screen2,
   },
   {
     name: 'Claim a seat',
     description:
-      'Players can claim seats for themselves and their guests in advance or improvise on the day.',
-    icon: DeviceChartIconLight,
-    selectedicon: DeviceChartIconDark,
+      'Players can claim seats in advance for themselves and their guests to make sure they get to play everything they want to.',
+    icon: DeviceTouchIconLight,
+    selectedicon: DeviceTouchIconDark,
     screen: Screen3,
   },
   {
     name: 'Coordinate on the go',
     description:
-      'Handle last minute changes smoothly with the ability to chat with everyone who claimed a seat.',
-    icon: DeviceChartIconLight,
-    selectedicon: DeviceChartIconDark,
+      'Handle last minute changes smoothly with the ability to chat with everyone who is interested or claimed a seat.',
+    icon: DeviceMessageIconLight,
+    selectedicon: DeviceMessageIconDark,
     screen: Screen4,
   },
 ]

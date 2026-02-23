@@ -38,9 +38,9 @@ function BackgroundIllustration(props) {
   )
 }
 
-export function DesignersHero() {
+export function PublishersHero() {
   return (
-    <div className="overflow-hidden pb-8 pt-16 sm:pt-32 lg:pb-20">
+    <div className="overflow-hidden sm:pb-8 pt-16 sm:pt-32">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-7">
@@ -128,7 +128,7 @@ export function DesignersHero() {
               <Image src='/images/designer-data.png' width={760} height={619} alt='Profile photo for Elaine' />
             </div> */}
           </div>
-          <div className='hidden lg:flex py-6'></div>
+          {/* <div className='hidden lg:flex py-6'></div> */}
         </div>
       </Container>
     </div>

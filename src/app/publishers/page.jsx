@@ -1,9 +1,9 @@
-import { DesignersContact } from '@/sections/DesignersContact';
-import { PublisherEventsFeature } from '@/sections/PublisherEventsFeature';
-import { PublishersCommunity } from '@/sections/PublishersCommunity';
-import { DesignersHero } from '@/sections/DesignersHero';
-import { DesignersPrimary } from '@/sections/DesignersPrimary';
-import { PublishersSecondary } from '@/sections/PublishersSecondary';
+import { PublisherEventsFeature } from '@/sections/publishers/PublisherEventsFeature';
+import { PublishersCommunity } from '@/sections/publishers/PublishersCommunity';
+import { PublishersHero } from '@/sections/publishers/PublishersHero';
+import { PublishersPrimary } from '@/sections/publishers/PublishersPrimary';
+import { PublishersSecondary } from '@/sections/publishers/PublishersSecondary';
+import { PublishersContact } from '@/sections/publishers/PublishersContact';
 
 export const metadata = {
   title: 'Publishers',
@@ -32,12 +32,12 @@ export const metadata = {
 export default function Publishers() {
   return (
     <main className='pt-20'>
-      <DesignersHero />
+      <PublishersHero />
       <PublisherEventsFeature />
       <PublishersCommunity />
-      <DesignersPrimary />
+      <PublishersPrimary />
       <PublishersSecondary />
-      <DesignersContact />
+      <PublishersContact />
     </main>
   )
 }

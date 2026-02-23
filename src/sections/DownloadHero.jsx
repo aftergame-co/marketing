@@ -4,7 +4,8 @@ import { useId } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
-import { Container } from '@/components/Container'
+import { Container } from '@/components/Container';
+import { Button } from '@/components/Button';
 import { GlobeAltIcon } from '@heroicons/react/24/outline'
 
 function BackgroundIllustration(props) {
@@ -84,51 +85,6 @@ function BackgroundIllustration(props) {
   )
 }
 
-const scores_1 = [
-  {score: 31, team: 'Woodland Alliance'},
-  {score: 22, team: 'Marquise de Cat'},
-  {score: 23, team: 'Vagabond'},
-  {score: 30, team: 'The Lizard Cult'},
-  {score: 16, team: 'Corvid Conspiracy'},
-  {score: 30, team: 'The Eyrie'},
-  {score: 32, team: 'Vagabond'},
-  {score: 30, team: 'Corvid Conspiracy'},
-  {score: 33, team: 'The Underground Duchy'},
-]
-const scores_2 = [
-  {score: 20, team: 'Vagabond'},
-  {score: 30, team: 'The Eyrie'},
-  {score: 31, team: 'Marquise de Cat'},
-  {score: 24, team: 'The Eyrie'},
-  {score: 30, team: 'Woodland Alliance'},
-  {score: 21, team: 'The Lizard Cult'},
-  {score: 17, team: 'Corvid Conspiracy'},
-  {score: 29, team: 'Vagabond'},
-  {score: 24, team: 'The Riverfolk Company'},
-]
-const maxScore = Math.max(...scores_1.map(s => s.score))
-const mnScore = Math.min(...scores_1.map(s => s.score))
-
-
-let path = ''
-let path2 = ''
-let points = []
-let points2 = []
-
-let width = 282 - 1 * 2
-let height = 180 - 32 * 2
-for (let index = 0; index < scores_1.length; index++) {
-  let x = 1 + (index / (scores_1.length - 1)) * width
-  let y = 32 + (1 - (scores_1[index].score - mnScore) / (maxScore - mnScore)) * height
-  points.push({ x, y })
-  path += `${index === 0 ? 'M' : 'L'} ${x.toFixed(4)} ${y.toFixed(4)}`
-  
-  let x2 = 1 + (index / (scores_2.length - 1)) * width
-  let y2 = 32 + (1 - (scores_2[index].score - mnScore) / (maxScore - mnScore)) * height
-  path2 += `${index === 0 ? 'M' : 'L'} ${x2.toFixed(4)} ${y2.toFixed(4)}`
-  points2.push({ x: x2, y: y2 })
-}
-
 export function DownloadHero({ className }) {
   return (
     <div className={clsx("overflow-hidden py-16 sm:py-32 lg:pb-32", className)}>
@@ -141,22 +97,19 @@ export function DownloadHero({ className }) {
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
               Download the free Aftergame app to get more games to the table and to start sharing your gaming journey with friends. 
             </p>
-            <div className="pt-6 pb-4 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4">
+            <Button href="https://aftergame.app" className="xl:mt-4 mb-0 w-full max-w-[376px] text-xl py-3 bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+              Launch the web app →
+            </Button>
+            <div className="pt-4 pb-4 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4">
               <AppStoreLink />
               <GooglePlayLink />
-            </div>
-            <div className="xl:mt-4 mb-8 xl:mb-0 flex flex-row items-center bg-gg-blue-faint rounded w-full max-w-[376px] py-1 px-3">
-              <GlobeAltIcon className="h-6 w-6" />
-              <p className="ml-2 text-xl text-gray-600">
-                Now available <a href="https://aftergame.app" className='text-gg-blue font-medium hover:underline'>on the web</a>! 
-              </p>
             </div>
           </div>
           <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:mt-0">
             <BackgroundIllustration className="hidden lg:flex absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
             <div className="-mx-4 h-[600px] px-2 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
               <Image
-                src='/images/events/events-hero.png'
+                src='/images/conventions/hero.png'
                 alt='Events Schedule'
                 width={550}
                 height={550}

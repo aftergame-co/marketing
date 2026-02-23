@@ -8,13 +8,13 @@ import { ConventionsContact } from '@/sections/conventions/ConventionsContact';
 
 export const metadata = {
   title: 'Tabletop Events',
-  description: 'Plan ahead or play it by ear, with Aftergame you enable your event attendees to find their third musketeer so they can play more and have more fun.',
+  description: 'Run your convention from start to finish through Aftergame. We’ve got all the tools you’ll need to let the chaos organise itself!',
   alternates: {
     canonical: '/conventions'
   },
   openGraph: {
     title: 'Tabletop Events',
-    description: 'Plan ahead or play it by ear, with Aftergame you enable your event attendees to find their third musketeer so they can play more and have more fun.',
+    description: 'Run your convention from start to finish through Aftergame. We’ve got all the tools you’ll need to let the chaos organise itself!',
     url: 'https://www.aftergame.co',
     siteName: 'Aftergame',
     images: [

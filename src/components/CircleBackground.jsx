@@ -4,6 +4,7 @@ export function CircleBackground({
   color,
   width = 558,
   height = 558,
+  strokeWidth = 2,
   ...props
 }) {
   let id = useId()
@@ -34,13 +35,13 @@ export function CircleBackground({
         opacity=".2"
         d="M1 279C1 125.465 125.465 1 279 1s278 124.465 278 278-124.465 278-278 278S1 432.535 1 279Z"
         stroke={color}
-        strokeWidth="2"
+        strokeWidth={strokeWidth}
       />
       <path
         d="M1 279C1 125.465 125.465 1 279 1"
         stroke={`url(#${id})`}
         strokeLinecap="round"
-        strokeWidth="2"
+        strokeWidth={strokeWidth}
       />
     </svg>
   )

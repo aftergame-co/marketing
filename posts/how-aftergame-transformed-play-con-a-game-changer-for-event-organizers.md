@@ -3,7 +3,7 @@ title: 'How Aftergame Transformed Play Con: A Game-Changer for Event Organizers'
 date: '2025-01-29'
 image: '/images/posts/2025-01-29.png'
 intro: 'Aftergame offers tools like game planning, comprehensive event schedules, and game libraries to help attendees and event organizers make the most of their time at tabletop events.'
-category: ['events']
+category: ['events','conventions']
 author_name: 'Chalene Scott'
 author_image: '/images/about/team/chalene.jpg'
 author_title: 'Head of Community'

@@ -1,17 +1,18 @@
 import { RetailersContact } from '@/sections/retailers/RetailersContact';
 import { RetailersHero } from '@/sections/retailers/RetailersHero';
+import { RetailersEmbed } from '@/sections/retailers/RetailersEmbed';
 import { RetailersPrimary } from '@/sections/retailers/RetailersPrimary';
 import { RetailersSecondary } from '@/sections/retailers/RetailersSecondary';
 import { RetailersPosts } from '@/sections/retailers/RetailersPosts';
 
 export const metadata = {
-  title: 'Communities',
+  title: 'Retailers',
   description: 'You have the welcoming space. We connect local players wanting to play the same games.Together we grow a hub for people to gather and play the games they love.',
   alternates: {
-    canonical: '/communities'
+    canonical: '/retailers'
   },
   openGraph: {
-    title: 'Communities',
+    title: 'Retailers',
     description: 'You have the welcoming space. We connect local players wanting to play the same games.Together we grow a hub for people to gather and play the games they love.',
     url: 'https://www.aftergame.co',
     siteName: 'Aftergame',
@@ -28,10 +29,11 @@ export const metadata = {
   },
 };
 
-export default function Communities() {
+export default function Retailers() {
   return (
     <main className='pt-20'>
       <RetailersHero />
+      <RetailersEmbed />
       <RetailersPrimary />
       <RetailersSecondary />
       <RetailersPosts />

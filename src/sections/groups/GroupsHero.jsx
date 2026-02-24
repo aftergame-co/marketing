@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
 import Link from 'next/link';
-import { BuildingStorefrontIcon } from '@heroicons/react/24/outline'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -84,32 +83,50 @@ function BackgroundIllustration(props) {
   )
 }
 
-export function CommunitiesHero() {
+export function GroupsHero() {
   return (
     <div className="overflow-hidden pb-8 pt-16 sm:pt-32 lg:pb-8">
       <Container>
         <div className="lg:grid lg:grid-cols-12">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none">
-            <p className='text-xl text-gray-600 mb-4 uppercase'>Communities</p>
+            <p className='text-xl text-gray-600 mb-4 uppercase'>For Organizers</p>
             <h1 className="text-5xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
-              <span className='text-gg-blue font-semibold'>Empower</span> your community to <span className='text-gg-red font-semibold'>connect over games</span>
+              Turn <span className='text-gg-blue font-semibold'>empty tables</span> into <span className='text-gg-red font-semibold'>thriving communities</span>
             </h1>
-            <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
-              You have the welcoming space. We connect local players wanting to play the same games. <span className='italic'>Together</span> we grow a hub for people to gather and play the games they love.
+            <p className="mt-6 mb-4 lg:w-4/5 text-xl text-gray-600">
+              You bring the space and passion. We bring the tools to fill every seat, simplify every schedule, and transform casual players into a connected community.
             </p>
-            <p className="pt-6 lg:w-4/5 text-sm font-semibold">Join other early adopters and get in on the ground floor.</p>
-            <div className="pt-2 lg:w-4/5">
-              <Link href='#communities-contact'>
+            <p className="mb-8 lg:w-4/5 text-lg text-gray-700">
+              From weekly game nights at your local shop to multi-day conventions with hundreds of games, Aftergame makes organizing effortless and engagement inevitable.
+            </p>
+            <div className="pt-2 lg:w-4/5 flex flex-col sm:flex-row gap-4">
+              <Link href='#organizers-contact'>
                 <Button
-                  type="submit"
                   color='gg'
                   className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
                 >
                   Get in touch
                 </Button>
               </Link>
+              <Link href='#features'>
+                <Button
+                  variant="outline"
+                  className='border-2 border-gg-blue text-gg-blue hover:bg-gg-blue/5 !text-lg !px-6 !py-3'
+                >
+                  See how it works
+                </Button>
+              </Link>
             </div>
-            <div className="flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-6 pt-8 max-w-[480px]">
+            <div className="pt-10">
+              <p className='text-sm font-semibold text-gray-500 mb-4'>Trusted by organizers worldwide</p>
+              <div className="flex flex-row flex-wrap items-center gap-x-8 gap-y-6 max-w-[560px]">
+              <Image
+                src='/images/events/playcon.png'
+                alt='Play Con'
+                width={80}
+                height={80}
+                className='flex-shrink-0'
+              />
               <Image
                 src='/images/communities/behold.png'
                 alt='Behold Games'
@@ -118,8 +135,22 @@ export function CommunitiesHero() {
                 className='flex-shrink-0 mt-2'
               />
               <Image
+                src='/images/events/tantrumcon.png'
+                alt='Tantrum Con'
+                width={80}
+                height={80}
+                className='flex-shrink-0'
+              />
+              <Image
                 src='/images/communities/bgbbq.png'
                 alt='Board Game BBQ'
+                width={96}
+                height={96}
+                className='flex-shrink-0'
+              />
+              <Image
+                src='/images/events/wellycon.webp'
+                alt='Wellycon'
                 width={96}
                 height={96}
                 className='flex-shrink-0'
@@ -131,64 +162,16 @@ export function CommunitiesHero() {
                 height={60}
                 className='flex-shrink-0'
               />
-              <Image
-                src='/images/communities/ltn.png'
-                alt='Love Thy Nerd'
-                width={110}
-                height={96}
-                className='flex-shrink-0 mt-1'
-              />
-              <Image
-                src='/images/communities/kg.png'
-                alt='Kimberley Gamers'
-                width={110}
-                height={64}
-                className='flex-shrink-0'
-              />
-              <Image
-                src='/images/communities/rsg.png'
-                alt='Ringwood Social Games'
-                width={64}
-                height={64}
-                className='flex-shrink-0'
-              />
+              </div>
             </div>
           </div>
-          <div className="relative mt-8 lg:col-span-5 lg:row-span-2 lg:mt-0 lg:-mr-6">
+          <div className="relative mt-12 lg:col-span-5 lg:row-span-2 lg:mt-0 lg:-mr-6">
             <BackgroundIllustration className="lg:absolute left-1/2 top-4 h-[480px] w-[480px] sm:top-16 lg:-translate-x-1/2 lg:-top-8" />
-            <div className='absolute left-1/2 -translate-x-1/2 top-44 lg:top-40'>
-              <BuildingStorefrontIcon className='h-20 w-20 text-gg-blue m-auto' />
-              <p className="text-center">Your space</p>
-            </div>
-            <div className="flex items-center absolute left-1/2 translate-x-6 top-4 lg:top-0 rounded-2xl p-3 gap-x-2 bg-white border-2 border-gray-100">
-              <Image
-                src='/images/communities/andy.jpeg'
-                alt='Tim image'
-                width={32}
-                height={32}
-                className='rounded-full flex-shrink-0'
-              />
-              <p className='text-xs'>Andy is planning a<br /> game of Wingspan</p>
-            </div>
-            <div className='flex items-center absolute left-1/2 translate-x-6 top-[360px] md:top-[380px] lg:top-[360px] rounded-2xl p-3 gap-x-2 bg-white border-2 border-gray-100'>
-              <Image
-                src='/images/communities/josh.jpeg'
-                alt='Josh image'
-                width={32}
-                height={32}
-                className='rounded-full flex-shrink-0'
-              />
-              <p className='text-xs'>Josh wants to find<br /> a group to join</p>
-            </div>
-            <div className='flex items-center absolute -left-6 sm:left-1/2 sm:-translate-x-72 top-52 rounded-2xl p-3 gap-x-2 bg-white border-2 border-gray-100'>
-              <Image
-                src='/images/communities/kelly.jpeg'
-                alt='Anne image'
-                width={32}
-                height={32}
-                className='rounded-full flex-shrink-0'
-              />
-              <p className='text-xs'>Kelly wants to<br />play Wingspan</p>
+            {/* Placeholder for new hero image showing organizer dashboard or event overview */}
+            <div className='lg:absolute left-1/2 lg:-translate-x-1/2 top-0 lg:top-12'>
+              <div className='w-[300px] h-[500px] bg-gray-200 rounded-2xl border-2 border-gray-300 flex items-center justify-center mx-auto'>
+                <p className='text-gray-500 text-center px-8 text-sm'>PLACEHOLDER: Organizer dashboard showing event stats, upcoming games, and community activity</p>
+              </div>
             </div>
           </div>
           <div className='hidden lg:flex py-6'></div>

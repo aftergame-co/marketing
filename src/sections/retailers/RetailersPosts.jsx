@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { getSortedPostsData } from '@/utils/posts';
 
 
-export function CommunitiesPosts() {
+export function RetailersPosts() {
   const allPostsData = getSortedPostsData();
 
   return (

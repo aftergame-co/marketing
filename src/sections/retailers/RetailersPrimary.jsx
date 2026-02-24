@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useInView } from 'framer-motion';
 import { Container } from '@/components/Container';
 
-export function CommunitiesPrimary() {
+export function RetailersPrimary() {
   let containerRef = useRef();
   let ref1 = useRef();
   let ref2 = useRef();

@@ -11,7 +11,6 @@ export default async function sitemap() {
     '/terms',
     '/download',
     '/contact',
-    '/faq',
     '/releases',
   ].map((route) => ({
     url: `https://www.aftergame.co${route}`,

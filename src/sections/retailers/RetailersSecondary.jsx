@@ -56,7 +56,7 @@ const features = [
   // promote to your community
 ]
 
-export function CommunitiesSecondary() {
+export function RetailersSecondary() {
   return (
     <section
       id="secondary-features"

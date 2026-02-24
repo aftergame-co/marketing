@@ -67,7 +67,10 @@ export function ConventionsOverview() {
                 A Unified Schedule
               </h3>
               <p className='p-4 text-sm text-gray-700'>
-                Schedule official demos, learn to play sessions, tournaments, competitions, and more as the event organiser, while also letting your attendees plan games they want to play, which creates an easy to filter schedule of games and events that everyone can see.
+                Schedule official demos, learn to play sessions, tournaments, competitions, and more as the event organizer, while also letting your attendees plan games they want to play.
+              </p>
+              <p className='p-4 text-sm text-gray-700'>
+                This combination creates an easy to filter schedule of games and events so everyone can find something just for them.
               </p>
             </div>
           </div>
@@ -88,7 +91,7 @@ export function ConventionsOverview() {
                 Check-in your attendees
               </h3>
               <p className='p-4 text-sm text-gray-700'>
-                Quickly and easily check players, including their guests, into your event on game day manually or with player-specific QR codes!
+                Easily check-in attendees, including their guests, into your event on game day with QR codes or by searching their name, allowing people to quickly cruise through the line.
               </p>
             </div>
           </div>
@@ -106,7 +109,10 @@ export function ConventionsOverview() {
                 Central communication hub
               </h3>
               <p className='p-4 text-sm text-gray-700'>
-                With a social feed built into to every event page, you can post updates and news, pin important information, and chat with attendees before, during, and after your event, while threaded discussions, mentions and push notifications ensure the right people always get the message.
+                With a social feed built into to every event, you can post updates, pin important information, and chat with attendees before, during, or after your event.
+              </p>
+              <p className='p-4 text-sm text-gray-700'>
+               Threaded discussions, mentions and push notifications ensure the right people always get the message.
               </p>
             </div>
           </div>

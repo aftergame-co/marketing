@@ -1,5 +1,4 @@
 import { ArrowUturnDownIcon } from '@heroicons/react/24/outline';
-import { CircleBackground } from '@/components/CircleBackground';
 import { Container } from '@/components/Container';
 
 export function ConventionsEmbed() {

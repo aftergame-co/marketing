@@ -27,7 +27,7 @@ const features = [
   {
     name: 'Build your schedule',
     description:
-      'Filters for things like available seats, average play time, and suggested age help players maximise their game time.',
+      'Attendees can craft their event, browsing the schedule with filters for what their friends are playing, available seats, playing time, and much more.',
     icon: DeviceListIconLight,
     selectedicon: DeviceListIconDark,
     screen: Screen2,
@@ -35,7 +35,7 @@ const features = [
   {
     name: 'Claim a seat',
     description:
-      'Players can claim seats in advance for themselves and their guests to make sure they get to play everything they want to.',
+      'Attendees can claim seats in advance for themselves and their guests to make sure they get to play everything they want to.',
     icon: DeviceTouchIconLight,
     selectedicon: DeviceTouchIconDark,
     screen: Screen3,

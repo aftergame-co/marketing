@@ -95,7 +95,7 @@ const features = [
   {
     name: 'Enjoy a broader audience',
     description:
-      'Your event gets featured status on the events list, which shows your event to a larger area than.',
+      'Your event gets featured status on the events list, which shows your event to a much larger area.',
     icon: DeviceCardsIcon,
   },
   {
@@ -113,7 +113,7 @@ const features = [
   {
     name: 'Data report of plays at the event',
     description:
-      'Learn which games are played most, players per game, and more to better prepare for next time.',
+      'Learn which games are played most, players per game, and much more to better prepare for next time.',
     icon: DeviceClockIcon,
   },
 ]

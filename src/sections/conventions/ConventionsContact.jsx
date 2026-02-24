@@ -1,6 +1,6 @@
 import { CircleBackground } from '@/components/CircleBackground';
 import { Container } from '@/components/Container';
-import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import { Button } from '@/components/Button';
 import Link from 'next/link';
 
 export function ConventionsContact() {
@@ -18,17 +18,18 @@ export function ConventionsContact() {
             A smoother event experience
           </h2>
           <p className="mt-4 text-lg text-white">
-            Help your event attendees to find their third musketeer. Reach out today to set up your event.
+            Join hundreds of organizers and reach out today to set up your event.
           </p>
           <div className="mt-8 flex align-middle justify-center">
-            <EnvelopeIcon className='text-white h-9 w-9 mr-2'/>
-            <Link 
-                href="mailto:hello@aftergame.co"
-                aria-label="Email us" 
-                className="flex align-middle justify-center w-auto h-9 p-2 text-white hover:bg-gray-200/10 rounded-lg"
-              >
-              <p className='text-xl font-semibold m-0 p-0 self-center'>hello@aftergame.co</p>
-            </Link>
+              <Link href='/contact/organizer'>
+                <Button
+                  type="submit"
+                  color='black'
+                  className='bg-white hover:bg-gray-100 active:bg-gray-100 hover:text-gg-blue active:text-gg-blue !text-lg !px-6 !py-3'
+                >
+                  Get in touch
+                </Button>
+              </Link>
           </div>
         </div>
       </Container>

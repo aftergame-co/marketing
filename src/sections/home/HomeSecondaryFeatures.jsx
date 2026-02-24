@@ -58,7 +58,7 @@ const features = [
   },
 ]
 
-export function SecondaryFeatures() {
+export function HomeSecondaryFeatures() {
   return (
     <section
       id="secondary-features"

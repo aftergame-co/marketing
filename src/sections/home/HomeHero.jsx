@@ -5,7 +5,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
 import { Container } from '@/components/Container'
-import { GlobeAltIcon } from '@heroicons/react/24/outline'
+import { Button } from '@/components/Button';
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -103,15 +103,13 @@ export function HomeHero({ className }) {
             {/* With shared play logs, easily managed collections, and built-in planning for epic game nights and events, and group organisation tools, Aftergame lets you dive into social gaming like never before. */}
             {/* ecord, share, and gain valuable insights into the games you love */}
             </p>
-            <div className="pt-6 pb-4 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4">
+            
+            <Button href="https://aftergame.app" className="xl:mt-4 mb-0 w-full max-w-[376px] text-xl py-3 bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+              Launch the web app →
+            </Button>
+            <div className="pt-4 pb-4 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4">
               <AppStoreLink />
               <GooglePlayLink />
-            </div>
-            <div className="xl:mt-4 mb-8 xl:mb-0 flex flex-row items-center bg-gg-blue-faint rounded w-full max-w-[376px] py-1 px-3">
-              <GlobeAltIcon className="h-6 w-6" />
-              <p className="ml-2 text-xl text-gray-600">
-                Now available <a href="https://aftergame.app" className='text-gg-blue font-medium hover:underline'>on the web</a>! 
-              </p>
             </div>
           </div>
           <div className="relative lg:col-span-5 lg:row-span-2 xl:col-span-6">

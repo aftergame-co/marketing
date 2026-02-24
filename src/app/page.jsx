@@ -1,16 +1,16 @@
-import { CallToAction } from '@/sections/CallToAction';
-import { HomeHero } from '@/sections/HomeHero';
-import { PrimaryFeatures } from '@/sections/PrimaryFeatures';
-import { SecondaryFeatures } from '@/sections/SecondaryFeatures';
 import { HomeEventsFeature } from '@/sections/HomeEventsFeature';
+import { HomeHero } from '@/sections/home/HomeHero';
+import { HomePrimaryFeatures } from '@/sections/home/HomePrimaryFeatures';
+import { HomeSecondaryFeatures } from '@/sections/home/HomeSecondaryFeatures';
 import { Reviews } from '@/sections/Reviews';
+import { CallToAction } from '@/sections/CallToAction';
 
 export default function Home() {
   return (
     <main className='pt-20'>
       <HomeHero />
-      <PrimaryFeatures />
-      <SecondaryFeatures />
+      <HomePrimaryFeatures />
+      <HomeSecondaryFeatures />
       <HomeEventsFeature />
       <Reviews />
       <CallToAction />

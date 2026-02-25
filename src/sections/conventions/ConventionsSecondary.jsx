@@ -35,13 +35,13 @@ const features = [
   {
     name: 'Floor plans as a guide',
     description:
-      'Include a floor plan so attendees can drop a pin wherever they find a free table, ensuring  no one gets lost in the busy hall.',
+      'Include a floor plan so attendees can drop a pin wherever they find a free table, ensuring no one gets lost in the busy hall.',
     icon: DeviceCardsIcon,
   },
   {
     name: 'Play to Win',
     description:
-      'Get your attendees excited and promote your publishers with a Play to win competition fully managed in the app.',
+      'Get your attendees excited and promote your publishers with a Play to Win competition fully managed in the app.',
     icon: DeviceCardsIcon,
   },
   {
@@ -53,7 +53,7 @@ const features = [
   {
     name: 'Customize hosting options',
     description:
-      'Not all events are created the same! Choose whether to allow attendees to bring guests or plan games.',
+      'Not all events are created equal! Choose whether to allow attendees to bring guests or plan games.',
     icon: DeviceCardsIcon,
   },
   {

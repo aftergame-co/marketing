@@ -130,6 +130,162 @@ export function DeviceListIconDark(props) {
   )
 }
 
+export function DeviceNumberOneIconLight(props) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#C3C3C3" fillOpacity={0.2} />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#C3C3C3"
+      />
+      <text
+        x={16}
+        y={18}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="system-ui, sans-serif"
+        fontSize={16}
+        fontWeight="bold"
+        fill="#f6f6f6"
+      >
+        1
+      </text>
+    </svg>
+  )
+}
+
+export function DeviceNumberOneIconDark(props) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#737373"
+      />
+      <text
+        x={16}
+        y={18}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="system-ui, sans-serif"
+        fontSize={16}
+        fontWeight="bold"
+        fill="#222222"
+      >
+        1
+      </text>
+    </svg>
+  )
+}
+
+export function DeviceNumberTwoIconLight(props) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#C3C3C3" fillOpacity={0.2} />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#C3C3C3"
+      />
+      <text
+        x={16}
+        y={18}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="system-ui, sans-serif"
+        fontSize={16}
+        fontWeight="bold"
+        fill="#f6f6f6"
+      >
+        2
+      </text>
+    </svg>
+  )
+}
+
+export function DeviceNumberTwoIconDark(props) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#737373"
+      />
+      <text
+        x={16}
+        y={18}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="system-ui, sans-serif"
+        fontSize={16}
+        fontWeight="bold"
+        fill="#222222"
+      >
+        2
+      </text>
+    </svg>
+  )
+}
+
+export function DeviceNumberThreeIconLight(props) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#C3C3C3" fillOpacity={0.2} />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#C3C3C3"
+      />
+      <text
+        x={16}
+        y={18}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="system-ui, sans-serif"
+        fontSize={16}
+        fontWeight="bold"
+        fill="#f6f6f6"
+      >
+        3
+      </text>
+    </svg>
+  )
+}
+
+export function DeviceNumberThreeIconDark(props) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>
+      <circle cx={16} cy={16} r={16} fill="#A3A3A3" fillOpacity={0.2} />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+        fill="#737373"
+      />
+      <text
+        x={16}
+        y={18}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="system-ui, sans-serif"
+        fontSize={16}
+        fontWeight="bold"
+        fill="#222222"
+      >
+        3
+      </text>
+    </svg>
+  )
+}
+
 export function DeviceChartIcon(props) {
   return (
     <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>

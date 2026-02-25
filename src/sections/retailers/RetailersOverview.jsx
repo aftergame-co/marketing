@@ -4,9 +4,8 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import { useInView } from 'framer-motion';
 import { Container } from '@/components/Container';
-import Link from 'next/link';
 
-export function ConventionsOverview() {
+export function RetailersOverview() {
   let containerRef = useRef();
   let ref1 = useRef();
   let ref2 = useRef();
@@ -20,58 +19,58 @@ export function ConventionsOverview() {
     <section
       id="features"
       aria-label="The social tabletop gaming app"
-      className="bg-gg-blue pt-20 pb-8 sm:pt-32"
+      className="bg-gg-blue py-20 sm:py-32"
       ref={containerRef}
     >
       <Container>
         <div className="mx-auto max-w-3xl lg:mx-0 lg:max-w-4xl">
           <h2 className="text-4xl font-medium tracking-tighter lg:tracking-tight text-white">
-            Smoother events, way less effort
+            A platform that understands tabletop businesses
           </h2>
           <p className="mt-2 lg:mb-10 text-xl text-gray-100">
-            On web or mobile, set up your event the way you want it and let our purpose-built tools keep everything on track, because your biggest issue on game day should be “what will I play next?”
+            Events, ticketing, game libraries, player insights, and social engagement — designed around how gaming communities actually work, not bolted onto generic software.
           </p>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 pt-8 pb-8 lg:pb-16'>
           <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
             <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
               <Image
-                src='/images/conventions/overview-1.webp'
-                alt='Ticketing'
+                src='/images/retailers/overview-1.webp'
+                alt='More games, less work'
                 fill
                 className="object-scale-down"
               />
             </div>
             <div className='flex-[2] bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
-                Ticketing
+                More games, less work
               </h3>
               <p className='p-4 text-sm text-gray-700'>
-                Sell event tickets and add-ons, like panel talks, special game sessions, or competitions through Aftergame.  Tickets are simple to use, fully integrated, and transferable between attendees.
+                Creating events on Aftergame is a breeze. With recurring events, you can set up your Thursday Night Games once and then stop worrying about it. 
               </p>
-              {/* <p className='p-4 text-sm text-gray-700'>
-               We offer competitive rates and pricing options, <Link href='/pricing' className='text-gg-blue font-semibold'>view details</Link>.
-              </p> */}
+              <p className='p-4 text-sm text-gray-700'>
+               We’ll send notifications to your group as new Thursday Night Games are generated so you still reach your audience without even having to log in.
+              </p>
             </div>
           </div>
           <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
             <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
               <Image
-                src='/images/conventions/overview-2.webp'
-                alt='A Unified Schedule'
+                src='/images/retailers/overview-2.webp'
+                alt='Tickets and check-in'
                 fill
                 className="object-scale-down"
               />
             </div>
             <div className='flex-[2] bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
-                A Unified Schedule
+                Tickets and check-in
               </h3>
               <p className='p-4 text-sm text-gray-700'>
-                Schedule official demos, learn to play sessions, tournaments, competitions, and more as the event organizer, while also letting your attendees plan games they want to play.
+                You can sell tickets directly through Aftergame or give them away if you want an exclusive yet accessible event.
               </p>
               <p className='p-4 text-sm text-gray-700'>
-                This combination creates an easy-to-filter schedule of games and events so everyone can find something just for them.
+                With or without tickets, players will get a unique QR code with their RSVP that you can scan to quickly check people in as they arrive to keep track of who’s ready to play!
               </p>
             </div>
           </div>
@@ -81,36 +80,39 @@ export function ConventionsOverview() {
           <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
             <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
               <Image
-                src='/images/conventions/overview-3.webp'
-                alt='Check-in your attendees'
+                src='/images/retailers/overview-3.webp'
+                alt='Impactful insights'
                 fill
                 className="object-scale-down"
               />
             </div>
             <div className='flex-[2] bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
-                Check-in your attendees
+                Impactful insights
               </h3>
               <p className='p-4 text-sm text-gray-700'>
-                Easily check-in attendees, including their guests, into your event on game day with QR codes or by searching their name, allowing people to quickly cruise through the line.
+                Having an understanding of the games your community plays the most and what's in their collections allows you to put your effort in the right place.
+              </p>
+              <p className='p-4 text-sm text-gray-700'>
+                The group collection allows you to see an aggregation of what your community Wants to Play, and what's in their Wishlists, helping you to better plan events and what to stock in your game library.
               </p>
             </div>
           </div>
           <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
             <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
               <Image
-                src='/images/conventions/overview-4.webp'
-                alt='Central communication hub'
+                src='/images/retailers/overview-4.webp'
+                alt='A focused social feed'
                 fill
                 className="object-scale-down"
               />
             </div>
             <div className='flex-[2] bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
-                Keep everyone in the loop
+                A focused social feed
               </h3>
               <p className='p-4 text-sm text-gray-700'>
-                With a social feed built into every event, you can post updates, pin important information, and chat with attendees before, during, or after your event.
+                Baked into your group is a feed of all events, planned games, photos, posts, games played, and more. Pin important information and engage directly with members of your community.
               </p>
               <p className='p-4 text-sm text-gray-700'>
                Threaded discussions, mentions, and push notifications ensure the right people always get the message.

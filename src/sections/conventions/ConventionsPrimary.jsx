@@ -27,7 +27,7 @@ const features = [
   {
     name: 'Build your schedule',
     description:
-      'Attendees can craft their event, browsing the schedule with filters for what their friends are playing, available seats, playing time, and much more.',
+      'Attendees can craft their schedule, browsing with filters for what their friends are playing, available seats, playing time, and much more.',
     icon: DeviceListIconLight,
     selectedicon: DeviceListIconDark,
     screen: Screen2,

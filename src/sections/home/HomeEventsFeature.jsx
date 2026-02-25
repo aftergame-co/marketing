@@ -15,11 +15,11 @@ export async function HomeEventsFeature() {
       className="bg-gg-blue py-20"
     >
       <Container>
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
+        <div className="mx-auto lg:mx-0">
           <h2 className="text-4xl font-medium tracking-tighter lg:tracking-tight text-white">
-            Over 10,000 events hosted
+            Over 20,000 events and 100 conventions hosted
           </h2>
-          <p className="mt-2 text-xl text-gray-100">
+          <p className="mt-2 text-xl text-gray-100 max-w-2xl lg:max-w-3xl">
             No matter how large or small, set up your event in minutes and discover why a growing number of board game and tabletop events choose Aftergame.
           </p>
         </div>
@@ -46,7 +46,7 @@ export async function HomeEventsFeature() {
               Add your game library, manage Play to Win competitions, auto generated QR codes, floor plans, TV-mode, data reports, and more packed into a simple and modern interface.
             </p>
             <div className="pt-8 sm:pt-12 lg:pt-14 lg:w-4/5">
-              <Link href='/events'>
+              <Link href='/conventions'>
                 <Button
                   type="submit"
                   color='gg'
@@ -68,9 +68,8 @@ export async function HomeEventsFeature() {
                     <Image
                       src={caseStudyPost.image}
                       alt={caseStudyPost.title}
-                      layout="fill"
-                      objectFit="cover"
-                        className='rounded-t-2xl group-hover:opacity-80 transition-opacity'
+                      fill
+                      className='rounded-t-2xl group-hover:opacity-80 transition-opacity object-cover'
                     />
                   </div>
                 )}

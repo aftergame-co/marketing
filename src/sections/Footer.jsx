@@ -92,22 +92,12 @@ export function Footer() {
               id="faqs-title"
               className="mt-5 mb-2 text-lg font-semibold leading-6 text-gray-900"
             >
-              Solution
+              Solutions
             </h3>
             <ul>
-              {/* <li>
-                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/players" aria-label="Players">
-                  Players
-                </Link>
-              </li> */}
               <li>
-                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/communities" aria-label="Communities">
-                  Communities
-                </Link>
-              </li>
-              <li>
-                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/events" aria-label="Conventions and Events">
-                  Tabletop Events
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/conventions" aria-label="Conventions and Events">
+                  Conventions
                 </Link>
               </li>
               <li>
@@ -115,11 +105,11 @@ export function Footer() {
                   Publishers
                 </Link>
               </li>
-              {/* <li>
-                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/distributors" aria-label="Distributors">
-                  Distributors
+              <li>
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/retailers" aria-label="Retailers">
+                  Retailers
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
           <div className='hidden col-span-4 lg:block xl:hidden'></div>
@@ -171,11 +161,6 @@ export function Footer() {
                   About
                 </Link>
               </li>
-              {/* <li>
-                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/about#our-story" aria-label="About">
-                  Our story
-                </Link>
-              </li> */}
               <li>
                 <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/contact" aria-label="Contact">
                   Contact

@@ -1,4 +1,5 @@
 import { Container } from '@/components/Container';
+import { CallToAction } from '@/sections/CallToAction';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getSortedPostsData } from '@/utils/posts';
@@ -36,11 +37,8 @@ export default function Blog() {
                       <Image
                         src={image}
                         alt={title}
-                        // width={600}
-                        // height={300}
-                        layout="fill"
-                        objectFit="cover"
-                        className='rounded-t-2xl group-hover:opacity-80 transition-opacity'
+                        fill
+                        className='rounded-t-2xl group-hover:opacity-80 transition-opacity object-cover'
                       />
                     </div>
                   )}
@@ -55,6 +53,7 @@ export default function Blog() {
           </ul>
         </Container>
       </section>
+      <CallToAction />
     </main>
   )
 }

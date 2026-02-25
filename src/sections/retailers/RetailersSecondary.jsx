@@ -5,55 +5,90 @@ const features = [
   {
     name: 'Share your games library',
     description:
-      'Let people know the games you have available so that they know what they can play.',
+      'Let people know what games are available for easy browsing and planning games in advance.',
     icon: DeviceNotificationIcon,
-  },
-  {
-    name: 'Create your own events',
-    description:
-      'Spread the word to people in your area and get games planned early for a seamless event.',
-    icon: DeviceOfflineIcon,
   },
   {
     name: 'Connect to social media platforms',
     description:
-      'Cross-post your events, game library and leaderboards directly to other social channels.',
+      'Cross-post your events, game library, and leaderboards directly to other social channels.',
+    icon: DeviceOfflineIcon,
+  },
+  {
+    name: 'Photo Galleries',
+    description:
+      'Record memories and share the joy with galleries that gather photos from each event.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Learn more about your community',
+    name: 'Polls',
     description:
-      'Who plays the most, which games are popular, who last played Catan and lost the dice!',
+      'Post polls to gauge interest in certain events or games to help you decide what events to offer.',
     icon: DeviceArrowIcon,
-  },
-  {
-    name: 'Encourage a friendly rivalry',
-    description:
-      'Join inter-community leaderboards to help foster a sense of competition and team spirit.',
-    icon: DeviceClockIcon,
   },
   {
     name: 'Control your profile',
     description:
-      "Add information like your location, description, photos, and code of conduct policies.",
-    icon: DeviceTouchIcon,
+      'Add information like your location, description, website, photos, and code of conduct policies.',
+    icon: DeviceClockIcon,
   },
   {
-    name: 'Discover the games people want',
+    name: 'Leaderboards',
     description:
-      "See the games your members want to play and wishlists so you can stock the right collection.",
+      "Encourage a friendly rivalry with group leaderboards for all games played at your store.",
     icon: DeviceTouchIcon,
   },
   {
     name: 'Keep your community up-to-date',
     description:
-      "Post updates to keep people informed of any promotions, new games, or just to say hello!",
+      "Post about in-store promotions, new stock, event updates, or just to say hello!",
+    icon: DeviceTouchIcon,
+  },
+  {
+    name: 'Interested?',
+    description:
+      "Players can note their interest in a game or event and get updates without committing to it.",
+    icon: DeviceTouchIcon,
+  },
+  {
+    name: 'Waitlists',
+    description:
+      "Enable waitlists to help manage popular games and events. Vacated seats are automatically reserved for the next player in line.",
+    icon: DeviceTouchIcon,
+  },
+  {
+    name: 'Easy onboarding',
+    description:
+      "We automatically generate QR codes and unique URLs for every event and game so you can share the fun any way you like.",
+    icon: DeviceTouchIcon,
+  },
+  {
+    name: 'Mobile and web app',
+    description:
+      "You and your players have all the same tools and functionality whether you download the app or use the web version.",
+    icon: DeviceTouchIcon,
+  },
+  {
+    name: 'Notify your group',
+    description:
+      "Whenever you plan a new event, your group members get a notification and it shows up in their personal feed.",
+    icon: DeviceTouchIcon,
+  },
+  {
+    name: 'Discoverability',
+    description:
+      "The more games and events planned at your location, the more people are likely to see something that brings them in.",
+    icon: DeviceTouchIcon,
+  },
+  {
+    name: 'Host “Official” events',
+    description:
+      "Events that you host will be marked as Official, setting them apart from any player-planned events or games in your space.",
     icon: DeviceTouchIcon,
   },
   {
     name: '...and much more coming soon!',
   },
-  // promote to your community
 ]
 
 export function RetailersSecondary() {
@@ -61,15 +96,15 @@ export function RetailersSecondary() {
     <section
       id="secondary-features"
       aria-label="Smart features so you can keep on playing"
-      className="py-20 sm:py-32"
+      className="pt-20 pb-8 lg:pt-32"
     >
       <Container>
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            We’re here for the <span className='text-gg-blue font-semibold'>tabletop game communities</span>
+            <span className='text-gg-blue font-semibold'>Purpose-built</span> tools for tabletop businesses
           </h2>
           <p className="mt-4 mx-6 text-lg text-gray-600">
-            There is so much involved in running a great community and space for people to enjoy playing games. Aftergame is <span className='text-gg-red font-semibold'>built for tabletop gamers by tabletop gamers</span>.
+            All the social features you'd expect, plus a myriad of tabletop-specific tools to help you reduce admin and focus on what matters: <span className='text-gg-red font-semibold'>running a great gaming community</span>.
           </p>
         </div>
         <ul

@@ -21,15 +21,15 @@ export function PublishersContact() {
             Book a demo today and see how our toolkit can transform your events and community strategy!
           </p>
           <div className="mt-8 flex align-middle justify-center">
-              <Link href='/contact/demo'>
-                <Button
-                  type="submit"
-                  color='black'
-                  className='bg-white hover:bg-gray-100 active:bg-gray-100 hover:text-gg-blue active:text-gg-blue !text-lg !px-6 !py-3'
-                >
-                  Book Demo
-                </Button>
-              </Link>
+            <Link href='/contact/demo'>
+              <Button
+                type="submit"
+                color='black'
+                className='bg-white hover:bg-gray-100 active:bg-gray-100 hover:text-gg-blue active:text-gg-blue !text-lg !px-6 !py-3'
+              >
+                Book Demo
+              </Button>
+            </Link>
           </div>
         </div>
       </Container>

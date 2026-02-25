@@ -118,14 +118,17 @@ export function Header({darkMode}) {
                             className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-24 -mt-4 shadow-2xl shadow-gray-900/20"
                           >
                             <div>
-                              <MobileNavLink href="/communities">
-                                Communities
+                              <MobileNavLink href="/conventions">
+                                Conventions
                               </MobileNavLink>
-                              <MobileNavLink href="/events">
-                                Tabletop Events
-                              </MobileNavLink>
+                              {/* <MobileNavLink href="/groups">
+                                Clubs & Gaming Groups
+                              </MobileNavLink> */}
                               <MobileNavLink href="/publishers">
                                 Publishers
+                              </MobileNavLink>
+                              <MobileNavLink href="/retailers">
+                                Retailers
                               </MobileNavLink>
                               <MobileNavLink href="/plus">
                                 Aftergame+
@@ -139,7 +142,7 @@ export function Header({darkMode}) {
                             </div>
                             <div className="mt-8 flex flex-col gap-4">
                               <Button href="https://aftergame.app" className="bg-gg-blue hover:bg-gg-red active:bg-gg-red">
-                                Get Started
+                                Launch app
                               </Button>
                             </div>
                           </Popover.Panel>
@@ -150,7 +153,7 @@ export function Header({darkMode}) {
                 )}
               </Popover>
               <Button href="https://aftergame.app" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
-                Get Started
+                Launch app
               </Button>
             </div>
           </Container>

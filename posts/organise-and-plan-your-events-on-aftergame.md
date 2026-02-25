@@ -3,7 +3,7 @@ title: 'Organise and plan your board game events on Aftergame'
 date: '2024-09-25'
 image: '/images/posts/2024-09-25-1.jpg'
 intro: 'Organising board game and tabletop events doesn’t need to be an expensive chore. If you’re looking for a purpose-built alternative to Meetup, try Aftergame.'
-category: ['events','communities']
+category: ['retailers','groups']
 author_name: 'Chalene Scott'
 author_image: '/images/about/team/chalene.jpg'
 author_title: 'Head of Community'

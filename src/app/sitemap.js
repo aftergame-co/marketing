@@ -2,8 +2,9 @@ export default async function sitemap() {
   const routes = [
     '',
     '/communities',
-    '/events',
+    '/conventions',
     '/publishers',
+    '/retailers',
     '/plus',
     '/blog',
     '/about',

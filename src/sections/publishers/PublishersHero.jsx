@@ -40,7 +40,7 @@ function BackgroundIllustration(props) {
 
 export function PublishersHero() {
   return (
-    <div className="overflow-hidden sm:pb-8 pt-16 sm:pt-32">
+    <div className="overflow-hidden pt-16 lg:pt-28">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none xl:col-span-7">
@@ -48,11 +48,11 @@ export function PublishersHero() {
             <h1 className="text-4xl md:text-4xl xl:text-5xl font-medium tracking-tighter md:tracking-tight text-gray-900">
               <span className='text-gg-blue font-semibold'>Powerful tools</span> to grow & engage <span className='text-gg-red font-semibold'>your community</span>
             </h1>
-            <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
+            <p className="my-6 lg:w-4/5 text-xl text-gray-600">
             Manage your events, connect deeply with players, and get the insights you need—all in one easy-to-use platform. Aftergame keeps your community connected long after the game leaves the shelf. 
             </p>
-            <p className="pt-6 lg:w-4/5 text-sm font-semibold">See how our toolkit can transform your events and community strategy.</p>
-            <div className="pt-2 pb-16 xl:pb-0 lg:w-4/5">
+            <p className="lg:w-4/5 text-sm font-semibold">See how our toolkit can transform your events and community strategy.</p>
+            <div className="pt-2 pb-6 lg:w-4/5">
               <Link href='/contact/demo'>
                 <Button
                   type="submit"
@@ -63,7 +63,7 @@ export function PublishersHero() {
                 </Button>
               </Link>
             </div>
-            <div className="flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-6 pt-8 max-w-[420px]">
+            <div className="flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-6 max-w-[420px]">
               <Image
                 src='/images/publishers/asmodee.png'
                 alt='asmodee'
@@ -101,7 +101,7 @@ export function PublishersHero() {
               />
             </div>
           </div>
-          <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-5">
+          <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:-mt-16 xl:col-span-5">
             <div className='absolute bg-gg-blue-faint skew-x-3 skew-y-3 rounded-full' style={{top: 186, left: 48}}>
               <GlobeAmericasIcon className='w-20 h-20 text-gg-blue/75' />
             </div>
@@ -124,11 +124,7 @@ export function PublishersHero() {
               <IdentificationIcon className='w-5 h-5 text-gg-blue flex-none self-center mr-2' />
               <p className='flex-auto text-xs text-gray-700'>Won playing as the <i>Warrior</i> faction</p>
             </SpeechBubble>
-            {/* <div className="px-2 absolute left-0 top-4 h-[619px] w-[760px] -translate-x-1/3">
-              <Image src='/images/designer-data.png' width={760} height={619} alt='Profile photo for Elaine' />
-            </div> */}
           </div>
-          {/* <div className='hidden lg:flex py-6'></div> */}
         </div>
       </Container>
     </div>

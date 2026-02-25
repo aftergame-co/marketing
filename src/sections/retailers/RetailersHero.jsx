@@ -86,75 +86,90 @@ function BackgroundIllustration(props) {
 
 export function RetailersHero() {
   return (
-    <div className="overflow-hidden pb-8 pt-16 sm:pt-32 lg:pb-8">
+    <div className="overflow-hidden pt-16 pb-8 lg:pt-28 lg:pb-2">
       <Container>
         <div className="lg:grid lg:grid-cols-12">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none">
-            <p className='text-xl text-gray-600 mb-4 uppercase'>Communities</p>
-            <h1 className="text-5xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
-              <span className='text-gg-blue font-semibold'>Empower</span> your community to <span className='text-gg-red font-semibold'>connect over games</span>
+            <p className='text-xl text-gray-600 mb-4 uppercase'>Retailers</p>
+            <h1 className="text-4xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
+              <span className='text-gg-blue font-semibold'>Take your place</span> at the heart of a <span className='text-gg-red font-semibold'>thriving community</span>
             </h1>
-            <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
-              You have the welcoming space. We connect local players wanting to play the same games. <span className='italic'>Together</span> we grow a hub for people to gather and play the games they love.
+            <p className="my-6 lg:w-5/6 text-xl text-gray-600">
+              We know <em>a lot</em> goes into running a successful tabletop business. We're here with the tools to engage players, fill tables, and keep them coming back.
             </p>
-            <p className="pt-6 lg:w-4/5 text-sm font-semibold">Join hundreds of other early adopters and get in on the ground floor.</p>
-            <div className="pt-2 lg:w-4/5">
-              <Link href='#communities-contact'>
+            <p className="lg:w-4/5 text-sm font-semibold">Become the gathering point, add your group to Aftergame today.</p>
+            <div className="pt-2 lg:w-4/5 flex flex-row gap-x-4">
+              <Link href='https://aftergame.app/groups/create'>
                 <Button
                   type="submit"
                   color='gg'
                   className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
                 >
-                  Get in touch
+                  Sign up
+                </Button>
+              </Link>
+              <Link href='/contact/demo'>
+                <Button
+                  type="submit"
+                  color='white'
+                  className='bg-gg-blue-faint border-4 border-gg-blue md:hover:bg-gg-blue active:bg-gg-blue text-gg-blue md:hover:text-white active:text-white !text-lg !px-4 !py-2'
+                >
+                  Book Demo
                 </Button>
               </Link>
             </div>
-            <div className="flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-6 pt-8 max-w-[480px]">
+
+            <p className="pt-16 lg:pt-6 pb-4 text-xl text-gray-400 text-center lg:text-left">
+              Proudly supporting 100s of retailers worldwide
+            </p>
+            <div className="flex flex-row flex-wrap items-center justify-center lg:justify-start gap-8">
               <Image
-                src='/images/communities/behold.png'
+                src='/images/retailers/logos/behold.png'
                 alt='Behold Games'
-                width={64}
-                height={64}
-                className='flex-shrink-0 mt-2'
+                width={48}
+                height={48}
+                className='flex-shrink-0 mt-1'
               />
               <Image
-                src='/images/communities/bgbbq.png'
-                alt='Board Game BBQ'
-                width={96}
-                height={96}
-                className='flex-shrink-0'
+                src='/images/retailers/logos/matrix.png'
+                alt='Matrix'
+                width={48}
+                height={48}
+                className='flex-shrink-0 rounded-md'
               />
               <Image
-                src='/images/communities/mm.png'
-                alt='Melbourne Meeples'
+                src='/images/retailers/logos/vm.webp'
+                alt='Village Meeple'
                 width={60}
                 height={60}
                 className='flex-shrink-0'
               />
               <Image
-                src='/images/communities/ltn.png'
-                alt='Love Thy Nerd'
-                width={110}
-                height={96}
-                className='flex-shrink-0 mt-1'
-              />
-              <Image
-                src='/images/communities/kg.png'
-                alt='Kimberley Gamers'
-                width={110}
-                height={64}
+                src='/images/retailers/logos/arcane.avif'
+                alt='Wizards Arcane Tabletop Tavern'
+                width={68}
+                height={48}
                 className='flex-shrink-0'
               />
               <Image
-                src='/images/communities/rsg.png'
-                alt='Ringwood Social Games'
-                width={64}
-                height={64}
+                src='/images/retailers/logos/mana.png'
+                alt='Mana & Meeples'
+                width={40}
+                height={40}
                 className='flex-shrink-0'
+              />
+              <Image
+                src='/images/retailers/logos/clubhouse.jpg'
+                alt='Clubhouse'
+                width={40}
+                height={40}
+                className='flex-shrink-0 rounded-md'
               />
             </div>
+            <div className="flex flex-row items-center justify-center lg:justify-start gap-x-8 lg:pl-[132px] pt-6">
+            </div>
           </div>
-          <div className="relative mt-8 lg:col-span-5 lg:row-span-2 lg:mt-0 lg:-mr-6">
+          <div className="hidden lg:block relative mt-8 lg:col-span-5 lg:row-span-2 lg:mt-16 lg:-mr-6">
             <BackgroundIllustration className="lg:absolute left-1/2 top-4 h-[480px] w-[480px] sm:top-16 lg:-translate-x-1/2 lg:-top-8" />
             <div className='absolute left-1/2 -translate-x-1/2 top-44 lg:top-40'>
               <BuildingStorefrontIcon className='h-20 w-20 text-gg-blue m-auto' />

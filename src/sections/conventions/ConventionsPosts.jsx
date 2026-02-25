@@ -28,9 +28,8 @@ export function ConventionsPosts() {
                     <Image
                       src={image}
                       alt={title}
-                      layout="fill"
-                      objectFit="cover"
-                      className='rounded-t-2xl group-hover:opacity-80 transition-opacity'
+                      fill
+                      className='rounded-t-2xl group-hover:opacity-80 transition-opacity object-cover'
                     />
                   </div>
                 )}

@@ -3,7 +3,7 @@ title: 'Make sure everyone gets to play board games at your convention'
 date: '2023-11-24'
 image: '/images/posts/2023-11-24-1.jpg'
 intro: 'Discover how Aftergame can transform your board game convention by allowing your attendees to plan games, join events, and much more.'
-category: ['events','conventions']
+category: ['conventions']
 author_name: 'Chalene Scott'
 author_image: '/images/about/team/chalene.jpg'
 author_title: 'Head of Community'

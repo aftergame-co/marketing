@@ -118,6 +118,7 @@ export function HomeHero({ className }) {
               <Image
                 src='/images/home/home-hero.png'
                 alt='Events Schedule'
+                priority
                 width={900}
                 height={900}
                 className='flex-shrink-0 m-auto'

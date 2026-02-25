@@ -3,7 +3,7 @@ title: 'Establishing a new tabletop gaming group'
 date: '2025-04-30'
 image: '/images/posts/2025-04-30.jpg'
 intro: 'Starting something new can be hard, especially when it involves other people, but creating a game space that works for you and your community is definitely a rewarding adventure!'
-category: ['events','communities']
+category: ['groups']
 author_name: 'Chalene Scott'
 author_image: '/images/about/team/chalene.jpg'
 author_title: 'Head of Community'

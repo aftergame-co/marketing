@@ -20,7 +20,7 @@ export function RetailersPosts() {
           </h2>
         </div>
         <ul className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-8'>
-          {allPostsData.filter(p => p.category.includes("communities")).map(({ id, date, title, intro, image }) => (
+          {allPostsData.filter(p => p.category.includes("retailers")).map(({ id, date, title, intro, image }) => (
             <li className='group col-span-1 rounded-2xl bg-white text-gray-900 hover:bg-gg-blue-faint border-2 border-gray-100 transition-colors' key={id}>
               <Link href={`/blog/${id}`}>
                 {image && (
@@ -28,9 +28,8 @@ export function RetailersPosts() {
                     <Image
                       src={image}
                       alt={title}
-                      layout="fill"
-                      objectFit="cover"
-                        className='rounded-t-2xl group-hover:opacity-80 transition-opacity'
+                      fill
+                      className='rounded-t-2xl group-hover:opacity-80 transition-opacity object-cover'
                     />
                   </div>
                 )}

@@ -21,15 +21,15 @@ export function ConventionsContact() {
             Join hundreds of organizers and reach out today to set up your event.
           </p>
           <div className="mt-8 flex align-middle justify-center">
-              <Link href='/contact/organizer'>
-                <Button
-                  type="submit"
-                  color='black'
-                  className='bg-white hover:bg-gray-100 active:bg-gray-100 hover:text-gg-blue active:text-gg-blue !text-lg !px-6 !py-3'
-                >
-                  Get in touch
-                </Button>
-              </Link>
+            <Link href='/contact/organizer'>
+              <Button
+                type="submit"
+                color='black'
+                className='bg-white hover:bg-gray-100 active:bg-gray-100 hover:text-gg-blue active:text-gg-blue !text-lg !px-6 !py-3'
+              >
+                Get in touch
+              </Button>
+            </Link>
           </div>
         </div>
       </Container>

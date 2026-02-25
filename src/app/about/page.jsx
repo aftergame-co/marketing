@@ -98,18 +98,16 @@ export default function About() {
                 <Image
                     src="/images/about/eric-john-media.jpg"
                     alt="Eric and John in the local paper"
-                    layout="fill"
-                    objectFit="cover"
-                    className='rounded-2xl'
+                    fill
+                    className='rounded-2xl object-cover'
                   />
               </div>
               <div className='relative h-[480px]'>
                 <Image
                     src="/images/about/eli-chalene-convention.jpg"
                     alt="Eric and John in the local paper"
-                    layout="fill"
-                    objectFit="cover"
-                    className='rounded-2xl object-top'
+                    fill
+                    className='rounded-2xl object-cover object-top'
                   />
               </div>
             </div>

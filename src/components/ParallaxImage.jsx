@@ -26,7 +26,7 @@ export function ParallaxImage({ src, alt, width, height, containerClassName, cla
     return (
       <div ref={ref} className={`relative ${containerClassName ?? ''}`}>
         <motion.div style={{ y }} className='absolute inset-0 scale-110'>
-          <Image src={src} alt={alt} layout="fill" objectFit="cover" className={className} />
+          <Image src={src} alt={alt} fill className={`object-cover ${className ?? ''}`} />
         </motion.div>
       </div>
     );

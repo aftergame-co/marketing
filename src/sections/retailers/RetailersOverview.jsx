@@ -91,10 +91,10 @@ export function RetailersOverview() {
                 Impactful insights
               </h3>
               <p className='p-4 text-sm text-gray-700'>
-                Having an understanding of the games your community plays the most and what's in their collections allows you to put your effort in the right place.
+                Having an understanding of the games your community plays the most and what&apos;s in their collections allows you to put your effort in the right place.
               </p>
               <p className='p-4 text-sm text-gray-700'>
-                The group collection allows you to see an aggregation of what your community Wants to Play, and what's in their Wishlists, helping you to better plan events and what to stock in your game library.
+                The group collection allows you to see an aggregation of what your community Wants to Play, and what&apos;s in their Wishlists, helping you to better plan events and what to stock in your game library.
               </p>
             </div>
           </div>

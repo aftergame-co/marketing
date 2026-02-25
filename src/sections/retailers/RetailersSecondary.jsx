@@ -104,7 +104,7 @@ export function RetailersSecondary() {
             <span className='text-gg-blue font-semibold'>Purpose-built</span> tools for tabletop businesses
           </h2>
           <p className="mt-4 mx-6 text-lg text-gray-600">
-            All the social features you'd expect, plus a myriad of tabletop-specific tools to help you reduce admin and focus on what matters: <span className='text-gg-red font-semibold'>running a great gaming community</span>.
+            All the social features you&apos;d expect, plus a myriad of tabletop-specific tools to help you reduce admin and focus on what matters: <span className='text-gg-red font-semibold'>running a great gaming community</span>.
           </p>
         </div>
         <ul

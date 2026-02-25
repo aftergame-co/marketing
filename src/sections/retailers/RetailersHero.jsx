@@ -95,7 +95,7 @@ export function RetailersHero() {
               <span className='text-gg-blue font-semibold'>Take your place</span> at the heart of a <span className='text-gg-red font-semibold'>thriving community</span>
             </h1>
             <p className="my-6 lg:w-5/6 text-xl text-gray-600">
-              We know <em>a lot</em> goes into running a successful tabletop business. We're here with the tools to engage players, fill tables, and keep them coming back.
+              We know <em>a lot</em> goes into running a successful tabletop business. We&apos;re here with the tools to engage players, fill tables, and keep them coming back.
             </p>
             <p className="lg:w-4/5 text-sm font-semibold">Become the gathering point, add your group to Aftergame today.</p>
             <div className="pt-2 lg:w-4/5 flex flex-row gap-x-4">

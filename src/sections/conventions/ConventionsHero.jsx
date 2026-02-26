@@ -136,7 +136,7 @@ export function ConventionsHero() {
                 className='flex-shrink-0'
               />
             </div>
-            <div className="flex flex-row items-center justify-center lg:justify-start gap-x-8 lg:pl-28">
+            <div className="flex flex-row items-center justify-center lg:justify-start gap-x-8 lg:pl-28 mt-4">
               <Image
                 src='/images/conventions/logos/gridcon.png'
                 alt='GridCon'
@@ -145,10 +145,10 @@ export function ConventionsHero() {
                 className='flex-shrink-0'
               />
               <Image
-                src='/temp/ttcon.webp'
+                src='/images/conventions/logos/ttcon.png'
                 alt='TabletopCon'
-                width={104}
-                height={104}
+                width={90}
+                height={90}
                 className='flex-shrink-0 mr-2'
               />
             </div>

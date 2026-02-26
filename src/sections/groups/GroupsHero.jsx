@@ -121,13 +121,6 @@ export function GroupsHero() {
               <p className='text-sm font-semibold text-gray-500 mb-4'>Trusted by organizers worldwide</p>
               <div className="flex flex-row flex-wrap items-center gap-x-8 gap-y-6 max-w-[560px]">
               <Image
-                src='/images/events/playcon.png'
-                alt='Play Con'
-                width={80}
-                height={80}
-                className='flex-shrink-0'
-              />
-              <Image
                 src='/images/communities/behold.png'
                 alt='Behold Games'
                 width={64}
@@ -135,22 +128,8 @@ export function GroupsHero() {
                 className='flex-shrink-0 mt-2'
               />
               <Image
-                src='/images/events/tantrumcon.png'
-                alt='Tantrum Con'
-                width={80}
-                height={80}
-                className='flex-shrink-0'
-              />
-              <Image
                 src='/images/communities/bgbbq.png'
                 alt='Board Game BBQ'
-                width={96}
-                height={96}
-                className='flex-shrink-0'
-              />
-              <Image
-                src='/images/events/wellycon.webp'
-                alt='Wellycon'
                 width={96}
                 height={96}
                 className='flex-shrink-0'

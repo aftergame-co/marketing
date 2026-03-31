@@ -28,7 +28,7 @@ yarn lint
 
 The site uses Next.js 14's App Router pattern:
 - **src/app/** - Route definitions and page components
-  - Each folder represents a route (e.g., `/about`, `/blog`, `/communities`)
+  - Each folder represents a route (e.g., `/about`, `/blog`, `/retailers`)
   - `page.jsx` files define the page content
   - Root `layout.jsx` provides shared layout with Header/Footer
   - Uses custom output directory: `out/` (configured in next.config.js)

@@ -12,6 +12,63 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.17.149",
+    versionNumber: 85,
+    date: "April 13, 2026",
+    blurb:
+      "We have a bunch of fixes and small improvements in this release which also has behind the scenes updates for our upcoming Game Library checkout system.",
+    features: [
+      `Added the ability to delete a cancelled event.`,
+      `Added the ability to change between light and dark mode on web.`,
+      `Improved the readability of play log scores when logging a play.`,
+      `Fixed the ability to generate Play To Win QR codes and added this into the app itself.`,
+      `You can now dismiss the monthly games played recap shown on the home screen.`,
+    ],
+    fixes: [
+      `Fixed a bug where some Play To Win form questions could not be edited.`,
+      `Fixed a bug which blocked an attendee from changing from 'Reserved' to 'Going' in some cases.`,
+      `Fixed a UI issue where the keyboard would hide the cancel button when entering a reason.`,
+      `Fixed a bug where we still sent event reminders for cancelled events.`,
+      `We now hide place addresses for private homes which could be accessed through public play logs.`,
+      `Fixed a few issues with the clashing event warning that would not show up or show up when it should/shouldn't.`,
+      `Fixed a bug where you could not go back from viewing a deleted or banned player profile.`,
+      `Fixed a bug which showed the attendee limit as 100 even though it was set to higher.`,
+      `Fixed a bug where teachers or game masters would be added as a player when editing a play log.`,
+      `Upgraded many underlying technologies to the latest version, which should resolve many app crashes, in particular for Android.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.17.146",
+    versionNumber: 84,
+    date: "April 3, 2026",
+    blurb:
+      "Events have had a massive refresh, bringing many new highly requested features. Also added is the ability to connect/disconnect sign in methods and new app preferences.",
+    features: [],
+    fixes: [
+      `More important fixes to yesterday's major release.`,
+      `Fixed a crash which could happen viewing event attendees.`,
+      `Fixed a crash when editing an event's view or join open at / close at dates.`,
+      `Fixed a bug which incorrectly displayed +1's in a planned game.`,
+      `Fixed a bug which incorrectly added you as a host to a game if there were no hosts but it was posted as a group.`,
+    ],
+  },
+  {
+    version: "2.17.145",
+    versionNumber: 84,
+    date: "April 1, 2026",
+    blurb:
+      "Events have had a massive refresh, bringing many new highly requested features. Also added is the ability to connect/disconnect sign in methods and new app preferences.",
+    features: [],
+    fixes: [
+      `A few important fixes to yesterday's major release.`,
+      `Fixed a bug which broke inviting players to events.`,
+      `Fixed a bug where setting an event's view setting to group was disabled in some contexts.`,
+      `Fixed a bug where the default planned game duration would be set to 0.`,
+      `Fixed a bug where you were unable to edit a planned game's ruleset or scenario.`,
+    ],
+  },
+  {
     version: "2.17.143",
     versionNumber: 84,
     date: "March 31, 2026",

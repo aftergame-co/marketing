@@ -12,7 +12,29 @@ export const metadata = {
 
 const changelogs = [
   {
-    version: "2.17.149",
+    version: "2.17.151",
+    versionNumber: 86,
+    date: "April 19, 2026",
+    blurb: "Some important new features and improvements for event ticketing as we get close to moving it out of beta.",
+    features: [
+      `Added support for waitlists in ticketed events.`,
+      `Added the ability to assign child events with tickets that are required for entry to that game or event.`,
+      `Added the ability to set tickets as 'Private' and require an access code to view/purchase.`,
+      `We now email attendees when they have been moved off the waitlist and have a space reserved.`,
+      `Improved the UX of managing tickets and added the ability to generate access code links.`,
+      `Improved the experience for viewing and purchasing tickets when you are not signed in.`,
+    ],
+    fixes: [
+      `Fixed a bug which didn't load the credit card form and could happen in rare cases when purchasing tickets on web.`,
+      `Fixed an app crash which could happen in some rare circumstances when loading the app.`,
+      `Fixed a bug which would cause the sheet to close when creating a guest player while logging a play.`,
+      `Fixed some minor bugs with recording the time in which attendees responded / joined the waitlist.`,
+      `Fixed the notification icon on Android devices.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.17.150",
     versionNumber: 85,
     date: "April 13, 2026",
     blurb:
@@ -21,11 +43,11 @@ const changelogs = [
       `Added the ability to delete a cancelled event.`,
       `Added the ability to change between light and dark mode on web.`,
       `Improved the readability of play log scores when logging a play.`,
-      `Fixed the ability to generate Play To Win QR codes and added this into the app itself.`,
       `You can now dismiss the monthly games played recap shown on the home screen.`,
     ],
     fixes: [
       `Fixed a bug where some Play To Win form questions could not be edited.`,
+      `Fixed the ability to generate Play To Win QR codes and added this into the app itself.`,
       `Fixed a bug which blocked an attendee from changing from 'Reserved' to 'Going' in some cases.`,
       `Fixed a UI issue where the keyboard would hide the cancel button when entering a reason.`,
       `Fixed a bug where we still sent event reminders for cancelled events.`,

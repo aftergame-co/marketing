@@ -50,10 +50,6 @@ export function RetailersEmbed() {
           </div>
 
           <div className='w-full max-w-lg mx-auto mt-16 lg:mt-0'>
-            <div className="relative w-24 -mt-6 mb-1">
-              <span className="absolute h-full w-full rounded-md bg-gg-red opacity-15"></span>
-              <p className="relative rounded-md w-full py-0.5 text-gg-red text-center text-xs font-semibold">Coming soon</p>
-            </div>
             <p className="text-xl font-semibold text-gray-800">
               Events and LFG in your Discord server
             </p>
@@ -69,9 +65,12 @@ export function RetailersEmbed() {
             <p className="mt-3 mb-6 text-sm text-gray-600">
               With a full integration into Discord, you and your community can create events, plan games, and claim seats directly from within your Discord server.
             </p>
-            <p className="mt-2 mb-6 text-sm text-gray-600">
+            <p className="mt-2 mb-1 text-sm text-gray-600">
               All of this is automatically synced to Aftergame. This means that you can set up games and events from one place and they show up on your Aftergame profile and directly in your website; no more hidden active communities!
             </p>
+            <Link className='text-gg-blue font-semibold mb-6' href="https://aftergame.notion.site/discord-bot" aria-label="App help" target='_blank'>
+              More info
+            </Link>
             <p className="mt-16 text-xl font-semibold text-gray-800">
               ...and more planned
             </p>

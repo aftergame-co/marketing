@@ -12,6 +12,39 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.18.152",
+    versionNumber: 87,
+    date: "May 5, 2026",
+    blurb:
+      "This release brings our new Game Library lending/checkout system, new event volunteer roles, much better event attendee management, and more!",
+    features: [
+      `[Aftergame+] Group admins and event hosts can now manage their Game library lending through Aftergame. Handles QR code checkout as well as manual entry.`,
+      `[Aftergame+] Event hosts can now set the role of attendees to be "Volunteer", which gives them permission to manage event check-in and game library lending.`,
+      `The event 'Manage' menu has been given a big upgrade, adding helpful hints, adding more options, and structure.`,
+      `Editing the game library has been moved out of editing group/event details and into the 'Manage' menu.`,
+      `We now show attendees the availability of games in the game library.`,
+      `Group admins can now select any game lists in their group library to events they are running (even if they didn't create the game list).`,
+      `Added the ability to view all attendee check-in ticket information from the manage attendee screen.`,
+      `Added the ability to invite people to events from the attendee screen.`,
+      `Added the ability to invite people to groups from the group members screen.`,
+      `Improved the attendee check-in functionality UX.`,
+      `Event attendees can now enter Play To Win competitions directly from within the app with a new QR code scanner built in.`,
+      `We now show which events are ticketed and more information on event items in the event schedule.`,
+      `Event hosts can now buy tickets for themselves.`,
+    ],
+    fixes: [
+      `Fixed some app crashes happening in Android when logging a play.`,
+      `Fixed a bug when changing the dates of an event would incorrectly move child events.`,
+      `Fixed a bug where deleted events were used for a template in creating recurring events.`,
+      `Fixed a bug where attendees who had a reserved seat to a ticketed event could set themselves to going without buying a ticket.`,
+      `Fixed a bug with the time zone display when viewing events in different time zones.`,
+      `Fixed a bug where event hosts couldn't see all events if they had a visibility date in the future.`,
+      `Fixed a bug where buying more tickets to a game would wipe your experience level.`,
+      `We no longer delay post notifications to non-admins in private groups or events.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.17.151",
     versionNumber: 86,
     date: "April 19, 2026",

@@ -12,6 +12,65 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.18.155",
+    versionNumber: 89,
+    date: "May 14, 2026",
+    blurb:
+      "Event hosts and group admins now have more controls over how events and planned games are added which lays the groundwork for some future updates.",
+    features: [
+      `Group admins can now set whether members can create games or events within the group, with options to block the ability completely or just allow private events/games.`,
+      `Group admins now block the ability for members to post in the group.`,
+      `Event hosts can now completely block the ability to plan games (even private ones).`,
+      `Event hosts can now control if attendees are allowed to create events and not just games.`,
+      `Added a new notification which sends to someone borrowing a game when it's overdue.`,
+      `You can now sort the game loans list both alphabetically and by when a game was loaned.`,
+    ],
+    fixes: [
+      `Fixed issues with notifications not showing an up-to-date list.`,
+      `Fixed a bug which would incorrectly mark someone being checked in as absent.`,
+      `Fixed a bug where partial refunds on tickets would wipe all seats.`,
+      `Fixed a bug which allowed you to copy an event in the past and then create a new event that was in the past.`,
+      `Fixed some small UI bugs with where an event was being posted to.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.18.154",
+    versionNumber: 88,
+    date: "May 8, 2026",
+    blurb:
+      "This small update brings a bunch of important bug fixes and improvements following the Game Library lending system release.",
+    features: [`Event hosts can now modify an attendee's number of +1 guests even if the event has this disabled.`],
+    fixes: [
+      `Fixed a bug where players could mark themselves as not attending in a ticketed game. This would not free up the tickets (which requires an admin to refund) and would cause confusion.`,
+      `More fixes to potentially address crashes reported on iOS`,
+      `Improved the performance of many screens where there is a list of results.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.18.153",
+    versionNumber: 88,
+    date: "May 8, 2026",
+    blurb:
+      "This small update brings a bunch of important bug fixes and improvements following the Game Library lending system release.",
+    features: [
+      `We now better show when an event has access to Aftergame+ features (because the host of the event is a subscriber).`,
+      `Events that are changed from private -> group/publicly visible will now send a notification that it's been added.`,
+      `We added the ability to set players as "Lost" when logging a play for any game with a result. Previously this was hidden for rank-based games.`,
+    ],
+    fixes: [
+      `We made a series of fixes and improvements which should hopefully resolve some reported crashes on iOS devices.`,
+      `Fixed an edge case where someone buying a ticket would have an extra guest added to their RSVP.`,
+      `Fixed a bug which would display events that had a future visible date when the friend filter was enabled.`,
+      `Fixed a bug where the play log score input was not clickable on web.`,
+      `Fixed a bug where the play log score input was sometimes adding or deleting characters not where the cursor was positioned.`,
+      `Fixed a bug which would reset the minimum players of a game if you changed the max players.`,
+      `Fixed a bug when scanning a Play to Win QR code would load the competition form twice.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.18.152",
     versionNumber: 87,
     date: "May 5, 2026",
@@ -23,7 +82,7 @@ const changelogs = [
       `The event 'Manage' menu has been given a big upgrade, adding helpful hints, adding more options, and structure.`,
       `Editing the game library has been moved out of editing group/event details and into the 'Manage' menu.`,
       `We now show attendees the availability of games in the game library.`,
-      `Group admins can now select any game lists in their group library to events they are running (even if they didn't create the game list).`,
+      `Group admins can now assign any game lists in their group library to events they are running (even if they didn't create the game list).`,
       `Added the ability to view all attendee check-in ticket information from the manage attendee screen.`,
       `Added the ability to invite people to events from the attendee screen.`,
       `Added the ability to invite people to groups from the group members screen.`,

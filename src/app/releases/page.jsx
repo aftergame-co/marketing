@@ -12,7 +12,31 @@ export const metadata = {
 
 const changelogs = [
   {
-    version: "2.18.155",
+    version: "2.19.157",
+    versionNumber: 90,
+    date: "May 22, 2026",
+    blurb:
+      "Our ticketing platform is now open to all! This release also brings game submissions, allowing game runners to submit events they want to run for admin approval, and as always, more general improvements to the app.",
+    features: [
+      `Events powered by Aftergame’s ticketing platform no longer require signing up to the closed beta. We still are making some further improvements, but feel it is now ready for a wider audience.`,
+      `Set up the ability for people to submit games to add to your event's official schedule. Give instructions, set when submissions open/close, and control who can submit games.`,
+      `Added a new view to see all game submissions, with ways to edit submitted games, and approve or reject (along with a message).`,
+      `We improved searching game loans, with options to scan a game's QR code and added a faster search box.`,
+      `Added an easy access button to add any planned game or event to your calendar in the top right of any event page.`,
+      `We now support hiding a room as an option when creating an event / planning a game. Note: rooms & tables are currently only available for larger featured events.`,
+      `Tables can be added to rooms and then appear as options for selection when creating an event / planning a game. Note: rooms & tables are currently only available for larger featured events.`,
+      `Added a confirmation before deleting a game list.`,
+      `Added a confirmation before deleting a location.`,
+    ],
+    fixes: [
+      `Fixed more issues with incorrect ordering in the waitlist.`,
+      `Fixed a bug where events would be very tough to find if a group only had events without a time set.`,
+      `Fixed a bug which did not show creating an event as "Admin only" when it was.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.18.156",
     versionNumber: 89,
     date: "May 14, 2026",
     blurb:

@@ -12,6 +12,54 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "2.19.160",
+    versionNumber: 91,
+    date: "June 15, 2026",
+    blurb:
+      "This update is completely focused on quality of life improvements throughout the app and some massive changes to the underlying platform in preparation for future functionality.",
+    features: [
+      `Most links throughout the app now act like links on web, allowing you to right-click or Ctrl+click and open in a new tab. There are still some we need to update.`,
+      `Added a filter when browsing a game library to only show games with currently available copies.`,
+      `Added a filter when browsing the event schedule for whether a teacher or game master is wanted.`,
+      `Added filters when browsing a game's play logs to specify expansions or rulesets played.`,
+      `Added a link to "Your calendar" in the right menu on the web.`,
+      `Dozens of performance optimisations throughout the app which should result in the app feeling noticeably faster.`,
+    ],
+    fixes: [
+      `Fixed a bug on Android where notifications of deep links sometimes did not take you to the correct screen.`,
+      `Fixed a bug where setting the search radius for events to less than 100 miles would show no events (this did not happen when using kilometers).`,
+      `Fixed a bug where events you were invited to did not show up in your upcoming events section.`,
+      `Fixed an edge case where a player could win more than one game in a Play to Win competition.`,
+      `Fixed a bug where setting your date of birth would display off by one day in certain timezones.`,
+      `Fixed a bug where clicking into a game would clear the availability label.`,
+      `Fixed some inconsistencies of floor plan markers between web and mobile devices.`,
+      `Fixed the error message shown when a username is already taken.`,
+      `Fixed a bug where trying to open menus would not show on certain screens on iOS devices.`,
+      `Fixed a bug where quickly clicking on a link would open the page multiple times.`,
+      `Fixed bugs with the attendee list not showing more attendees as you scroll down the list.`,
+      `Fixed a bug where searching for a classification in a game list filter would not correctly check all selected classifications.`,
+      `Fixed a bug which meant the time period filter would not show when scrolling down the list in the scoreboard or games played table.`,
+      `Fixed bugs when selecting a player when the player select sheet was in single select mode.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.19.158",
+    versionNumber: 90,
+    date: "May 27, 2026",
+    blurb:
+      "Our ticketing platform is now open to all! This release also brings game submissions, allowing game runners to submit events they want to run for admin approval, and as always, more general improvements to the app.",
+    features: [],
+    fixes: [
+      `Some important fixes following our last release.`,
+      `Fixed a bug where no games would show up in the games bottom sheet if the device's "Reduced motion" setting was turned on.`,
+      `Fixed a bug which blocked volunteers from being able to manually check in attendees to events.`,
+      `Fixed some bugs which may have led to crashes when editing play logs.`,
+      `Fixed the styling for game QR code printing.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "2.19.157",
     versionNumber: 90,
     date: "May 22, 2026",

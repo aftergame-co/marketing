@@ -12,8 +12,57 @@ export const metadata = {
 
 const changelogs = [
   {
-    version: "2.19.160",
-    versionNumber: 91,
+    version: "2.20",
+    buildNumber: 162,
+    date: "June 28, 2026",
+    skipHomeBanner: true,
+    features: [`Added new Letter paper size printing options for printing game QR codes.`],
+    fixes: [
+      `Fixed a bug where player invite and connect links would not correctly connect the player account.`,
+      `A number of small fixes to the post and comment text input which should make it work better.`,
+      `Fixed a bug where you could not select a role during a play log if a game has both team and player roles.`,
+      `Some fixes to bottom sheets which allowed multiple items to be selected.`,
+      `Fixed an edge case bug where child events would not allow sign up.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.20",
+    buildNumber: 161,
+    date: "June 22, 2026",
+    blurb:
+      "Today's release brings venue management to events: add rooms, floor plans, and tables to any event! We also added many improvements to locations, event lists, and group stats.",
+    features: [
+      `[Aftergame+] A new "Venue" section has been added to the manage events area for managing rooms and tables.`,
+      `Adding a room allows you to add a floor plan or map to the room. Adding a map image enables event/game creators to drop a pin on the map.`,
+      `Add tables which can be used during event/game creation to let attendees know where an event is happening. Tables can also have a marker on the map which shows up when viewing linked events.`,
+      `Rooms and tables have settings to control who can plan events/games at them and also can easily be copied to recurring events.`,
+      `We made searching for existing public locations much easier.`,
+      `You can now create your own virtual locations.`,
+      `You can now view all group locations.`,
+      `You can now set virtual locations as your default for play logs.`,
+      `When editing game lists in a recurring event, we now give the option to update all future events with that game list.`,
+      `[Aftergame+] You can now filter the group games stats by location(s) and by game list(s)`,
+      `You can now sort the group games stats by game name.`,
+      `Added a new "Friends" filter to the main events screen, your calendar, and a group's upcoming events which allows you to see which events/games your friends are going to.`,
+      `Added a new filter in the event schedule to see only events created by attendees (and filter out 'official' events).`,
+      `Simplified the event and calendar screens and added more filter options.`,
+      `Reduced the default radius for events considered "Near me" and allowed filtering virtual events even when you don't have a location set.`,
+    ],
+    fixes: [
+      `Pressing on a push notification did not always mark that notification as read.`,
+      `Fixed a bug where setting a team's role was not possible in play logs.`,
+      `Fixed a bug which would not correctly pre-select your account when creating a play log.`,
+      `Fixed a bug which could lead to having duplicate players in a play log.`,
+      `Fixed a crash which could happen when you updated game filters very quickly.`,
+      `Fixed a crash which could happen on Android when adding an event to your calendar if you had disabled the calendar app.`,
+      `Fixed a bug where pressing "Spin again" for randomly choosing a start player in a play log did nothing.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.19",
+    buildNumber: 160,
     date: "June 15, 2026",
     blurb:
       "This update is completely focused on quality of life improvements throughout the app and some massive changes to the underlying platform in preparation for future functionality.",
@@ -45,7 +94,7 @@ const changelogs = [
   },
   {
     version: "2.19.158",
-    versionNumber: 90,
+    buildNumber: 158,
     date: "May 27, 2026",
     blurb:
       "Our ticketing platform is now open to all! This release also brings game submissions, allowing game runners to submit events they want to run for admin approval, and as always, more general improvements to the app.",
@@ -60,8 +109,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.19.157",
-    versionNumber: 90,
+    version: "2.19",
+    buildNumber: 157,
     date: "May 22, 2026",
     blurb:
       "Our ticketing platform is now open to all! This release also brings game submissions, allowing game runners to submit events they want to run for admin approval, and as always, more general improvements to the app.",
@@ -84,8 +133,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.18.156",
-    versionNumber: 89,
+    version: "2.18",
+    buildNumber: 156,
     date: "May 14, 2026",
     blurb:
       "Event hosts and group admins now have more controls over how events and planned games are added which lays the groundwork for some future updates.",
@@ -107,8 +156,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.18.154",
-    versionNumber: 88,
+    version: "2.18",
+    buildNumber: 154,
     date: "May 8, 2026",
     blurb:
       "This small update brings a bunch of important bug fixes and improvements following the Game Library lending system release.",
@@ -121,8 +170,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.18.153",
-    versionNumber: 88,
+    version: "2.18",
+    buildNumber: 153,
     date: "May 8, 2026",
     blurb:
       "This small update brings a bunch of important bug fixes and improvements following the Game Library lending system release.",
@@ -143,8 +192,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.18.152",
-    versionNumber: 87,
+    version: "2.18",
+    buildNumber: 152,
     date: "May 5, 2026",
     blurb:
       "This release brings our new Game Library lending/checkout system, new event volunteer roles, much better event attendee management, and more!",
@@ -176,8 +225,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.17.151",
-    versionNumber: 86,
+    version: "2.17",
+    buildNumber: 151,
     date: "April 19, 2026",
     blurb: "Some important new features and improvements for event ticketing as we get close to moving it out of beta.",
     features: [
@@ -198,8 +247,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.17.150",
-    versionNumber: 85,
+    version: "2.17",
+    buildNumber: 150,
     date: "April 13, 2026",
     blurb:
       "We have a bunch of fixes and small improvements in this release which also has behind the scenes updates for our upcoming Game Library checkout system.",
@@ -225,8 +274,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.17.146",
-    versionNumber: 84,
+    version: "2.17",
+    buildNumber: 146,
     date: "April 3, 2026",
     blurb:
       "Events have had a massive refresh, bringing many new highly requested features. Also added is the ability to connect/disconnect sign in methods and new app preferences.",
@@ -240,8 +289,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.17.145",
-    versionNumber: 84,
+    version: "2.17",
+    buildNumber: 145,
     date: "April 1, 2026",
     blurb:
       "Events have had a massive refresh, bringing many new highly requested features. Also added is the ability to connect/disconnect sign in methods and new app preferences.",
@@ -255,8 +304,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.17.143",
-    versionNumber: 84,
+    version: "2.17",
+    buildNumber: 143,
     date: "March 31, 2026",
     blurb:
       "Events have had a massive refresh, bringing many new highly requested features. Also added is the ability to connect/disconnect sign in methods and new app preferences.",
@@ -290,8 +339,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.16.142",
-    versionNumber: 83,
+    version: "2.16",
+    buildNumber: 142,
     date: "March 1, 2026",
     blurb: "Important fix for the ticketing beta.",
     features: [],
@@ -302,8 +351,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.16.141",
-    versionNumber: 83,
+    version: "2.16",
+    buildNumber: 141,
     date: "February 27, 2026",
     blurb: "Manage your Aftergame+ subscription from the web app and more important fixes for the ticketing beta.",
     features: [`You can now purchase and manage your Aftergame+ subscription from the web app.`],
@@ -319,8 +368,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.16.139",
-    versionNumber: 82,
+    version: "2.16",
+    buildNumber: 139,
     date: "February 21, 2026",
     blurb: "A small release with a bunch of important fixes and improvements for the ticketing beta.",
     features: [
@@ -335,8 +384,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.16.138",
-    versionNumber: 82,
+    version: "2.16",
+    buildNumber: 138,
     date: "February 11, 2026",
     blurb:
       "Today brings the Group Photo Gallery, an easy way to browse all photos posted to your group and events. Also included is the ability to pin posts in events and many fixes.",
@@ -361,8 +410,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.15.137",
-    versionNumber: 80,
+    version: "2.15",
+    buildNumber: 137,
     date: "February 5, 2026",
     blurb:
       "Added the ability to filter event schedules by suitable age and the type of game event, as well as some important authentication fixes.",
@@ -379,8 +428,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.15.136",
-    versionNumber: 79,
+    version: "2.15",
+    buildNumber: 136,
     date: "February 2, 2026",
     blurb:
       "Sharing game lists got a lot easier, a handful of bug fixes, and a lot of behind-the-scenes work for our upcoming ticketing feature.",
@@ -397,14 +446,14 @@ const changelogs = [
     ],
   },
   {
-    version: "2.15.135",
-    versionNumber: 78,
+    version: "2.15",
+    buildNumber: 135,
     date: "January 29, 2026",
     blurb:
       "We have completely rebuilt filters throughout the app, improving the UX and adding a number of new highly requested filter options!",
     features: [
       `We have updated the look of all filter sheets, making it easier to navigate and see all available filters.`,
-      `You can now filter games by Category, Mechanics, Designer, Artist, Publisher, and Theme.`,
+      `You can now filter games by Category, Mechanisms, Designer, Artist, Publisher, and Theme.`,
       `You can now filter by the number of seats available when viewing an event's schedule.`,
       `The range filters (e.g. for number of players) now allows you to put the range on the same number (so you can now say where number of players = 5).`,
       `You can now clear a single filter without having to clear all filters.`,
@@ -424,8 +473,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.15.134",
-    versionNumber: 77,
+    version: "2.15",
+    buildNumber: 134,
     date: "January 23, 2026",
     blurb:
       "Event hosts can now check-in attendees, filter event schedules by games your friends are in, filter events by room, and more!",
@@ -449,8 +498,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.14.133",
-    versionNumber: 76,
+    version: "2.14",
+    buildNumber: 133,
     date: "January 14, 2026",
     blurb:
       "The events screen has received some improvements, you can now block other user accounts, and some more fixes.",
@@ -468,8 +517,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.13.132",
-    versionNumber: 75,
+    version: "2.13",
+    buildNumber: 132,
     date: "January 11, 2026",
     blurb:
       "We have fixed some further crashes and added the ability to filter the content of group and event activity feeds.",
@@ -485,8 +534,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.13.131",
-    versionNumber: 74,
+    version: "2.13",
+    buildNumber: 131,
     date: "January 9, 2026",
     blurb: "This update includes some important fixes aimed to fix some recent crashes and stability problems.",
     features: [`Event hosts can now move attendees to the waitlist.`],
@@ -499,8 +548,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.13.129",
-    versionNumber: 73,
+    version: "2.13",
+    buildNumber: 129,
     date: "January 7, 2026",
     blurb:
       "Happy New Year! We kick off the year with big improvements to search along with a big batch of bug fixes and quality of life improvements.",
@@ -524,8 +573,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.13.128",
-    versionNumber: 72,
+    version: "2.13",
+    buildNumber: 128,
     date: "December 15, 2025",
     blurb:
       "We have pushed out a few smaller updates fixing bugs and adding small quality of life improvements while we work on our next big update in the background.",
@@ -544,8 +593,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.13.126",
-    versionNumber: 71,
+    version: "2.13",
+    buildNumber: 126,
     date: "December 3, 2025",
     blurb:
       "We have released a major upgrade to the core platform, a refresh of the home screen, big improvements to collection management, the ability to merge players, and dozens of bug fixes!",
@@ -565,8 +614,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.13.122",
-    versionNumber: 71,
+    version: "2.13",
+    buildNumber: 122,
     date: "November 30, 2025",
     blurb:
       "We have released a major upgrade to the core platform, a refresh of the home screen, big improvements to collection management, the ability to merge players, and dozens of bug fixes!",
@@ -594,8 +643,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.12.121",
-    versionNumber: 69,
+    version: "2.12",
+    buildNumber: 121,
     date: "November 4, 2025",
     blurb:
       "Planning a game no longer requires specifying a time, play logs get a revamp in the feed, many improvements to event management, and much more in today's release!",
@@ -623,8 +672,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.11.120",
-    versionNumber: 68,
+    version: "2.11",
+    buildNumber: 120,
     date: "October 20, 2025",
     blurb:
       "While we are cooking up our next big update, this is a small release which adds many quality of life improvements and fixes to play logs!",
@@ -646,8 +695,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.10.118",
-    versionNumber: 67,
+    version: "2.10",
+    buildNumber: 118,
     date: "October 2, 2025",
     blurb:
       "This release brings more controls and fixes. Set notification preferences per group, control who can join your games or events, and much more!",
@@ -673,8 +722,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.9.116",
-    versionNumber: 66,
+    version: "2.9",
+    buildNumber: 116,
     date: "September 18, 2025",
     blurb: "This release brings support for official publisher groups as well as a few important bug fixes.",
     features: [
@@ -695,8 +744,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.9.115",
-    versionNumber: 67,
+    version: "2.9",
+    buildNumber: 115,
     date: "September 15, 2025",
     blurb:
       "We have packed many improvements and bug fixes to events and groups as well as preparing for upcoming features in today's release.",
@@ -716,8 +765,8 @@ const changelogs = [
     ],
   },
   {
-    version: "2.9.112",
-    versionNumber: 66,
+    version: "2.9",
+    buildNumber: 112,
     date: "September 3, 2025",
     blurb:
       "Tag people in posts and comments, leaderboards get a big upgrade, and our initial launch of the group stats page are all included in today's release!",
@@ -740,7 +789,6 @@ const changelogs = [
   },
   {
     version: "2.8.3",
-    versionNumber: 65,
     date: "August 27, 2025",
     blurb:
       "A small release which fixes some app crashes which occurred while logging plays and push notifications on iOS.",
@@ -752,7 +800,6 @@ const changelogs = [
   },
   {
     version: "2.8.1",
-    versionNumber: 64,
     date: "August 19, 2025",
     blurb:
       "A small release with bug fixes which also includes some under-the-hood changes in preparation for some upcoming features.",
@@ -770,7 +817,6 @@ const changelogs = [
   },
   {
     version: "2.8.0",
-    versionNumber: 63,
     date: "August 7, 2025",
     blurb:
       "Email sign up is now supported, embed event and game lists into your website, as well as improvements to group and event screens.",
@@ -794,7 +840,6 @@ const changelogs = [
   },
   {
     version: "2.7.0",
-    versionNumber: 62,
     date: "July 17, 2025",
     blurb:
       "The wait for waitlists is over! Let players join a waitlist once games fill up. Also connect guest players via QR code and many fixes included in today's release.",
@@ -818,7 +863,6 @@ const changelogs = [
   },
   {
     version: "2.6.1",
-    versionNumber: 61,
     date: "July 3, 2025",
     blurb:
       "Event creation, inviting players, and managing event attendance has been greatly improved in this update packed with quality of life improvements.",
@@ -848,7 +892,6 @@ const changelogs = [
   },
   {
     version: "2.5.1",
-    versionNumber: 60,
     date: "June 5, 2025",
     blurb:
       "The Aftergame web app is out of early access, collection management has been streamlined, sharing to people without the Aftergame app is much better and some large under-the-hood resulting in big performance improvements.",
@@ -878,7 +921,6 @@ const changelogs = [
   },
   {
     version: "2.4.1",
-    versionNumber: 58,
     date: "April 22, 2025",
     blurb:
       "This update contains many bug fixes and a lot of behind-the-scenes changes to support some exciting upcoming features.",
@@ -897,7 +939,6 @@ const changelogs = [
   },
   {
     version: "2.4.0",
-    versionNumber: 57,
     date: "April 8, 2025",
     blurb:
       "Discover groups nearby, set yourself as 'Interested' for games or events, duplicate events and a whole lot of improvements throughout the app.",
@@ -922,7 +963,6 @@ const changelogs = [
   },
   {
     version: "2.3.3",
-    versionNumber: 56,
     date: "March 27, 2025",
     blurb:
       "We now detect when you may have timing clashes when claiming a seat to a game as well as a whole raft of bug fixes and improvements.",
@@ -944,7 +984,6 @@ const changelogs = [
   },
   {
     version: "2.3.2",
-    versionNumber: 55,
     date: "March 19, 2025",
     blurb:
       "Event hosts can now add non-game events to the schedule, as well as many usability fixes and stability improvements to the app.",
@@ -957,6 +996,7 @@ const changelogs = [
       `Fixed a bug which caused the home feed to show older items when returning to the screen.`,
       `Fixed a bug where accepting an invite to a merge a player would cause an infinite load.`,
       `We now block Google Sign In and give an explanation when trying to sign in from the Facebook or Instagram inbuilt browser. For reasons beyond our control, Google blocks their sign in method when users try to access it from Meta's browsers...`,
+      `Fixed a bug when trying to sign up with a different sign in method that was linked to the same email address.`,
       `Fixed a bug with the 'available seats' filter in event schedules sometimes showing full games.`,
       `GMs or teachers who are also the event host will no longer receive double notifications.`,
       `Fixed a bug blocking Aftergame+ features when editing an event.`,
@@ -970,7 +1010,6 @@ const changelogs = [
   },
   {
     version: "2.3.1",
-    versionNumber: 54,
     date: "March 14, 2025",
     blurb:
       "A massive update to play logging, bringing support for non-players, multiple roles, multiple scenarios, a start player/team picker, group-posted play logs and more.",
@@ -994,7 +1033,6 @@ const changelogs = [
   },
   {
     version: "2.2.2",
-    versionNumber: 53,
     date: "February 11, 2025",
     blurb:
       "The web version of Aftergame has launched and is in early access! We also added the ability to change group URLs and added email settings.",
@@ -1013,7 +1051,6 @@ const changelogs = [
   },
   {
     version: "2.2.1",
-    versionNumber: 52,
     date: "February 5, 2025",
     blurb:
       "This release brings notification settings and general notification improvements as well as many of the final pieces needed for the Aftergame web app.",
@@ -1036,7 +1073,6 @@ const changelogs = [
   },
   {
     version: "2.1.4",
-    versionNumber: 51,
     date: "January 23, 2025",
     blurb:
       "Added a new setting to override the app's theme and a lot of bug fixes while we work in the background on the upcoming web version of Aftergame! 🔜",
@@ -1058,7 +1094,6 @@ const changelogs = [
   },
   {
     version: "2.1.2",
-    versionNumber: 50,
     date: "January 15, 2025",
     blurb:
       "We've added the ability to feature group posts and require new members to get approved by admins. There has also been a lot behind the scenes work for our upcoming web version! 👀",
@@ -1080,7 +1115,6 @@ const changelogs = [
   },
   {
     version: "2.0.1",
-    versionNumber: 49,
     date: "December 30, 2024",
     blurb: "Fixed some app crashes and the applied 'Where' filter on the events tab is now saved.",
     features: [`The distance filter and whether to show virtual events is now remembered between app sessions.`],
@@ -1092,7 +1126,6 @@ const changelogs = [
   },
   {
     version: "2.0.0",
-    versionNumber: 48,
     date: "December 21, 2024",
     blurb:
       "Aftergame 2.0 is here! We have tied all parts of the platform together in a brand new home screen, new group and event feeds, and you can now post photos and polls 📸📊",
@@ -1116,7 +1149,6 @@ const changelogs = [
   },
   {
     version: "1.5.1",
-    versionNumber: 47,
     date: "December 11, 2024",
     blurb:
       "Your new personal event calendar, performance improvements, and a lot of groundwork for our next major release.",
@@ -1132,7 +1164,6 @@ const changelogs = [
   },
   {
     version: "1.5.0",
-    versionNumber: 47,
     date: "November 25, 2024",
     blurb:
       "Plan games that are happening online, a new distance filter when finding local games, import game lists via spreadsheet, and many improvements throughout the app.",
@@ -1161,7 +1192,6 @@ const changelogs = [
   },
   {
     version: "1.4.1",
-    versionNumber: 46,
     date: "November 6, 2024",
     blurb:
       "Edit all repeat events at once, post events that can only be seen by group members, and many important fixes.",
@@ -1182,7 +1212,6 @@ const changelogs = [
   },
   {
     version: "1.4.0",
-    versionNumber: 45,
     date: "October 30, 2024",
     blurb:
       "Add group game lists, generate QR codes, see the combined collection of group members, a refresh of the group page and much more!",
@@ -1208,7 +1237,6 @@ const changelogs = [
   },
   {
     version: "1.3.7",
-    versionNumber: 44,
     date: "October 16, 2024",
     blurb:
       "Early support for Play To Win (see changelog for details), discussion moderation, and more performance improvements.",
@@ -1229,7 +1257,6 @@ const changelogs = [
   },
   {
     version: "1.3.2",
-    versionNumber: 43,
     date: "September 24, 2024",
     blurb: "Featured events, improvements to event schedules, plus some notification and performance improvements.",
     features: [
@@ -1247,7 +1274,6 @@ const changelogs = [
   },
   {
     version: "1.3.0",
-    versionNumber: 42,
     date: "September 19, 2024",
     blurb:
       "Post game lists and play log results in discussions, the event schedule is rebuilt, sign up with Discord and much more!",
@@ -1268,7 +1294,6 @@ const changelogs = [
   },
   {
     version: "1.2.1",
-    versionNumber: 41,
     date: "September 4, 2024",
     blurb:
       "Time zones, content ratings, better event permissions, and many more quality of life improvements for events in today's release.",
@@ -1290,7 +1315,6 @@ const changelogs = [
   },
   {
     version: "1.2.0",
-    versionNumber: 40,
     date: "August 28, 2024",
     blurb:
       "We have rebuilt how we store collections from the ground up, enabling many new features to manage your games.\n\nThere should be no changes to the games in your collection, but please email our support if you have issues.",
@@ -1314,7 +1338,6 @@ const changelogs = [
   },
   {
     version: "1.1.0",
-    versionNumber: 39,
     date: "July 27, 2024",
     blurb:
       "Add scores on the fly with a new score calculator keyboard, log scores for each player in team-based games and many fixes.",
@@ -1338,7 +1361,6 @@ const changelogs = [
   },
   {
     version: "1.0.0",
-    versionNumber: 38,
     date: "July 19, 2024",
     blurb:
       "MAJOR RELEASE! Today we launch groups. Join local communities or create your own public and private groups to share and plan events.",
@@ -1358,7 +1380,6 @@ const changelogs = [
   },
   {
     version: "0.9.12",
-    versionNumber: 37,
     date: "July 13, 2024",
     blurb: "A whole bunch of bug fixes and you can now edit or delete your custom roles and scenarios.",
     features: [`Edit and delete any play log property options (like roles, scenarios, etc) you created in the past.`],
@@ -1374,7 +1395,6 @@ const changelogs = [
   },
   {
     version: "0.9.10",
-    versionNumber: 36,
     date: "July 7, 2024",
     blurb: "Add photos to play logs, get notified for games and events you've joined, and more general improvements.",
     features: [
@@ -1395,7 +1415,6 @@ const changelogs = [
   },
   {
     version: "0.9.8",
-    versionNumber: 35,
     date: "June 24, 2024",
     blurb: "We have added search additions and improvements throughout the app.",
     features: [
@@ -1411,13 +1430,12 @@ const changelogs = [
     fixes: [
       `BGG username is remembered when importing.`,
       `Profile bios can now be 2,000 characters long.`,
-      `[Android] Potential fix for the bottom bar showing up as white while in dark mode.`,
+      `[Android] Fix the bottom bar showing up as white while in dark mode.`,
       `Various other fixes and performance improvements.`,
     ],
   },
   {
     version: "0.9.7",
-    versionNumber: 34,
     date: "June 14, 2024",
     blurb: "More features and improvements for events, including recurring events, discussions in meetups, and more.",
     features: [
@@ -1437,7 +1455,6 @@ const changelogs = [
   },
   {
     version: "0.9.3",
-    versionNumber: 33,
     date: "May 29, 2024",
     blurb:
       "A large batch of improvement to events, some handy new filters, default locations, and more in this large quality of life update.",
@@ -1460,7 +1477,6 @@ const changelogs = [
   },
   {
     version: "0.9.2",
-    versionNumber: 32,
     date: "May 9, 2024",
     blurb:
       "A whole bunch of additions and improvements to events (including assigning game masters or teachers) and a fast new way to log a play again!",
@@ -1481,7 +1497,6 @@ const changelogs = [
   },
   {
     version: "0.9.1",
-    versionNumber: 31,
     date: "April 29, 2024",
     blurb:
       "Share the games you have been playing with new shareable images, some new filters, and some new badges for Aftergame+ subscribers.",
@@ -1494,7 +1509,6 @@ const changelogs = [
   },
   {
     version: "0.9.0",
-    versionNumber: 30,
     date: "April 25, 2024",
     blurb:
       "Creating meetups is now open to everyone, a complete rebuild of search and filters, the ability to sort your games, our new premium subscription (Aftergame+) and much more!",
@@ -1520,7 +1534,6 @@ const changelogs = [
   },
   {
     version: "0.8.13",
-    versionNumber: 29,
     date: "April 5, 2024",
     blurb: "We have made small fixes to events and added the ability to delete previous searches.",
     features: [`Added the ability to delete previous searches.`],
@@ -1534,7 +1547,6 @@ const changelogs = [
   },
   {
     version: "0.8.12",
-    versionNumber: 28,
     date: "April 2, 2024",
     blurb:
       "We have improved the design and options when creating events and added better information when play logs are updated.",
@@ -1550,7 +1562,6 @@ const changelogs = [
   },
   {
     version: "0.8.9",
-    versionNumber: 27,
     date: "March 21, 2024",
     blurb: "We added a new game timer to track the time when logging a play and many improvements to events.",
     features: [
@@ -1567,7 +1578,6 @@ const changelogs = [
   },
   {
     version: "0.8.8",
-    versionNumber: 26,
     date: "March 9, 2024",
     blurb: "We have fixed some annoying bugs with bottom sheets not showing / closing properly.",
     features: [],
@@ -1580,14 +1590,13 @@ const changelogs = [
   },
   {
     version: "0.8.5",
-    versionNumber: 25,
     date: "March 5, 2024",
     blurb:
       "We've added a bunch of improvements for events like claiming multiple seats and have now added in RPG systems.",
     features: [
       `Add guests when claiming a seat at a scheduled game.`,
       `Set whether a teacher is wanted when planning a game.`,
-      `RPG systems, settings, mechanics, and themes have been added for all tabletop RGPs.`,
+      `RPG systems, settings, mechanisms, and themes have been added for all tabletop RGPs.`,
       `A link for buying tickets has been added for relevant events.`,
       `Links within event descriptions, discussion messages, and play log notes can now be clicked.`,
       `New messages now automatically appear when viewing an event.`,
@@ -1600,7 +1609,6 @@ const changelogs = [
   },
   {
     version: "0.8.4",
-    versionNumber: 24,
     date: "February 23, 2024",
     blurb: "Get notified about games on your Want to Play list that are happening in your area!",
     features: [
@@ -1615,7 +1623,6 @@ const changelogs = [
   },
   {
     version: "0.8.3",
-    versionNumber: 23,
     date: "February 15, 2024",
     blurb:
       "See a list of all the games you've played with play counts, improved search, and more options when planning a game.",
@@ -1634,11 +1641,10 @@ const changelogs = [
   },
   {
     version: "0.8.0",
-    versionNumber: 22,
     date: "January 25, 2024",
     blurb: "Teams, custom roles, scenarios, and RPGs are now supported in this massive release!",
     features: [
-      `Teams! You can you set which teams players were on, assigning team roles and scores when the game allows it.`,
+      `Teams! You can now set which teams players were on, assigning team roles and scores when the game allows it.`,
       `Custom roles! We now allow you to enter your own roles, perfect for games we haven't defined, or where the roles are player-created.`,
       `Scenarios! Set the mission your team went on and more with a new way to log the scenario you played.`,
       `RPGs! We have added over 11k RPGs to the platform meaning you can now record the plays for a whole bunch more tabletop games.`,
@@ -1651,7 +1657,6 @@ const changelogs = [
   },
   {
     version: "0.7.7",
-    versionNumber: 21,
     date: "January 10, 2024",
     blurb:
       "Know what to expect at events! You can now view the games library available at an event and have a look at the floor plan.",
@@ -1663,7 +1668,6 @@ const changelogs = [
   },
   {
     version: "0.7.5",
-    versionNumber: 20,
     date: "December 27, 2023",
     blurb:
       "Find and plan local games easier by setting your current city and we have improved how you browse your play history.",
@@ -1683,7 +1687,6 @@ const changelogs = [
   },
   {
     version: "0.7.4",
-    versionNumber: 19,
     date: "December 14, 2023",
     blurb:
       "Events are now easier to navigate, with many new features, and BGG import has been rebuilt; now much more reliable and over 20x faster!",
@@ -1704,24 +1707,6 @@ const changelogs = [
   },
   {
     version: "0.7.2",
-    versionNumber: 18,
-    date: "December 6, 2023",
-    blurb: "Connect full addresses to locations, share links to events, and many other small improvements.",
-    features: [
-      `You can now search for an address to connect to a location. This will make organising events easier and enable future features.`,
-      `There is now an easy way to share an event link so other can quickly join.`,
-      `We have added a view in the events tab to see all the events attending and games you are joining in one place.`,
-    ],
-    fixes: [
-      `Deep links into our app were not always taking people to the right place - whoops!`,
-      `Fixed an issue with trying to remove scores on play logs.`,
-      `Fixed an issue on some devices where the keyboard covered half the comment box.`,
-      `Various other fixes and performance improvements.`,
-    ],
-  },
-  {
-    version: "0.7.1",
-    versionNumber: 18,
     date: "December 6, 2023",
     blurb: "Connect full addresses to locations, share links to events, and many other small improvements.",
     features: [
@@ -1738,13 +1723,12 @@ const changelogs = [
   },
   {
     version: "0.7.0",
-    versionNumber: 17,
     date: "November 29, 2023",
     blurb:
       "The game and profile screens have been completely rebuilt adding a lot more useful information and filters.",
     features: [
       `Profiles and game pages have been completely rebuilt, with a much cleaner look and new quick actions.`,
-      `Added categories, mechanics, themes, designers, artists, and publisher information to game pages.`,
+      `Added categories, mechanisms, themes, designers, artists, and publisher information to game pages.`,
       `We now show the game's complexity and you can also filter your library by this to find the right games.`,
       `Personal best and average scores are now shown for games where it's relevant.`,
       `You can now view your friends' collections and filter them by players, duration, complexity, and more!`,
@@ -1758,7 +1742,6 @@ const changelogs = [
   },
   {
     version: "0.6.4",
-    versionNumber: 16,
     date: "November 17, 2023",
     blurb:
       "Adding your friends is much easier and you can now set your profile visibility to only show to your friends.",
@@ -1776,7 +1759,6 @@ const changelogs = [
   },
   {
     version: "0.6.3",
-    versionNumber: 15,
     date: "November 12, 2023",
     blurb:
       "Coordinate for events by chatting with other attendees, better game library management, and easier player search.",
@@ -1793,7 +1775,6 @@ const changelogs = [
   },
   {
     version: "0.6.0",
-    versionNumber: 14,
     date: "October 13, 2023",
     blurb:
       "Select the role you played as, properly track cooperative games, and see the games you played at specific locations now available!",
@@ -1811,7 +1792,6 @@ const changelogs = [
   },
   {
     version: "0.5.0",
-    versionNumber: 13,
     date: "October 4, 2023",
     blurb:
       "Plan your next game on Aftergame!\n\nPlay with friends or find people to join in your favourite games in the Events tab.",
@@ -1829,7 +1809,6 @@ const changelogs = [
   },
   {
     version: "0.4.2",
-    versionNumber: 12,
     date: "September 20, 2023",
     blurb:
       "Update your name and profile photo, new profile pages with handy shortcuts, and the ability to manage players.",
@@ -1847,7 +1826,6 @@ const changelogs = [
   },
   {
     version: "0.4.1",
-    versionNumber: 11,
     date: "September 8, 2023",
     blurb:
       "Set the location of where you played a game and it's now much easier to invite your friends to join Aftergame.",
@@ -1864,14 +1842,13 @@ const changelogs = [
   },
   {
     version: "0.4.0",
-    versionNumber: 10,
     date: "August 30, 2023",
     blurb:
       "Add friends, get notified of new plays and the ability to import from BGG all features in this massive update.",
     features: [
       `Stay connected with friends! We now allow you to connect with fellow players.`,
       `Keep up-to-date with a new notifications section: friend requests and new plays you've been added to will show up here.`,
-      `There's a new import section where you can bring your collection and play history from BoardGameGeek and more coming soon.`,
+      `There's a new import section where you can bring your collection and play history from BoardGameGeek™ and more coming soon.`,
       `Invite codes are no longer required to access Aftergame!`,
     ],
     fixes: [
@@ -1882,7 +1859,6 @@ const changelogs = [
   },
   {
     version: "0.3.4",
-    versionNumber: 9,
     date: "August 17, 2023",
     blurb:
       "We have improved how you select players when logging a play, making it easier to find those you play with most.",
@@ -1901,7 +1877,6 @@ const changelogs = [
   },
   {
     version: "0.3.3",
-    versionNumber: 8,
     date: "August 3, 2023",
     blurb: "You can now select which expansions you played and view leaderboards for specific expansions.",
     features: [
@@ -1917,7 +1892,6 @@ const changelogs = [
   },
   {
     version: "0.3.2",
-    versionNumber: 7,
     date: "July 25, 2023",
     blurb: "We have released a big batch of fixes and improvements.",
     features: [],
@@ -1934,7 +1908,6 @@ const changelogs = [
   },
   {
     version: "0.3.1",
-    versionNumber: 6,
     date: "July 18, 2023",
     blurb: "It is now much easier to send player invites and you can set the duration of play.",
     features: [
@@ -1951,7 +1924,6 @@ const changelogs = [
   },
   {
     version: "0.3.0",
-    versionNumber: 5,
     date: "July 2, 2023",
     blurb: "Player profile pages have been added and you can now delete games and plays.",
     features: [
@@ -1967,7 +1939,6 @@ const changelogs = [
   },
   {
     version: "0.2.6",
-    versionNumber: 4,
     date: "June 19, 2023",
     blurb: "We have rebranded to be called Aftergame and have a new logo.",
     features: [
@@ -1978,7 +1949,6 @@ const changelogs = [
   },
   {
     version: "0.2.3",
-    versionNumber: 3,
     date: "June 1, 2023",
     blurb: "You can now edit your plays and manage your players in the new Players tab.",
     features: [
@@ -1994,7 +1964,6 @@ const changelogs = [
   },
   {
     version: "0.2.2",
-    versionNumber: 2,
     date: "May 22, 2023",
     blurb: "",
     features: [
@@ -2012,7 +1981,6 @@ const changelogs = [
   },
   {
     version: "0.2.1",
-    versionNumber: 1,
     date: "May 17, 2023",
     blurb: "Our initial release!",
     features: [
@@ -2097,7 +2065,7 @@ export default function About() {
               )}
               {changelog.version && (
                 <p className="mt-1 text-sm text-gray-500">
-                  Version {changelog.version}
+                  Version {changelog.version}{!!changelog.buildNumber && `.${changelog.buildNumber}`}
                 </p>
               )}
             </div>

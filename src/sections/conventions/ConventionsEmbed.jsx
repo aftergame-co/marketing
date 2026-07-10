@@ -4,7 +4,7 @@ import { Container } from '@/components/Container';
 export function ConventionsEmbed() {
   return (
     <section
-      id="communities-contact"
+      id="embed"
       className="relative overflow-hidden py-20"
     >
       <Container className="relative">

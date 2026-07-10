@@ -9,7 +9,7 @@ export function ConventionsPosts() {
 
   return (
     <section
-      id="secondary-features"
+      id="posts"
       aria-label="Posts to help with your tabletop events"
       className="py-20 sm:py-32"
     >

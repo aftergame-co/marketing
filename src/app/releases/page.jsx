@@ -11,6 +11,92 @@ export const metadata = {
 };
 
 const changelogs = [
+
+  {
+    version: "3.0",
+    buildNumber: 168,
+    date: "August 14, 2026",
+    isMajorRelease: true,
+    blurb: `We are so excited to bring you the next evolution of Aftergame! There is just too much to mention, but here are some highlights:
+
+**New Explore Tab**
+Finding events, groups, and now games(!!) just got so much better. The explore tab is the place to find new fun.
+
+**Collections Reimagined**
+We rebuilt game collections from the ground up, making them more beautiful, intuitive, and useful.
+
+**Improved Navigation**
+A new side drawer with quick links, updated nav bars, a more consistent "+" button, and more.
+
+...and there's so much more in the full notes.
+    `,
+    features: [
+      `The Explore tab has been added, combining event and group discovery into a new seamless experience.`,
+      `We now show trending and popular games, updated weekly and have added plenty of new categories to browse and find games you love.`,
+      `The Collection tab replaces the old Games tab and brings many improvements to your games collection.`,
+      `Game collections now have a new grid view, showing large game thumbnails for nicer viewing.`,
+      `You can now make a copy of a game list which also copies all the games to your new list.`,
+      `You can now set the visibility of each of your game lists individually.`,
+      `We have added a new "+" button to the bottom navbar which gives you easier access to posting events, adding plays, games, etc.`,
+      `There is a new side drawer which gives you quick access to all your "stuff" on Aftergame. You now have one quick place to view all your groups, events, games, plays, players, and locations.`,
+      `The side drawer also adds easy access to settings, feedback, and help.`,
+      `Now any event host or group admin can edit the games in a Game library linked to their event/group, even if it's not their own list.`,
+      `Group admins can now add group rules, which new members must accept before they can join the group.`,
+      `Groups can now set a "type", to help better categorise the group.`,
+      `New game filters added: filter by year and RPG Game System.`,
+      `New event filters added: filter by games in your game list (e.g. your "Want to Play" games), by events any of your friends are going to, or events in your groups.`,
+      `Cleaned up some game filters, moving several into the filter menu (e.g. virtual events, friends, and more)`,
+      `New group filter added: filter by the new group type property and made it easier to filter by group location.`,
+      `The Profile screen has had a small redesign, bringing clickable buttons to quickly view someone's plays, games, events, or friends (control who can see these in your privacy settings).`,
+      `The Game screen has had a redesign and viewing nearby planned games has been improved.`,
+      `We have now added the new tabletop game type "Social Deduction" as a distinct category from Board Games.`,
+      `We have now added "Storyteller" as an option alongside Game master, Teacher, and Judge.`,
+      `Game search got a lot better (and faster). We now better match on partial searches (e.g. "tick" will now show "Ticket to Ride").`,
+      `Improved the "Popular searches" options and how we store search history.`,
+      `Long press on game items to quickly access the edit collection menu.`,
+      `You can now sort games in the game select sheet when planning a game or logging a play.`,
+      `We made changing your group URL free and no longer requires Aftergame+.`,
+      `Greatly improved the speed and reliability of the app.`,
+      `Greatly improved the speed and reliability of the imports, particularly for large collections on BGG.`,
+      `We now better handle when you have no network connection or when the Aftergame servers are down.`,
+    ],
+    fixes: [
+      `Fixed some edge case bugs where it was possible to bypass the waitlist.`,
+      `Fixed some edge case bugs where it was possible to go over the attendee limit.`,
+      `Fixed an edge case bug where it was possible to get the same player invited to an event twice.`,
+      `Fixed an edge case bug where you could not unfriend someone (when the friend had borrowed a copy of a game from a list you owned).`,
+      `Fixed a bug where merging players would not correctly update play stats.`,
+      `Fixed a bug importing from BGG to a list where you previously had games but no longer had any would still incorrectly show the old count.`,
+      `Fixed a bug where being signed into multiple browser tabs could cause you to be signed out.`,
+      `Fixed a bug which would make adding a ticket access code constantly lose focus of the text input.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "2.20",
+    buildNumber: 163,
+    date: "July 15, 2026",
+    blurb:
+      "Many important fixes and small improvements released today while we continue work on one of our biggest updates ever!",
+    features: [
+      `Improved the share button and made it more consistent across all locations and devices.`,
+      `We made it more obvious how to join a group for an event that requires being a group member to join.`,
+      `Added support for events or games with a limit of 0 attendees / players.`,
+    ],
+    fixes: [
+      `Fixed a bug which showed the incorrect player count for a game (it would include non-seat fillers).`,
+      `Fixed a bug that caused issues while typing a ticket's access code.`,
+      `Fixed a bug where copying a planned game that had a specific time would not keep that time value in copies.`,
+      `Improved the UX for typing an attendee limit (i.e. when you clear the text box it no longer auto-fills the value back to the maximum amount).`,
+      `Fixed a bug which allowed the attendee limit or max players or child events / games to be larger than the parent event.`,
+      `Fixed a bug where the camera for scanning QR codes would sometimes not work.`,
+      `Fixed a bug where unfriending a player would not immediately clear them from your friends list.`,
+      `Fixed a bug which wouldn't allow the use of the waitlist in games that were planned in a paid event.`,
+      `Fixed a bug which would hide an attendee's event QR code if they were checked in.`,
+      `Fixed a bug which meant the profile tab would no longer be cached to your device.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
   {
     version: "2.20",
     buildNumber: 162,

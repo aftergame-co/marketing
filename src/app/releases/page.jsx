@@ -11,7 +11,57 @@ export const metadata = {
 };
 
 const changelogs = [
-
+  {
+    version: "3.1",
+    buildNumber: 171,
+    date: "August 24, 2026",
+    blurb:
+      "Today's release brings a number of new features to attendee and ticket management as well as many improvements throughout the app.",
+    features: [
+      `Event hosts can now assign tickets/badges directly to attendees.`,
+      `We now notify people who are set to 'Interested' for a game or event when it is open for sign ups.`,
+      `Added the ability for event hosts to filter attendees by specific tickets, and to check which attendees are in a game or running a game.`,
+      `Added a quick action for event hosts to add people to their event from the check-in screen (only for non-ticketed events).`,
+      `Event hosts can now add people to past events or games to better track who was in attendance.`,
+      `Added the ability for event hosts to view the complete schedule of any attendee.`,
+      `Added the ability for hosts to view the complete schedule of any attendee.`,
+      `Added the ability to filter games by your game lists when logging a play or planning a game.`,
+      `The comment text box now expands as you type longer comments.`,
+      `We now retain your search filters in the game sheet to make adding multiple games quicker.`,
+    ],
+    fixes: [
+      `Removing an attendee from a ticketed event (including free tickets) will now correctly adjust the unsold ticket count.`,
+      `Fixed a series of issues which could lead to duplicate people in a play log, event, or group.`,
+      `Fixed when notifications are sent to event hosts for when someone purchases a ticket.`,
+      `Fixed an edge-case where an event host could get in a situation where their permissions were set to an attendee level.`,
+      `Fixed a bug where event hosts could not change their own role or remove themselves from an event.`,
+      `Fixed a bug on web when your device changed from light to dark mode, the styles would get out-of-sync.`,
+      `Fixed a bug on web where pressing back from a list in the explore screen or from a search did not take you to the correct screen.`,
+      `Fixed some issues with the number keyboard not showing up correctly while entering scores in a play log.`,
+      `Fixed issues with avatars showing the wrong image when scrolling.`,
+      `Fixed numerous crashes throughout the app.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "3.0",
+    buildNumber: 170,
+    date: "August 17, 2026",
+    skipHomeBanner: true,
+    features: [
+      `When logging a play in a group or at an event, we now show the group or event options during player select.`,
+    ],
+    fixes: [
+      `Fixed some crashes in game lists.`,
+      `Fixed a crash when selecting a game list as a filter for events.`,
+      `Fixed a bug where clearing events while viewing your events would then show all events.`,
+      `Fixed a bug which lost the "Newly added" game sort option in some locations.`,
+      `Fixed a bug which did not always show the x out of total game count when a list of games was filtered.`,
+      `Fixed some issues which could break lists (of games, plays, events, etc) and meant they show as empty.`,
+      `New comments should now show up instantly rather than polling every minute.`,
+      `Many performance improvements.`,
+    ],
+  },
   {
     version: "3.0",
     buildNumber: 168,

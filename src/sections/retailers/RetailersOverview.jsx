@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import { useInView } from 'framer-motion';
 import { Container } from '@/components/Container';
+import Link from 'next/link';
 
 export function RetailersOverview() {
   let containerRef = useRef();
@@ -67,10 +68,13 @@ export function RetailersOverview() {
                 Tickets and check-in
               </h3>
               <p className='p-4 text-sm text-gray-700'>
-                You can sell tickets directly through Aftergame or give them away if you want an exclusive yet accessible event.
+                Sell tickets directly through Aftergame to provide a simple, fully integrated experience.
               </p>
               <p className='p-4 text-sm text-gray-700'>
-                With or without tickets, players will get a unique QR code with their RSVP that you can scan to quickly check people in as they arrive to keep track of who’s ready to play!
+                Players get a unique QR code with their RSVP that you can scan to quickly check people in as they arrive to keep track of who’s ready to play!
+              </p>
+              <p className='p-4 text-sm text-gray-700'>
+               We offer a competitive rate on fees, <Link href='/pricing#tickets' className='text-gg-blue font-semibold'>view details</Link>.
               </p>
             </div>
           </div>

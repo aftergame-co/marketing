@@ -98,14 +98,14 @@ export function RetailersHero() {
               We know <em>a lot</em> goes into running a successful tabletop business. We&apos;re here with the tools to engage players, fill tables, and keep them coming back.
             </p>
             <p className="lg:w-4/5 text-sm font-semibold">Become the gathering point, add your group to Aftergame today.</p>
-            <div className="pt-2 lg:w-4/5 flex flex-row gap-x-4">
+            <div className="pt-2 lg:w-4/5 flex flex-row gap-x-2 md:gap-x-4">
               <Link href='https://aftergame.app/groups/create'>
                 <Button
                   type="submit"
                   color='gg'
                   className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
                 >
-                  Sign up
+                  Create your group
                 </Button>
               </Link>
               <Link href='/contact/demo'>

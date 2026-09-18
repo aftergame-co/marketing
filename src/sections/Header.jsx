@@ -67,7 +67,7 @@ export function Header({darkMode}) {
   }, []);
 
   return (
-      <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', (scrolled || pathname.indexOf('/plus') !== -1) ? 'shadow-lg  bg-white py-4 lg:py-3' : 'py-4 lg:py-5')}>
+      <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', (scrolled || pathname.indexOf('/pricing') !== -1) ? 'shadow-lg  bg-white py-4 lg:py-3' : 'py-4 lg:py-5')}>
         <nav>
           <Container className="relative z-50 flex justify-between">
             <div className="relative z-10 flex items-center gap-16 -mt-2.5 -ml-2.5 -mb-1.5">
@@ -130,8 +130,8 @@ export function Header({darkMode}) {
                               <MobileNavLink href="/retailers">
                                 Retailers
                               </MobileNavLink>
-                              <MobileNavLink href="/plus">
-                                Aftergame+
+                              <MobileNavLink href="pricing">
+                                Pricing
                               </MobileNavLink>
                               <MobileNavLink href="/blog">
                                 Blog

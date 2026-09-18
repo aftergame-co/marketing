@@ -98,14 +98,23 @@ export function ConventionsHero() {
               Run your convention from start to finish through Aftergame. We’ve got all the tools you’ll need to let the chaos organise itself!
             </p>
             <p className="lg:w-4/5 text-sm font-semibold">Bring people back next year, add your event to Aftergame.</p>
-            <div className="pt-2 lg:w-4/5">
-              <Link href='/contact/organizer'>
+            <div className="pt-2 lg:w-4/5 flex flex-row gap-x-2 md:gap-x-4">
+              <Link href='https://aftergame.app/groups/create'>
                 <Button
                   type="submit"
                   color='gg'
                   className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
                 >
-                  Get in touch
+                  Create your event
+                </Button>
+              </Link>
+              <Link href='/contact/organizer'>
+                <Button
+                  type="submit"
+                  color='white'
+                  className='bg-gg-blue-faint border-4 border-gg-blue md:hover:bg-gg-blue active:bg-gg-blue text-gg-blue md:hover:text-white active:text-white !text-lg !px-4 !py-2'
+                >
+                  Book Demo
                 </Button>
               </Link>
             </div>

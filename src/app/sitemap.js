@@ -4,7 +4,7 @@ export default async function sitemap() {
     '/conventions',
     '/publishers',
     '/retailers',
-    '/plus',
+    '/pricing',
     '/blog',
     '/about',
     '/privacy',

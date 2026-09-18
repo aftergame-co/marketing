@@ -49,9 +49,9 @@ export function ConventionsOverview() {
               <p className='p-4 text-sm text-gray-700'>
                 Sell event tickets and add-ons, like panel talks, special game sessions, or competitions through Aftergame.  Tickets are simple to use, fully integrated, and transferable between attendees.
               </p>
-              {/* <p className='p-4 text-sm text-gray-700'>
-               We offer competitive rates and pricing options, <Link href='/pricing' className='text-gg-blue font-semibold'>view details</Link>.
-              </p> */}
+              <p className='p-4 text-sm text-gray-700'>
+               We offer a competitive rate on fees, <Link href='/pricing#tickets' className='text-gg-blue font-semibold'>view details</Link>.
+              </p>
             </div>
           </div>
           <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>

@@ -6,73 +6,47 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logomark } from '@/components/Logo'
 
 const plans = [
   {
-    name: 'Aftergame',
+    name: 'Aftergame Plus',
+    description: 'For players',
     featured: false,
-    price: { Monthly: 'Free forever', Annually: 'Free forever' },
+    price: { Monthly: '$2.49', Annually: '$21.99' },
     button: {
-      label: 'Get Aftergame',
-      href: '/download',
+      label: 'Subscribe',
+      href: 'https://aftergame.app/premium',
     },
     features: [
-      'No ads, ever.',
-      'Full history of every game you have ever played, stored across devices',
-      'Analytics for the last 90 days of game plays',
-      'Join groups and play with friends',
-      'Easy import of your games collection and play logs',
+      'Deep filters for games, plays, and stats',
+      'More granular game leaderboards',
+      'Automatically sync from BGG',
+      'Access beta features before anyone else',
+      'Show your support with a fancy badge',
+      'Help support our commitment to being ad-free',
     ],
   },
   {
-    name: 'Aftergame+ Monthly',
+    name: 'Aftergame Star',
+    description: 'For organizers',
     featured: true,
-    price: { Monthly: '$2.49', Annually: '$17.99' },
+    price: { Monthly: '$9.99', Annually: '$89.99' },
     button: {
-      label: 'Subscribe in app',
-      href: '/download',
+      label: 'Subscribe',
+      href: 'https://aftergame.app/premium',
     },
     features: [
-      'Analytics for all your game plays',
-      'Deeper insights, custom graphs, and reports',
-      'Track your own datapoints on your game plays',
-      'Ability to host events, create tournaments, and start leagues.',
-      'Access new features early',
+      'Everything in Aftergame Plus',
+      'Give premium access to all group admins¹',
+      'Host events of up to 200 attendees²',
+      'Create recurring events on a schedule',
+      'Ticketing, waitlists, and event check-in',
+      'Add your official game lending library',
+      'Manage event volunteers',
+      'Handle event and game submissions',
+      'Embed Aftergame directly on your website',
     ],
   },
-  {
-    name: 'Aftergame+ Yearly',
-    featured: true,
-    price: { Monthly: '$2.49', Annually: '$17.99' },
-    button: {
-      label: 'Subscribe in app',
-      href: '/download',
-    },
-    features: [
-      'Analytics for all your game plays',
-      'Deeper insights, custom graphs, and reports',
-      'Track your own datapoints on your game plays',
-      'Ability to host events, create tournaments, and start leagues.',
-      'Access new features early',
-    ],
-  },
-  // {
-  //   name: 'Premium Community',
-  //   featured: false,
-  //   price: { Monthly: '$14.99', Annually: '$129.99' },
-  //   button: {
-  //     label: 'Subscribe',
-  //     href: '#',
-  //   },
-  //   features: [
-  //     'Analytics for all your game plays',
-  //     'Deeper insights, custom graphs, and reports',
-  //     'Track your own datapoints on your game plays',
-  //     'Ability to host events, create tournaments, and start leagues.',
-  //     'Access new features early',
-  //   ],
-  // },
 ]
 
 function CheckIcon(props) {
@@ -109,61 +83,63 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col overflow-hidden rounded-3xl p-6 border-2 border-gray-100',
-        featured ? 'order-first bg-gg-blue lg:order-none' : 'bg-white'
+        featured ? 'order-first bg-gg-blue md:order-none' : 'bg-white'
       )}
     >
       <h3
         className={clsx(
-          'flex items-center font-semibold',
+          'flex items-center font-semibold text-xl',
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
-        <span>{name}</span>
+        {name}
       </h3>
+      <p
+        className={clsx(
+          'relative flex text-md italic tracking-tight',
+          featured ? 'text-gray-200' : 'text-gray-800'
+        )}
+      >
+        {description}
+      </p>
       <p
         className={clsx(
           'relative mt-5 flex text-3xl tracking-tight',
           featured ? 'text-white' : 'text-gray-900'
         )}
       >
-        {price.Monthly === price.Annually ? (
-          price.Monthly
-        ) : (
-          <>
-            <span
-              aria-hidden={activePeriod === 'Annually'}
-              className={clsx(
-                'transition duration-300',
-                activePeriod === 'Annually' &&
-                  'pointer-events-none translate-x-6 select-none opacity-0'
-              )}
-            >
-              <span className={clsx(
-                'pt-2 pr-1 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
-              )}>US</span>
-              {price.Monthly}
-              <span className={clsx(
-                'pt-2 pl-2 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
-              )}>/ month</span>
-            </span>
-            <span
-              aria-hidden={activePeriod === 'Monthly'}
-              className={clsx(
-                'absolute left-0 top-0 transition duration-300',
-                activePeriod === 'Monthly' &&
-                  'pointer-events-none -translate-x-6 select-none opacity-0'
-              )}
-            >
-              <span className={clsx(
-                'pt-2 pr-1 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
-              )}>US</span>
-              {price.Annually}
-              <span className={clsx(
-                'pt-2 pl-2 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
-              )}>/ year</span>
-            </span>
-          </>
-        )}
+        <span
+          aria-hidden={activePeriod === 'Annually'}
+          className={clsx(
+            'transition duration-300',
+            activePeriod === 'Annually' &&
+            'pointer-events-none translate-x-6 select-none opacity-0'
+          )}
+        >
+          <span className={clsx(
+            'pt-2 pr-1 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
+          )}>US</span>
+          {price.Monthly}
+          <span className={clsx(
+            'pt-2 pl-2 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
+          )}>/ month</span>
+        </span>
+        <span
+          aria-hidden={activePeriod === 'Monthly'}
+          className={clsx(
+            'absolute left-0 top-0 transition duration-300',
+            activePeriod === 'Monthly' &&
+            'pointer-events-none -translate-x-6 select-none opacity-0'
+          )}
+        >
+          <span className={clsx(
+            'pt-2 pr-1 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
+          )}>US</span>
+          {price.Annually}
+          <span className={clsx(
+            'pt-2 pl-2 text-lg', featured ? 'text-grey-100' : 'text-gray-800'
+          )}>/ year</span>
+        </span>
       </p>
       <div className="order-last mt-6">
         <ul
@@ -190,6 +166,7 @@ function Plan({
       </div>
       <Button
         href={button.href}
+        target='_blank'
         color={featured ? 'white' : 'gg'}
         className="mt-6"
         aria-label={`Get started with the ${name} plan for ${price}`}
@@ -200,26 +177,27 @@ function Plan({
   )
 }
 
-export function Plans() {
-  let [activePeriod, setActivePeriod] = useState('Annually')
+export function PricingPlans() {
+  let [activePeriod, setActivePeriod] = useState('Monthly')
 
   return (
     <section
       id="pricing"
       aria-labelledby="pricing-title"
-      className="py-20 sm:py-32"
+      className="py-16"
     >
       <Container>
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-3xl text-center">
           <h2
             id="pricing-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="text-4xl font-medium tracking-tight text-gray-900"
           >
-            Pricing intro
+            Unlock all of Aftergame
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            We are proud to offer Aftergame for free and with no ads. 
-          </p>
+        <p className="mt-2 text-lg text-gray-700 text-left">
+          <span className='font-semibold text-gray-900'>We offer Aftergame for free and with no ads. </span>
+          This is something our team are <i>proud</i> of. Our premium plans offer extra features to support this commitment.
+        </p>
         </div>
 
         <div className="mt-8 flex justify-center">
@@ -234,7 +212,7 @@ export function Plans() {
                   key={period}
                   value={period}
                   className={clsx(
-                    'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-0px)] px-[calc(theme(spacing.3)-0px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
+                    'cursor-pointer border border-gray-300 py-3 px-6 text-md text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
                     period === 'Monthly'
                       ? 'rounded-l-lg'
                       : '-ml-px rounded-r-lg'
@@ -257,7 +235,7 @@ export function Plans() {
                 <div
                   key={period}
                   className={clsx(
-                    'py-2 text-center text-sm font-semibold text-white [&:not(:focus-visible)]:focus:outline-none',
+                    'py-3 text-center text-md font-semibold text-white [&:not(:focus-visible)]:focus:outline-none',
                     period === 'Annually' && '-ml-px'
                   )}
                 >
@@ -268,11 +246,18 @@ export function Plans() {
           </div>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-8 md:mt-10 grid max-w-3xl grid-cols-1 items-start gap-x-8 gap-y-8 lg:max-w-4xl md:grid-cols-2">
           {plans.map((plan) => (
             <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
           ))}
         </div>
+        <p className="text-sm text-gray-600 italic text-center mt-6 px-2">
+          ¹ One group per Aftergame Star subscription.
+        </p>
+        <p className="text-sm text-gray-600 italic text-center px-2">
+          ² No limits when using Aftergame to sell your tickets.
+        </p>
+        <div id="tickets" />
       </Container>
     </section>
   )

@@ -71,8 +71,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/plus" aria-label="Aftergame+">
-                  Aftergame+
+                <Link className='py-1 pr-1 inline-block text-sm text-gray-600 hover:text-gray-900 hover:underline' href="/pricing" aria-label="Pricing">
+                  Pricing
                 </Link>
               </li>
               <li>

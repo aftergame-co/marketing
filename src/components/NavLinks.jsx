@@ -40,8 +40,8 @@ export function NavLinks({scrolled, darkMode}) {
       href: 'retailers',
     },
     {
-      name: 'Aftergame+',
-      href: '/plus',
+      name: 'Pricing',
+      href: '/pricing',
     },
     {
       name: 'Resources',

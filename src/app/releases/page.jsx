@@ -13,6 +13,28 @@ export const metadata = {
 const changelogs = [
   {
     version: "3.2",
+    buildNumber: 173,
+    date: "September 26, 2026",
+    blurb: "We've released a small update with import fixes for imports and events.",
+    features: [],
+    fixes: [
+      `Fixed an issue which could duplicate games or plays if you imported from both BGG and BG Stats.`,
+      `BG Stats imports now support .bgsplay files as well as .json files.`,
+      `Fixed a bug where adding a BGG profile would not show up in the app until you reloaded.`,
+      `Fixed some issues with the event attendee list showing incorrect attendee counts or duplicates.`,
+      `Updated the distance filter options, adding a lower one (10km/5mi) and removing the largest distance filter.`,
+      `Editing a recurring event's view or join access time will now update all repeat events with the correct time offsets.`,
+      `Fixed a bug on web which allowed you to set times outside the allowed min/max.`,
+      `We no longer support events with the same start/end times as this caused issues. The minimum event time is 15 minutes.`,
+      `Fixed some issues with loading game images in longer lists, both in the collection view and in the print preview.`,
+      `Fixed a bug which did not correctly clear a planned game's ruleset or scenarios when changing the game.`,
+      `Added the ability to remove a planned game's ruleset if none of the options makes sense.`,
+      `Fixed some edge-case issues with editing events in timezones other than yours where there was a change in daylight savings.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "3.2",
     buildNumber: 172,
     date: "September 17, 2026",
     blurb:

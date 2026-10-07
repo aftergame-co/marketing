@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* <!-- Meta Pixel Code --> */}
-        <Script id="meta-pixel">
+        <Script id="meta-pixel" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
         `}
         </Script>
         <noscript>
-          <img height="1" width="1" style="display:none" alt="meta pixel" src="https://www.facebook.com/tr?id=1329215262490101&ev=PageView&noscript=1" />
+          <img height="1" width="1" style={{ display: 'none' }} alt="" src="https://www.facebook.com/tr?id=1329215262490101&ev=PageView&noscript=1" />
         </noscript>
         {/* <!-- End Meta Pixel Code --> */}
       </head>

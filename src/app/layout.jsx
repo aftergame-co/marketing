@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import '@/styles/tailwind.css';
 import '@/styles/global.css';
 import 'focus-visible';
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta property="fb:app_id" content="317542250869616" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+
         {/* <!-- Google tag (gtag.js) --> */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-C15BKR7SR5"  strategy="afterInteractive"></Script>
         <Script id="google-analytics" strategy="afterInteractive">
@@ -62,6 +64,26 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-C15BKR7SR5');
         `}
         </Script>
+
+        {/* <!-- Meta Pixel Code --> */}
+        <Script id="meta-pixel">
+        {`
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '1329215262490101');
+          fbq('track', 'PageView');
+        `}
+        </Script>
+        <noscript>
+          <img height="1" width="1" style="display:none" alt="meta pixel" src="https://www.facebook.com/tr?id=1329215262490101&ev=PageView&noscript=1" />
+        </noscript>
+        {/* <!-- End Meta Pixel Code --> */}
       </head>
       <body className="flex flex-col">
         <Header />

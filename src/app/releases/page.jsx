@@ -12,6 +12,54 @@ export const metadata = {
 
 const changelogs = [
   {
+    version: "3.3",
+    buildNumber: 175,
+    date: "October 12, 2026",
+    blurb:
+      "A small release which adds the ability to modify the schedule for a recurring event and brings a number of important bug fixes.",
+    features: [
+      `Event admins can now modify the schedule for a recurring event.`,
+      `Player selection is remembered when logging a play after entering a play to win competition.`,
+    ],
+    fixes: [
+      `Fixed a bug where a notification was not sent to a host, GM, or Teacher being added to an event.`,
+      `Fixed a number of bugs in the wording of RSVP notifications.`,
+      `Fixed a bug which incorrectly counted two partial tickets as two seats when checking event capacity.`,
+      `Fixed a bug which meant you were unable to @everyone or @hosts when editing a post.`,
+      `Fixed a bug which would carry over the +1 guests when editing the response for multiple attendees at an event.`,
+      `Improved the wording of some options when setting your experience level while joining a planned game.`,
+      `Improved the aspect ratio of images in posts, in particular on larger screens.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "3.3",
+    buildNumber: 174,
+    date: "October 8, 2026",
+    blurb:
+      "This release brings many improvements to event ticketing, including the ability to handle refund requests through the app.",
+    features: [
+      `You can now request a refund on any ticket or badge purchases (assuming it is within the refund policy).`,
+      `Added a new Tickets & Badges admin dashboard which brings all ticket settings and screens together for easier management.`,
+      `Event admins can receive and process refund requests through the app.`,
+      `Event admins can now set up a refund policy which displays on their event.`,
+      `Added a new 'Sales' screen which shows all ticket sales for an event (with a link through to Stripe).`,
+      `Event admins can now choose who pays the ticket processing fees. Either the organizers (current) or the attendees. If attendees pay, we make it clear what the total cost will be before the checkout screen.`,
+      `Added an option to enforce that all ticket purchases are assigned to an Aftergame account or guest player (to avoid +1s when someone purchases multiple tickets).`,
+      `Added a new "Who can join" option to allow for no sign-up events. Perfect for adding items to the schedule that do not require signing up. Attendees can still mark themselves as interested to add to their schedule.`,
+      `When creating a recurring event schedule, you can now specify how many events to generate ahead of time.`,
+      `Event admins can now remove any tickets they assigned to attendees.`,
+    ],
+    fixes: [
+      `Fixed a number of bugs which would occur when multiple people were editing the same game list.`,
+      `Fixed the displayed timezone for virtual events so that they show your device's time.`,
+      `Fixed a bug when editing an event's timezone which would not correctly update the timezones of the child events.`,
+      `Fixed a bug which would throw an error when pressing "Create your event" from the Explore tab.`,
+      `Fixed a bug which would not show any events on the schedule if the parent event had no time set.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
     version: "3.2",
     buildNumber: 173,
     date: "September 26, 2026",

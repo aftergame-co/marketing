@@ -13,6 +13,33 @@ export const metadata = {
 const changelogs = [
   {
     version: "3.4",
+    buildNumber: 181,
+    date: "November 11, 2026",
+    blurb:
+      "Aftergame is no longer hidden behind a sign up screen as we open up the Explore tab, add the ability to share profiles and posts publicly, and improve the ticket purchasing experience.",
+    features: [
+      `The Explore screen is now viewable for all to browse! People installing the app will now land directly on the explore screen.`,
+      `Added new sections to the explore screen when you have not selected a city to browse in.`,
+      `You can now enter a discount code and select your tickets without an Aftergame account.`,
+      `You can now share a post on Aftergame, your game lists, or your profile to anyone on the internet.`,
+      `We now do a much better job of taking you to the right screen after signing in or creating a new account (including after verifying your email address).`,
+      `We now show when tickets are selling fast and there are only a few left.`,
+    ],
+    fixes: [
+      `Greatly improved the speed of loading your play history.`,
+      `Fixed some bugs with signing into Aftergame through an embedded view, greatly improving the ticket purchase UX.`,
+      `Fixed a bug which would not show the correct games when following the "Join these games" section link from the Explore screen.`,
+      `Fixed a bug which showed the wrong role or scenario options when logging a play in some cases.`,
+      `Fixed a bug which blocked the ability to remove an end date for a recurring event.`,
+      `Fixed a bug which would not load friends in the right order as you scrolled through your friends list.`,
+      `Fixed some edge case bugs around loading virtual events in timezones near you.`,
+      `Fixed an edge case bug for volunteers trying to add a guest from the attendee check-in screen.`,
+      `Improved a handful of Polish translations.`,
+      `Various other fixes and performance improvements.`,
+    ],
+  },
+  {
+    version: "3.4",
     buildNumber: 179,
     date: "November 5, 2026",
     blurb:

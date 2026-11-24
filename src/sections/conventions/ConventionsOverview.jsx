@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import Image from 'next/image';
-import { useInView } from 'framer-motion';
+import { useInView } from 'motion/react';
 import { Container } from '@/components/Container';
 import Link from 'next/link';
 
@@ -33,16 +33,17 @@ export function ConventionsOverview() {
           </p>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 pt-8 pb-8 lg:pb-16'>
-          <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
+          <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
+            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/conventions/overview-1.webp'
                 alt='Ticketing'
                 fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 className="object-scale-down"
               />
             </div>
-            <div className='flex-[2] bg-white border-l-2 border-gray-200'>
+            <div className='flex-2 bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
                 Ticketing
               </h3>
@@ -54,16 +55,17 @@ export function ConventionsOverview() {
               </p>
             </div>
           </div>
-          <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
+          <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
+            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/conventions/overview-2.webp'
                 alt='A Unified Schedule'
                 fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 className="object-scale-down"
               />
             </div>
-            <div className='flex-[2] bg-white border-l-2 border-gray-200'>
+            <div className='flex-2 bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
                 A Unified Schedule
               </h3>
@@ -78,16 +80,17 @@ export function ConventionsOverview() {
         </div>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16'>
-          <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
+          <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
+            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/conventions/overview-3.webp'
                 alt='Check-in your attendees'
                 fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 className="object-scale-down"
               />
             </div>
-            <div className='flex-[2] bg-white border-l-2 border-gray-200'>
+            <div className='flex-2 bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
                 Check-in your attendees
               </h3>
@@ -96,16 +99,17 @@ export function ConventionsOverview() {
               </p>
             </div>
           </div>
-          <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
+          <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
+            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/conventions/overview-4.webp'
                 alt='Central communication hub'
                 fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 className="object-scale-down"
               />
             </div>
-            <div className='flex-[2] bg-white border-l-2 border-gray-200'>
+            <div className='flex-2 bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
                 Keep everyone in the loop
               </h3>

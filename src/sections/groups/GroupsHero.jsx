@@ -103,7 +103,7 @@ export function GroupsHero() {
               <Link href='#organizers-contact'>
                 <Button
                   color='gg'
-                  className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
+                  className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red text-lg! px-6! py-3!'
                 >
                   Get in touch
                 </Button>
@@ -111,7 +111,7 @@ export function GroupsHero() {
               <Link href='#features'>
                 <Button
                   variant="outline"
-                  className='border-2 border-gg-blue text-gg-blue hover:bg-gg-blue/5 !text-lg !px-6 !py-3'
+                  className='border-2 border-gg-blue text-gg-blue hover:bg-gg-blue/5 text-lg! px-6! py-3!'
                 >
                   See how it works
                 </Button>
@@ -124,22 +124,22 @@ export function GroupsHero() {
                 src='/images/communities/behold.png'
                 alt='Behold Games'
                 width={64}
-                height={64}
-                className='flex-shrink-0 mt-2'
+                height={47}
+                className='shrink-0 mt-2'
               />
               <Image
                 src='/images/communities/bgbbq.png'
                 alt='Board Game BBQ'
                 width={96}
-                height={96}
-                className='flex-shrink-0'
+                height={59}
+                className='shrink-0'
               />
               <Image
                 src='/images/communities/mm.png'
                 alt='Melbourne Meeples'
                 width={60}
                 height={60}
-                className='flex-shrink-0'
+                className='shrink-0'
               />
               </div>
             </div>

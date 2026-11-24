@@ -1,8 +1,8 @@
 import { Fragment, useState } from 'react'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
-import { AnimatePresence, motion } from 'framer-motion'
-import { Popover, Transition } from '@headlessui/react'
+import { AnimatePresence, motion } from 'motion/react'
+import { Popover, PopoverButton, PopoverPanel, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 export function NavLinks({scrolled, darkMode}) {
@@ -37,7 +37,7 @@ export function NavLinks({scrolled, darkMode}) {
     },
     {
       name: 'Retailers',
-      href: 'retailers',
+      href: '/retailers',
     },
     {
       name: 'Pricing',
@@ -73,18 +73,22 @@ export function NavLinks({scrolled, darkMode}) {
   ]
 
   
-  return navItems.map((item, index) => (
-    <Link
-      key={item.name}
-      href={item.href ?? ''}
-      onClick={(ev) => {
-        if (item.href === undefined) {
-          ev.preventDefault();
-          setIsShowing(!isShowing);
-          setHoveredIndex(null);
-          return;
+  return navItems.map((item, index) => {
+    // Dropdown items hold links, so they can't be a link themselves (no <a> inside <a>)
+    const Item = item.menu ? 'div' : Link
+    const itemProps = item.menu
+      ? {
+          onClick: () => {
+            setIsShowing(!isShowing);
+            setHoveredIndex(null);
+          },
         }
-       }}
+      : { href: item.href }
+
+    return (
+    <Item
+      key={item.name}
+      {...itemProps}
       className={clsx(
         'relative -my-2 -mx-3 rounded-lg text-md',
         !scrolled && darkMode ? 'text-gray-100 hover:text-gray-300' : 'text-gray-500 hover:text-gray-700',
@@ -113,83 +117,78 @@ export function NavLinks({scrolled, darkMode}) {
         <span className="relative z-10 inline-flex px-3 py-2">{item.name}</span>
       :
         <Popover className="relative z-10">
-          {({ open }) => (
-            <>
-              <Popover.Button
-                className={`
-                  ${open ? '' : 'text-opacity-90'}
-                  group inline-flex px-3 pt-2 pb-5 -mb-3 items-center text-base hover:text-opacity-100 focus:outline-none`}
-                  onMouseEnter={() => setIsShowing(true)}
-                  onMouseLeave={() => setIsShowing(false)}
-              >
-                <span>{item.name}</span>
-              </Popover.Button>
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-200"
-                enterFrom="opacity-0 translate-y-1"
-                enterTo="opacity-100 translate-y-0"
-                leave="transition ease-in duration-150"
-                leaveFrom="opacity-100 translate-y-0"
-                leaveTo="opacity-0 translate-y-1"
-                show={isShowing}
-                onMouseEnter={() => setIsShowing(true)}
-                onMouseLeave={() => setIsShowing(false)}
-              >
-                <Popover.Panel className={`absolute left-1/2 z-10 mt-3 w-screen ${item.menuWidth ?? "max-w-sm"} -translate-x-1/2 transform px-4 sm:px-0`}>
-                  <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                    <div className="relative grid gap-8 bg-white py-6 px-5">
-                      {item.menu.map((item) => (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                          className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-100"
-                        >
-                          {!!item.icon && (
-                            <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                              <item.icon aria-hidden="true" />
-                            </div>
-                          )}
-                          <div className="ml-4">
-                            <p className="text-sm font-medium text-gray-900">
-                              {item.name}
-                            </p>
-                            {!!item.description && (
-                              <p className="text-sm text-gray-500">
-                                {item.description}
-                              </p>
-                            )}
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                    {/* <div className="bg-gray-50 p-4">
-                      <Link
-                        href="https://aftergame.notion.site/organizers"
-                        className="flow-root rounded-md px-3 py-2 transition duration-150 ease-in-out hover:bg-gray-100"
-                      >
-                        <span className="flex flex-row items-center gap-6">
-                          <QuestionMarkCircleIcon className="size-7 text-gray-400" />
-                          <span>
-                            <span className="text-sm font-medium text-gray-900">
-                              Help
-                            </span>
-                            <span className="block text-sm text-gray-500">
-                              Guides and support for organizers
-                            </span>
-                          </span>
+          <PopoverButton
+            className="group inline-flex px-3 pt-2 pb-5 -mb-3 items-center text-base focus:outline-hidden"
+            onMouseEnter={() => setIsShowing(true)}
+            onMouseLeave={() => setIsShowing(false)}
+          >
+            <span>{item.name}</span>
+          </PopoverButton>
+          <Transition
+            as={Fragment}
+            enter="transition ease-out duration-200"
+            enterFrom="opacity-0 translate-y-1"
+            enterTo="opacity-100 translate-y-0"
+            leave="transition ease-in duration-150"
+            leaveFrom="opacity-100 translate-y-0"
+            leaveTo="opacity-0 translate-y-1"
+            show={isShowing}
+            onMouseEnter={() => setIsShowing(true)}
+            onMouseLeave={() => setIsShowing(false)}
+          >
+            <PopoverPanel className={`absolute left-1/2 z-10 mt-3 w-screen ${item.menuWidth ?? "max-w-sm"} -translate-x-1/2 transform px-4 sm:px-0`}>
+              <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+                <div className="relative grid gap-8 bg-white py-6 px-5">
+                  {item.menu.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-100"
+                    >
+                      {!!item.icon && (
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
+                          <item.icon aria-hidden="true" />
+                        </div>
+                      )}
+                      <div className="ml-4">
+                        <p className="text-sm font-medium text-gray-900">
+                          {item.name}
+                        </p>
+                        {!!item.description && (
+                          <p className="text-sm text-gray-500">
+                            {item.description}
+                          </p>
+                        )}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+                {/* <div className="bg-gray-50 p-4">
+                  <Link
+                    href="https://aftergame.notion.site/organizers"
+                    className="flow-root rounded-md px-3 py-2 transition duration-150 ease-in-out hover:bg-gray-100"
+                  >
+                    <span className="flex flex-row items-center gap-6">
+                      <QuestionMarkCircleIcon className="size-7 text-gray-400" />
+                      <span>
+                        <span className="text-sm font-medium text-gray-900">
+                          Help
                         </span>
-                      </Link>
-                    </div> */}
-                  </div>
-                </Popover.Panel>
-              </Transition>
-            </>
-          )}
+                        <span className="block text-sm text-gray-500">
+                          Guides and support for organizers
+                        </span>
+                      </span>
+                    </span>
+                  </Link>
+                </div> */}
+              </div>
+            </PopoverPanel>
+          </Transition>
         </Popover>
       }
-    </Link>
-  ))
+    </Item>
+    )
+  })
 }
 
 function GroupsIcon() {

@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import Image from 'next/image';
-import { useInView } from 'framer-motion';
+import { useInView } from 'motion/react';
 import { Container } from '@/components/Container';
 import Link from 'next/link';
 
@@ -33,16 +33,17 @@ export function RetailersOverview() {
           </p>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 pt-8 pb-8 lg:pb-16'>
-          <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
+          <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
+            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/retailers/overview-1.webp'
                 alt='More games, less work'
                 fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 className="object-scale-down"
               />
             </div>
-            <div className='flex-[2] bg-white border-l-2 border-gray-200'>
+            <div className='flex-2 bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
                 More games, less work
               </h3>
@@ -54,16 +55,17 @@ export function RetailersOverview() {
               </p>
             </div>
           </div>
-          <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
+          <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
+            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/retailers/overview-2.webp'
                 alt='Tickets and check-in'
                 fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 className="object-scale-down"
               />
             </div>
-            <div className='flex-[2] bg-white border-l-2 border-gray-200'>
+            <div className='flex-2 bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
                 Tickets and check-in
               </h3>
@@ -81,16 +83,17 @@ export function RetailersOverview() {
         </div>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16'>
-          <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
+          <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
+            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/retailers/overview-3.webp'
                 alt='Impactful insights'
                 fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 className="object-scale-down"
               />
             </div>
-            <div className='flex-[2] bg-white border-l-2 border-gray-200'>
+            <div className='flex-2 bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
                 Impactful insights
               </h3>
@@ -102,16 +105,17 @@ export function RetailersOverview() {
               </p>
             </div>
           </div>
-          <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-[16px] border-gray-300 rounded-xl overflow-hidden'>
+          <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
+            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/retailers/overview-4.webp'
                 alt='A focused social feed'
                 fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 className="object-scale-down"
               />
             </div>
-            <div className='flex-[2] bg-white border-l-2 border-gray-200'>
+            <div className='flex-2 bg-white border-l-2 border-gray-200'>
               <h3 className="p-4 font-semibold text-2xl">
                 A focused social feed
               </h3>

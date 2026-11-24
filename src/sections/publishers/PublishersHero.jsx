@@ -57,7 +57,7 @@ export function PublishersHero() {
                 <Button
                   type="submit"
                   color='gg'
-                  className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
+                  className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red text-lg! px-6! py-3!'
                 >
                   Book Demo
                 </Button>
@@ -68,36 +68,36 @@ export function PublishersHero() {
                 src='/images/publishers/asmodee.png'
                 alt='asmodee'
                 width={112}
-                height={112}
-                className='flex-shrink-0'
+                height={49}
+                className='shrink-0'
               />
               <Image
                 src='/images/publishers/ledergames.webp'
                 alt='Leder Games'
                 width={112}
-                height={112}
-                className='flex-shrink-0 mr-2 rounded-lg'
+                height={53}
+                className='shrink-0 mr-2 rounded-lg'
               />
               <Image
                 src='/images/publishers/restoration.jpg'
                 alt='Restoration Games'
                 width={64}
                 height={64}
-                className='flex-shrink-0 mr-2 rounded-lg'
+                className='shrink-0 mr-2 rounded-lg'
               />
               <Image
                 src='/images/publishers/vr.png'
                 alt='VR Distribution'
-                width={112}
-                height={112}
-                className='flex-shrink-0'
+                width={110}
+                height={24}
+                className='shrink-0'
               />
               <Image
                 src='/images/publishers/lpg.png'
                 alt='Lets Play Games'
                 width={64}
                 height={64}
-                className='flex-shrink-0 mr-2'
+                className='shrink-0 mr-2'
               />
             </div>
           </div>

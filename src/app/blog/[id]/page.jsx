@@ -1,10 +1,18 @@
 import { Container } from '@/components/Container';
 import Image from 'next/image';
 import Date from '@/components/Date';
-import { getPostData } from '@/utils/posts';
+import { getAllPostIds, getPostData } from '@/utils/posts';
+
+// Pre-render every post at build time; unknown ids 404 instead of erroring
+export const dynamicParams = false
+
+export function generateStaticParams() {
+  return getAllPostIds()
+}
 
 export async function generateMetadata({ params }) {
-  const postData = await getPostData(params.id)
+  const { id } = await params
+  const postData = await getPostData(id)
 
   return {
     title: postData.title,
@@ -29,7 +37,8 @@ export async function generateMetadata({ params }) {
 
 // -< Post >-
 export default async function Post({ params }) {
-  const postData = await getPostData(params.id)
+  const { id } = await params
+  const postData = await getPostData(id)
 
   return (
     <main className='pt-20'>
@@ -44,6 +53,7 @@ export default async function Post({ params }) {
               <Image
                 src={postData.image}
                 alt={postData.title}
+                loading='eager'
                 width={2000}
                 height={1000}
                 className='rounded-2xl'

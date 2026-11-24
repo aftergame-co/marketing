@@ -4,7 +4,7 @@ Uses [Tailwind UI](https://tailwindui.com), [Tailwind CSS](https://tailwindcss.c
 
 ## Getting started
 
-To get started with this template, first install the npm dependencies:
+Requires Node 24 (see `.nvmrc`). Run `nvm use`, then install the dependencies:
 
 ```bash
 yarn
@@ -13,7 +13,7 @@ yarn
 Next, run the development server:
 
 ```bash
-yarn dev
+yarn start:dev
 ```
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.

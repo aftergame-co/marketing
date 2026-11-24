@@ -2,11 +2,15 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+@AGENTS.md
+
 ## Project Overview
 
-This is the Aftergame marketing website, built with Next.js 14 (App Router), Tailwind CSS, and Tailwind UI. The site promotes Aftergame, a social tabletop gaming app, and includes marketing pages for different audiences (communities, events, publishers), a blog, and feature descriptions.
+This is the Aftergame marketing website, built with Next.js 16 (App Router, Turbopack), React 19, Tailwind CSS v4, and Tailwind UI. The site promotes Aftergame, a social tabletop gaming app, and includes marketing pages for different audiences (communities, events, publishers), a blog, and feature descriptions.
 
 ## Development Commands
+
+Requires Node 24 (see `.nvmrc`; run `nvm use`).
 
 ```bash
 # Install dependencies
@@ -18,7 +22,7 @@ yarn start:dev
 # Build for production (outputs to /out directory)
 yarn build
 
-# Run linting
+# Run linting (ESLint flat config in eslint.config.mjs; `next build` does not lint)
 yarn lint
 ```
 
@@ -26,7 +30,7 @@ yarn lint
 
 ### Next.js App Router Structure
 
-The site uses Next.js 14's App Router pattern:
+The site uses Next.js 16's App Router pattern:
 - **src/app/** - Route definitions and page components
   - Each folder represents a route (e.g., `/about`, `/blog`, `/retailers`)
   - `page.jsx` files define the page content
@@ -64,11 +68,11 @@ author_title: 'Title'
 The blog uses:
 - `gray-matter` for parsing frontmatter
 - `remark` ecosystem for converting Markdown to HTML with custom styling
-- Dynamic routes via `src/app/blog/[id]/page.jsx`
+- Dynamic routes via `src/app/blog/[id]/page.jsx` (`params` is a Promise in Next 15+, so `await params`)
 
 ### Styling
 
-- Tailwind CSS with custom configuration in `tailwind.config.js`
+- Tailwind CSS v4, configured CSS-first in `src/styles/tailwind.css` (`@theme`, `@plugin`); there is no `tailwind.config.js`
 - Custom brand colors: `gg-blue`, `gg-red`, `gg-blue-faint`
 - Social media brand colors (twitter-blue, facebook-blue, etc.)
 - Custom animations: marquee, spin-slow, fade-in
@@ -80,11 +84,12 @@ The blog uses:
 - Responsive mobile menu using Headless UI's Popover
 - Desktop navigation includes dropdown "Solutions" menu
 - Navigation links defined in `src/components/NavLinks.jsx`
+- Uses Headless UI v2 named components (`PopoverButton`, `TabGroup`, ...), not the v1 dot API (`Popover.Button`)
 
 ## Key Patterns
 
 - Most components use the `Container` component for consistent max-width layout
-- Framer Motion used for animations and transitions
+- Motion (`motion` package, import from `motion/react`) used for animations and transitions
 - Client components marked with `'use client'` directive (Header, NavLinks)
 - Server components by default (most page components)
 - Metadata defined in page components or root layout

@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import Image from 'next/image';
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { useScroll, useTransform, motion } from 'motion/react';
 
 /**
  * ParallaxImage wraps a Next.js Image with a subtle scroll-driven parallax effect.
@@ -15,7 +15,7 @@ import { useScroll, useTransform, motion } from 'framer-motion';
  *   - fixed mode: renders a fixed-size image (width + height required).
  *     Props: src, alt, width, height, className, strength
  */
-export function ParallaxImage({ src, alt, width, height, containerClassName, className, strength = 60 }) {
+export function ParallaxImage({ src, alt, width, height, containerClassName, className, strength = 60, ...imageProps }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
   const y = useTransform(scrollYProgress, [0, 1], [-strength/6, strength]);
@@ -26,7 +26,7 @@ export function ParallaxImage({ src, alt, width, height, containerClassName, cla
     return (
       <div ref={ref} className={`relative ${containerClassName ?? ''}`}>
         <motion.div style={{ y }} className='absolute inset-0 scale-110'>
-          <Image src={src} alt={alt} fill className={`object-cover ${className ?? ''}`} />
+          <Image src={src} alt={alt} fill className={`object-cover ${className ?? ''}`} {...imageProps} />
         </motion.div>
       </div>
     );
@@ -35,7 +35,7 @@ export function ParallaxImage({ src, alt, width, height, containerClassName, cla
   return (
     <div ref={ref} className={`${containerClassName ?? ''}`}>
       <motion.div style={{ y }}>
-        <Image src={src} alt={alt} width={width} height={height} className={className} />
+        <Image src={src} alt={alt} width={width} height={height} className={className} {...imageProps} />
       </motion.div>
     </div>
   );

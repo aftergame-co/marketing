@@ -29,7 +29,7 @@ export default function Blog() {
             Thoughts on the future of social tabletop gaming, from the people helping to create it.
           </p>
           <ul className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-            {allPostsData.map(({ id, date, title, intro, image }) => (
+            {allPostsData.map(({ id, date, title, intro, image }, index) => (
               <li className='group col-span-1 rounded-2xl bg-white text-gray-900 hover:bg-gg-blue-faint border-2 border-gray-100 transition-colors' key={id}>
                 <Link href={`/blog/${id}`}>
                   {image && (
@@ -38,6 +38,8 @@ export default function Blog() {
                         src={image}
                         alt={title}
                         fill
+                        loading={index < 2 ? 'eager' : undefined}
+                        sizes="(min-width: 768px) 50vw, 100vw"
                         className='rounded-t-2xl group-hover:opacity-80 transition-opacity object-cover'
                       />
                     </div>

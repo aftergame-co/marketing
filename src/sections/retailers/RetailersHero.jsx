@@ -103,7 +103,7 @@ export function RetailersHero() {
                 <Button
                   type="submit"
                   color='gg'
-                  className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
+                  className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red text-lg! px-6! py-3!'
                 >
                   Create your group
                 </Button>
@@ -112,7 +112,7 @@ export function RetailersHero() {
                 <Button
                   type="submit"
                   color='white'
-                  className='bg-gg-blue-faint border-4 border-gg-blue md:hover:bg-gg-blue active:bg-gg-blue text-gg-blue md:hover:text-white active:text-white !text-lg !px-4 !py-2'
+                  className='bg-gg-blue-faint border-4 border-gg-blue md:hover:bg-gg-blue active:bg-gg-blue text-gg-blue md:hover:text-white active:text-white text-lg! px-4! py-2!'
                 >
                   Book Demo
                 </Button>
@@ -127,43 +127,43 @@ export function RetailersHero() {
                 src='/images/retailers/logos/behold.png'
                 alt='Behold Games'
                 width={48}
-                height={48}
-                className='flex-shrink-0 mt-1'
+                height={36}
+                className='shrink-0 mt-1'
               />
               <Image
                 src='/images/retailers/logos/matrix.png'
                 alt='Matrix'
                 width={48}
-                height={48}
-                className='flex-shrink-0 rounded-md'
+                height={35}
+                className='shrink-0 rounded-md'
               />
               <Image
                 src='/images/retailers/logos/vm.webp'
                 alt='Village Meeple'
                 width={60}
-                height={60}
-                className='flex-shrink-0'
+                height={48}
+                className='shrink-0'
               />
               <Image
                 src='/images/retailers/logos/arcane.avif'
                 alt='Wizards Arcane Tabletop Tavern'
                 width={68}
-                height={48}
-                className='flex-shrink-0'
+                height={40}
+                className='shrink-0'
               />
               <Image
                 src='/images/retailers/logos/mana.png'
                 alt='Mana & Meeples'
                 width={40}
                 height={40}
-                className='flex-shrink-0'
+                className='shrink-0'
               />
               <Image
                 src='/images/retailers/logos/clubhouse.jpg'
                 alt='Clubhouse'
                 width={40}
                 height={40}
-                className='flex-shrink-0 rounded-md'
+                className='shrink-0 rounded-md'
               />
             </div>
             <div className="flex flex-row items-center justify-center lg:justify-start gap-x-8 lg:pl-[132px] pt-6">
@@ -181,7 +181,7 @@ export function RetailersHero() {
                 alt='Tim image'
                 width={32}
                 height={32}
-                className='rounded-full flex-shrink-0'
+                className='rounded-full shrink-0'
               />
               <p className='text-xs'>Andy is planning a<br /> game of Wingspan</p>
             </div>
@@ -191,7 +191,7 @@ export function RetailersHero() {
                 alt='Josh image'
                 width={32}
                 height={32}
-                className='rounded-full flex-shrink-0'
+                className='rounded-full shrink-0'
               />
               <p className='text-xs'>Josh wants to find<br /> a group to join</p>
             </div>
@@ -201,7 +201,7 @@ export function RetailersHero() {
                 alt='Anne image'
                 width={32}
                 height={32}
-                className='rounded-full flex-shrink-0'
+                className='rounded-full shrink-0'
               />
               <p className='text-xs'>Kelly wants to<br />play Wingspan</p>
             </div>

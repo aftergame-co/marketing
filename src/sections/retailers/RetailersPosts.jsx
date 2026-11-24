@@ -29,6 +29,7 @@ export function RetailersPosts() {
                       src={image}
                       alt={title}
                       fill
+                      sizes="(min-width: 640px) 50vw, 100vw"
                       className='rounded-t-2xl group-hover:opacity-80 transition-opacity object-cover'
                     />
                   </div>

@@ -55,7 +55,7 @@ export function PricingTickets() {
               <Button
                 type="submit"
                 color='gg'
-                className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
+                className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red text-lg! px-6! py-3!'
               >
                 Create your event
               </Button>
@@ -64,7 +64,7 @@ export function PricingTickets() {
               <Button
                 type="submit"
                 color='white'
-                className='bg-gg-blue-faint border-4 border-gg-blue md:hover:bg-gg-blue active:bg-gg-blue text-gg-blue md:hover:text-white active:text-white !text-lg !px-4 !py-2'
+                className='bg-gg-blue-faint border-4 border-gg-blue md:hover:bg-gg-blue active:bg-gg-blue text-gg-blue md:hover:text-white active:text-white text-lg! px-4! py-2!'
               >
                 Book Demo
               </Button>

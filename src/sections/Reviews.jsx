@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import clsx from 'clsx'
 import {
   useInView,
-} from 'framer-motion'
+} from 'motion/react'
 
 import { Container } from '@/components/Container'
 
@@ -125,13 +125,14 @@ function StarRating({ rating }) {
   )
 }
 
+const possibleAnimationDelays = ['0s', '0.1s', '0.2s', '0.3s', '0.4s', '0.5s']
+
 function Review({ title, body, author, rating, className, ...props }) {
-  let animationDelay = useMemo(() => {
-    let possibleAnimationDelays = ['0s', '0.1s', '0.2s', '0.3s', '0.4s', '0.5s']
-    return possibleAnimationDelays[
-      Math.floor(Math.random() * possibleAnimationDelays.length)
+  // Derived from the content (not Math.random) so server and client renders match
+  let animationDelay =
+    possibleAnimationDelays[
+      `${title}${body}`.length % possibleAnimationDelays.length
     ]
-  }, [])
 
   return (
     <figure
@@ -217,7 +218,7 @@ function ReviewGrid() {
   return (
     <div
       ref={containerRef}
-      className="relative -mx-4 mt-16 grid h-[49rem] max-h-[150vh] grid-cols-1 items-start gap-8 overflow-hidden px-4 sm:mt-20 md:grid-cols-2 lg:grid-cols-3"
+      className="relative -mx-4 mt-16 grid h-196 max-h-[150vh] grid-cols-1 items-start gap-8 overflow-hidden px-4 sm:mt-20 md:grid-cols-2 lg:grid-cols-3"
     >
       {isInView && (
         <>
@@ -247,8 +248,8 @@ function ReviewGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-50" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-50" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-linear-to-b from-gray-50" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-gray-50" />
     </div>
   )
 }

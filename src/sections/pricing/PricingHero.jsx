@@ -5,9 +5,10 @@ export function PricingHero() {
     <div className='bg-gg-blue pt-16'>
       <Image
         src='/images/premium.png'
+        loading='eager'
         alt='Premium pricing'
         width={600}
-        height={600}
+        height={300}
         className='m-auto'
       />
     </div>

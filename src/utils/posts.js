@@ -75,35 +75,13 @@ export function getSortedPostsData() {
 
 // ------------------------------------------------
 // GET THE IDs OF ALL POSTS FOR THE DYNAMIC ROUTING
-/*
-  Returns an array that looks like this:
-  [
-    {
-      params: {
-        id: 'ssg-ssr'
-      }
-    },
-    {
-      params: {
-        id: 'pre-rendering'
-      }
-    }
-  ]
-  */
+// Returns [{ id: 'ssg-ssr' }, { id: 'pre-rendering' }], the shape `generateStaticParams` expects
 
 export function getAllPostIds() {
-  const fileNames = fs.readdirSync(postsDirectory)
-
-  return fileNames.map((fileName) => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, ''),
-      },
-    }
-  })
+  return fs
+    .readdirSync(postsDirectory)
+    .map((fileName) => ({ id: fileName.replace(/\.md$/, '') }))
 }
-
-// The returned array must have the params key otherwise `getStaticPaths` will fail
 
 // --------------------------------
 // GET THE DATA OF A SINGLE POST FROM THE ID
@@ -139,7 +117,7 @@ export async function getPostData(id) {
         blockquote: 'pt-4 px-4 pb-px bg-gray-200 rounded-lg text-lg font-medium',
         table: 'table-auto block sm:table',
         td: 'inline-block min-w-full sm:table-cell sm:min-w-32 lg:min-w-64 p-2 pb-6',
-        img: 'mx-auto rounded',
+        img: 'mx-auto rounded-sm',
     })
     .process(matterResult.content)
   const contentHtml = processedContent.toString()

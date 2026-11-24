@@ -1,19 +1,15 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
-import { useInView } from 'framer-motion'
+import { useInView } from 'motion/react'
 import useAnimation from '@/utils/animations'
 import { Container } from '@/components/Container';
 
 function Slider() {
-  let [sliderPosition, setSliderPosition] = useState(0);
   const animated = useAnimation('cubic', 2000, 1000);
-
-  useEffect(() => {
-    setSliderPosition(100 - (64 * animated));
-  }, [animated]);
+  const sliderPosition = 100 - (64 * animated);
 
   return (
     <ReactBeforeSliderComponent

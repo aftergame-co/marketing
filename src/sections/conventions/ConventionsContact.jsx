@@ -25,7 +25,7 @@ export function ConventionsContact() {
               <Button
                 type="submit"
                 color='black'
-                className='bg-white hover:bg-gray-100 active:bg-gray-100 hover:text-gg-blue active:text-gg-blue !text-lg !px-6 !py-3'
+                className='bg-white hover:bg-gray-100 active:bg-gray-100 hover:text-gg-blue active:text-gg-blue text-lg! px-6! py-3!'
               >
                 Get in touch
               </Button>

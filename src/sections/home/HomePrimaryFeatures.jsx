@@ -1,9 +1,9 @@
 'use client';
 
 import { Fragment, useEffect, useRef, useState } from 'react'
-import { Tab } from '@headlessui/react'
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'motion/react'
 import { useDebouncedCallback } from 'use-debounce'
 
 import { AppScreen } from '@/components/AppScreen'
@@ -13,7 +13,7 @@ import { PhoneFrame } from '@/components/PhoneFrame'
 import { DeviceChartIconDark, DeviceChartIconLight, DeviceListIconDark, DeviceListIconLight, DeviceUserIconDark, DeviceUserIconLight } from '@/components/DeviceIcons'
 import Image from 'next/image'
 
-const MotionAppScreenBody = motion(AppScreen.Body)
+const MotionAppScreenBody = motion.create(AppScreen.Body)
 
 const features = [
   {
@@ -79,12 +79,13 @@ const bodyAnimation = {
 function GroupScreen({ custom, animated = false }) {
   return (
     <AppScreen className="relative w-full">
-      <MotionAppScreenBody className='!bg-transparent  z-10' {...(animated ? { ...bodyAnimation, custom } : {})}>
+      <MotionAppScreenBody className='bg-transparent!  z-10' {...(animated ? { ...bodyAnimation, custom } : {})}>
         <div className='relative h-full'>
           <Image
             src='/images/home/group.png'
             alt='A screenshot of the scoresheet interface for Aftergame' 
             fill
+            sizes="320px"
             className="pointer-events-none"
           />
         </div>
@@ -102,6 +103,7 @@ function ProfileScreen({ custom, animated = false }) {
             src='/images/home/profile.png'
             alt='A screenshot of the scoresheet interface for Aftergame' 
             fill
+            sizes="320px"
           />
         </div>
       </MotionAppScreenBody>
@@ -118,6 +120,7 @@ function PlayScreen({ custom, animated = false }) {
             src='/images/home/play.png'
             alt='A screenshot of the scoresheet interface for Aftergame' 
             fill
+            sizes="320px"
           />
         </div>
       </MotionAppScreenBody>
@@ -126,13 +129,15 @@ function PlayScreen({ custom, animated = false }) {
 }
 
 function usePrevious(value) {
-  let ref = useRef()
+  let [current, setCurrent] = useState(value)
+  let [previous, setPrevious] = useState()
 
-  useEffect(() => {
-    ref.current = value
-  }, [value])
+  if (value !== current) {
+    setPrevious(current)
+    setCurrent(value)
+  }
 
-  return ref.current
+  return previous
 }
 
 function FeaturesDesktop() {
@@ -151,14 +156,14 @@ function FeaturesDesktop() {
   )
 
   return (
-    <Tab.Group
+    <TabGroup
       as="div"
       className="grid grid-cols-12 items-center gap-8 lg:gap-16 xl:gap-24"
       selectedIndex={selectedIndex}
       onChange={onChange}
       vertical
     >
-      <Tab.List className="relative z-10 order-last col-span-6 space-y-6">
+      <TabList className="relative z-10 order-last col-span-6 space-y-6">
         {features.map((feature, featureIndex) => (
           <div
             key={feature.name}
@@ -168,7 +173,7 @@ function FeaturesDesktop() {
               <motion.div
                 layoutId="activeBackground"
                 className="absolute inset-0 bg-gray-100"
-                initial={{ borderRadius: 16 }}
+                style={{ borderRadius: 16 }}
               />
             )}
             <div className="relative z-10 p-8">
@@ -179,7 +184,7 @@ function FeaturesDesktop() {
                 <feature.icon className="h-8 w-8" />
               )}
               <h3 className="mt-6 text-lg font-semibold text-gray-800">
-                <Tab className={clsx('text-left [&:not(:focus-visible)]:focus:outline-none transition-colors delay-100',
+                <Tab className={clsx('text-left not-focus-visible:focus:outline-hidden transition-colors delay-100',
                     featureIndex === selectedIndex ? 'text-black' : 'text-white')}>
                   <span className="absolute inset-0 rounded-2xl" />
                   {feature.name}
@@ -192,38 +197,38 @@ function FeaturesDesktop() {
             </div>
           </div>
         ))}
-      </Tab.List>
+      </TabList>
       <div className="relative col-span-6">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <CircleBackground color="#fff" className="animate-spin-slower" />
         </div>
         <PhoneFrame showHeader={false} className="z-10 mx-auto w-full max-w-[366px]">
           <div className="bg-white mt-2 h-full rounded-2xl overflow-hidden">
-            <Tab.Panels className="h-full" as={Fragment} >
+            <TabPanels className="h-full" as={Fragment} >
               <AnimatePresence
                 initial={false}
                 custom={{ isForwards, changeCount }}
               >
                 {features.map((feature, featureIndex) =>
                   selectedIndex === featureIndex ? (
-                    <Tab.Panel
+                    <TabPanel
                       static
                       key={feature.name + changeCount}
-                      className="h-full col-start-1 row-start-1 flex focus:outline-offset-[32px] [&:not(:focus-visible)]:focus:outline-none"
+                      className="h-full col-start-1 row-start-1 flex focus:outline-offset-32 not-focus-visible:focus:outline-hidden"
                     >
                       <feature.screen
                         animated
                         custom={{ isForwards, changeCount }}
                       />
-                    </Tab.Panel>
+                    </TabPanel>
                   ) : null
                 )}
               </AnimatePresence>
-            </Tab.Panels>
+            </TabPanels>
           </div>
         </PhoneFrame>
       </div>
-    </Tab.Group>
+    </TabGroup>
   )
 }
 
@@ -263,7 +268,7 @@ function FeaturesMobile() {
     <>
       <div
         ref={slideContainerRef}
-        className="-mb-4 flex snap-x snap-mandatory -space-x-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-4 [scrollbar-width:none] sm:-space-x-6 [&::-webkit-scrollbar]:hidden"
+        className="-mb-4 flex snap-x snap-mandatory -space-x-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-4 scrollbar-none sm:-space-x-6 [&::-webkit-scrollbar]:hidden"
       >
         {features.map((feature, featureIndex) => (
           <div
@@ -271,7 +276,7 @@ function FeaturesMobile() {
             ref={(ref) => (slideRefs.current[featureIndex] = ref)}
             className="w-full flex-none snap-center px-4 sm:px-6"
           >
-            <div className="relative transform overflow-hidden bg-white/20 rounded-2xl px-5 py-6">
+            <div className="relative isolate overflow-hidden bg-white/20 rounded-2xl px-5 py-6">
               <PhoneFrame showHeader={false} className="relative mx-auto w-full max-w-[366px]">
                 <feature.screen />
               </PhoneFrame>

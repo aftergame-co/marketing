@@ -99,14 +99,16 @@ export default function About() {
                     src="/images/about/eric-john-media.jpg"
                     alt="Eric and John in the local paper"
                     fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
                     className='rounded-2xl object-cover'
                   />
               </div>
-              <div className='relative h-[480px]'>
+              <div className='relative h-120'>
                 <Image
                     src="/images/about/eli-chalene-convention.jpg"
                     alt="Eric and John in the local paper"
                     fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
                     className='rounded-2xl object-cover object-top'
                   />
               </div>

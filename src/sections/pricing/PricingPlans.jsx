@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react'
-import { RadioGroup } from '@headlessui/react'
+import { Radio, RadioGroup } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
@@ -83,7 +83,7 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col overflow-hidden rounded-3xl p-6 border-2 border-gray-100',
-        featured ? 'order-first bg-gg-blue md:order-none' : 'bg-white'
+        featured ? 'order-first bg-gg-blue md:order-0' : 'bg-white'
       )}
     >
       <h3
@@ -208,18 +208,18 @@ export function PricingPlans() {
               className="grid grid-cols-2"
             >
               {['Monthly', 'Annually'].map((period) => (
-                <RadioGroup.Option
+                <Radio
                   key={period}
                   value={period}
                   className={clsx(
-                    'cursor-pointer border border-gray-300 py-3 px-6 text-md text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
+                    'cursor-pointer border border-gray-300 py-3 px-6 text-md text-gray-700 outline-offset-2 transition-colors hover:border-gray-400',
                     period === 'Monthly'
                       ? 'rounded-l-lg'
                       : '-ml-px rounded-r-lg'
                   )}
                 >
                   {period}
-                </RadioGroup.Option>
+                </Radio>
               ))}
             </RadioGroup>
             <div
@@ -235,7 +235,7 @@ export function PricingPlans() {
                 <div
                   key={period}
                   className={clsx(
-                    'py-3 text-center text-md font-semibold text-white [&:not(:focus-visible)]:focus:outline-none',
+                    'py-3 text-center text-md font-semibold text-white not-focus-visible:focus:outline-hidden',
                     period === 'Annually' && '-ml-px'
                   )}
                 >

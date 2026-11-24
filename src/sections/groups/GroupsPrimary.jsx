@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import { useInView } from 'framer-motion';
+import { useInView } from 'motion/react';
 import { Container } from '@/components/Container';
 
 export function GroupsPrimary() {
@@ -33,7 +33,7 @@ export function GroupsPrimary() {
         </div>
 
         {/* Feature 1: Matchmaking */}
-        <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
+        <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-100 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <div className='w-full h-[360px] bg-white/10 rounded-2xl border-2 border-white/20 flex items-center justify-center col-span-1'>
             <p className='text-white text-center px-8'>PLACEHOLDER: Animation showing player with &quot;want to play Wingspan&quot; being matched with another player planning Wingspan at organizer&apos;s venue</p>
           </div>
@@ -48,7 +48,7 @@ export function GroupsPrimary() {
         </div>
 
         {/* Feature 2: Self-organizing */}
-        <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
+        <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-100 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <div className='w-full h-[360px] bg-white/10 rounded-2xl border-2 border-white/20 flex items-center justify-center col-span-1'>
             <p className='text-white text-center px-8'>PLACEHOLDER: Split screen showing player creating game on phone, then schedule auto-updating with new game appearing</p>
           </div>
@@ -63,7 +63,7 @@ export function GroupsPrimary() {
         </div>
 
         {/* Feature 3: Reduce no-shows */}
-        <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
+        <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-100 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <div className='w-full h-[360px] bg-white/10 rounded-2xl border-2 border-white/20 flex items-center justify-center col-span-1'>
             <p className='text-white text-center px-8'>PLACEHOLDER: Phone notifications showing &quot;Your game starts in 1 hour&quot; and calendar sync confirmation</p>
           </div>
@@ -78,7 +78,7 @@ export function GroupsPrimary() {
         </div>
 
         {/* Feature 4: Grow beyond your walls */}
-        <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-1 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
+        <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-100 top-0" : "opacity-0 top-6"} grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 gap-x-24 py-16 px-12 lg:pt-24 lg:pb-16 lg:px-24`}>
           <div className='w-full h-[360px] bg-white/10 rounded-2xl border-2 border-white/20 flex items-center justify-center col-span-1'>
             <p className='text-white text-center px-8'>PLACEHOLDER: Map view showing venue location with radius highlighting nearby players being notified of events</p>
           </div>

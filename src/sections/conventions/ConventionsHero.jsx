@@ -103,7 +103,7 @@ export function ConventionsHero() {
                 <Button
                   type="submit"
                   color='gg'
-                  className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red !text-lg !px-6 !py-3'
+                  className='bg-gg-blue md:hover:bg-gg-red active:bg-gg-red text-lg! px-6! py-3!'
                 >
                   Create your event
                 </Button>
@@ -112,7 +112,7 @@ export function ConventionsHero() {
                 <Button
                   type="submit"
                   color='white'
-                  className='bg-gg-blue-faint border-4 border-gg-blue md:hover:bg-gg-blue active:bg-gg-blue text-gg-blue md:hover:text-white active:text-white !text-lg !px-4 !py-2'
+                  className='bg-gg-blue-faint border-4 border-gg-blue md:hover:bg-gg-blue active:bg-gg-blue text-gg-blue md:hover:text-white active:text-white text-lg! px-4! py-2!'
                 >
                   Book Demo
                 </Button>
@@ -127,22 +127,22 @@ export function ConventionsHero() {
                 src='/images/conventions/logos/playcon.png'
                 alt='Play Con'
                 width={96}
-                height={96}
-                className='flex-shrink-0'
+                height={26}
+                className='shrink-0'
               />
               <Image
                 src='/images/conventions/logos/tantrumcon.png'
                 alt='Tantrum Con'
                 width={96}
-                height={96}
-                className='flex-shrink-0'
+                height={64}
+                className='shrink-0'
               />
               <Image
                 src='/images/conventions/logos/wellycon.webp'
                 alt='Wellycon'
                 width={128}
-                height={128}
-                className='flex-shrink-0'
+                height={20}
+                className='shrink-0'
               />
             </div>
             <div className="flex flex-row items-center justify-center lg:justify-start gap-x-8 lg:pl-28 mt-4">
@@ -150,28 +150,29 @@ export function ConventionsHero() {
                 src='/images/conventions/logos/gridcon.png'
                 alt='GridCon'
                 width={96}
-                height={96}
-                className='flex-shrink-0'
+                height={56}
+                className='shrink-0'
               />
               <Image
                 src='/images/conventions/logos/ttcon.png'
                 alt='TabletopCon'
                 width={90}
-                height={90}
-                className='flex-shrink-0 mr-2'
+                height={65}
+                className='shrink-0 mr-2'
               />
             </div>
           </div>
           <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:mt-0">
-            <BackgroundIllustration className="hidden lg:flex absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
-            <div className="-mx-4 h-[600px] px-2 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-20 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
+            <BackgroundIllustration className="hidden lg:flex absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 mask-[linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
+            <div className="-mx-4 h-[600px] px-2 mask-[linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-20 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
               <ParallaxImage
                 src='/images/conventions/hero.png'
+                loading='eager'
                 alt='Events Schedule'
-                width={550}
-                height={550}
+                width={549}
+                height={900}
                 strength={120}
-                className='flex-shrink-0 m-auto'
+                className='shrink-0 m-auto'
               />
             </div>
           </div>

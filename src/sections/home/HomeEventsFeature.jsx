@@ -50,7 +50,7 @@ export async function HomeEventsFeature() {
                 <Button
                   type="submit"
                   color='gg'
-                  className='bg-white !text-gg-blue md:hover:bg-gg-blue-faint active:bg-gray-100 !text-lg !px-6 !py-3'
+                  className='bg-white text-gg-blue! md:hover:bg-gg-blue-faint active:bg-gray-100 text-lg! px-6! py-3!'
                 >
                   Learn more
                 </Button>
@@ -69,6 +69,7 @@ export async function HomeEventsFeature() {
                       src={caseStudyPost.image}
                       alt={caseStudyPost.title}
                       fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                       className='rounded-t-2xl group-hover:opacity-80 transition-opacity object-cover'
                     />
                   </div>

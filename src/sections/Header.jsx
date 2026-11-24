@@ -1,13 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { Popover } from '@headlessui/react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { Popover, PopoverBackdrop, PopoverButton, PopoverPanel } from '@headlessui/react';
+import { AnimatePresence, motion } from 'motion/react';
 import { Container } from '@/components/Container';
 import { Logo } from '@/components/Logo';
 import { NavLinks } from '@/components/NavLinks';
 import clsx from 'clsx';
-import { useEffect, useState } from 'react';
+import { useSyncExternalStore } from 'react';
 import { Button } from '@/components/Button';
 import { usePathname } from 'next/navigation';
 
@@ -37,34 +37,30 @@ function ChevronUpIcon(props) {
   )
 }
 
+function subscribeToScroll(onChange) {
+  window.addEventListener('scroll', onChange, { passive: true })
+  return () => window.removeEventListener('scroll', onChange)
+}
+
 function MobileNavLink({ children, ...props }) {
   return (
-    <Popover.Button
+    <PopoverButton
       as={Link}
       className="block text-base leading-7 tracking-tight text-gray-700 rounded-lg active:bg-gray-200 focus:bg-gray-200 hover:bg-gray-200 p-2"
       {...props}
     >
       {children}
-    </Popover.Button>
+    </PopoverButton>
   )
 }
 
 export function Header({darkMode}) {
   const pathname = usePathname()
-  let [scrolled, setScrolled] = useState(false);
-  useEffect(function mount() {
-    setScrolled(window.pageYOffset > 30);
-
-    function onScroll() {
-      setScrolled(window.pageYOffset > 30);
-    }
-
-    window.addEventListener("scroll", onScroll);
-
-    return function unMount() {
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
+  const scrolled = useSyncExternalStore(
+    subscribeToScroll,
+    () => window.scrollY > 30,
+    () => false,
+  );
 
   return (
       <header className={clsx('fixed top-0 left-0 right-0 z-50 transition-all duration-100', (scrolled || pathname.indexOf('/pricing') !== -1) ? 'shadow-lg  bg-white py-4 lg:py-3' : 'py-4 lg:py-5')}>
@@ -82,8 +78,8 @@ export function Header({darkMode}) {
               <Popover className="lg:hidden">
                 {({ open }) => (
                   <>
-                    <Popover.Button
-                      className="relative z-10 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none"
+                    <PopoverButton
+                      className="relative z-10 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 not-focus-visible:focus:outline-hidden"
                       aria-label="Toggle site navigation"
                     >
                       {({ open }) =>
@@ -93,19 +89,19 @@ export function Header({darkMode}) {
                           <MenuIcon className="h-6 w-6" />
                         )
                       }
-                    </Popover.Button>
+                    </PopoverButton>
                     <AnimatePresence initial={false}>
                       {open && (
                         <>
-                          <Popover.Overlay
+                          <PopoverBackdrop
                             static
                             as={motion.div}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="fixed inset-0 z-0 bg-gray-300/60 backdrop-blur"
+                            className="fixed inset-0 z-0 bg-gray-300/60 backdrop-blur-sm"
                           />
-                          <Popover.Panel
+                          <PopoverPanel
                             static
                             as={motion.div}
                             initial={{ y: -32 }}
@@ -130,7 +126,7 @@ export function Header({darkMode}) {
                               <MobileNavLink href="/retailers">
                                 Retailers
                               </MobileNavLink>
-                              <MobileNavLink href="pricing">
+                              <MobileNavLink href="/pricing">
                                 Pricing
                               </MobileNavLink>
                               <MobileNavLink href="/blog">
@@ -145,14 +141,14 @@ export function Header({darkMode}) {
                                 Launch app
                               </Button>
                             </div>
-                          </Popover.Panel>
+                          </PopoverPanel>
                         </>
                       )}
                     </AnimatePresence>
                   </>
                 )}
               </Popover>
-              <Button href="https://aftergame.app" className="hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+              <Button href="https://aftergame.app" className="max-lg:hidden lg:block bg-gg-blue hover:bg-gg-red active:bg-gg-red">
                 Launch app
               </Button>
             </div>

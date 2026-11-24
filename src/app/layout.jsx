@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import '@/styles/tailwind.css';
 import '@/styles/global.css';
-import 'focus-visible';
 import Script from 'next/script';
 import { Footer } from '@/sections/Footer';
 import { Header } from '@/sections/Header';

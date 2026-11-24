@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import Image from 'next/image';
+import Image from '@/components/Image';
 import { useInView } from 'motion/react';
 import { Container } from '@/components/Container';
 import Link from 'next/link';

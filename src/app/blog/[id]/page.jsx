@@ -1,5 +1,5 @@
 import { Container } from '@/components/Container';
-import Image from 'next/image';
+import Image from '@/components/Image';
 import Date from '@/components/Date';
 import { getAllPostIds, getPostData } from '@/utils/posts';
 

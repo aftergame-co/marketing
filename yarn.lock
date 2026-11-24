@@ -3562,6 +3562,14 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
+next-image-export-optimizer@^1.21.2:
+  version "1.21.2"
+  resolved "https://registry.yarnpkg.com/next-image-export-optimizer/-/next-image-export-optimizer-1.21.2.tgz#a956234e80f2c2e9cbdf1c9fa280154c0c8c5c9b"
+  integrity sha512-8WckogVRfmio9jnN86X9MDl2mfU9hycxOcUB9jdPa7IjeqAmg17wpqi5Uf/tOIaOnSxb21FJbkLuMUbVxIglwQ==
+  dependencies:
+    sharp "^0.35.5"
+    typescript "^5.2.2"
+
 next@^16.4.6:
   version "16.4.6"
   resolved "https://registry.yarnpkg.com/next/-/next-16.4.6.tgz#ce48f58e195a8eb224e58a2d136451f17c19d5cf"
@@ -4534,6 +4542,11 @@ typescript-eslint@^8.56.0:
     "@typescript-eslint/parser" "8.74.0"
     "@typescript-eslint/typescript-estree" "8.74.0"
     "@typescript-eslint/utils" "8.74.0"
+
+typescript@^5.2.2:
+  version "5.9.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.9.3.tgz#5b4f59e15310ab17a216f5d6cf53ee476ede670f"
+  integrity sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==
 
 typescript@~6.0.3:
   version "6.0.3"

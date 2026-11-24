@@ -19,8 +19,11 @@ yarn
 # Start development server (runs on http://localhost:3000)
 yarn start:dev
 
-# Build for production (outputs to /out directory)
+# Build the static site into out/ (next build + build-time image optimization)
 yarn build
+
+# Preview the built static site
+npx serve out
 
 # Run linting (ESLint flat config in eslint.config.mjs; `next build` does not lint)
 yarn lint
@@ -35,7 +38,7 @@ The site uses Next.js 16's App Router pattern:
   - Each folder represents a route (e.g., `/about`, `/blog`, `/retailers`)
   - `page.jsx` files define the page content
   - Root `layout.jsx` provides shared layout with Header/Footer
-  - Uses custom output directory: `out/` (configured in next.config.js)
+  - Static export (`output: 'export'` in next.config.js): `yarn build` writes plain HTML/CSS/JS to `out/`
 
 ### Component Organization
 
@@ -48,6 +51,22 @@ The site uses Next.js 16's App Router pattern:
 
 - **src/utils/** - Utility functions
   - `posts.js` - Blog post parsing using gray-matter and remark
+
+### Static Export Constraints
+
+The site is a static export hosted without a Next.js server, so:
+- Dynamic routes need `generateStaticParams` (see `src/app/blog/[id]/page.jsx`, which also sets `dynamicParams = false`)
+- Metadata routes (`robots.js`, `sitemap.js`) need `export const dynamic = 'force-static'`
+- No server-only features: `next.config` redirects/rewrites/headers, proxy (middleware), route handlers that read the request, cookies, Server Actions, ISR
+- Redirects live in host config, keep both in sync: `.cloudcannon/routing.json` (CloudCannon, also the 404 route) and `vercel.json` (Vercel)
+
+### Images
+
+- Always import `Image` from `@/components/Image`, never `next/image` (the global custom loader makes plain `next/image` fail)
+- It wraps `next-image-export-optimizer`, which resizes/converts images in `public/images` to WebP during `yarn build`
+- Its cache (`public/images/**/nextImageExportOptimizer/`) is gitignored
+- AVIF sources aren't supported by the optimizer: pass `unoptimized`
+- Give `width`/`height` the image's real aspect ratio and give `fill` images a `sizes` prop
 
 ### Blog System
 
@@ -104,13 +123,14 @@ The blog uses:
 
 The site is configured for CloudCannon CMS:
 - Source: `src/`
-- Output: `out/`
+- Output: `out/` (static export from `yarn build`)
+- Routing (redirects, 404): `.cloudcannon/routing.json`
 - Upload path: `uploads/`
 - Config: `cloudcannon.config.yml`
 
 ## Important Notes
 
-- The site uses `distDir: 'out'` in next.config.js (custom output directory)
 - Package manager is locked to Yarn 1.22.22
-- Static export configuration enabled
+- Static export (`output: 'export'`); `next start` does not apply
+- `next dev` allows this machine's LAN IPs via `allowedDevOrigins` so the Network URL works
 - The "Get Started" button throughout the site links to the main app

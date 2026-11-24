@@ -1,0 +1,8 @@
+{
+  "routes": [
+    { "from": "/communities", "to": "/retailers", "status": 308, "forced": true },
+    { "from": "/events", "to": "/conventions", "status": 308, "forced": true },
+    { "from": "/plus", "to": "/pricing", "status": 308, "forced": true },
+    { "from": "/.*", "to": "/404.html", "status": 404, "forced": false }
+  ]
+}

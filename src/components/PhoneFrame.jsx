@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from '@/components/Image';
 import clsx from 'clsx'
 
 import frame from '@/images/phone-frame.svg'

@@ -1,7 +1,7 @@
 import { Container } from '@/components/Container';
 import { LinkedInLogo } from '@/components/SocialLogos';
 import { CallToAction } from '@/sections/CallToAction';
-import Image from 'next/image';
+import Image from '@/components/Image';
 import Link from 'next/link';
 
 export const metadata = {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useId } from 'react';
-import Image from 'next/image';
+import Image from '@/components/Image';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
 import Link from 'next/link';

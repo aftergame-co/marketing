@@ -1,3 +1,6 @@
+// Pre-rendered to a static file for `output: 'export'`
+export const dynamic = 'force-static'
+
 export default async function sitemap() {
   const routes = [
     '',

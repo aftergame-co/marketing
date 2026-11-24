@@ -1,0 +1,8 @@
+{
+  "outputDirectory": ".next",
+  "redirects": [
+    { "source": "/communities", "destination": "/retailers", "permanent": true },
+    { "source": "/events", "destination": "/conventions", "permanent": true },
+    { "source": "/plus", "destination": "/pricing", "permanent": true }
+  ]
+}

@@ -18,6 +18,10 @@ yarn start:dev
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
+## Building
+
+`yarn build` creates a static site in `out/` (HTML plus build-time optimized images) that any static host can serve. Preview it with `npx serve out`.
+
 ## Customizing
 
 You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.

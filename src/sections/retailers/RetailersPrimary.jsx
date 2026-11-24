@@ -11,7 +11,7 @@ import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
 import { DeviceNumberOneIconLight, DeviceNumberOneIconDark, DeviceNumberTwoIconLight, DeviceNumberTwoIconDark, DeviceNumberThreeIconLight, DeviceNumberThreeIconDark } from '@/components/DeviceIcons'
-import Image from 'next/image'
+import Image from '@/components/Image';
 
 const MotionAppScreenBody = motion.create(AppScreen.Body)
 

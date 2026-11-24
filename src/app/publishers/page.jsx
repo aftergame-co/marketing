@@ -18,7 +18,7 @@ export const metadata = {
     siteName: 'Aftergame',
     images: [
       {
-        url: 'https://www.aftergame.co/_next/image?url=/images/ag-thumbnail-new.png&w=1200&q=75',
+        url: 'https://www.aftergame.co/images/ag-thumbnail-new.png',
         alt: 'Aftergame | The social tabletop gaming app',
         width: 1200,
         height: 630,

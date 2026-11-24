@@ -1,7 +1,7 @@
 'use client';
 
 import { useId } from 'react'
-import Image from 'next/image'
+import Image from '@/components/Image';
 import clsx from 'clsx'
 import { AppStoreLink, GooglePlayLink } from '@/components/AppStoreLink'
 import { Container } from '@/components/Container'

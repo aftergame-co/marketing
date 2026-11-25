@@ -2,6 +2,7 @@ import { Container } from '@/components/Container';
 import Image from '@/components/Image';
 import Date from '@/components/Date';
 import { getAllPostIds, getPostData } from '@/utils/posts';
+import { FEEDS, pageAlternates } from '@/utils/site';
 
 // Pre-render every post at build time; unknown ids 404 instead of erroring
 export const dynamicParams = false
@@ -17,9 +18,7 @@ export async function generateMetadata({ params }) {
   return {
     title: postData.title,
     description: postData.intro,
-    alternates: {
-      canonical: `/blog/${postData.id}`
-    },
+    alternates: pageAlternates(`/blog/${postData.id}`, [FEEDS.blog]),
     openGraph: {
       title: postData.title,
       description: postData.intro,

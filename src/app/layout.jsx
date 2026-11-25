@@ -4,6 +4,7 @@ import '@/styles/global.css';
 import Script from 'next/script';
 import { Footer } from '@/sections/Footer';
 import { Header } from '@/sections/Header';
+import { FEEDS, pageAlternates } from '@/utils/site';
 
 export const metadata = {
   title: {
@@ -14,9 +15,7 @@ export const metadata = {
   description: 'Gather your group, find events, plan epic game nights, create shared play logs, and easily manage your collection on Aftergame.',
   keywords: ['After game', 'tabletop game', 'board game', 'boardgames', 'boardgame', 'board', 'games', 'play logging', 'statistics', 'leaderboard'],
   metadataBase: new URL('https://www.aftergame.co'),
-  alternates: {
-    canonical: '/'
-  },
+  alternates: pageAlternates('/', [FEEDS.blog, FEEDS.releases]),
   openGraph: {
     title: {
       default: 'Aftergame | The social tabletop gaming app',

@@ -64,6 +64,14 @@
   --color-discord-blurple: #5865f2;
   --color-bluesky-blue: #0085ff;
 
+  /* Release note pills, matching the app (app/src/styles/theme.css) */
+  --color-changelog-feature: rgb(209 234 215);
+  --color-on-changelog-feature: rgb(22 101 52);
+  --color-changelog-improvement: rgb(219 234 254);
+  --color-on-changelog-improvement: rgb(30 64 175);
+  --color-changelog-fix: rgb(254 226 226);
+  --color-on-changelog-fix: rgb(153 27 27);
+
   --font-sans:
     Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';

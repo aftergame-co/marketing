@@ -3,12 +3,12 @@ import { CallToAction } from '@/sections/CallToAction';
 import Image from '@/components/Image';
 import Link from 'next/link';
 import { getSortedPostsData } from '@/utils/posts';
+import { RssLink } from '@/components/RssLink';
+import { FEEDS, pageAlternates } from '@/utils/site';
 
 export const metadata = {
   title: 'Blog',
-  alternates: {
-    canonical: '/blog'
-  },
+  alternates: pageAlternates('/blog', [FEEDS.blog]),
 }
 
 export default function Blog() {
@@ -25,9 +25,12 @@ export default function Blog() {
           <h1 className="text-5xl md:text-5xl xl:text-6xl font-medium tracking-tighter md:tracking-tight text-gray-900">
             The Aftergamer
           </h1>
-          <p className="mt-6 mb-16 lg:w-4/5 text-xl text-gray-600">
+          <p className="mt-6 lg:w-4/5 text-xl text-gray-600">
             Thoughts on the future of social tabletop gaming, from the people helping to create it.
           </p>
+          <RssLink href="/blog/feed.xml" className="mt-3 mb-16 text-sm font-medium text-gray-500 hover:text-orange-500">
+            Subscribe via RSS
+          </RssLink>
           <ul className='grid grid-cols-1 md:grid-cols-2 gap-8'>
             {allPostsData.map(({ id, date, title, intro, image }, index) => (
               <li className='group col-span-1 rounded-2xl bg-white text-gray-900 hover:bg-gg-blue-faint border-2 border-gray-100 transition-colors' key={id}>

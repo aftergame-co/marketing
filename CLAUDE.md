@@ -27,6 +27,10 @@ npx serve out
 
 # Run linting (ESLint flat config in eslint.config.mjs; `next build` does not lint)
 yarn lint
+
+# Regenerate data/releases.json from ../app's release notes (see Releases below)
+yarn releases:sync
+yarn releases:check   # exit 1 if out of date
 ```
 
 ## Architecture
@@ -56,7 +60,7 @@ The site uses Next.js 16's App Router pattern:
 
 The site is a static export hosted without a Next.js server, so:
 - Dynamic routes need `generateStaticParams` (see `src/app/blog/[id]/page.jsx`, which also sets `dynamicParams = false`)
-- Metadata routes (`robots.js`, `sitemap.js`) need `export const dynamic = 'force-static'`
+- Metadata routes (`robots.js`, `sitemap.js`) and feed route handlers (`feed.xml/route.js`, `GET()` only) need `export const dynamic = 'force-static'`
 - No server-only features: `next.config` redirects/rewrites/headers, proxy (middleware), route handlers that read the request, cookies, Server Actions, ISR
 - Redirects live in host config, keep both in sync: `.cloudcannon/routing.json` (CloudCannon, also the 404 route) and `vercel.json` (Vercel)
 
@@ -86,8 +90,23 @@ author_title: 'Title'
 
 The blog uses:
 - `gray-matter` for parsing frontmatter
-- `remark` ecosystem for converting Markdown to HTML with custom styling
+- `src/utils/markdown.js` (`markdownToHtml`, `markdownToText`), the shared `remark` pipeline with the article Tailwind class map
 - Dynamic routes via `src/app/blog/[id]/page.jsx` (`params` is a Promise in Next 15+, so `await params`)
+- An RSS feed at `/blog/feed.xml` (`src/app/blog/feed.xml/route.js`, built with `src/utils/feed.js`)
+
+### Releases
+
+Release notes are written once, in the app (`../app/src/hooks/useChangelog/changelog.tsx`). The process doc is `ops/how-to/release-notes.md`.
+- `yarn releases:sync` (`scripts/sync-releases.mjs`) transpiles that file with `typescript`, validates it, and writes **`data/releases.json`**. It is generated, so never edit it by hand: change the app and re-sync. The sync fails on unknown fields, bad dates, unknown change types, and releases that disappear (pass `--allow-removed` after adding redirects).
+- Optional editorial overlays live in **`releases/<slug>.md`**, never touched by the sync. Keys: `title`, `description`, `images: [{ src, alt, caption? }]` (under `public/images/releases/`, png/jpg/webp), `og_image`, `blog_post`. The markdown body is a longer story. Overlays are validated at build time and fail loudly.
+- `src/utils/releases.js` merges both: `getReleases()`, `getReleaseBySlug()`, `renderRelease()`, `releasesMetadata()`, and so on.
+- Pages:
+  - `/releases` shows the latest 10 in full and an archive by year.
+  - `/releases/[slug]` is static per release, with `dynamicParams = false`.
+  - `/releases/feed.xml` is RSS.
+  - Shared UI is `src/components/ReleaseEntry.jsx`, with New/Improved/Fixed pills that use `changelog-*` colour tokens matching the app.
+- Slugs are `v3-5-build-182`, or `v2-8-3` before build numbers. There are no dots, since static hosts would treat them as file extensions. A slug is a public URL, so never change one.
+- The newest build of each version also gets `id="<version>"`, so old `/releases#3.4` links still work.
 
 ### Styling
 
@@ -111,7 +130,8 @@ The blog uses:
 - Motion (`motion` package, import from `motion/react`) used for animations and transitions
 - Client components marked with `'use client'` directive (Header, NavLinks)
 - Server components by default (most page components)
-- Metadata defined in page components or root layout
+- Metadata defined in page components or root layout. Next merges page metadata shallowly, so a page that sets `alternates` uses `pageAlternates(path, feeds)` from `src/utils/site.js` to keep its RSS `<link>`. `SITE_URL` lives there too.
+- The sitemap (`src/app/sitemap.js`) lists static pages without `lastModified`, plus blog posts and releases with their real dates
 
 ## External Services
 

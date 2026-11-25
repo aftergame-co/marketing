@@ -51,7 +51,7 @@ export function GroupsEmbed() {
 
         {/* Carousel */}
         <div className="mt-16 relative">
-          <div className="w-full max-w-[900px] mx-auto">
+          <div className="w-full max-w-225 mx-auto">
             {/* Slide Content */}
             <div className="mb-8">
               <h3 className="text-2xl font-medium text-center text-gray-900 mb-2">

@@ -66,7 +66,7 @@ export default function Contact() {
                 href="https://discord.gg/XMYxvJ3ge2" 
                 target='_blank' 
                 aria-label="Discord" 
-                className="flex align-middle justify-center w-auto h-9 p-[9px] text-gray-500 hover:text-discord-blurple hover:bg-gray-200 rounded-lg"
+                className="flex align-middle justify-center w-auto h-9 p-2.25 text-gray-500 hover:text-discord-blurple hover:bg-gray-200 rounded-lg"
               >
                 <DiscordLogo />
                 <p className="text-lg ml-2 leading-tight">Discord</p>

@@ -104,7 +104,7 @@ export function HomeHero({ className }) {
             {/* ecord, share, and gain valuable insights into the games you love */}
             </p>
             
-            <Button href="https://aftergame.app" className="xl:mt-4 mb-0 w-full max-w-[376px] text-xl py-3 bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+            <Button href="https://aftergame.app" className="xl:mt-4 mb-0 w-full max-w-94 text-xl py-3 bg-gg-blue hover:bg-gg-red active:bg-gg-red">
               Launch the web app →
             </Button>
             <div className="pt-4 pb-4 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4">
@@ -113,7 +113,7 @@ export function HomeHero({ className }) {
             </div>
           </div>
           <div className="relative lg:col-span-5 lg:row-span-2 xl:col-span-6">
-            <BackgroundIllustration className="hidden lg:flex absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 mask-[linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
+            <BackgroundIllustration className="hidden lg:flex absolute left-1/2 top-4 h-256.5 w-256.5 -translate-x-1/3 stroke-gray-300/70 mask-[linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
             <div className="-mx-4 px-2 mask-[linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-40 lg:top-0 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-20 lg:pb-20 xl:-bottom-40">
               <Image
                 src='/images/home/home-hero.png'

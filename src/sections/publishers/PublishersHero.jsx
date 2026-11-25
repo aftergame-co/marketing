@@ -63,7 +63,7 @@ export function PublishersHero() {
                 </Button>
               </Link>
             </div>
-            <div className="flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-6 max-w-[420px]">
+            <div className="flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-6 max-w-105">
               <Image
                 src='/images/publishers/asmodee.png'
                 alt='asmodee'
@@ -111,16 +111,16 @@ export function PublishersHero() {
             <div className='absolute bg-gg-blue-faint skew-x-3 skew-y-3 rounded-full' style={{top: 380, left: 376}}>
               <GlobeAsiaAustraliaIcon className='w-20 h-20 text-gg-blue/75' />
             </div>
-            <BackgroundIllustration className="hidden absolute top-52 -translate-x-1/2 lg:flex h-[596px] w-[863px]" />
-            <SpeechBubble className="absolute w-[160px]" style={{top: 130, left: 10}}>
+            <BackgroundIllustration className="hidden absolute top-52 -translate-x-1/2 lg:flex h-149 w-215.75" />
+            <SpeechBubble className="absolute w-40" style={{top: 130, left: 10}}>
               <UserGroupIcon className='w-5 h-5 text-gg-blue flex-none self-center mr-2' />
               <p className='flex-auto text-xs text-gray-700'>5 people played in this game</p>
             </SpeechBubble>
-            <SpeechBubble className="absolute w-[160px]" style={{top: 216, left: 196}}>
+            <SpeechBubble className="absolute w-40" style={{top: 216, left: 196}}>
               <ScaleIcon className='w-5 h-5 text-gg-blue flex-none self-center mr-2' />
               <p className='flex-auto text-xs text-gray-700'>Tiebreak was used to win the game</p>
             </SpeechBubble>
-            <SpeechBubble className="absolute w-[160px]" style={{top: 328, left: 332}}>
+            <SpeechBubble className="absolute w-40" style={{top: 328, left: 332}}>
               <IdentificationIcon className='w-5 h-5 text-gg-blue flex-none self-center mr-2' />
               <p className='flex-auto text-xs text-gray-700'>Won playing as the <i>Warrior</i> faction</p>
             </SpeechBubble>

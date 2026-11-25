@@ -167,11 +167,11 @@ export function RetailersHero() {
                 className='shrink-0 rounded-md'
               />
             </div>
-            <div className="flex flex-row items-center justify-center lg:justify-start gap-x-8 lg:pl-[132px] pt-6">
+            <div className="flex flex-row items-center justify-center lg:justify-start gap-x-8 lg:pl-33 pt-6">
             </div>
           </div>
           <div className="hidden lg:block relative mt-8 lg:col-span-5 lg:row-span-2 lg:mt-16 lg:-mr-6">
-            <BackgroundIllustration className="lg:absolute left-1/2 top-4 h-[480px] w-[480px] sm:top-16 lg:-translate-x-1/2 lg:-top-8" />
+            <BackgroundIllustration className="lg:absolute left-1/2 top-4 h-120 w-120 sm:top-16 lg:-translate-x-1/2 lg:-top-8" />
             <div className='absolute left-1/2 -translate-x-1/2 top-44 lg:top-40'>
               <BuildingStorefrontIcon className='h-20 w-20 text-gg-blue m-auto' />
               <p className="text-center">Your space</p>
@@ -186,7 +186,7 @@ export function RetailersHero() {
               />
               <p className='text-xs'>Andy is planning a<br /> game of Wingspan</p>
             </div>
-            <div className='flex items-center absolute left-1/2 translate-x-6 top-[360px] md:top-[380px] lg:top-[360px] rounded-2xl p-3 gap-x-2 bg-white border-2 border-gray-100'>
+            <div className='flex items-center absolute left-1/2 translate-x-6 top-90 md:top-95 lg:top-90 rounded-2xl p-3 gap-x-2 bg-white border-2 border-gray-100'>
               <Image
                 src='/images/communities/josh.jpeg'
                 alt='Josh image'

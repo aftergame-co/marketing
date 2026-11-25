@@ -34,7 +34,7 @@ export function RetailersOverview() {
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 pt-8 pb-8 lg:pb-16'>
           <div ref={ref1} className={`transition-all duration-1000 relative ${isInView1 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
+            <div className='relative flex-[1.6] h-125 border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/retailers/overview-1.webp'
                 alt='More games, less work'
@@ -56,7 +56,7 @@ export function RetailersOverview() {
             </div>
           </div>
           <div ref={ref2} className={`transition-all duration-1000 relative ${isInView2 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
+            <div className='relative flex-[1.6] h-125 border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/retailers/overview-2.webp'
                 alt='Tickets and check-in'
@@ -84,7 +84,7 @@ export function RetailersOverview() {
 
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16'>
           <div ref={ref3} className={`transition-all duration-1000 relative ${isInView3 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
+            <div className='relative flex-[1.6] h-125 border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/retailers/overview-3.webp'
                 alt='Impactful insights'
@@ -106,7 +106,7 @@ export function RetailersOverview() {
             </div>
           </div>
           <div ref={ref4} className={`transition-all duration-1000 relative ${isInView4 ? "opacity-100 top-0" : "opacity-0 top-6"} col-span-1 rounded-2xl overflow-hidden bg-gray-300 border-2 border-gray-200 flex flex-row`}>
-            <div className='relative flex-[1.6] h-[500px] border-16 border-gray-300 rounded-xl overflow-hidden'>
+            <div className='relative flex-[1.6] h-125 border-16 border-gray-300 rounded-xl overflow-hidden'>
               <Image
                 src='/images/retailers/overview-4.webp'
                 alt='A focused social feed'

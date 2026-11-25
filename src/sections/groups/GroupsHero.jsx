@@ -119,7 +119,7 @@ export function GroupsHero() {
             </div>
             <div className="pt-10">
               <p className='text-sm font-semibold text-gray-500 mb-4'>Trusted by organizers worldwide</p>
-              <div className="flex flex-row flex-wrap items-center gap-x-8 gap-y-6 max-w-[560px]">
+              <div className="flex flex-row flex-wrap items-center gap-x-8 gap-y-6 max-w-140">
               <Image
                 src='/images/communities/behold.png'
                 alt='Behold Games'
@@ -145,10 +145,10 @@ export function GroupsHero() {
             </div>
           </div>
           <div className="relative mt-12 lg:col-span-5 lg:row-span-2 lg:mt-0 lg:-mr-6">
-            <BackgroundIllustration className="lg:absolute left-1/2 top-4 h-[480px] w-[480px] sm:top-16 lg:-translate-x-1/2 lg:-top-8" />
+            <BackgroundIllustration className="lg:absolute left-1/2 top-4 h-120 w-120 sm:top-16 lg:-translate-x-1/2 lg:-top-8" />
             {/* Placeholder for new hero image showing organizer dashboard or event overview */}
             <div className='lg:absolute left-1/2 lg:-translate-x-1/2 top-0 lg:top-12'>
-              <div className='w-[300px] h-[500px] bg-gray-200 rounded-2xl border-2 border-gray-300 flex items-center justify-center mx-auto'>
+              <div className='w-75 h-125 bg-gray-200 rounded-2xl border-2 border-gray-300 flex items-center justify-center mx-auto'>
                 <p className='text-gray-500 text-center px-8 text-sm'>PLACEHOLDER: Organizer dashboard showing event stats, upcoming games, and community activity</p>
               </div>
             </div>

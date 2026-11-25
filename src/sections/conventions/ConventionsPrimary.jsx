@@ -227,7 +227,7 @@ function FeaturesDesktop() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <CircleBackground color="#fff" className="animate-spin-slower" />
         </div>
-        <PhoneFrame showHeader={false} className="z-10 mx-auto w-full max-w-[366px]">
+        <PhoneFrame showHeader={false} className="z-10 mx-auto w-full max-w-91.5">
           <div className="bg-white mt-2 h-full rounded-2xl overflow-hidden">
             <TabPanels className="h-full" as={Fragment} >
               <AnimatePresence
@@ -302,7 +302,7 @@ function FeaturesMobile() {
             className="w-full flex-none snap-center px-4 sm:px-6"
           >
             <div className="relative isolate overflow-hidden bg-white/20 rounded-2xl px-5 py-6">
-              <PhoneFrame showHeader={false} className="relative mx-auto w-full max-w-[366px]">
+              <PhoneFrame showHeader={false} className="relative mx-auto w-full max-w-91.5">
                 <feature.screen />
               </PhoneFrame>
               <div className="absolute inset-x-0 bottom-0 bg-white p-6 sm:p-10 border-t border-slate-200">

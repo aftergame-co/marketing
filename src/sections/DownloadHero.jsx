@@ -97,7 +97,7 @@ export function DownloadHero({ className }) {
             <p className="mt-6 mb-8 lg:w-4/5 text-xl text-gray-600">
               Download the free Aftergame app to get more games to the table and to start sharing your gaming journey with friends. 
             </p>
-            <Button href="https://aftergame.app" className="xl:mt-4 mb-0 w-full max-w-[376px] text-xl py-3 bg-gg-blue hover:bg-gg-red active:bg-gg-red">
+            <Button href="https://aftergame.app" className="xl:mt-4 mb-0 w-full max-w-94 text-xl py-3 bg-gg-blue hover:bg-gg-red active:bg-gg-red">
               Launch the web app →
             </Button>
             <div className="pt-4 pb-4 xl:pb-0 flex flex-wrap gap-x-4 gap-y-4">
@@ -106,8 +106,8 @@ export function DownloadHero({ className }) {
             </div>
           </div>
           <div className="relative mt-10 sm:mt-10 lg:col-span-5 lg:row-span-2 lg:mt-0">
-            <BackgroundIllustration className="hidden lg:flex absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 mask-[linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
-            <div className="-mx-4 h-[600px] px-2 mask-[linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
+            <BackgroundIllustration className="hidden lg:flex absolute left-1/2 top-4 h-256.5 w-256.5 -translate-x-1/3 stroke-gray-300/70 mask-[linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
+            <div className="-mx-4 h-150 px-2 mask-[linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
               <Image
                 src='/images/conventions/hero.png'
                 loading='eager'

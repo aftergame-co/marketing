@@ -29,7 +29,7 @@ We ask people to bring a snack for the snack table and we provide a meal, usuall
 
 Ensure you have fridge space for drinks and likely some food. We had a chilly bin at the last one to boost our cold space and that worked well.
 
-For an event in the 25-30 people range (scale accordingly), we try to make sure we’ve got at least three playing tables: one that could hold something like *Wingspan* and another that could support a big one like *Ark Nova.* The bigger table can be used to play multiple different games at once any time it’s not needed for a beastly game.
+For an event in the 25-30 people range (scale accordingly), we try to make sure we’ve got at least three playing tables: one that could hold something like _Wingspan_ and another that could support a big one like _Ark Nova._ The bigger table can be used to play multiple different games at once any time it’s not needed for a beastly game.
 
 We normally have games on all three tables from about 11AM. There’s almost always a heavy 3-4 hour game being played by 4-6 of the attendees and we do our best to make sure there’s a bit of mixing between our various game circles.
 
@@ -61,33 +61,33 @@ Our hardcore friends, the ones who will be with us until the bitter, sleepy end,
 
 **Hydrate!**
 
-We can normally assume that most of the daytime shift has arrived by this point and everyone is fresh as a board game straight from the shrink wrap, so the group will gravitate towards games that have a bit more of a time commitment and ideally with a high player count. People are getting to know each other by now so games with high player interaction usually go over well. People are coming to this event with the hopes of playing games they (or others) have brought. Our biggest job right now is coordinating people so that each game ends up with the right player count and no one is left out because they’re a bit shy or not sure what a game will be like. That being said, getting at least one low-complexity high player count game going for newcomers (something like *Incan Gold* or *Saboteur*) is a good idea especially during what is usually the busiest part of the day!
+We can normally assume that most of the daytime shift has arrived by this point and everyone is fresh as a board game straight from the shrink wrap, so the group will gravitate towards games that have a bit more of a time commitment and ideally with a high player count. People are getting to know each other by now so games with high player interaction usually go over well. People are coming to this event with the hopes of playing games they (or others) have brought. Our biggest job right now is coordinating people so that each game ends up with the right player count and no one is left out because they’re a bit shy or not sure what a game will be like. That being said, getting at least one low-complexity high player count game going for newcomers (something like _Incan Gold_ or _Saboteur_) is a good idea especially during what is usually the busiest part of the day!
 
 ### 6PM - 11PM: Settle in
 
 **Hydrate!**
 
-Time to dig in. As people get their dinner sorted, we settle in for some longer games that we’ve been wanting to get to the table for a while (or that we know only make it to the table once a year specifically because of this event). At this point, there is usually a clear distinction between the players who want lighter, party-style games, and the players who are here for the chunky games so while some folks settle in for a few rounds of *Snake Oil, Tattoo Stories,* or *Anomia,* I get ready for the main events. We almost always play *Sidereal Confluence* around now because it’s such a great game to play with the full player count and it’s so hard to make that happen! If we get that one to the table, my partner is happy. My game is *Concordia Venus*. I love teaming up with people who have never played it for an added challenge.
+Time to dig in. As people get their dinner sorted, we settle in for some longer games that we’ve been wanting to get to the table for a while (or that we know only make it to the table once a year specifically because of this event). At this point, there is usually a clear distinction between the players who want lighter, party-style games, and the players who are here for the chunky games so while some folks settle in for a few rounds of _Snake Oil, Tattoo Stories,_ or _Anomia,_ I get ready for the main events. We almost always play _Sidereal Confluence_ around now because it’s such a great game to play with the full player count and it’s so hard to make that happen! If we get that one to the table, my partner is happy. My game is _Concordia Venus_. I love teaming up with people who have never played it for an added challenge.
 
 ### 11PM - 4AM: Starting to feel it
 
 **Hydrate!**
 
-Newcomers are no longer joining, and many people are starting to call it a night, so you can bust out the extremely complex games because the people that want to play games through the night are usually the people who are serious enough to handle them. Never mind that you’re getting tired; you still have some time before the sleep deprivation starts to truly kick in. *Forbidden Stars,* any COIN game, *Hegemony,* all great ideas.
+Newcomers are no longer joining, and many people are starting to call it a night, so you can bust out the extremely complex games because the people that want to play games through the night are usually the people who are serious enough to handle them. Never mind that you’re getting tired; you still have some time before the sleep deprivation starts to truly kick in. _Forbidden Stars,_ any COIN game, _Hegemony,_ all great ideas.
 
 ### 4AM - 8AM: Why are we doing this again?
 
 **Hydrate!**
 
-You know what’s great when you’re this tired? Low to medium complexity games that everyone is already familiar with so that you can play on autopilot if you need to. We all know how to play *Terraforming Mars*, right? Or maybe a quick game of *Dune.* (We had a friend a few years ago who suggested “a quick game of *Dune*” around 11pm that lasted six hours. We haven’t played it at the marathon since, nor have we let them forget it.)
+You know what’s great when you’re this tired? Low to medium complexity games that everyone is already familiar with so that you can play on autopilot if you need to. We all know how to play _Terraforming Mars_, right? Or maybe a quick game of _Dune._ (We had a friend a few years ago who suggested “a quick game of _Dune_” around 11pm that lasted six hours. We haven’t played it at the marathon since, nor have we let them forget it.)
 
-Depending on the mood and types of gamers you have remaining, this is also the best window for light deception or speed-based games, things like *Fake Artist goes to New York* or *Cockroach Poker* or *Jungle Speed* because they’re instantly 20% more hilarious when you remove the barrier of being alert enough to care how it goes.
+Depending on the mood and types of gamers you have remaining, this is also the best window for light deception or speed-based games, things like _Fake Artist goes to New York_ or _Cockroach Poker_ or _Jungle Speed_ because they’re instantly 20% more hilarious when you remove the barrier of being alert enough to care how it goes.
 
 ### 8AM - 10AM: On the home stretch
 
 **Hydrate!**
 
-Nearly there! Now it’s just you and the most dedicated. Everyone is sleep deprived, and you can’t rightly expect to get through anything more complicated than a game of *Splendor*. If you can keep your eyes open, quick games, team-based games, or dexterity games are our go-to’s, games like *Trapwords* (very funny and also somehow easier when you’re this loopy)*, Qwixx*, *Crokinole,* or *Win, Lose, Banana.*
+Nearly there! Now it’s just you and the most dedicated. Everyone is sleep deprived, and you can’t rightly expect to get through anything more complicated than a game of _Splendor_. If you can keep your eyes open, quick games, team-based games, or dexterity games are our go-to’s, games like _Trapwords_ (very funny and also somehow easier when you’re this loopy)_, Qwixx_, _Crokinole,_ or _Win, Lose, Banana._
 
 A good place to find games in this window of time is your Waiting Games pile.
 

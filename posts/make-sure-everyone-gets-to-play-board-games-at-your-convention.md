@@ -23,7 +23,7 @@ On the other hand, you have somebody like Todd, who is still wandering around tr
 
 ## A handy tool to get more people playing games at board game events
 
-Aftergame is a social board game app available on Android and iOS, with shared play histories, intuitive play logging, and (drum roll, please) the ability for any attendee to plan a game at your convention.  What does that mean?
+Aftergame is a social board game app available on Android and iOS, with shared play histories, intuitive play logging, and (drum roll, please) the ability for any attendee to plan a game at your convention. What does that mean?
 
 As a player, Todd can go into your AwesomeCon event within Aftergame and make a mini event for the game he wants to play. He selects:
 
@@ -38,7 +38,7 @@ As a player, Todd can go into your AwesomeCon event within Aftergame and make a 
 
 The game he’s just created will show up in the list of games being played at AwesomeCon, ordered by the scheduled time so the first ones people see are happening soonest. Now anyone looking for a game to join (Alex, perhaps?) has the option of claiming a seat at the table for his agriculture game.
 
-For many people, finding a game to join with strangers can be an anxiety-inducing scenario. It’s so much easier to join an open game by tapping a screen than to interrupt someone’s conversation to ask if they still need a player. It takes the guess work and nerve-building out of the equation altogether. 
+For many people, finding a game to join with strangers can be an anxiety-inducing scenario. It’s so much easier to join an open game by tapping a screen than to interrupt someone’s conversation to ask if they still need a player. It takes the guess work and nerve-building out of the equation altogether.
 
 Aftergame even helps get those tricky games to the table. Whether it’s got a large player count, a weird theme, or some intricate mechanisms, when so many people can see the game event, there’s a much higher chance of matching players to their preferred games!
 
@@ -54,6 +54,6 @@ On top of this basic functionality, Aftergame has a lot of flexibility and addit
 - **Player profiles**: Players create their own profiles, and with the ability to import past playlogs from various sources, they won’t need to leave anything behind.
 - **Player ratings and reviews**: After a game, players can rate their experience and leave a review, giving valuable feedback to other players and helping them choose games in the future.
 
-[Get in touch](https://www.aftergame.co/contact "Contact us") if you’d like to explore the possibility of using Aftergame at your next awesome convention or event.
+[Get in touch](https://www.aftergame.co/contact 'Contact us') if you’d like to explore the possibility of using Aftergame at your next awesome convention or event.
 
-With [Aftergame](https://www.aftergame.co/download "Download Aftergame"), you can ensure that everyone at AwesomeCon has a chance to join in the fun, no matter how niche their favourite game is. Even Todd.
+With [Aftergame](https://www.aftergame.co/download 'Download Aftergame'), you can ensure that everyone at AwesomeCon has a chance to join in the fun, no matter how niche their favourite game is. Even Todd.

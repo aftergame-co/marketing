@@ -36,19 +36,23 @@ Guided playtests are where you get to see everything come together, which might 
 Pretty much anyone could be a good candidate for a guided playtest. If you’re testing with people who helped with quick tests, they’ll probably be excited to see it all the pieces fit together. When you test with new folks, you’ll get valuable new first impressions. So, in addition to playing your game with the people who helped in earlier stages, try reaching out to:
 
 #### Other board game designers
+
 You don’t need to come out of this stage with a fully polished diamond but if you go into stress testing with an unfinished game, you might be in trouble, so this is a great time to bring in your heavy-hitter designer friends. They can poke holes, tell you what’s working well, and call you on making decisions about things you’ve been putting off or haven’t fully considered.
 
 If you live in a city, there’s a good chance a group of designers is already meeting on a weekly or monthly basis to test or show off their designs. Try searching for a “Game Jam” event or a Game Designer’s group on Facebook, Discord, Meetup, or [Aftergame](https://www.aftergame.co/download). If there doesn’t seem to be one in your area, start one! Surely you’re not the only one in an entire city that wants this to exist!
 
-***Pro tip:** Look for a game jam or other meeting of local designers. Having everyone in the same place for the same reason takes the pressure off of your game to be perfect because everyone is there to work stuff out.*
+_**Pro tip:** Look for a game jam or other meeting of local designers. Having everyone in the same place for the same reason takes the pressure off of your game to be perfect because everyone is there to work stuff out._
 
 #### Players in your area
-Much like with the designers above, there are almost certainly multiple groups of gamers meeting in your area. Each group probably has a slightly different focus. Reach out to the admins to see if they think your game would appeal to their group. The admins may also be able to put you in touch with a few group members who might be interested if the group isn’t a good fit (like, if you’ve made a real-time party game but the group normally plays three-hour euros). 
 
-#### Players *not* in your area
+Much like with the designers above, there are almost certainly multiple groups of gamers meeting in your area. Each group probably has a slightly different focus. Reach out to the admins to see if they think your game would appeal to their group. The admins may also be able to put you in touch with a few group members who might be interested if the group isn’t a good fit (like, if you’ve made a real-time party game but the group normally plays three-hour euros).
+
+#### Players _not_ in your area
+
 You can put your game on Tabletop Simulator (TTS) and conduct playtests with anyone from anywhere at anytime! It may seem daunting to make a digital copy of your game and make it function but it could be very worthwhile for you, especially if you’re struggling to find players in your vicinity. It doesn’t even have to be a fully realized version of your game. Much like making a paper prototype, you can use the components available in TTS to make a digital facsimile if you have yet to level up your tech skill.
 
 #### Aftergame
+
 There are loads of people in your area who would be interested in playtesting a game if they knew how to find someone who was looking to have their game playtested. There are also a lot of people who don’t know that playtesting is a thing they could do but are very excited to get involved when they find out it’s a possibility.
 
 You could [plan a couple of playtests in your area](https://www.notion.so/how-we-support-playtesting-and-demos-b4899f587bef4d69b245eaf8f45c3a77?pvs=21) to find the folks who are outside the inner circles.
@@ -57,15 +61,18 @@ You could [plan a couple of playtests in your area](https://www.notion.so/how-we
 
 By this point, you should at least have a solid game with the rules written down. This is where you invite all the most semantic, hard-core, experienced players you can find to try to break your game by going further than you thought possible with every imaginable strategy. This stage will likely take an amount of time proportionate to the length and complexity of your game. If you’ve made a quick, light party game, for example, you may not need to spend as much time here as someone who’s making a heavy euro with special roles and player abilities.
 
-Players who are willing to play your game many times are the water that drips through any cracks you’ve got left. Cherish them as you resent them for tearing apart your incredibly hard work. You need to find people who can tell you that something isn’t working or doesn’t feel good to the player and huge bonus if they have some theories about why that is. If you are not already acquainted with people who can fill this role for you, it can be hard to find them. 
+Players who are willing to play your game many times are the water that drips through any cracks you’ve got left. Cherish them as you resent them for tearing apart your incredibly hard work. You need to find people who can tell you that something isn’t working or doesn’t feel good to the player and huge bonus if they have some theories about why that is. If you are not already acquainted with people who can fill this role for you, it can be hard to find them.
 
 #### Local game groups
+
 Again, there’s likely an organised group near you with some people who would love the opportunity to dig into a game in such depth. Intense, repeated testing is definitely not universally appealing, but you’ll probably have some luck approaching the folks who gravitate towards the heavier games at the game nights or who get into debates about game theory.
 
 #### Look online
-Ask in relevant Facebook, Meetup, BGG, and Discord groups if anyone is interested in playtesting your game and if they’re not local, well, good thing you already set your game up on Tabletop Simulator! While it can be cumbersome to test digitally, it’s a better alternative than very little or no testing. 
+
+Ask in relevant Facebook, Meetup, BGG, and Discord groups if anyone is interested in playtesting your game and if they’re not local, well, good thing you already set your game up on Tabletop Simulator! While it can be cumbersome to test digitally, it’s a better alternative than very little or no testing.
 
 #### Aftergame
+
 If you’re planning playtests through Aftergame, you can put notes in the description of a planned playtest to make it clear that you’re conducting a specific kind of test and looking for a particular type of player.
 
 ### 4. Blind playtesting
@@ -75,15 +82,18 @@ By now, you should be pretty confident that you’ve got a board game that can b
 This stage should be easier to find playtesters for because your average (board gaming) Joe is your target demographic. No bells (special skills) or whistles (particular personality traits) required. If the game appeals to them as a player, they’re perfect. This does mean that you need a steady source of new players who have to learn the game from your rulebook, which is the tricky part.
 
 #### Your friendly local game store (FLGS)
+
 Small business owners often have community support built into their DNA. It’s always worth asking if they can help in some way. Depending on the kind of place it is, they might be able to give you table space for playtests, put a call out to their network to help you find players, connect you with regulars they think would be interested, sit down and play through it themselves, let you leave a copy with a feedback form to be played at any time, or, at the very least, let you put up a notice that they can point their customers toward.
 
 #### Aftergame
+
 You get to plan a playtest and invite players to try something unpublished but whole. You might plan a few playtests in a row so you only have to travel and set up once, or you might do them one at a time to give yourself time to implement changes and reprint the rules between tests.
 
 #### Board game convention or other large tabletop gaming event
+
 If you have the opportunity, getting a table or time slot at a large board game event to playtest your game is a great way to get it in front of a LOT of new players. You could do this at any stage, but you’ll probably earn more buzz for your game the closer it is to a finished product.
 
-We’ve already covered [how to demo your game at a convention](https://www.aftergame.co/blog/indie-problems-demoing-your-new-board-game-at-conventions) and most of the advice also applies to playtesting. 
+We’ve already covered [how to demo your game at a convention](https://www.aftergame.co/blog/indie-problems-demoing-your-new-board-game-at-conventions) and most of the advice also applies to playtesting.
 
 - The point I’d **add** is that you want to make sure people understand what stage of testing you’re in. If they sit down expecting to play a mostly finished game but you’re still working with a paper prototype, they may leave disappointed for reasons that have nothing to do with the content of your game.
 - The point I’d **take away** is that you probably don’t want to put much time and money into printed and promo materials, especially if you’re not at the stage of having an artistic through line. It’s more important right now to get feedback so you can make sure you have a game rather than hyping up an idea that might look very different by the end. The thing that’s most worth doing is having either a sign-up sheet or a QR code so people can join your mailing list and get updates as your game develops.

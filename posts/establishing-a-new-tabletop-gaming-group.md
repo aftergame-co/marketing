@@ -11,7 +11,7 @@ author_title: 'Head of Community'
 
 ## Should I start a new game group?
 
-Maybe the groups in your area don’t often play the kinds of board games, TCGs or RPGs that you enjoy, maybe there’s someone you clash with, or maybe there isn’t a game group near you at all.  ****Whatever the reason, starting a new game group that plays regularly can be a daunting prospect. Depending on your situation, you may not need to go as far as starting a new group entirely. 
+Maybe the groups in your area don’t often play the kinds of board games, TCGs or RPGs that you enjoy, maybe there’s someone you clash with, or maybe there isn’t a game group near you at all. ****Whatever the reason, starting a new game group that plays regularly can be a daunting prospect. Depending on your situation, you may not need to go as far as starting a new group entirely.
 
 If you really like the people in a group you’re already a part of but you have, for example, a scheduling conflict with the regular game night or you wish the group played different games, you can have a chat with the organizer and see if they’re open to having you host a second regular game night for the group on another day and/or with a different focus.
 
@@ -50,7 +50,7 @@ If you can clearly articulate your group values, you’ll have a much better cha
 
 ### Show people what games to expect
 
-If it’s not part of your top-line mission statement, making sure people know what kinds of games they can expect to encounter in your group is important. Even if you’ve said something like “This group is for experienced players,” showing a photo of some games they can expect to encounter or, better yet, a link to your group’s [Aftergame list](https://www.notion.so/Games-and-Collections-198176cc981d8032bf60eb26c201e202?pvs=21), helps players decide if their definition of “experienced” matches yours. 
+If it’s not part of your top-line mission statement, making sure people know what kinds of games they can expect to encounter in your group is important. Even if you’ve said something like “This group is for experienced players,” showing a photo of some games they can expect to encounter or, better yet, a link to your group’s [Aftergame list](https://www.notion.so/Games-and-Collections-198176cc981d8032bf60eb26c201e202?pvs=21), helps players decide if their definition of “experienced” matches yours.
 
 I worked in a board game café for seven years and can’t count the number of times people would call themselves experienced board-gamers and then tell me the most complex game they’ve played is Catan. No shade on Catan, but those folks wouldn’t know what they were getting into if they turned up at your Twilight Imperium game.
 
@@ -62,7 +62,7 @@ Additionally, you might be able to borrow some ideas that fit with how you want 
 
 ### Post on the socials
 
-Sending out invites is a vital step that you can take a little further than just inviting your friends. 
+Sending out invites is a vital step that you can take a little further than just inviting your friends.
 
 You can find local community groups, either general groups (like a group for a town or neighborhood) or groups dedicated to tabletop gaming, in which to post about your group. (If the group is a dedicated game group, best practice would be to check with the admins regarding posting about another game group. Much like the above point, there might be some negative feelings if you go ahead without permission, especially if the group is already doing a similar thing.) A lot of people don’t think to look for new groups very often so putting your group in front of them is possibly doing them a favor, as well.
 
@@ -80,9 +80,9 @@ While your own schedule is probably the biggest factor in this decision, other g
 
 ### Choose a place
 
-If you’re starting a big group that will require using a community space such as a café, game store, library, or community centre, it’s worth considering how people will get there. Is there parking nearby? It’s hard to lug heavy board games around. Is it accessible by public transit? Sometimes games go late and getting to and from your venue easily can remove a barrier for players. 
+If you’re starting a big group that will require using a community space such as a café, game store, library, or community centre, it’s worth considering how people will get there. Is there parking nearby? It’s hard to lug heavy board games around. Is it accessible by public transit? Sometimes games go late and getting to and from your venue easily can remove a barrier for players.
 
-If you’re starting a small group, is your living space appropriate? Consider carefully before inviting strangers into your home. Perhaps you could meet in public a few times first. In addition to the venue ideas above, a pub with large tables can be an excellent place to play a (non-precious) game or two.  
+If you’re starting a small group, is your living space appropriate? Consider carefully before inviting strangers into your home. Perhaps you could meet in public a few times first. In addition to the venue ideas above, a pub with large tables can be an excellent place to play a (non-precious) game or two.
 
 ### It’s okay to start small
 

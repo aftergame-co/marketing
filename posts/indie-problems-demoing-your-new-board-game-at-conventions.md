@@ -9,7 +9,7 @@ author_image: '/images/about/team/chalene.jpg'
 author_title: 'Head of Community'
 ---
 
-It’s no small feat to get a game from conceived to designed to published (or ready to publish). You’re already amazing. Now we need to get that game in front of as many people as possible because your hard work deserves to be seen. 
+It’s no small feat to get a game from conceived to designed to published (or ready to publish). You’re already amazing. Now we need to get that game in front of as many people as possible because your hard work deserves to be seen.
 
 Demoing a new tabletop game can be a strange position to be in at a convention. It’s not a playtest where a lot of the appeal is getting to play something that’s still being created, knowing that your experience and feedback may help shape the final product. You’re not just a player asking other players to join you in your favourite game or something new, the stakes are much lower for those people; if the game goes poorly, it won’t affect their livelihoods.
 
@@ -25,7 +25,7 @@ If you don’t have a large publishing house behind you (good on you for self-pu
 
 ### Prepare your pitch.
 
-Refine a one sentence pitch for your game that covers the theme, the dominant mechanism(s), and the weight or style. Here’s a board game example: *Treetop Tango* is a light, fast-paced, card-drafting game played in pairs where the animal duo with the best combination of moves by the end of the song will win the dance contest.
+Refine a one sentence pitch for your game that covers the theme, the dominant mechanism(s), and the weight or style. Here’s a board game example: _Treetop Tango_ is a light, fast-paced, card-drafting game played in pairs where the animal duo with the best combination of moves by the end of the song will win the dance contest.
 
 This pitch should be in the Description section of all your planned demo games on Aftergame and on the tip of your tongue at all times.
 
@@ -33,7 +33,7 @@ This pitch should be in the Description section of all your planned demo games o
 
 Teaching a board game is an artform. You’ve been living in the world of your game for… let’s assume a long time so you know all the rules and strategies very well. It can be hard to come back to that beginner mindset and teach the game without making assumptions that this or that is really obvious. Nothing is a given when introducing your game to new players. There are lots of great articles and videos online that can help you learn to teach your board game effectively; check them out! Here’s a quick-start guide:
 
-Start at the end and work your way to the beginning. I find it helpful to create a series of unasked questions to guide me through the teach. Here’s an example of how I would teach *Treetop Tango.* 
+Start at the end and work your way to the beginning. I find it helpful to create a series of unasked questions to guide me through the teach. Here’s an example of how I would teach _Treetop Tango._
 
 - **What’s this game about?** Treetop Tango takes place over one epic song. You and your partner are jungle animals who pair up to compete in the biggest dance competition of the year. You need to have your costumes and full dance routine in place by the end of the song. Each animal has a little bonus, some work better together than others, and the best couple will take home the trophy! Beginning with a bit of the lore of the game will help scaffold the learning if your game is well-themed.
 - **How do you win?** The goal of the game is to get the most Dance Points.
@@ -45,7 +45,7 @@ Start at the end and work your way to the beginning. I find it helpful to create
 
 ### Prepare your printed materials.
 
-The minimum here is a printed sheet with info and a QR code that you can keep on the table (preferably in a stand) and direct people to. If you’re on a tight budget, maybe that’s enough. You can rely on your natural sparkle and enthusiasm for the game to grab peoples’ attention. 
+The minimum here is a printed sheet with info and a QR code that you can keep on the table (preferably in a stand) and direct people to. If you’re on a tight budget, maybe that’s enough. You can rely on your natural sparkle and enthusiasm for the game to grab peoples’ attention.
 
 Some other ideas you can use to try to bring more people to the table:
 
@@ -56,13 +56,13 @@ Some other ideas you can use to try to bring more people to the table:
 
 ### Make sure your game is in Aftergame.
 
-If your game has been published, it’s probably already in the Aftergame app, but it’s worth double-checking the details and sending a note along if anything needs correcting. If you’re pre-publication or at any other stage and your game isn’t there, use the submission form to have it added. (Go to the Profile tab, Settings, then “Are we missing a game?” to find the form.) 
+If your game has been published, it’s probably already in the Aftergame app, but it’s worth double-checking the details and sending a note along if anything needs correcting. If you’re pre-publication or at any other stage and your game isn’t there, use the submission form to have it added. (Go to the Profile tab, Settings, then “Are we missing a game?” to find the form.)
 
 ## Tips for keeping your game demo tables full on the day
 
-If the convention you’re at is using Aftergame, [schedule some demo times](https://aftergame.notion.site/plan-a-game-4368c884e2ae4d40ba0b6d5598bf3bd8?pvs=4) in the convention’s event page. One of Aftergame’s main features at an event is helping people find others to play with, so you’ll get your game in front of people who are not only open to playing something new, they’re actively searching for a game to join. 
+If the convention you’re at is using Aftergame, [schedule some demo times](https://aftergame.notion.site/plan-a-game-4368c884e2ae4d40ba0b6d5598bf3bd8?pvs=4) in the convention’s event page. One of Aftergame’s main features at an event is helping people find others to play with, so you’ll get your game in front of people who are not only open to playing something new, they’re actively searching for a game to join.
 
-If you’re planning to play full games during your demos, make sure to schedule more time than you think you’ll need. You don’t want to be rushing the current group to finish once the next group starts to assemble. Plus, if you rush them out, you’ll be missing the opportunity to close a sale or give them a pen or encourage them to sign up to the mailing list. 
+If you’re planning to play full games during your demos, make sure to schedule more time than you think you’ll need. You don’t want to be rushing the current group to finish once the next group starts to assemble. Plus, if you rush them out, you’ll be missing the opportunity to close a sale or give them a pen or encourage them to sign up to the mailing list.
 
 If you’re just playing the first round or a shorter version of the game, it may take a bit of trial and error to figure out the ideal amount of time to make that happen. The games you plan on Aftergame can be edited at any time, so you can adjust the times if you need to, and there’s a chat feature you can use to communicate with upcoming groups if you’re running behind.
 
@@ -75,8 +75,8 @@ Here are some more tips for attracting players to your game and getting them to 
 - Always take “No” for an answer. If they don’t want what you’re selling, move on.
 - Connect with the enthused players that come through your booth/table on Aftergame so you can invite them back to fill up the table if you need more players later in the day. This will work outside the event setting, as well. You can plan a demo, full game, or playtest anytime and invite anyone you’ve connected with on Aftergame to claim a seat. If you don’t already have a community around your design work, this is a great way to start connecting with board gamers who are interested in your designs.
 
-**Good luck!  You don’t have the easiest job right now, but at least you can have a lot of fun doing it!**
+**Good luck! You don’t have the easiest job right now, but at least you can have a lot of fun doing it!**
 
-If there are other topics you’d like to read about as an indie game developer, email [chalene@aftergame.co](mailto:chalene@aftergame.co) to make a request. 
+If there are other topics you’d like to read about as an indie game developer, email [chalene@aftergame.co](mailto:chalene@aftergame.co) to make a request.
 
 Stay tuned for more exciting developments from the Aftergame team. You can find Aftergame on [Instagram](https://www.instagram.com/aftergameapp/) and [Facebook](https://www.facebook.com/AftergameApp) or join our [Discord](https://discord.gg/xBqvWCFXb8) to be a part of the conversation.

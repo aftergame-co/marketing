@@ -9,9 +9,12 @@
   "scripts": {
     "start:dev": "next dev",
     "build": "next build && next-image-export-optimizer",
-    "lint": "eslint .",
-    "releases:sync": "node scripts/sync-releases.mjs",
-    "releases:check": "node scripts/sync-releases.mjs --check"
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "typecheck": "next typegen && tsc --noEmit",
+    "releases:sync": "node scripts/sync-releases.mts",
+    "releases:check": "node scripts/sync-releases.mts --check"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -42,10 +45,12 @@
     "use-debounce": "^10.1.1"
   },
   "devDependencies": {
-    "eslint": "^10.15.0",
-    "eslint-config-next": "^16.4.6",
-    "prettier": "^3.10.1",
-    "prettier-plugin-tailwindcss": "^0.8.1",
-    "typescript": "~6.0.3"
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "oxfmt": "^0.80.0",
+    "oxlint": "^1.95.0",
+    "oxlint-tsgolint": "^7.0.2008",
+    "typescript": "^7.0.2"
   }
 }

@@ -22,6 +22,18 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 
 `yarn build` creates a static site in `out/` (HTML plus build-time optimized images) that any static host can serve. Preview it with `npx serve out`.
 
+## Checks
+
+The site is written in TypeScript (strict, TypeScript 7), linted with [Oxlint](https://oxc.rs/docs/guide/usage/linter) and formatted with [Oxfmt](https://oxc.rs/docs/guide/usage/formatter):
+
+```bash
+yarn typecheck      # tsc (next build also type-checks)
+yarn lint           # oxlint
+yarn format         # oxfmt; `yarn format:check` only reports
+```
+
+For editor support, install the Oxc VS Code extension (`oxc.oxc-vscode`).
+
 ## Customizing
 
 You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.

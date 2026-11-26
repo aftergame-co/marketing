@@ -1,7 +1,6 @@
 # Read the CloudCannon documentation for more information on how to use this file:
 # https://cloudcannon.com/documentation/articles/setting-global-configuration/?ssg=Next.js
 
-
 # Base path to your source files, relative to the root folder of your repository.
 source: src
 

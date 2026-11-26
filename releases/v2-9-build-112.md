@@ -1,5 +1,5 @@
 ---
 images:
   - src: /images/releases/v2-9-build-112/changelog.png
-    alt: "Version 2.9, build 112"
+    alt: 'Version 2.9, build 112'
 ---

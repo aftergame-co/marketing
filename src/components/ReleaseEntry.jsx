@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import clsx from 'clsx'
+import Image from '@/components/Image'
 import { formatReleaseDate } from '@/utils/releases'
 
 // Pill colours per change type (tokens in src/styles/tailwind.css, matching the app)
@@ -10,10 +11,11 @@ const PILL_CLASSES = {
 }
 
 /**
- * One release: heading, date/build, blurb, then each section's changes with New/Improved/Fixed pills.
- * `children` (images, story) render between the blurb and the sections.
+ * One release: images, heading, date/build, blurb, then each section's changes with New/Improved/Fixed pills.
+ * `children` (story) render between the blurb and the sections. `eagerImage` loads the first image
+ * eagerly (pass it when the entry is the first thing on the page).
  */
-export function ReleaseEntry({ release, labels, blurbHtml, as: Heading = 'h2', href, children }) {
+export function ReleaseEntry({ release, labels, blurbHtml, as: Heading = 'h2', href, eagerImage, children }) {
   const SectionHeading = Heading === 'h1' ? 'h2' : 'h3'
   const title = `Version ${release.version}`
 
@@ -31,13 +33,23 @@ export function ReleaseEntry({ release, labels, blurbHtml, as: Heading = 'h2', h
       <p className="mt-1 flex flex-wrap items-center gap-x-2 text-sm text-gray-500">
         <time dateTime={release.date}>{formatReleaseDate(release.date)}</time>
         {release.build && <span>· Build {release.build}</span>}
-        {release.major && (
-          <span className="rounded-full bg-gg-blue-faint px-2 py-0.5 text-xs font-semibold text-gg-blue">
-            Major release
-          </span>
-        )}
       </p>
-      {release.title && <p className="mt-4 text-xl font-medium text-gray-900">{release.title}</p>}
+      {release.images.map((image, index) => (
+        <figure key={image.src} className="mt-2 mb-4">
+          <Image
+            src={image.src}
+            alt={image.alt}
+            width={image.width}
+            height={image.height}
+            sizes="(min-width: 768px) 42rem, 100vw"
+            loading={eagerImage && index === 0 ? 'eager' : undefined}
+            className="mx-auto max-h-[80vh] w-auto rounded-2xl border border-gray-200"
+          />
+          {image.caption && (
+            <figcaption className="mt-2 text-center text-sm text-gray-500">{image.caption}</figcaption>
+          )}
+        </figure>
+      ))}
       {blurbHtml && (
         <div className="mt-4 text-lg text-gray-700" dangerouslySetInnerHTML={{ __html: blurbHtml }} />
       )}

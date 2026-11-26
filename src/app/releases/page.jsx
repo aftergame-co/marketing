@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Container } from '@/components/Container';
+import Image from '@/components/Image';
 import { InstagramLogo, FacebookLogo, DiscordLogo, BlueksyLogo } from '@/components/SocialLogos';
 import { ReleaseEntry } from '@/components/ReleaseEntry';
 import { RssLink } from '@/components/RssLink';
@@ -107,6 +108,7 @@ export default async function Releases() {
                 labels={labels}
                 blurbHtml={rendered[index].blurbHtml}
                 href={`/releases/${release.slug}`}
+                eagerImage={index === 0}
               />
             </div>
           </Container>
@@ -128,12 +130,27 @@ export default async function Releases() {
                       id={release.versionAnchor ? release.version : undefined}
                       className="scroll-mt-24 py-4"
                     >
-                      <Link href={`/releases/${release.slug}`} className="group block">
-                        <p className="text-sm text-gray-500">
-                          <time dateTime={release.date}>{formatReleaseDate(release.date)}</time>
-                        </p>
-                        <p className="font-medium text-gray-900 group-hover:text-gg-blue">{releaseHeading(release)}</p>
-                        <p className="mt-1 line-clamp-2 text-sm text-gray-600">{releaseDescription(release, 200)}</p>
+                      <Link href={`/releases/${release.slug}`} className="group flex items-start gap-x-4">
+                        {release.images[0] && (
+                          // Decorative: the link text already names the release
+                          <Image
+                            src={release.images[0].src}
+                            alt=""
+                            width={release.images[0].width}
+                            height={release.images[0].height}
+                            sizes="(min-width: 640px) 8rem, 6rem"
+                            className="w-24 shrink-0 rounded-lg border border-gray-200 sm:w-32"
+                          />
+                        )}
+                        <div className="min-w-0 flex-1">
+                          <div className='flex justify-between'>
+                            <p className="font-medium text-gray-900 group-hover:text-gg-blue">{releaseHeading(release)}</p>
+                            <p className="text-sm text-gray-500">
+                              <time dateTime={release.date}>{formatReleaseDate(release.date)}</time>
+                            </p>
+                          </div>
+                          <p className="mt-0px line-clamp-2 text-sm leading-5 text-gray-600">{releaseDescription(release, 200)}</p>
+                        </div>
                       </Link>
                     </li>
                   ))}

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Container } from '@/components/Container';
-import Image from '@/components/Image';
 import { ReleaseEntry } from '@/components/ReleaseEntry';
 import { CallToAction } from '@/sections/CallToAction';
 import {
@@ -57,23 +56,7 @@ export default async function ReleasePage({ params }) {
             ← All releases
           </Link>
           <div className="mt-6">
-            <ReleaseEntry release={release} labels={labels} blurbHtml={blurbHtml} as="h1">
-              {release.images.map((image, index) => (
-                <figure key={image.src} className="mt-8">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={image.width}
-                    height={image.height}
-                    sizes="(min-width: 768px) 42rem, 100vw"
-                    loading={index === 0 ? 'eager' : undefined}
-                    className="mx-auto max-h-[80vh] w-auto rounded-2xl border border-gray-200"
-                  />
-                  {image.caption && (
-                    <figcaption className="mt-2 text-center text-sm text-gray-500">{image.caption}</figcaption>
-                  )}
-                </figure>
-              ))}
+            <ReleaseEntry release={release} labels={labels} blurbHtml={blurbHtml} as="h1" eagerImage>
               {storyHtml && <div className="mt-8 text-gray-700" dangerouslySetInnerHTML={{ __html: storyHtml }} />}
               {release.blogPost && (
                 <p className="mt-6">

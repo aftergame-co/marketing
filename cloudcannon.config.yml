@@ -5,7 +5,8 @@
 # Base path to your source files, relative to the root folder of your repository.
 source: src
 
-output: out
+# The build output folder (out/) is set in CloudCannon's Site Settings > Build,
+# not here: `output` isn't a valid key in this file.
 
 # The locations of various types of files within your site.
 # Each path is relative to your site's source folder.
